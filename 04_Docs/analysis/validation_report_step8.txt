@@ -1,0 +1,76 @@
+STEP 8 VALIDATION: 45/45 checks passed
+
+[PASS] A. Deliverables: All 10 Step 8 deliverables exist and are non-empty - []
+[PASS] A. Deliverables: 8 page screenshots, all the same size and 16:9 (cropped to the report canvas) - 8 files, sizes={(1166, 656)}
+[PASS] A. Deliverables: Screenshot files are named after the report pages in report order - ['01_overview.png', '02_insights_actions.png', '03_attrition_drivers.png', '04_training_learning.png', '05_satisfaction_performance.png', '06_job_role_summary.png', '07_employee_details.png', '08_data_quality.png']
+[PASS] A. Deliverables: User guide PDF is 1-2 pages (as planned in System Design) - 2
+[PASS] A. Deliverables: Dashboard preview PDF has one page per report page - 8
+[PASS] A. Deliverables: Deck PDF has 5 pages - 5
+[PASS] A. Deliverables: LICENSE is MIT and states that the dataset is under IBM's ODbL / DbCL terms
+[PASS] B. Links: README.md: every relative link / image resolves (28 links) - []
+[PASS] B. Links: README.md: external links are only the known sources - []
+[PASS] B. Links: User_Guide.md: every relative link / image resolves (1 links) - []
+[PASS] B. Links: User_Guide.md: external links are only the known sources - []
+[PASS] B. Links: Every file path in backticks exists (17 paths) - []
+[PASS] B. Links: Every entry of the README's repository tree exists (15 entries) - []
+[PASS] B. Links: Measure names in backticks are real measures - []
+[PASS] D. DAX reference: README measure table lists all 33 measures in the model's order - ['Headcount', 'Leavers', 'Active Employees']
+[PASS] D. DAX reference: Every measure description in the README == the description Power BI reports - []
+[PASS] D. DAX reference: README DAX code + format for all 33 measures == what Power BI reports - []
+[PASS] D. DAX reference: DAX sections == the model's display folders, with the right measure counts - [('Headcount & Attrition', '7'), ('Tenure', '5'), ('Training & Learning', '6'), ('Overtime', '5'), ('Satisfaction & Performance', '7'), ('Demographics & Pay', '3')]
+[PASS] C. Number audit: README.md: every one of its 73 numbers is logged with a source or is a justified literal - []
+[PASS] C. Number audit: README.md: every logged number appears in it - []
+[PASS] C. Number audit: 04_Docs/User_Guide.md: every one of its 23 numbers is logged with a source or is a justified literal - []
+[PASS] C. Number audit: 04_Docs/User_Guide.md: every logged number appears in it - []
+[PASS] C. Number audit: Deck (slides, speaker notes, chart): every one of its 38 numbers is logged or a justified literal - []
+[PASS] C. Number audit: Deck: every logged number appears in the PPTX - []
+[PASS] C. Number audit: Only one M partition is not ETL: the empty _Measures placeholder table that holds the measures - ['_Measures.tmdl']
+[PASS] C. Number audit: Power Query ETL count agrees two ways (.pq files == TMDL shared expressions + M table partitions) - 25 vs 25
+[PASS] C. Number audit: All 118 logged numbers re-checked against an independent source (facts / Power BI / file recount / report tally)
+[PASS] C. Number audit: Data Quality page (Power BI): all QA checks PASS, so the README's 'every row should say PASS' is true
+[PASS] C. Number audit: README, user guide, deck content and manifest are exactly what build_docs.py generates from the current sources (no manual edits) - {}
+[PASS] C. Number audit: Every text in deck_content.json appears verbatim in the PPTX (the deck was rebuilt after the last content change) - []
+[PASS] E. Deck: 5 slides, each with a title - ['16.1% of employees left - where, why, and what HR can do', 'From a raw CSV to a self-testing Power BI model', 'A star schema built for slicing', 'Overtime and the first year stand out', 'Four actions to pilot, one data fix']
+[PASS] E. Deck: Every slide has speaker notes - {'ppt/notesSlides/notesSlide1.xml': 144, 'ppt/notesSlides/notesSlide2.xml': 119, 'ppt/notesSlides/notesSlide3.xml': 102, 'ppt/notesSlides/notesSlide4.xml': 205, 'ppt/notesSlides/notesSlide5.xml': 150}
+[PASS] E. Deck: Chart values in the PPTX == insights_facts.json (each bar), company bar separate - [0.39759036144578314, 0.3488372093023256, 0.3125, 0.30528846153846156, 0.22837370242214533, 0.16122448979591836] vs [0.39759036144578314, 0.3488372093023256, 0.3125, 0.30528846153846156, 0.22837370242214533, 0.16122448979591836]
+[PASS] E. Deck: Chart labels show 1 decimal percent and hide the zero half of each stacked bar
+[PASS] E. Deck: Star-schema image is embedded
+[PASS] E. Deck: No text box extends past the slide edge - []
+[PASS] E. Deck: Deck title promises match the plan (problem -> data -> model -> findings -> recommendations) - ['16.1% of employees left - where, why, and what HR can do', 'From a raw CSV to a self-testing Power BI model', 'A star schema built for slicing', 'Overtime and the first year stand out', 'Four actions to pilot, one data fix']
+[PASS] F. Consistency: Every check tally and project count claimed in the 8 Markdown docs is current (42 claims)
+[PASS] F. Consistency: System Design progress checklist: Steps 1-7 ticked and each links an existing report
+[PASS] G. Git readiness: git would commit 241 files and none of them is a Power BI cache, local setting or leftover - []
+[PASS] G. Git readiness: No file over 50 MB (GitHub warns at 50 MB); repo size 5.1 MB - []
+[PASS] G. Git readiness: The files needed to open and review the project are all included - []
+[PASS] G. Git readiness: No secrets (tokens, keys, passwords) or personal e-mail / user-folder paths in any committed text file - []
+[PASS] G. Git readiness: README tells a new user how to point ProjectFolder at their own copy (the parameter exists in the model)
+[PASS] G. Git readiness: .gitignore excludes the Power BI cache and local settings everywhere
+
+NEGATIVE CONTROLS: 27/27 deliberately planted faults were caught (each run on a throw-away copy; 04_Docs/build/negative_controls_step8.py)
+  CAUGHT README: one rate mistyped (30.5% -> 30.6%)
+  CAUGHT README: hand-typed unsupported number
+  CAUGHT README: wrong page count in heading
+  CAUGHT README: a rate swapped for another real number (30.5% -> 34.9%)
+  CAUGHT Deck content changed but deck not rebuilt
+  CAUGHT README: broken screenshot link
+  CAUGHT README: tree lists a folder that does not exist
+  CAUGHT README: DAX code differs from the model
+  CAUGHT README: one measure row dropped
+  CAUGHT README: measure description changed
+  CAUGHT README: ProjectFolder instructions removed
+  CAUGHT README: personal e-mail added
+  CAUGHT User guide: KPI value mistyped (2.80 -> 2.81)
+  CAUGHT System Design: stale check tally (68/68 -> 66/66)
+  CAUGHT System Design: Step 7 tick no longer matches its report
+  CAUGHT System Design: Step 8 tick no longer matches its report
+  CAUGHT Model_Design: stale check tally
+  CAUGHT Report_Guide: stale visual count
+  CAUGHT Deck: chart bar value differs from facts
+  CAUGHT Deck: slide number mistyped (498 -> 500)
+  CAUGHT Facts file: value perturbed
+  CAUGHT Power BI result differs (Headcount 1469)
+  CAUGHT A validation report is no longer all-pass
+  CAUGHT Extra M query that is not in the PowerQuery folder
+  CAUGHT A screenshot is missing
+  CAUGHT .gitignore no longer excludes the Power BI cache (cache present)
+  CAUGHT A token committed in a text file

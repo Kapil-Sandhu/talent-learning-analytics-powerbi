@@ -1,0 +1,57 @@
+/// Monthly income bands (currency not stated in the source data).
+table DimIncomeBand
+	lineageTag: a47dd695-7abd-528c-99a3-759bfdf150e9
+
+	column IncomeBandKey
+		dataType: int64
+		isHidden
+		isKey
+		formatString: 0
+		lineageTag: 959cdf76-40dd-559e-800a-cc573645ab83
+		summarizeBy: none
+		sourceColumn: IncomeBandKey
+
+		annotation SummarizationSetBy = User
+
+	column IncomeBand
+		dataType: string
+		lineageTag: 63c25973-91ee-5ea5-b03e-cc430b7b0e33
+		summarizeBy: none
+		sourceColumn: IncomeBand
+		sortByColumn: IncomeBandKey
+
+		annotation SummarizationSetBy = User
+
+	column MinIncome
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: ed9dc3b2-798e-5713-b6f3-46662e75ef0d
+		summarizeBy: none
+		sourceColumn: MinIncome
+
+		annotation SummarizationSetBy = User
+
+	column MaxIncome
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 0b8f30a4-d6d9-53db-8b87-df2258c801e9
+		summarizeBy: none
+		sourceColumn: MaxIncome
+
+		annotation SummarizationSetBy = User
+
+	partition DimIncomeBand = m
+		mode: import
+		source =
+				let
+				    Source  = lkp_IncomeBand,
+				    Renamed = Table.RenameColumns(Source, {{"BandKey", "IncomeBandKey"}, {"Band", "IncomeBand"}, {"Min", "MinIncome"}, {"Max", "MaxIncome"}}),
+				    Final   = Table.SelectColumns(Renamed, {"IncomeBandKey", "IncomeBand", "MinIncome", "MaxIncome"}),
+				    Typed   = Table.TransformColumnTypes(Final, {{"IncomeBandKey", Int64.Type}, {"IncomeBand", type text}, {"MinIncome", Int64.Type}, {"MaxIncome", Int64.Type}})
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table
+

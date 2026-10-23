@@ -1,0 +1,670 @@
+{
+  "DimDepartment": {
+    "hidden": false,
+    "columns": {
+      "DepartmentKey": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": true,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "Department": {
+        "dataType": "string",
+        "isHidden": false,
+        "isKey": false,
+        "summarizeBy": "none"
+      }
+    }
+  },
+  "DimJobRole": {
+    "hidden": false,
+    "columns": {
+      "JobRoleKey": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": true,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "JobRole": {
+        "dataType": "string",
+        "isHidden": false,
+        "isKey": false,
+        "summarizeBy": "none"
+      }
+    }
+  },
+  "DimEducation": {
+    "hidden": false,
+    "columns": {
+      "EducationKey": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": true,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "EducationLevel": {
+        "dataType": "string",
+        "isHidden": false,
+        "isKey": false,
+        "summarizeBy": "none",
+        "sortByColumn": "EducationKey"
+      }
+    }
+  },
+  "DimJobSatisfaction": {
+    "hidden": false,
+    "columns": {
+      "JobSatisfactionKey": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": true,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "JobSatisfaction": {
+        "dataType": "string",
+        "isHidden": false,
+        "isKey": false,
+        "summarizeBy": "none",
+        "sortByColumn": "JobSatisfactionKey"
+      }
+    }
+  },
+  "DimAgeBand": {
+    "hidden": false,
+    "columns": {
+      "AgeBandKey": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": true,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "AgeBand": {
+        "dataType": "string",
+        "isHidden": false,
+        "isKey": false,
+        "summarizeBy": "none",
+        "sortByColumn": "AgeBandKey"
+      },
+      "MinAge": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "MaxAge": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "none"
+      }
+    }
+  },
+  "DimTenureBand": {
+    "hidden": false,
+    "columns": {
+      "TenureBandKey": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": true,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "TenureBand": {
+        "dataType": "string",
+        "isHidden": false,
+        "isKey": false,
+        "summarizeBy": "none",
+        "sortByColumn": "TenureBandKey"
+      },
+      "MinYears": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "MaxYears": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "none"
+      }
+    }
+  },
+  "DimIncomeBand": {
+    "hidden": false,
+    "columns": {
+      "IncomeBandKey": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": true,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "IncomeBand": {
+        "dataType": "string",
+        "isHidden": false,
+        "isKey": false,
+        "summarizeBy": "none",
+        "sortByColumn": "IncomeBandKey"
+      },
+      "MinIncome": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "MaxIncome": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "none"
+      }
+    }
+  },
+  "DimTrainingBand": {
+    "hidden": false,
+    "columns": {
+      "TrainingBandKey": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": true,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "TrainingBand": {
+        "dataType": "string",
+        "isHidden": false,
+        "isKey": false,
+        "summarizeBy": "none",
+        "sortByColumn": "TrainingBandKey"
+      },
+      "MinTrainings": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "MaxTrainings": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "none"
+      }
+    }
+  },
+  "DimEmployee": {
+    "hidden": false,
+    "columns": {
+      "EmployeeID": {
+        "dataType": "int64",
+        "isHidden": false,
+        "isKey": true,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "EmployeeStatus": {
+        "dataType": "string",
+        "isHidden": false,
+        "isKey": false,
+        "summarizeBy": "none"
+      },
+      "Gender": {
+        "dataType": "string",
+        "isHidden": false,
+        "isKey": false,
+        "summarizeBy": "none"
+      },
+      "MaritalStatus": {
+        "dataType": "string",
+        "isHidden": false,
+        "isKey": false,
+        "summarizeBy": "none"
+      },
+      "EducationField": {
+        "dataType": "string",
+        "isHidden": false,
+        "isKey": false,
+        "summarizeBy": "none"
+      },
+      "BusinessTravel": {
+        "dataType": "string",
+        "isHidden": false,
+        "isKey": false,
+        "summarizeBy": "none",
+        "sortByColumn": "BusinessTravelSort"
+      },
+      "BusinessTravelSort": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "OverTime": {
+        "dataType": "string",
+        "isHidden": false,
+        "isKey": false,
+        "summarizeBy": "none"
+      },
+      "JobLevel": {
+        "dataType": "int64",
+        "isHidden": false,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "StockOptionLevel": {
+        "dataType": "int64",
+        "isHidden": false,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "EnvironmentSatisfaction": {
+        "dataType": "string",
+        "isHidden": false,
+        "isKey": false,
+        "summarizeBy": "none",
+        "sortByColumn": "EnvironmentSatisfactionSort"
+      },
+      "EnvironmentSatisfactionSort": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "RelationshipSatisfaction": {
+        "dataType": "string",
+        "isHidden": false,
+        "isKey": false,
+        "summarizeBy": "none",
+        "sortByColumn": "RelationshipSatisfactionSort"
+      },
+      "RelationshipSatisfactionSort": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "JobInvolvement": {
+        "dataType": "string",
+        "isHidden": false,
+        "isKey": false,
+        "summarizeBy": "none",
+        "sortByColumn": "JobInvolvementSort"
+      },
+      "JobInvolvementSort": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "WorkLifeBalance": {
+        "dataType": "string",
+        "isHidden": false,
+        "isKey": false,
+        "summarizeBy": "none",
+        "sortByColumn": "WorkLifeBalanceSort"
+      },
+      "WorkLifeBalanceSort": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "PerformanceRating": {
+        "dataType": "string",
+        "isHidden": false,
+        "isKey": false,
+        "summarizeBy": "none",
+        "sortByColumn": "PerformanceRatingSort"
+      },
+      "PerformanceRatingSort": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "none"
+      }
+    }
+  },
+  "FactEmployee": {
+    "hidden": false,
+    "columns": {
+      "EmployeeID": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "DepartmentKey": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "JobRoleKey": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "EducationKey": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "JobSatisfactionKey": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "AgeBandKey": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "TenureBandKey": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "IncomeBandKey": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "TrainingBandKey": {
+        "dataType": "int64",
+        "isHidden": true,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "AttritionFlag": {
+        "dataType": "int64",
+        "isHidden": false,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "sum"
+      },
+      "OverTimeFlag": {
+        "dataType": "int64",
+        "isHidden": false,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "sum"
+      },
+      "Age": {
+        "dataType": "int64",
+        "isHidden": false,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "average"
+      },
+      "MonthlyIncome": {
+        "dataType": "int64",
+        "isHidden": false,
+        "isKey": false,
+        "formatString": "#,##0",
+        "summarizeBy": "sum"
+      },
+      "PercentSalaryHike": {
+        "dataType": "int64",
+        "isHidden": false,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "average"
+      },
+      "DistanceFromHome": {
+        "dataType": "int64",
+        "isHidden": false,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "average"
+      },
+      "NumCompaniesWorked": {
+        "dataType": "int64",
+        "isHidden": false,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "average"
+      },
+      "TotalWorkingYears": {
+        "dataType": "int64",
+        "isHidden": false,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "average"
+      },
+      "YearsAtCompany": {
+        "dataType": "int64",
+        "isHidden": false,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "average"
+      },
+      "YearsInCurrentRole": {
+        "dataType": "int64",
+        "isHidden": false,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "average"
+      },
+      "YearsSinceLastPromotion": {
+        "dataType": "int64",
+        "isHidden": false,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "average"
+      },
+      "YearsWithCurrManager": {
+        "dataType": "int64",
+        "isHidden": false,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "average"
+      },
+      "TrainingTimesLastYear": {
+        "dataType": "int64",
+        "isHidden": false,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "sum"
+      },
+      "JobSatisfactionScore": {
+        "dataType": "int64",
+        "isHidden": false,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "average"
+      },
+      "EnvironmentSatisfactionScore": {
+        "dataType": "int64",
+        "isHidden": false,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "average"
+      },
+      "RelationshipSatisfactionScore": {
+        "dataType": "int64",
+        "isHidden": false,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "average"
+      },
+      "JobInvolvementScore": {
+        "dataType": "int64",
+        "isHidden": false,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "average"
+      },
+      "WorkLifeBalanceScore": {
+        "dataType": "int64",
+        "isHidden": false,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "average"
+      },
+      "PerformanceRatingScore": {
+        "dataType": "int64",
+        "isHidden": false,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "average"
+      }
+    }
+  },
+  "QA_Checks": {
+    "hidden": true,
+    "columns": {
+      "CheckNo": {
+        "dataType": "int64",
+        "isHidden": false,
+        "isKey": false,
+        "formatString": "0",
+        "summarizeBy": "none"
+      },
+      "Check": {
+        "dataType": "string",
+        "isHidden": false,
+        "isKey": false,
+        "summarizeBy": "none"
+      },
+      "Actual": {
+        "dataType": "double",
+        "isHidden": false,
+        "isKey": false,
+        "summarizeBy": "none"
+      },
+      "Expected": {
+        "dataType": "double",
+        "isHidden": false,
+        "isKey": false,
+        "summarizeBy": "none"
+      },
+      "Result": {
+        "dataType": "string",
+        "isHidden": false,
+        "isKey": false,
+        "summarizeBy": "none"
+      }
+    }
+  },
+  "_Measures": {
+    "hidden": false,
+    "columns": {
+      "Placeholder": {
+        "dataType": "string",
+        "isHidden": true,
+        "isKey": false,
+        "summarizeBy": "none"
+      }
+    }
+  },
+  "_relationships": [
+    {
+      "from": "FactEmployee.DepartmentKey",
+      "to": "DimDepartment.DepartmentKey",
+      "fromCardinality": "many",
+      "toCardinality": "one",
+      "crossFilter": "oneDirection",
+      "active": true
+    },
+    {
+      "from": "FactEmployee.JobRoleKey",
+      "to": "DimJobRole.JobRoleKey",
+      "fromCardinality": "many",
+      "toCardinality": "one",
+      "crossFilter": "oneDirection",
+      "active": true
+    },
+    {
+      "from": "FactEmployee.EducationKey",
+      "to": "DimEducation.EducationKey",
+      "fromCardinality": "many",
+      "toCardinality": "one",
+      "crossFilter": "oneDirection",
+      "active": true
+    },
+    {
+      "from": "FactEmployee.JobSatisfactionKey",
+      "to": "DimJobSatisfaction.JobSatisfactionKey",
+      "fromCardinality": "many",
+      "toCardinality": "one",
+      "crossFilter": "oneDirection",
+      "active": true
+    },
+    {
+      "from": "FactEmployee.AgeBandKey",
+      "to": "DimAgeBand.AgeBandKey",
+      "fromCardinality": "many",
+      "toCardinality": "one",
+      "crossFilter": "oneDirection",
+      "active": true
+    },
+    {
+      "from": "FactEmployee.TenureBandKey",
+      "to": "DimTenureBand.TenureBandKey",
+      "fromCardinality": "many",
+      "toCardinality": "one",
+      "crossFilter": "oneDirection",
+      "active": true
+    },
+    {
+      "from": "FactEmployee.IncomeBandKey",
+      "to": "DimIncomeBand.IncomeBandKey",
+      "fromCardinality": "many",
+      "toCardinality": "one",
+      "crossFilter": "oneDirection",
+      "active": true
+    },
+    {
+      "from": "FactEmployee.TrainingBandKey",
+      "to": "DimTrainingBand.TrainingBandKey",
+      "fromCardinality": "many",
+      "toCardinality": "one",
+      "crossFilter": "oneDirection",
+      "active": true
+    },
+    {
+      "from": "FactEmployee.EmployeeID",
+      "to": "DimEmployee.EmployeeID",
+      "fromCardinality": "many",
+      "toCardinality": "one",
+      "crossFilter": "oneDirection",
+      "active": true
+    }
+  ]
+}

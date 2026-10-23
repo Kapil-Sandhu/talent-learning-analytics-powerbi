@@ -1,0 +1,139 @@
+STEP 2 VALIDATION: 137/137 checks passed
+
+[PASS] A. Lookups: All 9 lookup tables exist with correct names - missing=set() extra=set()
+[PASS] A. Lookups: Lkp_Education covers every Education value - unmapped=set()
+[PASS] A. Lookups: Lkp_Education codes unique
+[PASS] A. Lookups: Lkp_Education labels non-empty
+[PASS] A. Lookups: Lkp_Satisfaction covers every JobSatisfaction value - unmapped=set()
+[PASS] A. Lookups: Lkp_Satisfaction covers every EnvironmentSatisfaction value - unmapped=set()
+[PASS] A. Lookups: Lkp_Satisfaction covers every RelationshipSatisfaction value - unmapped=set()
+[PASS] A. Lookups: Lkp_Satisfaction covers every JobInvolvement value - unmapped=set()
+[PASS] A. Lookups: Lkp_Satisfaction codes unique
+[PASS] A. Lookups: Lkp_Satisfaction labels non-empty
+[PASS] A. Lookups: Lkp_WorkLifeBalance covers every WorkLifeBalance value - unmapped=set()
+[PASS] A. Lookups: Lkp_WorkLifeBalance codes unique
+[PASS] A. Lookups: Lkp_WorkLifeBalance labels non-empty
+[PASS] A. Lookups: Lkp_PerformanceRating covers every PerformanceRating value - unmapped=set()
+[PASS] A. Lookups: Lkp_PerformanceRating codes unique
+[PASS] A. Lookups: Lkp_PerformanceRating labels non-empty
+[PASS] A. Lookups: Lkp_BusinessTravel covers every BusinessTravel value - unmapped=set()
+[PASS] A. Lookups: Lkp_BusinessTravel codes unique
+[PASS] A. Lookups: Lkp_BusinessTravel labels non-empty
+[PASS] A. Lookups: Lkp_Education labels match dataset documentation - got={1: 'Below College', 2: 'College', 3: 'Bachelor', 4: 'Master', 5: 'Doctor'}
+[PASS] A. Lookups: Lkp_Satisfaction labels match dataset documentation - got={1: 'Low', 2: 'Medium', 3: 'High', 4: 'Very High'}
+[PASS] A. Lookups: Lkp_WorkLifeBalance labels match dataset documentation - got={1: 'Bad', 2: 'Good', 3: 'Better', 4: 'Best'}
+[PASS] A. Lookups: Lkp_PerformanceRating labels match dataset documentation - got={1: 'Low', 2: 'Good', 3: 'Excellent', 4: 'Outstanding'}
+[PASS] A. Lookups: Lkp_AgeBand bands contiguous, no gaps/overlaps - bounds=[(18, 25), (26, 35), (36, 45), (46, 55), (56, 60)]
+[PASS] A. Lookups: Lkp_AgeBand covers Age range 18-60
+[PASS] A. Lookups: Lkp_AgeBand: every employee in exactly one band - 0 employees not in exactly one band
+[PASS] A. Lookups: Lkp_AgeBand SortOrder is 1..n
+[PASS] A. Lookups: Lkp_TenureBand bands contiguous, no gaps/overlaps - bounds=[(0, 1), (2, 5), (6, 10), (11, 99)]
+[PASS] A. Lookups: Lkp_TenureBand covers YearsAtCompany range 0-40
+[PASS] A. Lookups: Lkp_TenureBand: every employee in exactly one band - 0 employees not in exactly one band
+[PASS] A. Lookups: Lkp_TenureBand SortOrder is 1..n
+[PASS] A. Lookups: Lkp_IncomeBand bands contiguous, no gaps/overlaps - bounds=[(0, 2999), (3000, 5999), (6000, 9999), (10000, 14999), (15000, 999999)]
+[PASS] A. Lookups: Lkp_IncomeBand covers MonthlyIncome range 1009-19999
+[PASS] A. Lookups: Lkp_IncomeBand: every employee in exactly one band - 0 employees not in exactly one band
+[PASS] A. Lookups: Lkp_IncomeBand SortOrder is 1..n
+[PASS] A. Lookups: Lkp_TrainingBand bands contiguous, no gaps/overlaps - bounds=[(0, 0), (1, 2), (3, 4), (5, 6)]
+[PASS] A. Lookups: Lkp_TrainingBand covers TrainingTimesLastYear range 0-6
+[PASS] A. Lookups: Lkp_TrainingBand: every employee in exactly one band - 0 employees not in exactly one band
+[PASS] A. Lookups: Lkp_TrainingBand SortOrder is 1..n
+[PASS] B. Raw_Data: tbl_HR table exists
+[PASS] B. Raw_Data: tbl_HR range = A1:AI1471 - A1:AI1471
+[PASS] B. Raw_Data: Headers identical to CSV (incl. 'Age' without BOM) - ['Age', 'Attrition', 'BusinessTravel']
+[PASS] B. Raw_Data: All 51,450 cells identical to CSV - 0 mismatches
+[PASS] C. KPI_Summary: All 19 KPIs present - missing=set()
+[PASS] C. KPI_Summary: Headcount = 1470 - excel=1470
+[PASS] C. KPI_Summary: Leavers = 237 - excel=237
+[PASS] C. KPI_Summary: Active Employees = 1233 - excel=1233
+[PASS] C. KPI_Summary: Attrition Rate = 0.161224 - excel=0.161224489795918
+[PASS] C. KPI_Summary: Avg Tenure (years) = 7.00816 - excel=7.00816326530612
+[PASS] C. KPI_Summary: Median Tenure (years) = 5 - excel=5
+[PASS] C. KPI_Summary: Avg Tenure - Leavers (years) = 5.1308 - excel=5.13080168776371
+[PASS] C. KPI_Summary: Avg Age = 36.9238 - excel=36.9238095238095
+[PASS] C. KPI_Summary: Avg Monthly Income = 6502.93 - excel=6502.93129251701
+[PASS] C. KPI_Summary: Total Trainings Last Year = 4115 - excel=4115
+[PASS] C. KPI_Summary: Training per Employee = 2.79932 - excel=2.79931972789116
+[PASS] C. KPI_Summary: % Zero Training = 0.0367347 - excel=0.036734693877551
+[PASS] C. KPI_Summary: Overtime % = 0.282993 - excel=0.282993197278912
+[PASS] C. KPI_Summary: Attrition Rate - Overtime = 0.305288 - excel=0.305288461538462
+[PASS] C. KPI_Summary: Attrition Rate - No Overtime = 0.104364 - excel=0.104364326375712
+[PASS] C. KPI_Summary: Avg Job Satisfaction (1-4) = 2.72857 - excel=2.72857142857143
+[PASS] C. KPI_Summary: % Low Job Satisfaction = 0.196599 - excel=0.196598639455782
+[PASS] C. KPI_Summary: Avg Years Since Last Promotion = 2.18776 - excel=2.18775510204082
+[PASS] C. KPI_Summary: Avg Performance Rating = 3.15374 - excel=3.15374149659864
+[PASS] C. KPI_Summary: Every KPI value is a formula (no hardcoded results) - []
+[PASS] D. Profiles: Attrition_Profile / Department (3 rows) match pandas
+[PASS] D. Profiles: Attrition_Profile / Department total = 1470 - total=1470
+[PASS] D. Profiles: Attrition_Profile / Job Role (9 rows) match pandas
+[PASS] D. Profiles: Attrition_Profile / Job Role total = 1470 - total=1470
+[PASS] D. Profiles: Attrition_Profile / Overtime (2 rows) match pandas
+[PASS] D. Profiles: Attrition_Profile / Overtime total = 1470 - total=1470
+[PASS] D. Profiles: Attrition_Profile / Business Travel (3 rows) match pandas
+[PASS] D. Profiles: Attrition_Profile / Business Travel total = 1470 - total=1470
+[PASS] D. Profiles: Attrition_Profile / Gender (2 rows) match pandas
+[PASS] D. Profiles: Attrition_Profile / Gender total = 1470 - total=1470
+[PASS] D. Profiles: Attrition_Profile / Marital Status (3 rows) match pandas
+[PASS] D. Profiles: Attrition_Profile / Marital Status total = 1470 - total=1470
+[PASS] D. Profiles: Attrition_Profile / Age Band (5 rows) match pandas
+[PASS] D. Profiles: Attrition_Profile / Age Band total = 1470 - total=1470
+[PASS] D. Profiles: Attrition_Profile / Age Band band bounds identical to Lkp_AgeBand - [('18-25', 18, 25), ('26-35', 26, 35), ('36-45', 36, 45), ('46-55', 46, 55), ('56-60', 56, 60)] vs [('18-25', 18, 25), ('26-35', 26, 35), ('36-45', 36, 45), ('46-55', 46, 55), ('56-60', 56, 60)]
+[PASS] D. Profiles: Attrition_Profile / Tenure Band (YearsAtCompany) (4 rows) match pandas
+[PASS] D. Profiles: Attrition_Profile / Tenure Band (YearsAtCompany) total = 1470 - total=1470
+[PASS] D. Profiles: Attrition_Profile / Tenure Band (YearsAtCompany) band bounds identical to Lkp_TenureBand - [('0-1 yrs', 0, 1), ('2-5 yrs', 2, 5), ('6-10 yrs', 6, 10), ('11+ yrs', 11, 99)] vs [('0-1 yrs', 0, 1), ('2-5 yrs', 2, 5), ('6-10 yrs', 6, 10), ('11+ yrs', 11, 99)]
+[PASS] D. Profiles: Attrition_Profile / Monthly Income Band (5 rows) match pandas
+[PASS] D. Profiles: Attrition_Profile / Monthly Income Band total = 1470 - total=1470
+[PASS] D. Profiles: Attrition_Profile / Monthly Income Band band bounds identical to Lkp_IncomeBand - [('Under 3,000', 0, 2999), ('3,000-5,999', 3000, 5999), ('6,000-9,999', 6000, 9999), ('10,000-14,999', 10000, 14999), ('15,000+', 15000, 999999)] vs [('Under 3,000', 0, 2999), ('3,000-5,999', 3000, 5999), ('6,000-9,999', 6000, 9999), ('10,000-14,999', 10000, 14999), ('15,000+', 15000, 999999)]
+[PASS] D. Profiles: Attrition_Profile / Job Level (5 rows) match pandas
+[PASS] D. Profiles: Attrition_Profile / Job Level total = 1470 - total=1470
+[PASS] D. Profiles: Attrition_Profile / Stock Option Level (4 rows) match pandas
+[PASS] D. Profiles: Attrition_Profile / Stock Option Level total = 1470 - total=1470
+[PASS] D. Profiles: Training_Profile / Attrition by Trainings Attended Last Year (7 rows) match pandas
+[PASS] D. Profiles: Training_Profile / Attrition by Trainings Attended Last Year total = 1470 - total=1470
+[PASS] D. Profiles: Training_Profile / Attrition by Training Band (4 rows) match pandas
+[PASS] D. Profiles: Training_Profile / Attrition by Training Band total = 1470 - total=1470
+[PASS] D. Profiles: Training_Profile / Attrition by Training Band band bounds identical to Lkp_TrainingBand - [('None (0)', 0, 0), ('Low (1-2)', 1, 2), ('Medium (3-4)', 3, 4), ('High (5-6)', 5, 6)] vs [('None (0)', 0, 0), ('Low (1-2)', 1, 2), ('Medium (3-4)', 3, 4), ('High (5-6)', 5, 6)]
+[PASS] D. Profiles: Satisfaction_Profile / Job Satisfaction (4 rows) match pandas
+[PASS] D. Profiles: Satisfaction_Profile / Job Satisfaction total = 1470 - total=1470
+[PASS] D. Profiles: Satisfaction_Profile / Job Satisfaction labels match Lkp_Satisfaction - ['1 - Low', '2 - Medium', '3 - High', '4 - Very High']
+[PASS] D. Profiles: Satisfaction_Profile / Environment Satisfaction (4 rows) match pandas
+[PASS] D. Profiles: Satisfaction_Profile / Environment Satisfaction total = 1470 - total=1470
+[PASS] D. Profiles: Satisfaction_Profile / Environment Satisfaction labels match Lkp_Satisfaction - ['1 - Low', '2 - Medium', '3 - High', '4 - Very High']
+[PASS] D. Profiles: Satisfaction_Profile / Relationship Satisfaction (4 rows) match pandas
+[PASS] D. Profiles: Satisfaction_Profile / Relationship Satisfaction total = 1470 - total=1470
+[PASS] D. Profiles: Satisfaction_Profile / Relationship Satisfaction labels match Lkp_Satisfaction - ['1 - Low', '2 - Medium', '3 - High', '4 - Very High']
+[PASS] D. Profiles: Satisfaction_Profile / Job Involvement (4 rows) match pandas
+[PASS] D. Profiles: Satisfaction_Profile / Job Involvement total = 1470 - total=1470
+[PASS] D. Profiles: Satisfaction_Profile / Job Involvement labels match Lkp_Satisfaction - ['1 - Low', '2 - Medium', '3 - High', '4 - Very High']
+[PASS] D. Profiles: Satisfaction_Profile / Work-Life Balance (4 rows) match pandas
+[PASS] D. Profiles: Satisfaction_Profile / Work-Life Balance total = 1470 - total=1470
+[PASS] D. Profiles: Satisfaction_Profile / Work-Life Balance labels match Lkp_WorkLifeBalance - ['1 - Bad', '2 - Good', '3 - Better', '4 - Best']
+[PASS] D. Profiles: Satisfaction_Profile / Performance Rating (4 rows) match pandas
+[PASS] D. Profiles: Satisfaction_Profile / Performance Rating total = 1470 - total=1470
+[PASS] D. Profiles: Satisfaction_Profile / Performance Rating labels match Lkp_PerformanceRating - ['1 - Low', '2 - Good', '3 - Excellent', '4 - Outstanding']
+[PASS] D. Profiles: Satisfaction_Profile / Education (5 rows) match pandas
+[PASS] D. Profiles: Satisfaction_Profile / Education total = 1470 - total=1470
+[PASS] D. Profiles: Satisfaction_Profile / Education labels match Lkp_Education - ['1 - Below College', '2 - College', '3 - Bachelor', '4 - Master', '5 - Doctor']
+[PASS] D. Profiles: Expected number of profile blocks found (11 + 2 + 7 = 20) - found 20
+[PASS] D. Profiles: Training_Profile / Training by Department matches pandas (incl. total)
+[PASS] D. Profiles: Training_Profile / Training by JobRole matches pandas (incl. total)
+[PASS] E. Data_Dictionary: All 35 columns listed in CSV order
+[PASS] E. Data_Dictionary: Min/Max/Distinct/Blanks match pandas; description + action filled
+[PASS] E. Data_Dictionary: Drop list = 3 constant + 3 undocumented rate columns - ['DailyRate', 'EmployeeCount', 'HourlyRate', 'MonthlyRate', 'Over18', 'StandardHours']
+[PASS] F. Data_Quality: All 19 in-workbook checks PASS - fails=[]
+[PASS] F. Data_Quality: Summary row says ALL PASS - ['ALL PASS']
+[PASS] G. Key_Findings: 8 findings rendered as text (no errors/blanks)
+[PASS] G. Key_Findings: Finding 1 numbers match pandas - missing [] in: Overall attrition is 16.1% (237 of 1,470 employees left).
+[PASS] G. Key_Findings: Finding 2 numbers match pandas - missing [] in: Employees working overtime leave at 30.5% vs 10.4% without overtime - about 2.9x higher. 28.3% of staff work overtime.
+[PASS] G. Key_Findings: Finding 3 numbers match pandas - missing [] in: Employees in their first 0-1 years leave at 34.9% vs 8.1% for 11+ years. Leavers stayed 5.1 years on average vs 7.0 overall.
+[PASS] G. Key_Findings: Finding 4 numbers match pandas - missing [] in: Employees with Low job satisfaction leave at 22.8% vs 11.3% for Very High satisfaction.
+[PASS] G. Key_Findings: Finding 5 numbers match pandas - missing [] in: Highest-attrition department: Sales (20.6%). Highest-attrition role: Sales Representative (39.8%).
+[PASS] G. Key_Findings: Finding 6 numbers match pandas - missing [] in: Employees with no training last year leave at 27.8% vs 10.9% for 5-6 trainings. Only 3.7% had zero training, so the no-training group is small (54 people) - treat as indicative.
+[PASS] G. Key_Findings: Finding 7 numbers match pandas - missing [] in: Job Level 1 attrition is 26.3%; employees with no stock options (level 0) leave at 24.4%.
+[PASS] G. Key_Findings: Finding 8 numbers match pandas - missing [] in: Attrition is similar for Excellent (16.1%) and Outstanding (16.4%) performers - high performers are not being retained better.
+[PASS] H. Formatting: HR_Lookups: every populated cell uses Arial - 0 cells
+[PASS] H. Formatting: HR_Data_Profiling: every populated cell uses Arial - 0 cells
+[PASS] H. Formatting: No error values (#DIV/0!, #N/A, #NAME?, #REF!, #VALUE!) in profiling workbook - 0
+[PASS] H. Formatting: Sheet order as designed - ['README', 'KPI_Summary', 'Attrition_Profile', 'Training_Profile', 'Satisfaction_Profile', 'Data_Dictionary', 'Data_Quality', 'Key_Findings', 'Raw_Data']
+[PASS] H. Formatting: Charts present (7) - 7

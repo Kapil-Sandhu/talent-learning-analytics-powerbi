@@ -1,0 +1,37 @@
+/// Job satisfaction scale 1-4 (Low ... Very High) - a key attrition driver.
+table DimJobSatisfaction
+	lineageTag: 0d855dd0-d170-5f1b-8e0c-f804ca611b93
+
+	column JobSatisfactionKey
+		dataType: int64
+		isHidden
+		isKey
+		formatString: 0
+		lineageTag: ec02baa6-1f43-57b7-8a9e-db9bc18513f6
+		summarizeBy: none
+		sourceColumn: JobSatisfactionKey
+
+		annotation SummarizationSetBy = User
+
+	column JobSatisfaction
+		dataType: string
+		lineageTag: cf75969a-7a77-505d-8342-ac28b5eed98f
+		summarizeBy: none
+		sourceColumn: JobSatisfaction
+		sortByColumn: JobSatisfactionKey
+
+		annotation SummarizationSetBy = User
+
+	partition DimJobSatisfaction = m
+		mode: import
+		source =
+				let
+				    Source  = lkp_Satisfaction,
+				    Renamed = Table.RenameColumns(Source, {{"RatingCode", "JobSatisfactionKey"}, {"RatingLabel", "JobSatisfaction"}}),
+				    Final   = Table.SelectColumns(Renamed, {"JobSatisfactionKey", "JobSatisfaction"}),
+				    Typed   = Table.TransformColumnTypes(Final, {{"JobSatisfactionKey", Int64.Type}, {"JobSatisfaction", type text}})
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "92a6e97bf9d35131ad08",
+  "position": {
+    "x": 16,
+    "y": 680,
+    "z": 11000,
+    "height": 34,
+    "width": 1248,
+    "tabOrder": 11000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Associations in a fictional snapshot (IBM sample), not proven causes - test actions with a pilot first. Also improve learning data: course type, hours, completion, dates. Full analysis: 04_Docs/Insights_and_Recommendations.md",
+                    "textStyle": {
+                      "fontSize": "9pt",
+                      "color": "#595959"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

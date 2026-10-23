@@ -1,0 +1,5 @@
+TenureBandKey,TenureBand,MinYears,MaxYears
+1,0-1 yrs,0,1
+2,2-5 yrs,2,5
+3,6-10 yrs,6,10
+4,11+ yrs,11,99

@@ -1,0 +1,1810 @@
+﻿{
+    "port":  51312,
+    "database":  "25081bd6-b5f6-4ba4-b2f7-a08e82878cca",
+    "refresh":  null,
+    "refreshSeconds":  null,
+    "tables":  [
+                   {
+                       "name":  "DimDepartment",
+                       "isHidden":  false,
+                       "columns":  [
+                                       {
+                                           "name":  "DepartmentKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  true,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "Department",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  null
+                                       }
+                                   ]
+                   },
+                   {
+                       "name":  "DimJobRole",
+                       "isHidden":  false,
+                       "columns":  [
+                                       {
+                                           "name":  "JobRoleKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  true,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "JobRole",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  null
+                                       }
+                                   ]
+                   },
+                   {
+                       "name":  "DimEducation",
+                       "isHidden":  false,
+                       "columns":  [
+                                       {
+                                           "name":  "EducationKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  true,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "EducationLevel",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  "EducationKey"
+                                       }
+                                   ]
+                   },
+                   {
+                       "name":  "DimJobSatisfaction",
+                       "isHidden":  false,
+                       "columns":  [
+                                       {
+                                           "name":  "JobSatisfactionKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  true,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "JobSatisfaction",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  "JobSatisfactionKey"
+                                       }
+                                   ]
+                   },
+                   {
+                       "name":  "DimAgeBand",
+                       "isHidden":  false,
+                       "columns":  [
+                                       {
+                                           "name":  "AgeBandKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  true,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "AgeBand",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  "AgeBandKey"
+                                       },
+                                       {
+                                           "name":  "MinAge",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "MaxAge",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       }
+                                   ]
+                   },
+                   {
+                       "name":  "DimTenureBand",
+                       "isHidden":  false,
+                       "columns":  [
+                                       {
+                                           "name":  "TenureBandKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  true,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "TenureBand",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  "TenureBandKey"
+                                       },
+                                       {
+                                           "name":  "MinYears",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "MaxYears",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       }
+                                   ]
+                   },
+                   {
+                       "name":  "DimIncomeBand",
+                       "isHidden":  false,
+                       "columns":  [
+                                       {
+                                           "name":  "IncomeBandKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  true,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "IncomeBand",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  "IncomeBandKey"
+                                       },
+                                       {
+                                           "name":  "MinIncome",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "MaxIncome",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       }
+                                   ]
+                   },
+                   {
+                       "name":  "DimTrainingBand",
+                       "isHidden":  false,
+                       "columns":  [
+                                       {
+                                           "name":  "TrainingBandKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  true,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "TrainingBand",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  "TrainingBandKey"
+                                       },
+                                       {
+                                           "name":  "MinTrainings",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "MaxTrainings",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       }
+                                   ]
+                   },
+                   {
+                       "name":  "DimEmployee",
+                       "isHidden":  false,
+                       "columns":  [
+                                       {
+                                           "name":  "EmployeeID",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  true,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "EmployeeStatus",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "Gender",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "MaritalStatus",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "EducationField",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "BusinessTravel",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  "BusinessTravelSort"
+                                       },
+                                       {
+                                           "name":  "BusinessTravelSort",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "OverTime",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "JobLevel",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "StockOptionLevel",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "EnvironmentSatisfaction",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  "EnvironmentSatisfactionSort"
+                                       },
+                                       {
+                                           "name":  "EnvironmentSatisfactionSort",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "RelationshipSatisfaction",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  "RelationshipSatisfactionSort"
+                                       },
+                                       {
+                                           "name":  "RelationshipSatisfactionSort",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "JobInvolvement",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  "JobInvolvementSort"
+                                       },
+                                       {
+                                           "name":  "JobInvolvementSort",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "WorkLifeBalance",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  "WorkLifeBalanceSort"
+                                       },
+                                       {
+                                           "name":  "WorkLifeBalanceSort",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "PerformanceRating",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  "PerformanceRatingSort"
+                                       },
+                                       {
+                                           "name":  "PerformanceRatingSort",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       }
+                                   ]
+                   },
+                   {
+                       "name":  "FactEmployee",
+                       "isHidden":  false,
+                       "columns":  [
+                                       {
+                                           "name":  "EmployeeID",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "DepartmentKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "JobRoleKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "EducationKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "JobSatisfactionKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "AgeBandKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "TenureBandKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "IncomeBandKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "TrainingBandKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "AttritionFlag",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Sum",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "OverTimeFlag",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Sum",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "Age",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "MonthlyIncome",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Sum",
+                                           "formatString":  "#,##0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "PercentSalaryHike",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "DistanceFromHome",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "NumCompaniesWorked",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "TotalWorkingYears",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "YearsAtCompany",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "YearsInCurrentRole",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "YearsSinceLastPromotion",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "YearsWithCurrManager",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "TrainingTimesLastYear",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Sum",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "JobSatisfactionScore",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "EnvironmentSatisfactionScore",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "RelationshipSatisfactionScore",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "JobInvolvementScore",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "WorkLifeBalanceScore",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "PerformanceRatingScore",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       }
+                                   ]
+                   },
+                   {
+                       "name":  "QA_Checks",
+                       "isHidden":  true,
+                       "columns":  [
+                                       {
+                                           "name":  "CheckNo",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "Check",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "Actual",
+                                           "dataType":  "Double",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "Expected",
+                                           "dataType":  "Double",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "Result",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  null
+                                       }
+                                   ]
+                   },
+                   {
+                       "name":  "_Measures",
+                       "isHidden":  false,
+                       "columns":  [
+                                       {
+                                           "name":  "Placeholder",
+                                           "dataType":  "String",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  null
+                                       }
+                                   ]
+                   }
+               ],
+    "relationships":  [
+                          {
+                              "from":  "FactEmployee.DepartmentKey",
+                              "to":  "DimDepartment.DepartmentKey",
+                              "fromCardinality":  "Many",
+                              "toCardinality":  "One",
+                              "crossFilter":  "OneDirection",
+                              "active":  true
+                          },
+                          {
+                              "from":  "FactEmployee.JobRoleKey",
+                              "to":  "DimJobRole.JobRoleKey",
+                              "fromCardinality":  "Many",
+                              "toCardinality":  "One",
+                              "crossFilter":  "OneDirection",
+                              "active":  true
+                          },
+                          {
+                              "from":  "FactEmployee.EducationKey",
+                              "to":  "DimEducation.EducationKey",
+                              "fromCardinality":  "Many",
+                              "toCardinality":  "One",
+                              "crossFilter":  "OneDirection",
+                              "active":  true
+                          },
+                          {
+                              "from":  "FactEmployee.JobSatisfactionKey",
+                              "to":  "DimJobSatisfaction.JobSatisfactionKey",
+                              "fromCardinality":  "Many",
+                              "toCardinality":  "One",
+                              "crossFilter":  "OneDirection",
+                              "active":  true
+                          },
+                          {
+                              "from":  "FactEmployee.AgeBandKey",
+                              "to":  "DimAgeBand.AgeBandKey",
+                              "fromCardinality":  "Many",
+                              "toCardinality":  "One",
+                              "crossFilter":  "OneDirection",
+                              "active":  true
+                          },
+                          {
+                              "from":  "FactEmployee.TenureBandKey",
+                              "to":  "DimTenureBand.TenureBandKey",
+                              "fromCardinality":  "Many",
+                              "toCardinality":  "One",
+                              "crossFilter":  "OneDirection",
+                              "active":  true
+                          },
+                          {
+                              "from":  "FactEmployee.IncomeBandKey",
+                              "to":  "DimIncomeBand.IncomeBandKey",
+                              "fromCardinality":  "Many",
+                              "toCardinality":  "One",
+                              "crossFilter":  "OneDirection",
+                              "active":  true
+                          },
+                          {
+                              "from":  "FactEmployee.TrainingBandKey",
+                              "to":  "DimTrainingBand.TrainingBandKey",
+                              "fromCardinality":  "Many",
+                              "toCardinality":  "One",
+                              "crossFilter":  "OneDirection",
+                              "active":  true
+                          },
+                          {
+                              "from":  "FactEmployee.EmployeeID",
+                              "to":  "DimEmployee.EmployeeID",
+                              "fromCardinality":  "Many",
+                              "toCardinality":  "One",
+                              "crossFilter":  "OneDirection",
+                              "active":  true
+                          }
+                      ],
+    "queries":  {
+                    "rowcounts":  {
+                                      "dax":  "EVALUATE ROW(\"DimDepartment\", COUNTROWS(\u0027DimDepartment\u0027), \"DimJobRole\", COUNTROWS(\u0027DimJobRole\u0027), \"DimEducation\", COUNTROWS(\u0027DimEducation\u0027), \"DimJobSatisfaction\", COUNTROWS(\u0027DimJobSatisfaction\u0027), \"DimAgeBand\", COUNTROWS(\u0027DimAgeBand\u0027), \"DimTenureBand\", COUNTROWS(\u0027DimTenureBand\u0027), \"DimIncomeBand\", COUNTROWS(\u0027DimIncomeBand\u0027), \"DimTrainingBand\", COUNTROWS(\u0027DimTrainingBand\u0027), \"DimEmployee\", COUNTROWS(\u0027DimEmployee\u0027), \"FactEmployee\", COUNTROWS(\u0027FactEmployee\u0027), \"QA_Checks\", COUNTROWS(\u0027QA_Checks\u0027), \"_Measures\", COUNTROWS(\u0027_Measures\u0027))",
+                                      "columns":  [
+                                                      "[DimDepartment]",
+                                                      "[DimJobRole]",
+                                                      "[DimEducation]",
+                                                      "[DimJobSatisfaction]",
+                                                      "[DimAgeBand]",
+                                                      "[DimTenureBand]",
+                                                      "[DimIncomeBand]",
+                                                      "[DimTrainingBand]",
+                                                      "[DimEmployee]",
+                                                      "[FactEmployee]",
+                                                      "[QA_Checks]",
+                                                      "[_Measures]"
+                                                  ],
+                                      "rows":  [
+                                                   [
+                                                       3,
+                                                       9,
+                                                       5,
+                                                       4,
+                                                       5,
+                                                       4,
+                                                       5,
+                                                       4,
+                                                       1470,
+                                                       1470,
+                                                       35,
+                                                       null
+                                                   ]
+                                               ]
+                                  },
+                    "qa_checks":  {
+                                      "dax":  "EVALUATE QA_Checks ORDER BY QA_Checks[CheckNo]",
+                                      "columns":  [
+                                                      "QA_Checks[CheckNo]",
+                                                      "QA_Checks[Check]",
+                                                      "QA_Checks[Actual]",
+                                                      "QA_Checks[Expected]",
+                                                      "QA_Checks[Result]"
+                                                  ],
+                                      "rows":  [
+                                                   [
+                                                       1,
+                                                       "FactEmployee rows",
+                                                       1470,
+                                                       1470,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       2,
+                                                       "DimEmployee rows",
+                                                       1470,
+                                                       1470,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       3,
+                                                       "FactEmployee columns",
+                                                       28,
+                                                       28,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       4,
+                                                       "DimEmployee columns",
+                                                       20,
+                                                       20,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       5,
+                                                       "DimDepartment rows",
+                                                       3,
+                                                       3,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       6,
+                                                       "DimJobRole rows",
+                                                       9,
+                                                       9,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       7,
+                                                       "DimEducation rows",
+                                                       5,
+                                                       5,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       8,
+                                                       "DimJobSatisfaction rows",
+                                                       4,
+                                                       4,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       9,
+                                                       "DimAgeBand rows",
+                                                       5,
+                                                       5,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       10,
+                                                       "DimTenureBand rows",
+                                                       4,
+                                                       4,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       11,
+                                                       "DimIncomeBand rows",
+                                                       5,
+                                                       5,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       12,
+                                                       "DimTrainingBand rows",
+                                                       4,
+                                                       4,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       13,
+                                                       "Duplicate EmployeeID in FactEmployee",
+                                                       0,
+                                                       0,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       14,
+                                                       "Duplicate EmployeeID in DimEmployee",
+                                                       0,
+                                                       0,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       15,
+                                                       "Duplicate DepartmentKey in DimDepartment",
+                                                       0,
+                                                       0,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       16,
+                                                       "Duplicate JobRoleKey in DimJobRole",
+                                                       0,
+                                                       0,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       17,
+                                                       "Rows with a null in FactEmployee",
+                                                       0,
+                                                       0,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       18,
+                                                       "Rows with a null in DimEmployee",
+                                                       0,
+                                                       0,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       19,
+                                                       "Orphan EmployeeID (Fact -\u003e DimEmployee)",
+                                                       0,
+                                                       0,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       20,
+                                                       "Orphan DepartmentKey",
+                                                       0,
+                                                       0,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       21,
+                                                       "Orphan JobRoleKey",
+                                                       0,
+                                                       0,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       22,
+                                                       "Orphan EducationKey",
+                                                       0,
+                                                       0,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       23,
+                                                       "Orphan JobSatisfactionKey",
+                                                       0,
+                                                       0,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       24,
+                                                       "Orphan AgeBandKey",
+                                                       0,
+                                                       0,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       25,
+                                                       "Orphan TenureBandKey",
+                                                       0,
+                                                       0,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       26,
+                                                       "Orphan IncomeBandKey",
+                                                       0,
+                                                       0,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       27,
+                                                       "Orphan TrainingBandKey",
+                                                       0,
+                                                       0,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       28,
+                                                       "Sum AttritionFlag (leavers)",
+                                                       237,
+                                                       237,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       29,
+                                                       "Sum OverTimeFlag",
+                                                       416,
+                                                       416,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       30,
+                                                       "Sum TrainingTimesLastYear",
+                                                       4115,
+                                                       4115,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       31,
+                                                       "Sum MonthlyIncome",
+                                                       9559309,
+                                                       9559309,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       32,
+                                                       "Sum YearsAtCompany",
+                                                       10302,
+                                                       10302,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       33,
+                                                       "Sum JobSatisfactionScore",
+                                                       4011,
+                                                       4011,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       34,
+                                                       "Employees with Status = Left",
+                                                       237,
+                                                       237,
+                                                       "PASS"
+                                                   ],
+                                                   [
+                                                       35,
+                                                       "Dropped columns still present in stg_HR",
+                                                       0,
+                                                       0,
+                                                       "PASS"
+                                                   ]
+                                               ]
+                                  },
+                    "orphans":  {
+                                    "dax":  "EVALUATE ROW(\"DimDepartment\", COUNTROWS(FILTER(FactEmployee, ISBLANK(RELATED(DimDepartment[DepartmentKey])))), \"DimJobRole\", COUNTROWS(FILTER(FactEmployee, ISBLANK(RELATED(DimJobRole[JobRoleKey])))), \"DimEducation\", COUNTROWS(FILTER(FactEmployee, ISBLANK(RELATED(DimEducation[EducationKey])))), \"DimJobSatisfaction\", COUNTROWS(FILTER(FactEmployee, ISBLANK(RELATED(DimJobSatisfaction[JobSatisfactionKey])))), \"DimAgeBand\", COUNTROWS(FILTER(FactEmployee, ISBLANK(RELATED(DimAgeBand[AgeBandKey])))), \"DimTenureBand\", COUNTROWS(FILTER(FactEmployee, ISBLANK(RELATED(DimTenureBand[TenureBandKey])))), \"DimIncomeBand\", COUNTROWS(FILTER(FactEmployee, ISBLANK(RELATED(DimIncomeBand[IncomeBandKey])))), \"DimTrainingBand\", COUNTROWS(FILTER(FactEmployee, ISBLANK(RELATED(DimTrainingBand[TrainingBandKey])))), \"DimEmployee\", COUNTROWS(FILTER(FactEmployee, ISBLANK(RELATED(DimEmployee[EmployeeID])))))",
+                                    "columns":  [
+                                                    "[DimDepartment]",
+                                                    "[DimJobRole]",
+                                                    "[DimEducation]",
+                                                    "[DimJobSatisfaction]",
+                                                    "[DimAgeBand]",
+                                                    "[DimTenureBand]",
+                                                    "[DimIncomeBand]",
+                                                    "[DimTrainingBand]",
+                                                    "[DimEmployee]"
+                                                ],
+                                    "rows":  [
+                                                 [
+                                                     null,
+                                                     null,
+                                                     null,
+                                                     null,
+                                                     null,
+                                                     null,
+                                                     null,
+                                                     null,
+                                                     null
+                                                 ]
+                                             ]
+                                },
+                    "direction":  {
+                                      "dax":  "EVALUATE ROW(\"DeptRowsWhenFactFiltered\", CALCULATE(COUNTROWS(DimDepartment), FactEmployee[AttritionFlag] = 1), \"EmployeeRowsWhenFactFiltered\", CALCULATE(COUNTROWS(DimEmployee), FactEmployee[AttritionFlag] = 1), \"FactRowsWhenDeptFiltered\", CALCULATE(COUNTROWS(FactEmployee), DimDepartment[Department] = \"Sales\"))",
+                                      "columns":  [
+                                                      "[DeptRowsWhenFactFiltered]",
+                                                      "[EmployeeRowsWhenFactFiltered]",
+                                                      "[FactRowsWhenDeptFiltered]"
+                                                  ],
+                                      "rows":  [
+                                                   [
+                                                       3,
+                                                       1470,
+                                                       446
+                                                   ]
+                                               ]
+                                  },
+                    "by_DimDepartment":  {
+                                             "dax":  "EVALUATE SUMMARIZECOLUMNS(DimDepartment[Department], \"Headcount\", COUNTROWS(FactEmployee), \"Leavers\", SUM(FactEmployee[AttritionFlag]), \"Trainings\", SUM(FactEmployee[TrainingTimesLastYear]))",
+                                             "columns":  [
+                                                             "DimDepartment[Department]",
+                                                             "[Headcount]",
+                                                             "[Leavers]",
+                                                             "[Trainings]"
+                                                         ],
+                                             "rows":  [
+                                                          [
+                                                              "Human Resources",
+                                                              63,
+                                                              12,
+                                                              161
+                                                          ],
+                                                          [
+                                                              "Research \u0026 Development",
+                                                              961,
+                                                              133,
+                                                              2684
+                                                          ],
+                                                          [
+                                                              "Sales",
+                                                              446,
+                                                              92,
+                                                              1270
+                                                          ]
+                                                      ]
+                                         },
+                    "by_DimJobRole":  {
+                                          "dax":  "EVALUATE SUMMARIZECOLUMNS(DimJobRole[JobRole], \"Headcount\", COUNTROWS(FactEmployee), \"Leavers\", SUM(FactEmployee[AttritionFlag]), \"Trainings\", SUM(FactEmployee[TrainingTimesLastYear]))",
+                                          "columns":  [
+                                                          "DimJobRole[JobRole]",
+                                                          "[Headcount]",
+                                                          "[Leavers]",
+                                                          "[Trainings]"
+                                                      ],
+                                          "rows":  [
+                                                       [
+                                                           "Healthcare Representative",
+                                                           131,
+                                                           9,
+                                                           360
+                                                       ],
+                                                       [
+                                                           "Human Resources",
+                                                           52,
+                                                           12,
+                                                           133
+                                                       ],
+                                                       [
+                                                           "Laboratory Technician",
+                                                           259,
+                                                           62,
+                                                           764
+                                                       ],
+                                                       [
+                                                           "Manager",
+                                                           102,
+                                                           5,
+                                                           287
+                                                       ],
+                                                       [
+                                                           "Manufacturing Director",
+                                                           145,
+                                                           10,
+                                                           398
+                                                       ],
+                                                       [
+                                                           "Research Director",
+                                                           80,
+                                                           2,
+                                                           222
+                                                       ],
+                                                       [
+                                                           "Research Scientist",
+                                                           292,
+                                                           47,
+                                                           778
+                                                       ],
+                                                       [
+                                                           "Sales Executive",
+                                                           326,
+                                                           57,
+                                                           923
+                                                       ],
+                                                       [
+                                                           "Sales Representative",
+                                                           83,
+                                                           33,
+                                                           250
+                                                       ]
+                                                   ]
+                                      },
+                    "by_DimEducation":  {
+                                            "dax":  "EVALUATE SUMMARIZECOLUMNS(DimEducation[EducationLevel], \"Headcount\", COUNTROWS(FactEmployee), \"Leavers\", SUM(FactEmployee[AttritionFlag]), \"Trainings\", SUM(FactEmployee[TrainingTimesLastYear]))",
+                                            "columns":  [
+                                                            "DimEducation[EducationLevel]",
+                                                            "[Headcount]",
+                                                            "[Leavers]",
+                                                            "[Trainings]"
+                                                        ],
+                                            "rows":  [
+                                                         [
+                                                             "Below College",
+                                                             170,
+                                                             31,
+                                                             487
+                                                         ],
+                                                         [
+                                                             "College",
+                                                             282,
+                                                             44,
+                                                             803
+                                                         ],
+                                                         [
+                                                             "Bachelor",
+                                                             572,
+                                                             99,
+                                                             1599
+                                                         ],
+                                                         [
+                                                             "Master",
+                                                             398,
+                                                             58,
+                                                             1082
+                                                         ],
+                                                         [
+                                                             "Doctor",
+                                                             48,
+                                                             5,
+                                                             144
+                                                         ]
+                                                     ]
+                                        },
+                    "by_DimJobSatisfaction":  {
+                                                  "dax":  "EVALUATE SUMMARIZECOLUMNS(DimJobSatisfaction[JobSatisfaction], \"Headcount\", COUNTROWS(FactEmployee), \"Leavers\", SUM(FactEmployee[AttritionFlag]), \"Trainings\", SUM(FactEmployee[TrainingTimesLastYear]))",
+                                                  "columns":  [
+                                                                  "DimJobSatisfaction[JobSatisfaction]",
+                                                                  "[Headcount]",
+                                                                  "[Leavers]",
+                                                                  "[Trainings]"
+                                                              ],
+                                                  "rows":  [
+                                                               [
+                                                                   "Low",
+                                                                   289,
+                                                                   66,
+                                                                   814
+                                                               ],
+                                                               [
+                                                                   "Medium",
+                                                                   280,
+                                                                   46,
+                                                                   795
+                                                               ],
+                                                               [
+                                                                   "High",
+                                                                   442,
+                                                                   73,
+                                                                   1212
+                                                               ],
+                                                               [
+                                                                   "Very High",
+                                                                   459,
+                                                                   52,
+                                                                   1294
+                                                               ]
+                                                           ]
+                                              },
+                    "by_DimAgeBand":  {
+                                          "dax":  "EVALUATE SUMMARIZECOLUMNS(DimAgeBand[AgeBand], \"Headcount\", COUNTROWS(FactEmployee), \"Leavers\", SUM(FactEmployee[AttritionFlag]), \"Trainings\", SUM(FactEmployee[TrainingTimesLastYear]))",
+                                          "columns":  [
+                                                          "DimAgeBand[AgeBand]",
+                                                          "[Headcount]",
+                                                          "[Leavers]",
+                                                          "[Trainings]"
+                                                      ],
+                                          "rows":  [
+                                                       [
+                                                           "18-25",
+                                                           123,
+                                                           44,
+                                                           358
+                                                       ],
+                                                       [
+                                                           "26-35",
+                                                           606,
+                                                           116,
+                                                           1699
+                                                       ],
+                                                       [
+                                                           "36-45",
+                                                           468,
+                                                           43,
+                                                           1310
+                                                       ],
+                                                       [
+                                                           "46-55",
+                                                           226,
+                                                           26,
+                                                           625
+                                                       ],
+                                                       [
+                                                           "56-60",
+                                                           47,
+                                                           8,
+                                                           123
+                                                       ]
+                                                   ]
+                                      },
+                    "by_DimTenureBand":  {
+                                             "dax":  "EVALUATE SUMMARIZECOLUMNS(DimTenureBand[TenureBand], \"Headcount\", COUNTROWS(FactEmployee), \"Leavers\", SUM(FactEmployee[AttritionFlag]), \"Trainings\", SUM(FactEmployee[TrainingTimesLastYear]))",
+                                             "columns":  [
+                                                             "DimTenureBand[TenureBand]",
+                                                             "[Headcount]",
+                                                             "[Leavers]",
+                                                             "[Trainings]"
+                                                         ],
+                                             "rows":  [
+                                                          [
+                                                              "0-1 yrs",
+                                                              215,
+                                                              75,
+                                                              631
+                                                          ],
+                                                          [
+                                                              "2-5 yrs",
+                                                              561,
+                                                              87,
+                                                              1546
+                                                          ],
+                                                          [
+                                                              "6-10 yrs",
+                                                              448,
+                                                              55,
+                                                              1249
+                                                          ],
+                                                          [
+                                                              "11+ yrs",
+                                                              246,
+                                                              20,
+                                                              689
+                                                          ]
+                                                      ]
+                                         },
+                    "by_DimIncomeBand":  {
+                                             "dax":  "EVALUATE SUMMARIZECOLUMNS(DimIncomeBand[IncomeBand], \"Headcount\", COUNTROWS(FactEmployee), \"Leavers\", SUM(FactEmployee[AttritionFlag]), \"Trainings\", SUM(FactEmployee[TrainingTimesLastYear]))",
+                                             "columns":  [
+                                                             "DimIncomeBand[IncomeBand]",
+                                                             "[Headcount]",
+                                                             "[Leavers]",
+                                                             "[Trainings]"
+                                                         ],
+                                             "rows":  [
+                                                          [
+                                                              "Under 3,000",
+                                                              395,
+                                                              113,
+                                                              1134
+                                                          ],
+                                                          [
+                                                              "3,000-5,999",
+                                                              519,
+                                                              66,
+                                                              1428
+                                                          ],
+                                                          [
+                                                              "6,000-9,999",
+                                                              275,
+                                                              33,
+                                                              761
+                                                          ],
+                                                          [
+                                                              "10,000-14,999",
+                                                              148,
+                                                              20,
+                                                              430
+                                                          ],
+                                                          [
+                                                              "15,000+",
+                                                              133,
+                                                              5,
+                                                              362
+                                                          ]
+                                                      ]
+                                         },
+                    "by_DimTrainingBand":  {
+                                               "dax":  "EVALUATE SUMMARIZECOLUMNS(DimTrainingBand[TrainingBand], \"Headcount\", COUNTROWS(FactEmployee), \"Leavers\", SUM(FactEmployee[AttritionFlag]), \"Trainings\", SUM(FactEmployee[TrainingTimesLastYear]))",
+                                               "columns":  [
+                                                               "DimTrainingBand[TrainingBand]",
+                                                               "[Headcount]",
+                                                               "[Leavers]",
+                                                               "[Trainings]"
+                                                           ],
+                                               "rows":  [
+                                                            [
+                                                                "None (0)",
+                                                                54,
+                                                                15,
+                                                                0
+                                                            ],
+                                                            [
+                                                                "Low (1-2)",
+                                                                618,
+                                                                107,
+                                                                1165
+                                                            ],
+                                                            [
+                                                                "Medium (3-4)",
+                                                                614,
+                                                                95,
+                                                                1965
+                                                            ],
+                                                            [
+                                                                "High (5-6)",
+                                                                184,
+                                                                20,
+                                                                985
+                                                            ]
+                                                        ]
+                                           },
+                    "by_DimEmployee":  {
+                                           "dax":  "EVALUATE SUMMARIZECOLUMNS(DimEmployee[EmployeeStatus], \"Headcount\", COUNTROWS(FactEmployee), \"Leavers\", SUM(FactEmployee[AttritionFlag]), \"Trainings\", SUM(FactEmployee[TrainingTimesLastYear]))",
+                                           "columns":  [
+                                                           "DimEmployee[EmployeeStatus]",
+                                                           "[Headcount]",
+                                                           "[Leavers]",
+                                                           "[Trainings]"
+                                                       ],
+                                           "rows":  [
+                                                        [
+                                                            "Left",
+                                                            237,
+                                                            237,
+                                                            622
+                                                        ],
+                                                        [
+                                                            "Active",
+                                                            1233,
+                                                            0,
+                                                            3493
+                                                        ]
+                                                    ]
+                                       },
+                    "by_DimEmployee_OverTime":  {
+                                                    "dax":  "EVALUATE SUMMARIZECOLUMNS(DimEmployee[OverTime], \"Headcount\", COUNTROWS(FactEmployee), \"Leavers\", SUM(FactEmployee[AttritionFlag]))",
+                                                    "columns":  [
+                                                                    "DimEmployee[OverTime]",
+                                                                    "[Headcount]",
+                                                                    "[Leavers]"
+                                                                ],
+                                                    "rows":  [
+                                                                 [
+                                                                     "Yes",
+                                                                     416,
+                                                                     127
+                                                                 ],
+                                                                 [
+                                                                     "No",
+                                                                     1054,
+                                                                     110
+                                                                 ]
+                                                             ]
+                                                },
+                    "by_DimEmployee_BusinessTravel":  {
+                                                          "dax":  "EVALUATE SUMMARIZECOLUMNS(DimEmployee[BusinessTravel], \"Headcount\", COUNTROWS(FactEmployee), \"Leavers\", SUM(FactEmployee[AttritionFlag]))",
+                                                          "columns":  [
+                                                                          "DimEmployee[BusinessTravel]",
+                                                                          "[Headcount]",
+                                                                          "[Leavers]"
+                                                                      ],
+                                                          "rows":  [
+                                                                       [
+                                                                           "Travels Rarely",
+                                                                           1043,
+                                                                           156
+                                                                       ],
+                                                                       [
+                                                                           "Travels Frequently",
+                                                                           277,
+                                                                           69
+                                                                       ],
+                                                                       [
+                                                                           "No Travel",
+                                                                           150,
+                                                                           12
+                                                                       ]
+                                                                   ]
+                                                      },
+                    "by_DimEmployee_WorkLifeBalance":  {
+                                                           "dax":  "EVALUATE SUMMARIZECOLUMNS(DimEmployee[WorkLifeBalance], \"Headcount\", COUNTROWS(FactEmployee), \"Leavers\", SUM(FactEmployee[AttritionFlag]))",
+                                                           "columns":  [
+                                                                           "DimEmployee[WorkLifeBalance]",
+                                                                           "[Headcount]",
+                                                                           "[Leavers]"
+                                                                       ],
+                                                           "rows":  [
+                                                                        [
+                                                                            "Bad",
+                                                                            80,
+                                                                            25
+                                                                        ],
+                                                                        [
+                                                                            "Better",
+                                                                            893,
+                                                                            127
+                                                                        ],
+                                                                        [
+                                                                            "Good",
+                                                                            344,
+                                                                            58
+                                                                        ],
+                                                                        [
+                                                                            "Best",
+                                                                            153,
+                                                                            27
+                                                                        ]
+                                                                    ]
+                                                       },
+                    "by_DimEmployee_EnvironmentSatisfaction":  {
+                                                                   "dax":  "EVALUATE SUMMARIZECOLUMNS(DimEmployee[EnvironmentSatisfaction], \"Headcount\", COUNTROWS(FactEmployee), \"Leavers\", SUM(FactEmployee[AttritionFlag]))",
+                                                                   "columns":  [
+                                                                                   "DimEmployee[EnvironmentSatisfaction]",
+                                                                                   "[Headcount]",
+                                                                                   "[Leavers]"
+                                                                               ],
+                                                                   "rows":  [
+                                                                                [
+                                                                                    "Medium",
+                                                                                    287,
+                                                                                    43
+                                                                                ],
+                                                                                [
+                                                                                    "High",
+                                                                                    453,
+                                                                                    62
+                                                                                ],
+                                                                                [
+                                                                                    "Very High",
+                                                                                    446,
+                                                                                    60
+                                                                                ],
+                                                                                [
+                                                                                    "Low",
+                                                                                    284,
+                                                                                    72
+                                                                                ]
+                                                                            ]
+                                                               },
+                    "by_DimEmployee_PerformanceRating":  {
+                                                             "dax":  "EVALUATE SUMMARIZECOLUMNS(DimEmployee[PerformanceRating], \"Headcount\", COUNTROWS(FactEmployee), \"Leavers\", SUM(FactEmployee[AttritionFlag]))",
+                                                             "columns":  [
+                                                                             "DimEmployee[PerformanceRating]",
+                                                                             "[Headcount]",
+                                                                             "[Leavers]"
+                                                                         ],
+                                                             "rows":  [
+                                                                          [
+                                                                              "Excellent",
+                                                                              1244,
+                                                                              200
+                                                                          ],
+                                                                          [
+                                                                              "Outstanding",
+                                                                              226,
+                                                                              37
+                                                                          ]
+                                                                      ]
+                                                         },
+                    "by_DimEmployee_Gender":  {
+                                                  "dax":  "EVALUATE SUMMARIZECOLUMNS(DimEmployee[Gender], \"Headcount\", COUNTROWS(FactEmployee), \"Leavers\", SUM(FactEmployee[AttritionFlag]))",
+                                                  "columns":  [
+                                                                  "DimEmployee[Gender]",
+                                                                  "[Headcount]",
+                                                                  "[Leavers]"
+                                                              ],
+                                                  "rows":  [
+                                                               [
+                                                                   "Female",
+                                                                   588,
+                                                                   87
+                                                               ],
+                                                               [
+                                                                   "Male",
+                                                                   882,
+                                                                   150
+                                                               ]
+                                                           ]
+                                              },
+                    "by_DimEmployee_MaritalStatus":  {
+                                                         "dax":  "EVALUATE SUMMARIZECOLUMNS(DimEmployee[MaritalStatus], \"Headcount\", COUNTROWS(FactEmployee), \"Leavers\", SUM(FactEmployee[AttritionFlag]))",
+                                                         "columns":  [
+                                                                         "DimEmployee[MaritalStatus]",
+                                                                         "[Headcount]",
+                                                                         "[Leavers]"
+                                                                     ],
+                                                         "rows":  [
+                                                                      [
+                                                                          "Single",
+                                                                          470,
+                                                                          120
+                                                                      ],
+                                                                      [
+                                                                          "Married",
+                                                                          673,
+                                                                          84
+                                                                      ],
+                                                                      [
+                                                                          "Divorced",
+                                                                          327,
+                                                                          33
+                                                                      ]
+                                                                  ]
+                                                     },
+                    "totals":  {
+                                   "dax":  "EVALUATE ROW(\"Headcount\", COUNTROWS(FactEmployee), \"Leavers\", SUM(FactEmployee[AttritionFlag]), \"Trainings\", SUM(FactEmployee[TrainingTimesLastYear]), \"Income\", SUM(FactEmployee[MonthlyIncome]), \"Tenure\", SUM(FactEmployee[YearsAtCompany]))",
+                                   "columns":  [
+                                                   "[Headcount]",
+                                                   "[Leavers]",
+                                                   "[Trainings]",
+                                                   "[Income]",
+                                                   "[Tenure]"
+                                               ],
+                                   "rows":  [
+                                                [
+                                                    1470,
+                                                    237,
+                                                    4115,
+                                                    9559309,
+                                                    10302
+                                                ]
+                                            ]
+                               },
+                    "two_dims":  {
+                                     "dax":  "EVALUATE SUMMARIZECOLUMNS(DimDepartment[Department], DimTenureBand[TenureBand], \"Headcount\", COUNTROWS(FactEmployee), \"Leavers\", SUM(FactEmployee[AttritionFlag]))",
+                                     "columns":  [
+                                                     "DimDepartment[Department]",
+                                                     "DimTenureBand[TenureBand]",
+                                                     "[Headcount]",
+                                                     "[Leavers]"
+                                                 ],
+                                     "rows":  [
+                                                  [
+                                                      "Human Resources",
+                                                      "0-1 yrs",
+                                                      5,
+                                                      4
+                                                  ],
+                                                  [
+                                                      "Research \u0026 Development",
+                                                      "0-1 yrs",
+                                                      149,
+                                                      47
+                                                  ],
+                                                  [
+                                                      "Sales",
+                                                      "0-1 yrs",
+                                                      61,
+                                                      24
+                                                  ],
+                                                  [
+                                                      "Human Resources",
+                                                      "2-5 yrs",
+                                                      31,
+                                                      6
+                                                  ],
+                                                  [
+                                                      "Research \u0026 Development",
+                                                      "2-5 yrs",
+                                                      371,
+                                                      45
+                                                  ],
+                                                  [
+                                                      "Sales",
+                                                      "2-5 yrs",
+                                                      159,
+                                                      36
+                                                  ],
+                                                  [
+                                                      "Human Resources",
+                                                      "6-10 yrs",
+                                                      18,
+                                                      1
+                                                  ],
+                                                  [
+                                                      "Research \u0026 Development",
+                                                      "6-10 yrs",
+                                                      286,
+                                                      34
+                                                  ],
+                                                  [
+                                                      "Sales",
+                                                      "6-10 yrs",
+                                                      144,
+                                                      20
+                                                  ],
+                                                  [
+                                                      "Human Resources",
+                                                      "11+ yrs",
+                                                      9,
+                                                      1
+                                                  ],
+                                                  [
+                                                      "Research \u0026 Development",
+                                                      "11+ yrs",
+                                                      155,
+                                                      7
+                                                  ],
+                                                  [
+                                                      "Sales",
+                                                      "11+ yrs",
+                                                      82,
+                                                      12
+                                                  ]
+                                              ]
+                                 }
+                },
+    "errors":  [
+
+               ]
+}

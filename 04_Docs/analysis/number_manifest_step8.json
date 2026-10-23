@@ -1,0 +1,710 @@
+[
+ {
+  "text": "1,470",
+  "source": "project:csv_rows",
+  "value": 1470,
+  "doc": "README.md"
+ },
+ {
+  "text": "498",
+  "source": "validation:total",
+  "value": 498,
+  "doc": "README.md"
+ },
+ {
+  "text": "16.1%",
+  "source": "facts:company.attrition_rate",
+  "value": 0.16122448979591836,
+  "doc": "README.md"
+ },
+ {
+  "text": "237",
+  "source": "facts:company.leavers",
+  "value": 237,
+  "doc": "README.md"
+ },
+ {
+  "text": "1,470",
+  "source": "facts:company.headcount",
+  "value": 1470,
+  "doc": "README.md"
+ },
+ {
+  "text": "30.5%",
+  "source": "facts:overtime_rates.ot",
+  "value": 0.30528846153846156,
+  "doc": "README.md"
+ },
+ {
+  "text": "10.4%",
+  "source": "facts:overtime_rates.no_ot",
+  "value": 0.10436432637571158,
+  "doc": "README.md"
+ },
+ {
+  "text": "2.9x",
+  "source": "facts:overtime_rates.ratio",
+  "value": 2.9252185314685315,
+  "doc": "README.md"
+ },
+ {
+  "text": "4.3",
+  "source": "facts:overtime_mh_or_by_role.or",
+  "value": 4.295757281381226,
+  "doc": "README.md"
+ },
+ {
+  "text": "5.0",
+  "source": "facts:logit.terms.Overtime.odds_ratio",
+  "value": 4.985860049696523,
+  "doc": "README.md"
+ },
+ {
+  "text": "34.9%",
+  "source": "facts:drivers.early_tenure.rate",
+  "value": 0.3488372093023256,
+  "doc": "README.md"
+ },
+ {
+  "text": "55.1%",
+  "source": "facts:segment_ot_early.rate",
+  "value": 0.5507246376811594,
+  "doc": "README.md"
+ },
+ {
+  "text": "39.8%",
+  "source": "facts:drivers.sales_rep.rate",
+  "value": 0.39759036144578314,
+  "doc": "README.md"
+ },
+ {
+  "text": "+23.6 pts",
+  "source": "facts:drivers.sales_rep.vs_company_pts",
+  "value": 23.636587164986476,
+  "doc": "README.md"
+ },
+ {
+  "text": "22.8%",
+  "source": "facts:drivers.low_job_sat.rate",
+  "value": 0.22837370242214533,
+  "doc": "README.md"
+ },
+ {
+  "text": "31.3%",
+  "source": "facts:drivers.bad_wlb.rate",
+  "value": 0.3125,
+  "doc": "README.md"
+ },
+ {
+  "text": "16.4%",
+  "source": "facts:drivers.outstanding_perf.rate",
+  "value": 0.16371681415929204,
+  "doc": "README.md"
+ },
+ {
+  "text": "16.1%",
+  "source": "facts:drivers.outstanding_perf.rest_rate",
+  "value": 0.1607717041800643,
+  "doc": "README.md"
+ },
+ {
+  "text": "8",
+  "source": "project:pages",
+  "value": 8,
+  "doc": "README.md"
+ },
+ {
+  "text": "77",
+  "source": "project:visuals",
+  "value": 77,
+  "doc": "README.md"
+ },
+ {
+  "text": "1,470",
+  "source": "project:csv_rows",
+  "value": 1470,
+  "doc": "README.md"
+ },
+ {
+  "text": "35",
+  "source": "project:csv_cols",
+  "value": 35,
+  "doc": "README.md"
+ },
+ {
+  "text": "25",
+  "source": "project:queries",
+  "value": 25,
+  "doc": "README.md"
+ },
+ {
+  "text": "9",
+  "source": "project:dimensions",
+  "value": 9,
+  "doc": "README.md"
+ },
+ {
+  "text": "33",
+  "source": "project:measures",
+  "value": 33,
+  "doc": "README.md"
+ },
+ {
+  "text": "8",
+  "source": "project:pages",
+  "value": 8,
+  "doc": "README.md"
+ },
+ {
+  "text": "25",
+  "source": "project:queries",
+  "value": 25,
+  "doc": "README.md"
+ },
+ {
+  "text": "9",
+  "source": "project:relationships",
+  "value": 9,
+  "doc": "README.md"
+ },
+ {
+  "text": "33",
+  "source": "project:measures",
+  "value": 33,
+  "doc": "README.md"
+ },
+ {
+  "text": "6",
+  "source": "project:folders",
+  "value": 6,
+  "doc": "README.md"
+ },
+ {
+  "text": "8",
+  "source": "project:pages",
+  "value": 8,
+  "doc": "README.md"
+ },
+ {
+  "text": "35",
+  "source": "project:qa_checks",
+  "value": 35,
+  "doc": "README.md"
+ },
+ {
+  "text": "33",
+  "source": "project:measures",
+  "value": 33,
+  "doc": "README.md"
+ },
+ {
+  "text": "1,470",
+  "source": "measure:Headcount",
+  "value": 1470,
+  "doc": "README.md"
+ },
+ {
+  "text": "237",
+  "source": "measure:Leavers",
+  "value": 237,
+  "doc": "README.md"
+ },
+ {
+  "text": "1,233",
+  "source": "measure:Active Employees",
+  "value": 1233,
+  "doc": "README.md"
+ },
+ {
+  "text": "16.1%",
+  "source": "measure:Attrition Rate",
+  "value": 0.16122448979591836,
+  "doc": "README.md"
+ },
+ {
+  "text": "83.9%",
+  "source": "measure:Retention Rate",
+  "value": 0.8387755102040816,
+  "doc": "README.md"
+ },
+ {
+  "text": "16.1%",
+  "source": "measure:Company Attrition Rate",
+  "value": 0.16122448979591836,
+  "doc": "README.md"
+ },
+ {
+  "text": "0.0%",
+  "source": "measure:Attrition vs Company (pts)",
+  "value": 0.0,
+  "doc": "README.md"
+ },
+ {
+  "text": "7.0",
+  "source": "measure:Avg Tenure (Years)",
+  "value": 7.0081632653061225,
+  "doc": "README.md"
+ },
+ {
+  "text": "5.0",
+  "source": "measure:Median Tenure (Years)",
+  "value": 5.0,
+  "doc": "README.md"
+ },
+ {
+  "text": "5.1",
+  "source": "measure:Avg Tenure of Leavers (Years)",
+  "value": 5.1308016877637135,
+  "doc": "README.md"
+ },
+ {
+  "text": "34.9%",
+  "source": "measure:Early Tenure Attrition Rate (0-1 yrs)",
+  "value": 0.3488372093023256,
+  "doc": "README.md"
+ },
+ {
+  "text": "2.2",
+  "source": "measure:Avg Years Since Promotion",
+  "value": 2.1877551020408164,
+  "doc": "README.md"
+ },
+ {
+  "text": "4,115",
+  "source": "measure:Total Trainings",
+  "value": 4115,
+  "doc": "README.md"
+ },
+ {
+  "text": "2.80",
+  "source": "measure:Training per Employee",
+  "value": 2.7993197278911564,
+  "doc": "README.md"
+ },
+ {
+  "text": "54",
+  "source": "measure:Employees with No Training",
+  "value": 54,
+  "doc": "README.md"
+ },
+ {
+  "text": "3.7%",
+  "source": "measure:% No Training",
+  "value": 0.036734693877551024,
+  "doc": "README.md"
+ },
+ {
+  "text": "12.5%",
+  "source": "measure:% High Training (5-6)",
+  "value": 0.1251700680272109,
+  "doc": "README.md"
+ },
+ {
+  "text": "27.8%",
+  "source": "measure:Attrition Rate - No Training",
+  "value": 0.2777777777777778,
+  "doc": "README.md"
+ },
+ {
+  "text": "416",
+  "source": "measure:Overtime Employees",
+  "value": 416,
+  "doc": "README.md"
+ },
+ {
+  "text": "28.3%",
+  "source": "measure:Overtime %",
+  "value": 0.2829931972789116,
+  "doc": "README.md"
+ },
+ {
+  "text": "30.5%",
+  "source": "measure:Attrition Rate - Overtime",
+  "value": 0.30528846153846156,
+  "doc": "README.md"
+ },
+ {
+  "text": "10.4%",
+  "source": "measure:Attrition Rate - No Overtime",
+  "value": 0.10436432637571158,
+  "doc": "README.md"
+ },
+ {
+  "text": "2.9x",
+  "source": "measure:Overtime Attrition Ratio",
+  "value": 2.9252185314685315,
+  "doc": "README.md"
+ },
+ {
+  "text": "2.73",
+  "source": "measure:Avg Job Satisfaction",
+  "value": 2.7285714285714286,
+  "doc": "README.md"
+ },
+ {
+  "text": "19.7%",
+  "source": "measure:% Low Job Satisfaction",
+  "value": 0.19659863945578232,
+  "doc": "README.md"
+ },
+ {
+  "text": "22.8%",
+  "source": "measure:Attrition Rate - Low Job Satisfaction",
+  "value": 0.22837370242214533,
+  "doc": "README.md"
+ },
+ {
+  "text": "2.72",
+  "source": "measure:Avg Environment Satisfaction",
+  "value": 2.721768707482993,
+  "doc": "README.md"
+ },
+ {
+  "text": "2.76",
+  "source": "measure:Avg Work-Life Balance",
+  "value": 2.7612244897959184,
+  "doc": "README.md"
+ },
+ {
+  "text": "2.73",
+  "source": "measure:Avg Job Involvement",
+  "value": 2.7299319727891156,
+  "doc": "README.md"
+ },
+ {
+  "text": "3.15",
+  "source": "measure:Avg Performance Rating",
+  "value": 3.1537414965986397,
+  "doc": "README.md"
+ },
+ {
+  "text": "36.9",
+  "source": "measure:Avg Age",
+  "value": 36.923809523809524,
+  "doc": "README.md"
+ },
+ {
+  "text": "6,503",
+  "source": "measure:Avg Monthly Income",
+  "value": 6502.931292517007,
+  "doc": "README.md"
+ },
+ {
+  "text": "15.2",
+  "source": "measure:Avg Salary Hike (%)",
+  "value": 15.209523809523809,
+  "doc": "README.md"
+ },
+ {
+  "text": "36/36",
+  "source": "validation:1",
+  "value": 36,
+  "doc": "README.md"
+ },
+ {
+  "text": "137/137",
+  "source": "validation:2",
+  "value": 137,
+  "doc": "README.md"
+ },
+ {
+  "text": "126/126",
+  "source": "validation:3",
+  "value": 126,
+  "doc": "README.md"
+ },
+ {
+  "text": "68/68",
+  "source": "validation:4",
+  "value": 68,
+  "doc": "README.md"
+ },
+ {
+  "text": "60/60",
+  "source": "validation:5",
+  "value": 60,
+  "doc": "README.md"
+ },
+ {
+  "text": "43/43",
+  "source": "validation:6",
+  "value": 43,
+  "doc": "README.md"
+ },
+ {
+  "text": "28/28",
+  "source": "validation:7",
+  "value": 28,
+  "doc": "README.md"
+ },
+ {
+  "text": "18/18",
+  "source": "validation:7-negative",
+  "value": 18,
+  "doc": "README.md"
+ },
+ {
+  "text": "25",
+  "source": "project:queries",
+  "value": 25,
+  "doc": "README.md"
+ },
+ {
+  "text": "1,470",
+  "source": "project:csv_rows",
+  "value": 1470,
+  "doc": "04_Docs/User_Guide.md"
+ },
+ {
+  "text": "1,470",
+  "source": "measure:Headcount",
+  "value": 1470,
+  "doc": "04_Docs/User_Guide.md"
+ },
+ {
+  "text": "237",
+  "source": "measure:Leavers",
+  "value": 237,
+  "doc": "04_Docs/User_Guide.md"
+ },
+ {
+  "text": "16.1%",
+  "source": "measure:Attrition Rate",
+  "value": 0.16122448979591836,
+  "doc": "04_Docs/User_Guide.md"
+ },
+ {
+  "text": "0.0%",
+  "source": "measure:Attrition vs Company (pts)",
+  "value": 0.0,
+  "doc": "04_Docs/User_Guide.md"
+ },
+ {
+  "text": "+23.6%",
+  "source": "facts:drivers.sales_rep.vs_company_pts",
+  "value": 23.636587164986476,
+  "doc": "04_Docs/User_Guide.md"
+ },
+ {
+  "text": "7.0",
+  "source": "measure:Avg Tenure (Years)",
+  "value": 7.0081632653061225,
+  "doc": "04_Docs/User_Guide.md"
+ },
+ {
+  "text": "34.9%",
+  "source": "measure:Early Tenure Attrition Rate (0-1 yrs)",
+  "value": 0.3488372093023256,
+  "doc": "04_Docs/User_Guide.md"
+ },
+ {
+  "text": "2.80",
+  "source": "measure:Training per Employee",
+  "value": 2.7993197278911564,
+  "doc": "04_Docs/User_Guide.md"
+ },
+ {
+  "text": "3.7%",
+  "source": "measure:% No Training",
+  "value": 0.036734693877551024,
+  "doc": "04_Docs/User_Guide.md"
+ },
+ {
+  "text": "28.3%",
+  "source": "measure:Overtime %",
+  "value": 0.2829931972789116,
+  "doc": "04_Docs/User_Guide.md"
+ },
+ {
+  "text": "2.9x",
+  "source": "measure:Overtime Attrition Ratio",
+  "value": 2.9252185314685315,
+  "doc": "04_Docs/User_Guide.md"
+ },
+ {
+  "text": "19.7%",
+  "source": "measure:% Low Job Satisfaction",
+  "value": 0.19659863945578232,
+  "doc": "04_Docs/User_Guide.md"
+ },
+ {
+  "text": "2.76",
+  "source": "measure:Avg Work-Life Balance",
+  "value": 2.7612244897959184,
+  "doc": "04_Docs/User_Guide.md"
+ },
+ {
+  "text": "54",
+  "source": "facts:drivers.no_training.n",
+  "value": 54,
+  "doc": "04_Docs/User_Guide.md"
+ },
+ {
+  "text": "83",
+  "source": "facts:drivers.sales_rep.n",
+  "value": 83,
+  "doc": "04_Docs/User_Guide.md"
+ },
+ {
+  "text": "35",
+  "source": "project:qa_checks",
+  "value": 35,
+  "doc": "04_Docs/User_Guide.md"
+ },
+ {
+  "text": "16.1%",
+  "source": "facts:company.attrition_rate",
+  "value": 0.16122448979591836,
+  "doc": "05_Presentation/deck_content.json"
+ },
+ {
+  "text": "1,470",
+  "source": "facts:company.headcount",
+  "value": 1470,
+  "doc": "05_Presentation/deck_content.json"
+ },
+ {
+  "text": "237",
+  "source": "facts:company.leavers",
+  "value": 237,
+  "doc": "05_Presentation/deck_content.json"
+ },
+ {
+  "text": "16.1%",
+  "source": "facts:company.attrition_rate",
+  "value": 0.16122448979591836,
+  "doc": "05_Presentation/deck_content.json"
+ },
+ {
+  "text": "1,470",
+  "source": "project:csv_rows",
+  "value": 1470,
+  "doc": "05_Presentation/deck_content.json"
+ },
+ {
+  "text": "35",
+  "source": "project:csv_cols",
+  "value": 35,
+  "doc": "05_Presentation/deck_content.json"
+ },
+ {
+  "text": "25",
+  "source": "project:queries",
+  "value": 25,
+  "doc": "05_Presentation/deck_content.json"
+ },
+ {
+  "text": "33",
+  "source": "project:measures",
+  "value": 33,
+  "doc": "05_Presentation/deck_content.json"
+ },
+ {
+  "text": "8",
+  "source": "project:pages",
+  "value": 8,
+  "doc": "05_Presentation/deck_content.json"
+ },
+ {
+  "text": "498",
+  "source": "validation:total",
+  "value": 498,
+  "doc": "05_Presentation/deck_content.json"
+ },
+ {
+  "text": "9",
+  "source": "project:relationships",
+  "value": 9,
+  "doc": "05_Presentation/deck_content.json"
+ },
+ {
+  "text": "33",
+  "source": "project:measures",
+  "value": 33,
+  "doc": "05_Presentation/deck_content.json"
+ },
+ {
+  "text": "35",
+  "source": "project:qa_checks",
+  "value": 35,
+  "doc": "05_Presentation/deck_content.json"
+ },
+ {
+  "text": "2.9x",
+  "source": "facts:overtime_rates.ratio",
+  "value": 2.9252185314685315,
+  "doc": "05_Presentation/deck_content.json"
+ },
+ {
+  "text": "30.5%",
+  "source": "facts:overtime_rates.ot",
+  "value": 0.30528846153846156,
+  "doc": "05_Presentation/deck_content.json"
+ },
+ {
+  "text": "10.4%",
+  "source": "facts:overtime_rates.no_ot",
+  "value": 0.10436432637571158,
+  "doc": "05_Presentation/deck_content.json"
+ },
+ {
+  "text": "5.0",
+  "source": "facts:logit.terms.Overtime.odds_ratio",
+  "value": 4.985860049696523,
+  "doc": "05_Presentation/deck_content.json"
+ },
+ {
+  "text": "55.1%",
+  "source": "facts:segment_ot_early.rate",
+  "value": 0.5507246376811594,
+  "doc": "05_Presentation/deck_content.json"
+ },
+ {
+  "text": "+23.6 pts",
+  "source": "facts:drivers.sales_rep.vs_company_pts",
+  "value": 23.636587164986476,
+  "doc": "05_Presentation/deck_content.json"
+ },
+ {
+  "text": "16.4%",
+  "source": "facts:drivers.outstanding_perf.rate",
+  "value": 0.16371681415929204,
+  "doc": "05_Presentation/deck_content.json"
+ },
+ {
+  "text": "16.1%",
+  "source": "facts:drivers.outstanding_perf.rest_rate",
+  "value": 0.1607717041800643,
+  "doc": "05_Presentation/deck_content.json"
+ },
+ {
+  "text": "8",
+  "source": "facts:overtime_by_role[count rate_ot > rate_no_ot]",
+  "value": 8,
+  "doc": "05_Presentation/deck_content.json"
+ },
+ {
+  "text": "9",
+  "source": "facts:overtime_by_role[count]",
+  "value": 9,
+  "doc": "05_Presentation/deck_content.json"
+ },
+ {
+  "text": "4.3",
+  "source": "facts:overtime_mh_or_by_role.or",
+  "value": 4.295757281381226,
+  "doc": "05_Presentation/deck_content.json"
+ },
+ {
+  "text": "5.0",
+  "source": "facts:logit.terms.Overtime.odds_ratio",
+  "value": 4.985860049696523,
+  "doc": "05_Presentation/deck_content.json"
+ },
+ {
+  "text": "39.8%",
+  "source": "facts:drivers.sales_rep.rate",
+  "value": 0.39759036144578314,
+  "doc": "05_Presentation/deck_content.json"
+ }
+]

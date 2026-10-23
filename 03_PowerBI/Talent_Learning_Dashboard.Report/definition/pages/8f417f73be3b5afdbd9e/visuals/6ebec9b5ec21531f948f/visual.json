@@ -1,0 +1,60 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "6ebec9b5ec21531f948f",
+  "position": {
+    "x": 646,
+    "y": 184,
+    "z": 8000,
+    "height": 236,
+    "width": 618,
+    "tabOrder": 8000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "2. Make the first year stick",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1F3864",
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "34.9% of 0-1 year employees left (55.1% with overtime). New joiners get no extra training.",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#262626"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Action: 90-day onboarding, mentor per new hire, front-loaded learning path, no routine overtime in year 1.",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#262626"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

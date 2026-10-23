@@ -1,0 +1,23 @@
+# Power BI Desktop local files - re-created on open, machine-specific (cache.abf holds a copy of the data)
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+
+# Python
+__pycache__/
+*.pyc
+
+# Office lock files
+~$*
+
+# Working files that are not part of the project
+03_PowerBI/validation/incoming/
+03_PowerBI/validation/backup_*/
+03_PowerBI/validation/schemas/
+screenshots/raw/
+04_Docs/analysis/insights_page_capture.png
+04_Docs/_render_tmp.html
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store

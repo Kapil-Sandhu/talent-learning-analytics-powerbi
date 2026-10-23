@@ -1,0 +1,322 @@
+/// Fact table. Grain: one row per employee (point-in-time snapshot). Foreign keys + numeric columns for DAX measures.
+table FactEmployee
+	lineageTag: ca6ac1cd-52bb-50ef-862d-5b44ae32e333
+
+	/// Unique employee identifier (EmployeeNumber in the source).
+	column EmployeeID
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: fb716dfe-056f-59ca-b9e4-4e1233f38422
+		summarizeBy: none
+		sourceColumn: EmployeeID
+
+		annotation SummarizationSetBy = User
+
+	column DepartmentKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: dda967cc-1c24-533c-b076-23361818dc38
+		summarizeBy: none
+		sourceColumn: DepartmentKey
+
+		annotation SummarizationSetBy = User
+
+	column JobRoleKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: d7312596-3c10-5336-9f29-1d526c3e5804
+		summarizeBy: none
+		sourceColumn: JobRoleKey
+
+		annotation SummarizationSetBy = User
+
+	column EducationKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 7ca178b1-60bc-5a7e-8657-80ce0ec2a664
+		summarizeBy: none
+		sourceColumn: EducationKey
+
+		annotation SummarizationSetBy = User
+
+	column JobSatisfactionKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 78d0acfb-fefc-5bd7-941d-115b89b833d8
+		summarizeBy: none
+		sourceColumn: JobSatisfactionKey
+
+		annotation SummarizationSetBy = User
+
+	column AgeBandKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 6db66163-9933-5687-97da-fc8d39a27637
+		summarizeBy: none
+		sourceColumn: AgeBandKey
+
+		annotation SummarizationSetBy = User
+
+	column TenureBandKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 27844cfa-2e5f-5907-9c44-aac84e084067
+		summarizeBy: none
+		sourceColumn: TenureBandKey
+
+		annotation SummarizationSetBy = User
+
+	column IncomeBandKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: fe20feb6-ce4d-549e-a977-57c36bf4a68d
+		summarizeBy: none
+		sourceColumn: IncomeBandKey
+
+		annotation SummarizationSetBy = User
+
+	column TrainingBandKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: ad741f71-3523-5f12-a9ff-70e3d503231d
+		summarizeBy: none
+		sourceColumn: TrainingBandKey
+
+		annotation SummarizationSetBy = User
+
+	/// 1 = employee left, 0 = still employed.
+	column AttritionFlag
+		dataType: int64
+		formatString: 0
+		lineageTag: 1cf888b8-976c-5388-b45a-a53650a449ff
+		summarizeBy: sum
+		sourceColumn: AttritionFlag
+
+		annotation SummarizationSetBy = User
+
+	/// 1 = works overtime, 0 = no overtime.
+	column OverTimeFlag
+		dataType: int64
+		formatString: 0
+		lineageTag: 2941c0bc-0de6-59d5-b565-e41e94115204
+		summarizeBy: sum
+		sourceColumn: OverTimeFlag
+
+		annotation SummarizationSetBy = User
+
+	column Age
+		dataType: int64
+		formatString: 0
+		lineageTag: fa9696c6-7a37-5c39-bf7d-c6dd8c3c5851
+		summarizeBy: average
+		sourceColumn: Age
+
+		annotation SummarizationSetBy = User
+
+	/// Monthly income (currency not stated in the source data).
+	column MonthlyIncome
+		dataType: int64
+		formatString: #,##0
+		lineageTag: ba345bbd-08a4-5353-88b2-2de643a99345
+		summarizeBy: sum
+		sourceColumn: MonthlyIncome
+
+		annotation SummarizationSetBy = User
+
+	column PercentSalaryHike
+		dataType: int64
+		formatString: 0
+		lineageTag: fe4af443-3042-50b5-8222-8c2bd7b37728
+		summarizeBy: average
+		sourceColumn: PercentSalaryHike
+
+		annotation SummarizationSetBy = User
+
+	column DistanceFromHome
+		dataType: int64
+		formatString: 0
+		lineageTag: e2b70a92-0762-5085-9403-30e33ee2713b
+		summarizeBy: average
+		sourceColumn: DistanceFromHome
+
+		annotation SummarizationSetBy = User
+
+	column NumCompaniesWorked
+		dataType: int64
+		formatString: 0
+		lineageTag: 5f98dc3d-4a8c-5e76-8082-f8e89d4b063e
+		summarizeBy: average
+		sourceColumn: NumCompaniesWorked
+
+		annotation SummarizationSetBy = User
+
+	column TotalWorkingYears
+		dataType: int64
+		formatString: 0
+		lineageTag: c31dc457-8fcf-5e0c-b816-3ff34c40b293
+		summarizeBy: average
+		sourceColumn: TotalWorkingYears
+
+		annotation SummarizationSetBy = User
+
+	/// Tenure at the company in years.
+	column YearsAtCompany
+		dataType: int64
+		formatString: 0
+		lineageTag: 85f05d87-5671-5cc9-88b4-869c77d418dc
+		summarizeBy: average
+		sourceColumn: YearsAtCompany
+
+		annotation SummarizationSetBy = User
+
+	column YearsInCurrentRole
+		dataType: int64
+		formatString: 0
+		lineageTag: 4f4be343-8c38-5b13-92d8-2ac396e5e6b7
+		summarizeBy: average
+		sourceColumn: YearsInCurrentRole
+
+		annotation SummarizationSetBy = User
+
+	column YearsSinceLastPromotion
+		dataType: int64
+		formatString: 0
+		lineageTag: badc6d1f-acda-5a22-9457-0726bf1300c7
+		summarizeBy: average
+		sourceColumn: YearsSinceLastPromotion
+
+		annotation SummarizationSetBy = User
+
+	column YearsWithCurrManager
+		dataType: int64
+		formatString: 0
+		lineageTag: 3f2dedef-c9e5-59ce-ab7f-70005450e8f5
+		summarizeBy: average
+		sourceColumn: YearsWithCurrManager
+
+		annotation SummarizationSetBy = User
+
+	/// Number of trainings attended last year (0-6) - the learning metric.
+	column TrainingTimesLastYear
+		dataType: int64
+		formatString: 0
+		lineageTag: d4fd07f2-ccaa-5138-b0a6-8e3a05808271
+		summarizeBy: sum
+		sourceColumn: TrainingTimesLastYear
+
+		annotation SummarizationSetBy = User
+
+	/// Job satisfaction 1-4, for averages.
+	column JobSatisfactionScore
+		dataType: int64
+		formatString: 0
+		lineageTag: d087a1b6-908b-5cbd-a6d5-3f8e312fe6e6
+		summarizeBy: average
+		sourceColumn: JobSatisfactionScore
+
+		annotation SummarizationSetBy = User
+
+	column EnvironmentSatisfactionScore
+		dataType: int64
+		formatString: 0
+		lineageTag: f90c6c8e-c74f-5513-b3b8-57f2990cb3eb
+		summarizeBy: average
+		sourceColumn: EnvironmentSatisfactionScore
+
+		annotation SummarizationSetBy = User
+
+	column RelationshipSatisfactionScore
+		dataType: int64
+		formatString: 0
+		lineageTag: fa0dd36c-49bf-5d8d-94fb-7d14961eee28
+		summarizeBy: average
+		sourceColumn: RelationshipSatisfactionScore
+
+		annotation SummarizationSetBy = User
+
+	column JobInvolvementScore
+		dataType: int64
+		formatString: 0
+		lineageTag: 946ea389-69e8-507b-8bc0-68fe7c467f30
+		summarizeBy: average
+		sourceColumn: JobInvolvementScore
+
+		annotation SummarizationSetBy = User
+
+	column WorkLifeBalanceScore
+		dataType: int64
+		formatString: 0
+		lineageTag: ec51daa1-837d-525d-a60c-7edb9b8d9fe4
+		summarizeBy: average
+		sourceColumn: WorkLifeBalanceScore
+
+		annotation SummarizationSetBy = User
+
+	column PerformanceRatingScore
+		dataType: int64
+		formatString: 0
+		lineageTag: 034ead28-f273-5f59-9383-6e7444d8b41b
+		summarizeBy: average
+		sourceColumn: PerformanceRatingScore
+
+		annotation SummarizationSetBy = User
+
+	partition FactEmployee = m
+		mode: import
+		source =
+				let
+				    Source = stg_HR,
+				
+				    // Surrogate keys for the data-driven dimensions
+				    MergeDept  = Table.NestedJoin(Source, {"Department"}, DimDepartment, {"Department"}, "DeptDim", JoinKind.LeftOuter),
+				    ExpandDept = Table.ExpandTableColumn(MergeDept, "DeptDim", {"DepartmentKey"}, {"DepartmentKey"}),
+				    MergeRole  = Table.NestedJoin(ExpandDept, {"JobRole"}, DimJobRole, {"JobRole"}, "RoleDim", JoinKind.LeftOuter),
+				    ExpandRole = Table.ExpandTableColumn(MergeRole, "RoleDim", {"JobRoleKey"}, {"JobRoleKey"}),
+				
+				    // Keys that equal the source codes, plus "Score" copies of the ratings for averages
+				    AddEducationKey = Table.AddColumn(ExpandRole, "EducationKey", each [Education], Int64.Type),
+				    AddJobSatKey    = Table.AddColumn(AddEducationKey, "JobSatisfactionKey", each [JobSatisfaction], Int64.Type),
+				    Renamed = Table.RenameColumns(AddJobSatKey, {
+				                  {"JobSatisfaction", "JobSatisfactionScore"},
+				                  {"EnvironmentSatisfaction", "EnvironmentSatisfactionScore"},
+				                  {"RelationshipSatisfaction", "RelationshipSatisfactionScore"},
+				                  {"JobInvolvement", "JobInvolvementScore"},
+				                  {"WorkLifeBalance", "WorkLifeBalanceScore"},
+				                  {"PerformanceRating", "PerformanceRatingScore"}}),
+				
+				    Final = Table.SelectColumns(Renamed, {
+				                  "EmployeeID", "DepartmentKey", "JobRoleKey", "EducationKey", "JobSatisfactionKey",
+				                  "AgeBandKey", "TenureBandKey", "IncomeBandKey", "TrainingBandKey",
+				                  "AttritionFlag", "OverTimeFlag", "Age", "MonthlyIncome", "PercentSalaryHike",
+				                  "DistanceFromHome", "NumCompaniesWorked", "TotalWorkingYears", "YearsAtCompany",
+				                  "YearsInCurrentRole", "YearsSinceLastPromotion", "YearsWithCurrManager",
+				                  "TrainingTimesLastYear", "JobSatisfactionScore", "EnvironmentSatisfactionScore",
+				                  "RelationshipSatisfactionScore", "JobInvolvementScore", "WorkLifeBalanceScore",
+				                  "PerformanceRatingScore"}),
+				    Typed = Table.TransformColumnTypes(Final, {
+				                  {"EmployeeID", Int64.Type}, {"DepartmentKey", Int64.Type}, {"JobRoleKey", Int64.Type},
+				                  {"EducationKey", Int64.Type}, {"JobSatisfactionKey", Int64.Type}, {"AgeBandKey", Int64.Type},
+				                  {"TenureBandKey", Int64.Type}, {"IncomeBandKey", Int64.Type}, {"TrainingBandKey", Int64.Type},
+				                  {"AttritionFlag", Int64.Type}, {"OverTimeFlag", Int64.Type}, {"Age", Int64.Type},
+				                  {"MonthlyIncome", Int64.Type}, {"PercentSalaryHike", Int64.Type}, {"DistanceFromHome", Int64.Type},
+				                  {"NumCompaniesWorked", Int64.Type}, {"TotalWorkingYears", Int64.Type}, {"YearsAtCompany", Int64.Type},
+				                  {"YearsInCurrentRole", Int64.Type}, {"YearsSinceLastPromotion", Int64.Type},
+				                  {"YearsWithCurrManager", Int64.Type}, {"TrainingTimesLastYear", Int64.Type},
+				                  {"JobSatisfactionScore", Int64.Type}, {"EnvironmentSatisfactionScore", Int64.Type},
+				                  {"RelationshipSatisfactionScore", Int64.Type}, {"JobInvolvementScore", Int64.Type},
+				                  {"WorkLifeBalanceScore", Int64.Type}, {"PerformanceRatingScore", Int64.Type}}),
+				    Sorted = Table.Sort(Typed, {{"EmployeeID", Order.Ascending}})
+				in
+				    Sorted
+
+	annotation PBI_ResultType = Table
+

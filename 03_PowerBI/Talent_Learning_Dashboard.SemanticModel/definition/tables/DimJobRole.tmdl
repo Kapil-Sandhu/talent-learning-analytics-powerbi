@@ -1,0 +1,39 @@
+/// One row per job role (9).
+table DimJobRole
+	lineageTag: 95f1c84c-18fd-51ed-9bc0-93ff54ecf94f
+
+	column JobRoleKey
+		dataType: int64
+		isHidden
+		isKey
+		formatString: 0
+		lineageTag: a914ac94-9d7e-5cea-91d0-6a960901e56f
+		summarizeBy: none
+		sourceColumn: JobRoleKey
+
+		annotation SummarizationSetBy = User
+
+	column JobRole
+		dataType: string
+		lineageTag: 1c071e24-25bc-5060-b57b-191b43382475
+		summarizeBy: none
+		sourceColumn: JobRole
+
+		annotation SummarizationSetBy = User
+
+	partition DimJobRole = m
+		mode: import
+		source =
+				let
+				    Source   = stg_HR,
+				    Selected = Table.SelectColumns(Source, {"JobRole"}),
+				    Distinct = Table.Distinct(Selected),
+				    Sorted   = Table.Sort(Distinct, {{"JobRole", Order.Ascending}}),
+				    AddKey   = Table.AddIndexColumn(Sorted, "JobRoleKey", 1, 1, Int64.Type),
+				    Final    = Table.SelectColumns(AddKey, {"JobRoleKey", "JobRole"}),
+				    Typed    = Table.TransformColumnTypes(Final, {{"JobRoleKey", Int64.Type}, {"JobRole", type text}})
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table
+

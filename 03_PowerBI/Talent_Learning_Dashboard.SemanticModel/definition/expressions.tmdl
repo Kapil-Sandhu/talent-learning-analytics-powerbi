@@ -1,0 +1,235 @@
+/// Root folder of the project (a trailing backslash is optional). Change this one value if you move the project.
+expression ProjectFolder = "D:\Ai Projects\Power BI\" meta [IsParameterQuery = true, Type = "Text", IsParameterQueryRequired = true]
+	lineageTag: 703c1d1f-623c-5bce-b1ee-ad98e1a3f789
+
+	annotation PBI_ResultType = Text
+
+/// Returns one Excel TABLE (by its table name, e.g. "Lkp_Education") from 01_Data\lookups\HR_Lookups.xlsx.
+expression fnGetLookup =
+		(TableName as text) as table =>
+		let
+		    Folder   = if Text.EndsWith(ProjectFolder, "\") then ProjectFolder else ProjectFolder & "\",   // works with or without trailing \
+		    Source   = Excel.Workbook(File.Contents(Folder & "01_Data\lookups\HR_Lookups.xlsx"), true, true),
+		    Selected = Table.SelectRows(Source, each [Kind] = "Table" and [Name] = TableName),
+		    Result   = if Table.RowCount(Selected) = 1
+		               then Selected{0}[Data]
+		               else error Error.Record("Lookup not found", "Table '" & TableName & "' was not found in HR_Lookups.xlsx")
+		in
+		    Result
+	lineageTag: ebf98c9d-3069-5758-a9a5-7a38948ee366
+
+	annotation PBI_ResultType = Function
+
+/// Returns the BandKey of the single band where Min <= Value <= Max. Raises an error if the value falls in no band or in more than one band (so bad band tables never load silently).
+expression fnBandKey =
+		(Value as nullable number, Bands as table) as nullable number =>
+		let
+		    Matches = Table.SelectRows(Bands, each [Min] <= Value and Value <= [Max]),
+		    Count   = Table.RowCount(Matches),
+		    Key     = if Value = null then null
+		              else if Count = 1 then Matches{0}[BandKey]
+		              else error Error.Record("Band lookup failed",
+		                         "Value " & Number.ToText(Value) & " matches " & Number.ToText(Count) & " bands")
+		in
+		    Key
+	lineageTag: 76e8bf32-a584-5cad-bf15-28d659a3b901
+
+	annotation PBI_ResultType = Function
+
+/// Reads the raw CSV. Encoding 65001 = UTF-8, which also removes the BOM in front of the first header ("Age"). Every one of the 35 columns gets an explicit data type (no automatic type detection).
+expression src_HR =
+		let
+		    Folder   = if Text.EndsWith(ProjectFolder, "\") then ProjectFolder else ProjectFolder & "\",   // works with or without trailing \
+		    Source   = Csv.Document(
+		                   File.Contents(Folder & "01_Data\raw\WA_Fn-UseC_-HR-Employee-Attrition.csv"),
+		                   [Delimiter = ",", Columns = 35, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+		    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+		    Typed    = Table.TransformColumnTypes(Promoted, {
+		                   {"Age", Int64.Type}, {"Attrition", type text}, {"BusinessTravel", type text},
+		                   {"DailyRate", Int64.Type}, {"Department", type text}, {"DistanceFromHome", Int64.Type},
+		                   {"Education", Int64.Type}, {"EducationField", type text}, {"EmployeeCount", Int64.Type},
+		                   {"EmployeeNumber", Int64.Type}, {"EnvironmentSatisfaction", Int64.Type}, {"Gender", type text},
+		                   {"HourlyRate", Int64.Type}, {"JobInvolvement", Int64.Type}, {"JobLevel", Int64.Type},
+		                   {"JobRole", type text}, {"JobSatisfaction", Int64.Type}, {"MaritalStatus", type text},
+		                   {"MonthlyIncome", Int64.Type}, {"MonthlyRate", Int64.Type}, {"NumCompaniesWorked", Int64.Type},
+		                   {"Over18", type text}, {"OverTime", type text}, {"PercentSalaryHike", Int64.Type},
+		                   {"PerformanceRating", Int64.Type}, {"RelationshipSatisfaction", Int64.Type},
+		                   {"StandardHours", Int64.Type}, {"StockOptionLevel", Int64.Type}, {"TotalWorkingYears", Int64.Type},
+		                   {"TrainingTimesLastYear", Int64.Type}, {"WorkLifeBalance", Int64.Type}, {"YearsAtCompany", Int64.Type},
+		                   {"YearsInCurrentRole", Int64.Type}, {"YearsSinceLastPromotion", Int64.Type},
+		                   {"YearsWithCurrManager", Int64.Type}}, "en-US")
+		in
+		    Typed
+	lineageTag: 6d36beae-ebbc-5c36-b01e-72bbb2a11db8
+
+	annotation PBI_ResultType = Table
+
+/// Code -> label mapping table Lkp_Education from HR_Lookups.xlsx.
+expression lkp_Education =
+		let
+		    Source   = fnGetLookup("Lkp_Education"),
+		    Typed    = Table.TransformColumnTypes(Source, {{"EducationCode", Int64.Type}, {"EducationLevel", type text}, {"SortOrder", Int64.Type}}),
+		    Buffered = Table.Buffer(Typed)
+		in
+		    Buffered
+	lineageTag: dab33614-3126-5584-bc19-ef0b7d0ac506
+
+	annotation PBI_ResultType = Table
+
+/// Code -> label mapping table Lkp_Satisfaction from HR_Lookups.xlsx.
+expression lkp_Satisfaction =
+		let
+		    Source   = fnGetLookup("Lkp_Satisfaction"),
+		    Typed    = Table.TransformColumnTypes(Source, {{"RatingCode", Int64.Type}, {"RatingLabel", type text}, {"SortOrder", Int64.Type}}),
+		    Buffered = Table.Buffer(Typed)
+		in
+		    Buffered
+	lineageTag: 148d48a8-328f-5b8b-bee8-6c9847ddd4f2
+
+	annotation PBI_ResultType = Table
+
+/// Code -> label mapping table Lkp_WorkLifeBalance from HR_Lookups.xlsx.
+expression lkp_WorkLifeBalance =
+		let
+		    Source   = fnGetLookup("Lkp_WorkLifeBalance"),
+		    Typed    = Table.TransformColumnTypes(Source, {{"WLBCode", Int64.Type}, {"WLBLabel", type text}, {"SortOrder", Int64.Type}}),
+		    Buffered = Table.Buffer(Typed)
+		in
+		    Buffered
+	lineageTag: 57d9935b-fb77-5475-8b24-8d28e04bc064
+
+	annotation PBI_ResultType = Table
+
+/// Code -> label mapping table Lkp_PerformanceRating from HR_Lookups.xlsx.
+expression lkp_PerformanceRating =
+		let
+		    Source   = fnGetLookup("Lkp_PerformanceRating"),
+		    Typed    = Table.TransformColumnTypes(Source, {{"PerformanceCode", Int64.Type}, {"PerformanceLabel", type text}, {"SortOrder", Int64.Type}}),
+		    Buffered = Table.Buffer(Typed)
+		in
+		    Buffered
+	lineageTag: f58a58e8-8a60-55d3-8f8b-3e80eb4fc4f2
+
+	annotation PBI_ResultType = Table
+
+/// Code -> label mapping table Lkp_BusinessTravel from HR_Lookups.xlsx.
+expression lkp_BusinessTravel =
+		let
+		    Source   = fnGetLookup("Lkp_BusinessTravel"),
+		    Typed    = Table.TransformColumnTypes(Source, {{"BusinessTravelCode", type text}, {"BusinessTravelLabel", type text}, {"SortOrder", Int64.Type}}),
+		    Buffered = Table.Buffer(Typed)
+		in
+		    Buffered
+	lineageTag: 8f0af057-cebd-5f61-8807-26d8d456fdc1
+
+	annotation PBI_ResultType = Table
+
+/// Band table Lkp_AgeBand from HR_Lookups.xlsx, renamed to the generic columns used by fnBandKey: Band (label), Min, Max (inclusive bounds), BandKey (= SortOrder).
+expression lkp_AgeBand =
+		let
+		    Source   = fnGetLookup("Lkp_AgeBand"),
+		    Typed    = Table.TransformColumnTypes(Source, {{"AgeBand", type text}, {"MinAge", Int64.Type}, {"MaxAge", Int64.Type}, {"SortOrder", Int64.Type}}),
+		    Renamed  = Table.RenameColumns(Typed, {{"AgeBand", "Band"}, {"MinAge", "Min"}, {"MaxAge", "Max"}, {"SortOrder", "BandKey"}}),
+		    Buffered = Table.Buffer(Renamed)
+		in
+		    Buffered
+	lineageTag: 9f6b7558-d68d-5761-9b6e-ca17c0a330c2
+
+	annotation PBI_ResultType = Table
+
+/// Band table Lkp_TenureBand from HR_Lookups.xlsx, renamed to the generic columns used by fnBandKey: Band (label), Min, Max (inclusive bounds), BandKey (= SortOrder).
+expression lkp_TenureBand =
+		let
+		    Source   = fnGetLookup("Lkp_TenureBand"),
+		    Typed    = Table.TransformColumnTypes(Source, {{"TenureBand", type text}, {"MinYears", Int64.Type}, {"MaxYears", Int64.Type}, {"SortOrder", Int64.Type}}),
+		    Renamed  = Table.RenameColumns(Typed, {{"TenureBand", "Band"}, {"MinYears", "Min"}, {"MaxYears", "Max"}, {"SortOrder", "BandKey"}}),
+		    Buffered = Table.Buffer(Renamed)
+		in
+		    Buffered
+	lineageTag: de15b964-79dd-5e44-8253-714807eec004
+
+	annotation PBI_ResultType = Table
+
+/// Band table Lkp_IncomeBand from HR_Lookups.xlsx, renamed to the generic columns used by fnBandKey: Band (label), Min, Max (inclusive bounds), BandKey (= SortOrder).
+expression lkp_IncomeBand =
+		let
+		    Source   = fnGetLookup("Lkp_IncomeBand"),
+		    Typed    = Table.TransformColumnTypes(Source, {{"IncomeBand", type text}, {"MinIncome", Int64.Type}, {"MaxIncome", Int64.Type}, {"SortOrder", Int64.Type}}),
+		    Renamed  = Table.RenameColumns(Typed, {{"IncomeBand", "Band"}, {"MinIncome", "Min"}, {"MaxIncome", "Max"}, {"SortOrder", "BandKey"}}),
+		    Buffered = Table.Buffer(Renamed)
+		in
+		    Buffered
+	lineageTag: a13c9603-e39a-5781-aa05-75ed12b577d9
+
+	annotation PBI_ResultType = Table
+
+/// Band table Lkp_TrainingBand from HR_Lookups.xlsx, renamed to the generic columns used by fnBandKey: Band (label), Min, Max (inclusive bounds), BandKey (= SortOrder).
+expression lkp_TrainingBand =
+		let
+		    Source   = fnGetLookup("Lkp_TrainingBand"),
+		    Typed    = Table.TransformColumnTypes(Source, {{"TrainingBand", type text}, {"MinTrainings", Int64.Type}, {"MaxTrainings", Int64.Type}, {"SortOrder", Int64.Type}}),
+		    Renamed  = Table.RenameColumns(Typed, {{"TrainingBand", "Band"}, {"MinTrainings", "Min"}, {"MaxTrainings", "Max"}, {"SortOrder", "BandKey"}}),
+		    Buffered = Table.Buffer(Renamed)
+		in
+		    Buffered
+	lineageTag: ce8355e7-3bbc-5427-b03c-2db3fbc85b62
+
+	annotation PBI_ResultType = Table
+
+/// Cleaned, enriched employee table that all dimension and fact tables are built from.
+expression stg_HR =
+		let
+		    Source = src_HR,
+		
+		    // 1. Drop 3 constant columns (EmployeeCount = 1, Over18 = "Y", StandardHours = 80)
+		    //    and 3 rate columns whose meaning the dataset does not document.
+		    RemovedColumns = Table.RemoveColumns(Source,
+		        {"EmployeeCount", "Over18", "StandardHours", "DailyRate", "HourlyRate", "MonthlyRate"}),
+		
+		    // 2. EmployeeNumber is unique (validated in Step 2) -> primary key
+		    RenamedKey = Table.RenameColumns(RemovedColumns, {{"EmployeeNumber", "EmployeeID"}}),
+		
+		    // 3. Trim all text columns (defensive cleaning)
+		    TrimmedText = Table.TransformColumns(RenamedKey, {
+		        {"Attrition", Text.Trim, type text}, {"BusinessTravel", Text.Trim, type text},
+		        {"Department", Text.Trim, type text}, {"EducationField", Text.Trim, type text},
+		        {"Gender", Text.Trim, type text}, {"JobRole", Text.Trim, type text},
+		        {"MaritalStatus", Text.Trim, type text}, {"OverTime", Text.Trim, type text}}),
+		
+		    // 4. Numeric flags for DAX measures, and a readable status
+		    AddAttritionFlag = Table.AddColumn(TrimmedText, "AttritionFlag", each if [Attrition] = "Yes" then 1 else 0, Int64.Type),
+		    AddOverTimeFlag  = Table.AddColumn(AddAttritionFlag, "OverTimeFlag", each if [OverTime] = "Yes" then 1 else 0, Int64.Type),
+		    AddStatus        = Table.AddColumn(AddOverTimeFlag, "EmployeeStatus", each if [AttritionFlag] = 1 then "Left" else "Active", type text),
+		
+		    // 5. Band keys from the band lookup tables (fnBandKey errors if a value fits no band)
+		    AddAgeBandKey      = Table.AddColumn(AddStatus, "AgeBandKey", each fnBandKey([Age], lkp_AgeBand), Int64.Type),
+		    AddTenureBandKey   = Table.AddColumn(AddAgeBandKey, "TenureBandKey", each fnBandKey([YearsAtCompany], lkp_TenureBand), Int64.Type),
+		    AddIncomeBandKey   = Table.AddColumn(AddTenureBandKey, "IncomeBandKey", each fnBandKey([MonthlyIncome], lkp_IncomeBand), Int64.Type),
+		    AddTrainingBandKey = Table.AddColumn(AddIncomeBandKey, "TrainingBandKey", each fnBandKey([TrainingTimesLastYear], lkp_TrainingBand), Int64.Type),
+		
+		    // 6. Code -> label merges (Merge Queries, left outer join)
+		    MergeEnv   = Table.NestedJoin(AddTrainingBandKey, {"EnvironmentSatisfaction"}, lkp_Satisfaction, {"RatingCode"}, "EnvLkp", JoinKind.LeftOuter),
+		    ExpandEnv  = Table.ExpandTableColumn(MergeEnv, "EnvLkp", {"RatingLabel"}, {"EnvironmentSatisfactionLabel"}),
+		    MergeRel   = Table.NestedJoin(ExpandEnv, {"RelationshipSatisfaction"}, lkp_Satisfaction, {"RatingCode"}, "RelLkp", JoinKind.LeftOuter),
+		    ExpandRel  = Table.ExpandTableColumn(MergeRel, "RelLkp", {"RatingLabel"}, {"RelationshipSatisfactionLabel"}),
+		    MergeInv   = Table.NestedJoin(ExpandRel, {"JobInvolvement"}, lkp_Satisfaction, {"RatingCode"}, "InvLkp", JoinKind.LeftOuter),
+		    ExpandInv  = Table.ExpandTableColumn(MergeInv, "InvLkp", {"RatingLabel"}, {"JobInvolvementLabel"}),
+		    MergeWLB   = Table.NestedJoin(ExpandInv, {"WorkLifeBalance"}, lkp_WorkLifeBalance, {"WLBCode"}, "WLBLkp", JoinKind.LeftOuter),
+		    ExpandWLB  = Table.ExpandTableColumn(MergeWLB, "WLBLkp", {"WLBLabel"}, {"WorkLifeBalanceLabel"}),
+		    MergePerf  = Table.NestedJoin(ExpandWLB, {"PerformanceRating"}, lkp_PerformanceRating, {"PerformanceCode"}, "PerfLkp", JoinKind.LeftOuter),
+		    ExpandPerf = Table.ExpandTableColumn(MergePerf, "PerfLkp", {"PerformanceLabel"}, {"PerformanceRatingLabel"}),
+		    MergeTrav  = Table.NestedJoin(ExpandPerf, {"BusinessTravel"}, lkp_BusinessTravel, {"BusinessTravelCode"}, "TravLkp", JoinKind.LeftOuter),
+		    ExpandTrav = Table.ExpandTableColumn(MergeTrav, "TravLkp", {"BusinessTravelLabel", "SortOrder"}, {"BusinessTravelLabel", "BusinessTravelSort"}),
+		
+		    // 7. Types for the merged columns, then restore employee order (merges do not guarantee order)
+		    TypedLabels = Table.TransformColumnTypes(ExpandTrav, {
+		        {"EnvironmentSatisfactionLabel", type text}, {"RelationshipSatisfactionLabel", type text},
+		        {"JobInvolvementLabel", type text}, {"WorkLifeBalanceLabel", type text},
+		        {"PerformanceRatingLabel", type text}, {"BusinessTravelLabel", type text}, {"BusinessTravelSort", Int64.Type}}),
+		    Sorted = Table.Sort(TypedLabels, {{"EmployeeID", Order.Ascending}})
+		in
+		    Sorted
+	lineageTag: f9baa052-18e0-573d-acc8-d7fd70e0c104
+
+	annotation PBI_ResultType = Table
+

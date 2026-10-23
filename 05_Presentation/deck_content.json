@@ -1,0 +1,155 @@
+{
+ "title": {
+  "kicker": "Talent & Learning Analytics Dashboard",
+  "headline": "16.1% of employees left - where, why, and what HR can do",
+  "stats": [
+   [
+    "1,470",
+    "employees"
+   ],
+   [
+    "237",
+    "leavers"
+   ],
+   [
+    "16.1%",
+    "attrition rate"
+   ]
+  ],
+  "sub": "Power BI | Power Query | DAX | Excel - IBM HR sample data (fictional), one point-in-time snapshot",
+  "notes": "The question: why do people leave, and what can HR and L&D do about it? The answer comes from a Power BI dashboard built on the IBM HR sample."
+ },
+ "data": {
+  "title": "From a raw CSV to a self-testing Power BI model",
+  "steps": [
+   [
+    "Raw data",
+    "1,470 employees x 35 columns"
+   ],
+   [
+    "Excel",
+    "Profiling + lookup tables"
+   ],
+   [
+    "Power Query",
+    "25 queries: clean, map, band"
+   ],
+   [
+    "Model + DAX",
+    "Star schema, 33 measures"
+   ],
+   [
+    "Report",
+    "8 pages, drill-through"
+   ]
+  ],
+  "callout": [
+   "498",
+   "automated checks passed, Steps 1-7"
+  ],
+  "callout_sub": "Every displayed number was compared with an independent calculation from the raw CSV",
+  "notes": "Each stage is validated before the next one starts. The model also tests itself on every refresh (Data Quality page)."
+ },
+ "model": {
+  "title": "A star schema built for slicing",
+  "image": "screenshots/star_schema.png",
+  "points": [
+   [
+    "Single-direction filters",
+    "9 one-to-many relationships, dimension to fact - no ambiguous paths"
+   ],
+   [
+    "Measures, not columns",
+    "33 DAX measures with DIVIDE, KEEPFILTERS and a REMOVEFILTERS company baseline"
+   ],
+   [
+    "Self-testing",
+    "35 QA checks recalculated on every refresh"
+   ],
+   [
+    "Code, not clicks",
+    "PBIP / TMDL text format: reviewable in Git and rebuildable from scripts"
+   ]
+  ],
+  "notes": "Why a star schema on one flat file: clean slicers, simple DAX, and room to add real HR tables later."
+ },
+ "findings": {
+  "title": "Overtime and the first year stand out",
+  "chart_title": "Attrition rate by group",
+  "chart": [
+   {
+    "label": "Sales Representatives",
+    "value": 0.39759036144578314,
+    "path": "drivers.sales_rep.rate"
+   },
+   {
+    "label": "0-1 years at the company",
+    "value": 0.3488372093023256,
+    "path": "drivers.early_tenure.rate"
+   },
+   {
+    "label": "Bad work-life balance",
+    "value": 0.3125,
+    "path": "drivers.bad_wlb.rate"
+   },
+   {
+    "label": "Works overtime",
+    "value": 0.30528846153846156,
+    "path": "drivers.overtime.rate"
+   },
+   {
+    "label": "Low job satisfaction",
+    "value": 0.22837370242214533,
+    "path": "drivers.low_job_sat.rate"
+   },
+   {
+    "label": "Company",
+    "value": 0.16122448979591836,
+    "path": "company.attrition_rate"
+   }
+  ],
+  "points": [
+   [
+    "2.9x",
+    "higher attrition with overtime (30.5% vs 10.4%); odds ratio 5.0 after controls"
+   ],
+   [
+    "55.1%",
+    "attrition in the first 0-1 years when combined with overtime"
+   ],
+   [
+    "+23.6 pts",
+    "Sales Representatives vs the company rate"
+   ]
+  ],
+  "foot": "Performance rating does not predict attrition (16.4% Outstanding vs 16.1% others). Associations in a snapshot, not proven causes.",
+  "notes": "Overtime goes with higher attrition in 8 of 9 job roles, within roles (odds ratio 4.3) and in a logistic regression with tenure, satisfaction, job level, stock options and other factors (odds ratio 5.0)."
+ },
+ "recs": {
+  "title": "Four actions to pilot, one data fix",
+  "cards": [
+   [
+    "Reduce sustained overtime",
+    "Monthly overtime reviews and workload rebalancing, starting with the highest-risk roles",
+    "Track: Overtime %, Attrition Rate - Overtime"
+   ],
+   [
+    "Make the first year stick",
+    "90-day onboarding, a mentor for every new hire, front-loaded learning",
+    "Track: Early Tenure Attrition Rate (0-1 yrs)"
+   ],
+   [
+    "Retain Sales Representatives",
+    "Pay and incentive benchmark, career path to Sales Executive (39.8% attrition today)",
+    "Track: Attrition vs Company (pts)"
+   ],
+   [
+    "Act on engagement signals",
+    "Quarterly pulse survey, manager follow-up within 30 days",
+    "Track: % Low Job Satisfaction"
+   ]
+  ],
+  "data_fix": "Data fix: record course type, hours and completion, calibrate performance ratings, and add dates to measure whether the actions work.",
+  "notes": "Each action has a measure in the dashboard to track it. Run them as pilots with a comparison group, because the data shows associations, not causes."
+ }
+}

@@ -1,0 +1,37 @@
+/// Education level 1-5 (Below College ... Doctor).
+table DimEducation
+	lineageTag: 9e5a4441-090d-5d1f-ac1e-faa2d26c3fcd
+
+	column EducationKey
+		dataType: int64
+		isHidden
+		isKey
+		formatString: 0
+		lineageTag: 0c0005ac-7b3a-5291-a389-1e2f99f6ec97
+		summarizeBy: none
+		sourceColumn: EducationKey
+
+		annotation SummarizationSetBy = User
+
+	column EducationLevel
+		dataType: string
+		lineageTag: c28f5d5e-bb30-5bb1-8f41-f85b2b41db20
+		summarizeBy: none
+		sourceColumn: EducationLevel
+		sortByColumn: EducationKey
+
+		annotation SummarizationSetBy = User
+
+	partition DimEducation = m
+		mode: import
+		source =
+				let
+				    Source  = lkp_Education,
+				    Renamed = Table.RenameColumns(Source, {{"EducationCode", "EducationKey"}}),
+				    Final   = Table.SelectColumns(Renamed, {"EducationKey", "EducationLevel"}),
+				    Typed   = Table.TransformColumnTypes(Final, {{"EducationKey", Int64.Type}, {"EducationLevel", type text}})
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table
+

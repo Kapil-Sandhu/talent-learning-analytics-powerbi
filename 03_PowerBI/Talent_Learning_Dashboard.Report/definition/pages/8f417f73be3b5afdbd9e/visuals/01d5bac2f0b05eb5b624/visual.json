@@ -1,0 +1,60 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "01d5bac2f0b05eb5b624",
+  "position": {
+    "x": 16,
+    "y": 432,
+    "z": 9000,
+    "height": 236,
+    "width": 618,
+    "tabOrder": 9000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "3. Retention plan for Sales Representatives",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1F3864",
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "39.8% attrition (+23.6 pts); 91.6% are level 1, avg income 2,626 vs 6,503.",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#262626"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Action: pay and incentive benchmark, career path to Sales Executive, coaching.",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#262626"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

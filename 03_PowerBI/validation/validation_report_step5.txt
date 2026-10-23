@@ -1,0 +1,62 @@
+STEP 5 VALIDATION: 60/60 checks passed
+
+[PASS] A. Definition: 33 measures defined in the spec, names unique
+[PASS] A. Definition: No measure name equals a column name anywhere in the model - set()
+[PASS] A. Definition: Microsoft TmdlSerializer parsed the model incl. measures - ok=True measures=33 err=None
+[PASS] A. Definition: Offline TMDL: all 33 measures == spec (home table, expression, format, folder, description)
+[PASS] A. Definition: Measures organised in 6 display folders - ['1 Headcount & Attrition', '2 Tenure', '3 Training & Learning', '4 Overtime', '5 Satisfaction & Performance', '6 Demographics & Pay']
+[PASS] B. Engine: Live model reports 33 measures - 33
+[PASS] B. Engine: Every measure State = Ready in Power BI (no syntax or semantic errors) - []
+[PASS] B. Engine: Live model: all 33 measures == spec (home table, expression, format, folder, description)
+[PASS] B. Engine: All DAX test queries ran (except the deliberate negative control) - []
+[PASS] C. Step 2 KPIs: All 19 Step 2 KPIs are mapped to a measure
+[PASS] C. Step 2 KPIs: Headcount (Excel 1470) == [Headcount] in Power BI - powerbi=1470
+[PASS] C. Step 2 KPIs: Leavers (Excel 237) == [Leavers] in Power BI - powerbi=237
+[PASS] C. Step 2 KPIs: Active Employees (Excel 1233) == [Active Employees] in Power BI - powerbi=1233
+[PASS] C. Step 2 KPIs: Attrition Rate (Excel 0.161224) == [Attrition Rate] in Power BI - powerbi=0.16122448979591836
+[PASS] C. Step 2 KPIs: Avg Tenure (years) (Excel 7.00816) == [Avg Tenure (Years)] in Power BI - powerbi=7.0081632653061225
+[PASS] C. Step 2 KPIs: Median Tenure (years) (Excel 5) == [Median Tenure (Years)] in Power BI - powerbi=5
+[PASS] C. Step 2 KPIs: Avg Tenure - Leavers (years) (Excel 5.1308) == [Avg Tenure of Leavers (Years)] in Power BI - powerbi=5.1308016877637135
+[PASS] C. Step 2 KPIs: Avg Age (Excel 36.9238) == [Avg Age] in Power BI - powerbi=36.923809523809524
+[PASS] C. Step 2 KPIs: Avg Monthly Income (Excel 6502.93) == [Avg Monthly Income] in Power BI - powerbi=6502.931292517007
+[PASS] C. Step 2 KPIs: Total Trainings Last Year (Excel 4115) == [Total Trainings] in Power BI - powerbi=4115
+[PASS] C. Step 2 KPIs: Training per Employee (Excel 2.79932) == [Training per Employee] in Power BI - powerbi=2.7993197278911564
+[PASS] C. Step 2 KPIs: % Zero Training (Excel 0.0367347) == [% No Training] in Power BI - powerbi=0.036734693877551024
+[PASS] C. Step 2 KPIs: Overtime % (Excel 0.282993) == [Overtime %] in Power BI - powerbi=0.2829931972789116
+[PASS] C. Step 2 KPIs: Attrition Rate - Overtime (Excel 0.305288) == [Attrition Rate - Overtime] in Power BI - powerbi=0.30528846153846156
+[PASS] C. Step 2 KPIs: Attrition Rate - No Overtime (Excel 0.104364) == [Attrition Rate - No Overtime] in Power BI - powerbi=0.10436432637571158
+[PASS] C. Step 2 KPIs: Avg Job Satisfaction (1-4) (Excel 2.72857) == [Avg Job Satisfaction] in Power BI - powerbi=2.7285714285714286
+[PASS] C. Step 2 KPIs: % Low Job Satisfaction (Excel 0.196599) == [% Low Job Satisfaction] in Power BI - powerbi=0.19659863945578232
+[PASS] C. Step 2 KPIs: Avg Years Since Last Promotion (Excel 2.18776) == [Avg Years Since Promotion] in Power BI - powerbi=2.1877551020408164
+[PASS] C. Step 2 KPIs: Avg Performance Rating (Excel 3.15374) == [Avg Performance Rating] in Power BI - powerbi=3.1537414965986397
+[PASS] D. Measures vs raw CSV: Total level: all 33 measures == pandas - []
+[PASS] D. Measures vs raw CSV: By DimDepartment[Department]: 3 members x 33 measures == pandas
+[PASS] D. Measures vs raw CSV: By DimJobRole[JobRole]: 9 members x 33 measures == pandas
+[PASS] D. Measures vs raw CSV: By DimEducation[EducationLevel]: 5 members x 33 measures == pandas
+[PASS] D. Measures vs raw CSV: By DimJobSatisfaction[JobSatisfaction]: 4 members x 33 measures == pandas
+[PASS] D. Measures vs raw CSV: By DimAgeBand[AgeBand]: 5 members x 33 measures == pandas
+[PASS] D. Measures vs raw CSV: By DimTenureBand[TenureBand]: 4 members x 33 measures == pandas
+[PASS] D. Measures vs raw CSV: By DimIncomeBand[IncomeBand]: 5 members x 33 measures == pandas
+[PASS] D. Measures vs raw CSV: By DimTrainingBand[TrainingBand]: 4 members x 33 measures == pandas
+[PASS] D. Measures vs raw CSV: By DimEmployee[OverTime]: 2 members x 33 measures == pandas
+[PASS] D. Measures vs raw CSV: By DimEmployee[Gender]: 2 members x 33 measures == pandas
+[PASS] D. Measures vs raw CSV: By DimEmployee[MaritalStatus]: 3 members x 33 measures == pandas
+[PASS] D. Measures vs raw CSV: By DimEmployee[BusinessTravel]: 3 members x 33 measures == pandas
+[PASS] D. Measures vs raw CSV: By DimEmployee[WorkLifeBalance]: 4 members x 33 measures == pandas
+[PASS] D. Measures vs raw CSV: By DimEmployee[EmployeeStatus]: 2 members x 33 measures == pandas
+[PASS] D. Measures vs raw CSV: By DimEmployee[EmployeeID]: 1470 members x 33 measures == pandas
+[PASS] D. Measures vs raw CSV: Two filters at once (Department x OverTime, 6 combinations) == pandas
+[PASS] D. Measures vs raw CSV: Total measure values compared with independent pandas: 50,523
+[PASS] E. Edge cases: Empty selection: every measure BLANK (no error), Company baseline still 16.1% - []
+[PASS] E. Edge cases: KEEPFILTERS: on an OverTimeFlag axis, 'Attrition Rate - Overtime' is blank for flag 0 and 30.5% for flag 1 - {"1": {"FactEmployee[OverTimeFlag]": 1, "[HC]": 416, "[AR_OT]": 0.30528846153846156, "[AR_NoOT]": null, "[OT_Emp]": 416}, "0": {"FactEmployee[OverTimeFlag]": 0, "[HC]": 1054, "[AR_OT]": null, "[AR_NoOT]": 0.10436432637571158, "[OT_Emp]": 0}}
+[PASS] E. Edge cases: Counts return 0 (not blank) when nobody matches: Overtime Employees = 0 on the flag-0 row
+[PASS] E. Edge cases: KEEPFILTERS: 'Employees with No Training' = 54 only on the 0-trainings row, 0 elsewhere; '% High Training' 100% only for 5-6
+[PASS] E. Edge cases: Slicer Department = Sales: rate 20.6%, company baseline unchanged 16.1%, gap +4.5 pts - {'[Rate]': 0.2062780269058296, '[Company]': 0.16122448979591836, '[Vs]': 0.04505353710991125, '[HC]': 446}
+[PASS] E. Edge cases: No NaN or infinity in any query result - set()
+[PASS] E. Edge cases: Negative control: a query using a non-existent column FAILS (proves errors are detected) - {'error': 'Exception calling "ExecuteReader" with "0" argument(s): "Query (1, 51) Column \'NoSuchColumn\' in table \'FactEmployee\' cannot be found or may not be used in this expression."'}
+[PASS] F. Report + UI: All 8 report/project JSON files still pass Microsoft's official schemas
+[PASS] F. Report + UI: Power BI window is open on the project - ['Talent_Learning_Dashboard']
+[PASS] F. Report + UI: Power BI's own Problems counter shows 0 (or is not displayed) - ['Problems 0']
+[PASS] F. Report + UI: No other dialog / warning / error text in the Power BI window - []
+[PASS] F. Report + UI: No modal dialog open (only Power BI's built-in DAX-query / TMDL view panes) - ['Run DAX queries on your model']
+[PASS] F. Report + UI: Data pane lists the _Measures table

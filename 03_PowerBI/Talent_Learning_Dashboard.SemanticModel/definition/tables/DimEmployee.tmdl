@@ -1,0 +1,230 @@
+/// One row per employee: descriptive attributes for slicers and the drill-through page.
+table DimEmployee
+	lineageTag: 24f5d51d-7f6f-5637-a87b-700d8ca7d360
+
+	/// Unique employee identifier (EmployeeNumber in the source).
+	column EmployeeID
+		dataType: int64
+		isKey
+		formatString: 0
+		lineageTag: 352515bd-d244-5a8f-a3bc-00555e9aaba3
+		summarizeBy: none
+		sourceColumn: EmployeeID
+
+		annotation SummarizationSetBy = User
+
+	/// Left / Active.
+	column EmployeeStatus
+		dataType: string
+		lineageTag: ae8fcbfe-837b-58e4-a355-7212f891a292
+		summarizeBy: none
+		sourceColumn: EmployeeStatus
+
+		annotation SummarizationSetBy = User
+
+	column Gender
+		dataType: string
+		lineageTag: 79721cdd-2178-55cf-8f91-b311ea3ac11e
+		summarizeBy: none
+		sourceColumn: Gender
+
+		annotation SummarizationSetBy = User
+
+	column MaritalStatus
+		dataType: string
+		lineageTag: 62f4bd2d-8959-5193-9332-de8137fa2531
+		summarizeBy: none
+		sourceColumn: MaritalStatus
+
+		annotation SummarizationSetBy = User
+
+	column EducationField
+		dataType: string
+		lineageTag: 983c509e-d60d-5c72-945d-39a0a16db643
+		summarizeBy: none
+		sourceColumn: EducationField
+
+		annotation SummarizationSetBy = User
+
+	column BusinessTravel
+		dataType: string
+		lineageTag: e4a42588-0a80-56c1-9ef7-0eb9effb6f7c
+		summarizeBy: none
+		sourceColumn: BusinessTravel
+		sortByColumn: BusinessTravelSort
+
+		annotation SummarizationSetBy = User
+
+	column BusinessTravelSort
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 754d2366-786e-592d-9a50-e8b2fdd0c609
+		summarizeBy: none
+		sourceColumn: BusinessTravelSort
+
+		annotation SummarizationSetBy = User
+
+	column OverTime
+		dataType: string
+		lineageTag: 7c6808f0-8a12-5a17-a150-ca85ae8bdea7
+		summarizeBy: none
+		sourceColumn: OverTime
+
+		annotation SummarizationSetBy = User
+
+	column JobLevel
+		dataType: int64
+		formatString: 0
+		lineageTag: 41014ab2-7bb4-5602-bfc9-e0f55a8570f4
+		summarizeBy: none
+		sourceColumn: JobLevel
+
+		annotation SummarizationSetBy = User
+
+	column StockOptionLevel
+		dataType: int64
+		formatString: 0
+		lineageTag: 39942a7e-08cc-57e4-94d7-28cb639282af
+		summarizeBy: none
+		sourceColumn: StockOptionLevel
+
+		annotation SummarizationSetBy = User
+
+	column EnvironmentSatisfaction
+		dataType: string
+		lineageTag: e1bb1b12-b42e-56fd-a207-878125a94c41
+		summarizeBy: none
+		sourceColumn: EnvironmentSatisfaction
+		sortByColumn: EnvironmentSatisfactionSort
+
+		annotation SummarizationSetBy = User
+
+	column EnvironmentSatisfactionSort
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 04ef21e6-dd0b-5406-a784-7d48c38b97ba
+		summarizeBy: none
+		sourceColumn: EnvironmentSatisfactionSort
+
+		annotation SummarizationSetBy = User
+
+	column RelationshipSatisfaction
+		dataType: string
+		lineageTag: 8032032f-696e-5200-b8e8-efe8d4e77679
+		summarizeBy: none
+		sourceColumn: RelationshipSatisfaction
+		sortByColumn: RelationshipSatisfactionSort
+
+		annotation SummarizationSetBy = User
+
+	column RelationshipSatisfactionSort
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: cf6f820f-ae25-59c6-8d6b-3860072a278b
+		summarizeBy: none
+		sourceColumn: RelationshipSatisfactionSort
+
+		annotation SummarizationSetBy = User
+
+	column JobInvolvement
+		dataType: string
+		lineageTag: e64973dc-206b-558b-ac47-7718cc93f795
+		summarizeBy: none
+		sourceColumn: JobInvolvement
+		sortByColumn: JobInvolvementSort
+
+		annotation SummarizationSetBy = User
+
+	column JobInvolvementSort
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 6d5a467e-5bf3-5394-8df1-4a995102c8d4
+		summarizeBy: none
+		sourceColumn: JobInvolvementSort
+
+		annotation SummarizationSetBy = User
+
+	column WorkLifeBalance
+		dataType: string
+		lineageTag: 559a980e-7a23-51d5-8018-da5db8108cbd
+		summarizeBy: none
+		sourceColumn: WorkLifeBalance
+		sortByColumn: WorkLifeBalanceSort
+
+		annotation SummarizationSetBy = User
+
+	column WorkLifeBalanceSort
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 01216d08-574e-534e-b638-9232f2e770cd
+		summarizeBy: none
+		sourceColumn: WorkLifeBalanceSort
+
+		annotation SummarizationSetBy = User
+
+	column PerformanceRating
+		dataType: string
+		lineageTag: 511572ec-7a85-55e6-ad28-0d5184f09d9f
+		summarizeBy: none
+		sourceColumn: PerformanceRating
+		sortByColumn: PerformanceRatingSort
+
+		annotation SummarizationSetBy = User
+
+	column PerformanceRatingSort
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 12ccff60-b081-513a-a0f7-6c802015ef95
+		summarizeBy: none
+		sourceColumn: PerformanceRatingSort
+
+		annotation SummarizationSetBy = User
+
+	partition DimEmployee = m
+		mode: import
+		source =
+				let
+				    Source  = stg_HR,
+				    Final   = Table.SelectColumns(Source, {
+				                  "EmployeeID", "EmployeeStatus", "Gender", "MaritalStatus", "EducationField",
+				                  "BusinessTravelLabel", "BusinessTravelSort", "OverTime", "JobLevel", "StockOptionLevel",
+				                  "EnvironmentSatisfactionLabel", "EnvironmentSatisfaction",
+				                  "RelationshipSatisfactionLabel", "RelationshipSatisfaction",
+				                  "JobInvolvementLabel", "JobInvolvement",
+				                  "WorkLifeBalanceLabel", "WorkLifeBalance",
+				                  "PerformanceRatingLabel", "PerformanceRating"}),
+				    // Rename in two steps: codes -> *Sort first, then labels -> the plain name (avoids a name clash)
+				    RenamedCodes  = Table.RenameColumns(Final, {
+				                  {"EnvironmentSatisfaction", "EnvironmentSatisfactionSort"},
+				                  {"RelationshipSatisfaction", "RelationshipSatisfactionSort"},
+				                  {"JobInvolvement", "JobInvolvementSort"},
+				                  {"WorkLifeBalance", "WorkLifeBalanceSort"},
+				                  {"PerformanceRating", "PerformanceRatingSort"}}),
+				    Renamed = Table.RenameColumns(RenamedCodes, {
+				                  {"BusinessTravelLabel", "BusinessTravel"},
+				                  {"EnvironmentSatisfactionLabel", "EnvironmentSatisfaction"},
+				                  {"RelationshipSatisfactionLabel", "RelationshipSatisfaction"},
+				                  {"JobInvolvementLabel", "JobInvolvement"},
+				                  {"WorkLifeBalanceLabel", "WorkLifeBalance"},
+				                  {"PerformanceRatingLabel", "PerformanceRating"}}),
+				    Typed   = Table.TransformColumnTypes(Renamed, {
+				                  {"EmployeeID", Int64.Type}, {"EmployeeStatus", type text}, {"Gender", type text},
+				                  {"MaritalStatus", type text}, {"EducationField", type text}, {"BusinessTravel", type text},
+				                  {"BusinessTravelSort", Int64.Type}, {"OverTime", type text}, {"JobLevel", Int64.Type},
+				                  {"StockOptionLevel", Int64.Type}, {"EnvironmentSatisfaction", type text},
+				                  {"EnvironmentSatisfactionSort", Int64.Type}, {"RelationshipSatisfaction", type text},
+				                  {"RelationshipSatisfactionSort", Int64.Type}, {"JobInvolvement", type text},
+				                  {"JobInvolvementSort", Int64.Type}, {"WorkLifeBalance", type text},
+				                  {"WorkLifeBalanceSort", Int64.Type}, {"PerformanceRating", type text},
+				                  {"PerformanceRatingSort", Int64.Type}})
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table
+

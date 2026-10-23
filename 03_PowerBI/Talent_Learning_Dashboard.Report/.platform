@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Talent_Learning_Dashboard"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "2b38c748-ab7f-5e84-91e1-3b4b3ff9a8f5"
+  }
+}

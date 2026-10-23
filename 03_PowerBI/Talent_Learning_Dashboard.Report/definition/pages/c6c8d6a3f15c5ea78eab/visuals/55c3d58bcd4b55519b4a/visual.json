@@ -1,0 +1,136 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "55c3d58bcd4b55519b4a",
+  "position": {
+    "x": 16,
+    "y": 80,
+    "z": 3000,
+    "height": 628,
+    "width": 1248,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "QA_Checks"
+                    }
+                  },
+                  "Property": "CheckNo"
+                }
+              },
+              "queryRef": "QA_Checks.CheckNo",
+              "nativeQueryRef": "CheckNo",
+              "displayName": "#"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "QA_Checks"
+                    }
+                  },
+                  "Property": "Check"
+                }
+              },
+              "queryRef": "QA_Checks.Check",
+              "nativeQueryRef": "Check",
+              "displayName": "Check"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "QA_Checks"
+                    }
+                  },
+                  "Property": "Actual"
+                }
+              },
+              "queryRef": "QA_Checks.Actual",
+              "nativeQueryRef": "Actual",
+              "displayName": "Actual"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "QA_Checks"
+                    }
+                  },
+                  "Property": "Expected"
+                }
+              },
+              "queryRef": "QA_Checks.Expected",
+              "nativeQueryRef": "Expected",
+              "displayName": "Expected"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "QA_Checks"
+                    }
+                  },
+                  "Property": "Result"
+                }
+              },
+              "queryRef": "QA_Checks.Result",
+              "nativeQueryRef": "Result",
+              "displayName": "Result"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'QA_Checks - recalculated on every refresh'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

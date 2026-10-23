@@ -1,0 +1,39 @@
+/// One row per department (3).
+table DimDepartment
+	lineageTag: d6161a46-bfac-5299-bc2f-50cf81a19cf0
+
+	column DepartmentKey
+		dataType: int64
+		isHidden
+		isKey
+		formatString: 0
+		lineageTag: dfac60f5-3cba-58fc-8177-d760be63c2e4
+		summarizeBy: none
+		sourceColumn: DepartmentKey
+
+		annotation SummarizationSetBy = User
+
+	column Department
+		dataType: string
+		lineageTag: 5327c3c9-502e-56a1-8194-57e0a2b6e412
+		summarizeBy: none
+		sourceColumn: Department
+
+		annotation SummarizationSetBy = User
+
+	partition DimDepartment = m
+		mode: import
+		source =
+				let
+				    Source   = stg_HR,
+				    Selected = Table.SelectColumns(Source, {"Department"}),
+				    Distinct = Table.Distinct(Selected),
+				    Sorted   = Table.Sort(Distinct, {{"Department", Order.Ascending}}),
+				    AddKey   = Table.AddIndexColumn(Sorted, "DepartmentKey", 1, 1, Int64.Type),
+				    Final    = Table.SelectColumns(AddKey, {"DepartmentKey", "Department"}),
+				    Typed    = Table.TransformColumnTypes(Final, {{"DepartmentKey", Int64.Type}, {"Department", type text}})
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table
+

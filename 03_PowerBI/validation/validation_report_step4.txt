@@ -1,0 +1,70 @@
+STEP 4 VALIDATION: 68/68 checks passed
+
+[PASS] A. Project files: All 14 required project files exist - []
+[PASS] A. Project files: Every JSON project file parses
+[PASS] A. Project files: .pbip points to the report folder
+[PASS] A. Project files: definition.pbir binds the report to the local semantic model (byPath)
+[PASS] A. Project files: definition.pbism version >= 4.0 (required for TMDL)
+[PASS] A. Project files: Report page listed in pages.json exists
+[PASS] A. Project files: .gitignore excludes data cache + local settings (safe for GitHub)
+[PASS] A. Project files: One TMDL file per model table (12) - ['DimAgeBand', 'DimDepartment', 'DimEducation', 'DimEmployee', 'DimIncomeBand', 'DimJobRole', 'DimJobSatisfaction', 'DimTenureBand', 'DimTrainingBand', 'FactEmployee', 'QA_Checks', '_Measures']
+[PASS] A. Project files: All 8 report/project JSON files pass Microsoft's official JSON schemas
+[PASS] A. Project files: report.json has the required layoutOptimization property
+[PASS] B. Offline TMDL: Microsoft TmdlSerializer parsed the model folder without errors - None
+[PASS] B. Offline TMDL: Table set == design (12 tables, no auto date tables) - diff=set()
+[PASS] B. Offline TMDL: DimAgeBand: 4 columns - types, hidden, key, summarize, sort-by, format == design
+[PASS] B. Offline TMDL: DimDepartment: 2 columns - types, hidden, key, summarize, sort-by, format == design
+[PASS] B. Offline TMDL: DimEducation: 2 columns - types, hidden, key, summarize, sort-by, format == design
+[PASS] B. Offline TMDL: DimEmployee: 20 columns - types, hidden, key, summarize, sort-by, format == design
+[PASS] B. Offline TMDL: DimIncomeBand: 4 columns - types, hidden, key, summarize, sort-by, format == design
+[PASS] B. Offline TMDL: DimJobRole: 2 columns - types, hidden, key, summarize, sort-by, format == design
+[PASS] B. Offline TMDL: DimJobSatisfaction: 2 columns - types, hidden, key, summarize, sort-by, format == design
+[PASS] B. Offline TMDL: DimTenureBand: 4 columns - types, hidden, key, summarize, sort-by, format == design
+[PASS] B. Offline TMDL: DimTrainingBand: 4 columns - types, hidden, key, summarize, sort-by, format == design
+[PASS] B. Offline TMDL: FactEmployee: 28 columns - types, hidden, key, summarize, sort-by, format == design
+[PASS] B. Offline TMDL: QA_Checks: 5 columns - types, hidden, key, summarize, sort-by, format == design
+[PASS] B. Offline TMDL: _Measures: 1 columns - types, hidden, key, summarize, sort-by, format == design
+[PASS] B. Offline TMDL: Relationships == design (9 x many-to-one, single direction, active) - got=[('FactEmployee.AgeBandKey', 'DimAgeBand.AgeBandKey', 'many', 'one', 'onedirection', True), ('FactEmployee.DepartmentKey', 'DimDepartment.DepartmentKey', 'many', 'one', 'onedirection', True), ('FactEmployee.EducationKey', 'DimEducation.EducationKey', 'many', 'one', 'onedirection', True), ('FactEmployee.EmployeeID', 'DimEmployee.EmployeeID', 'many', 'one', 'onedirection', True), ('FactEmployee.IncomeBandKey', 'DimIncomeBand.IncomeBandKey', 'many', 'one', 'onedirection', True), ('FactEmployee.JobRoleKey', 'DimJobRole.JobRoleKey', 'many', 'one', 'onedirection', True), ('FactEmployee.JobSatisfactionKey', 'DimJobSatisfaction.JobSatisfactionKey', 'many', 'one', 'onedirection', True), ('FactEmployee.TenureBandKey', 'DimTenureBand.TenureBandKey', 'many', 'one', 'onedirection', True), ('FactEmployee.TrainingBandKey', 'DimTrainingBand.TrainingBandKey', 'many', 'one', 'onedirection', True)]
+[PASS] B. Offline TMDL: 14 non-loaded queries (parameter, functions, staging) stored as M expressions - {'ProjectFolder': 'M', 'fnGetLookup': 'M', 'fnBandKey': 'M', 'src_HR': 'M', 'lkp_Education': 'M', 'lkp_Satisfaction': 'M', 'lkp_WorkLifeBalance': 'M', 'lkp_PerformanceRating': 'M', 'lkp_BusinessTravel': 'M', 'lkp_AgeBand': 'M', 'lkp_TenureBand': 'M', 'lkp_IncomeBand': 'M', 'lkp_TrainingBand': 'M', 'stg_HR': 'M'}
+[PASS] B. Offline TMDL: Every table has exactly one Import-mode Power Query (M) partition
+[PASS] C. Live model: Table set == design (12 tables, no auto date tables) - diff=set()
+[PASS] C. Live model: DimAgeBand: 4 columns - types, hidden, key, summarize, sort-by, format == design
+[PASS] C. Live model: DimDepartment: 2 columns - types, hidden, key, summarize, sort-by, format == design
+[PASS] C. Live model: DimEducation: 2 columns - types, hidden, key, summarize, sort-by, format == design
+[PASS] C. Live model: DimEmployee: 20 columns - types, hidden, key, summarize, sort-by, format == design
+[PASS] C. Live model: DimIncomeBand: 4 columns - types, hidden, key, summarize, sort-by, format == design
+[PASS] C. Live model: DimJobRole: 2 columns - types, hidden, key, summarize, sort-by, format == design
+[PASS] C. Live model: DimJobSatisfaction: 2 columns - types, hidden, key, summarize, sort-by, format == design
+[PASS] C. Live model: DimTenureBand: 4 columns - types, hidden, key, summarize, sort-by, format == design
+[PASS] C. Live model: DimTrainingBand: 4 columns - types, hidden, key, summarize, sort-by, format == design
+[PASS] C. Live model: FactEmployee: 28 columns - types, hidden, key, summarize, sort-by, format == design
+[PASS] C. Live model: QA_Checks: 5 columns - types, hidden, key, summarize, sort-by, format == design
+[PASS] C. Live model: _Measures: 1 columns - types, hidden, key, summarize, sort-by, format == design
+[PASS] C. Live model: Relationships == design (9 x many-to-one, single direction, active) - got=[('FactEmployee.AgeBandKey', 'DimAgeBand.AgeBandKey', 'many', 'one', 'onedirection', True), ('FactEmployee.DepartmentKey', 'DimDepartment.DepartmentKey', 'many', 'one', 'onedirection', True), ('FactEmployee.EducationKey', 'DimEducation.EducationKey', 'many', 'one', 'onedirection', True), ('FactEmployee.EmployeeID', 'DimEmployee.EmployeeID', 'many', 'one', 'onedirection', True), ('FactEmployee.IncomeBandKey', 'DimIncomeBand.IncomeBandKey', 'many', 'one', 'onedirection', True), ('FactEmployee.JobRoleKey', 'DimJobRole.JobRoleKey', 'many', 'one', 'onedirection', True), ('FactEmployee.JobSatisfactionKey', 'DimJobSatisfaction.JobSatisfactionKey', 'many', 'one', 'onedirection', True), ('FactEmployee.TenureBandKey', 'DimTenureBand.TenureBandKey', 'many', 'one', 'onedirection', True), ('FactEmployee.TrainingBandKey', 'DimTrainingBand.TrainingBandKey', 'many', 'one', 'onedirection', True)]
+[PASS] D. Refresh + data: Model opened from the saved data cache (no refresh needed) - data checked below - no refresh in this run
+[PASS] D. Refresh + data: All 22 DAX test queries ran without error - []
+[PASS] D. Refresh + data: Row count of every table == expected (FactEmployee 1,470 ... _Measures 0) - {}
+[PASS] D. Refresh + data: QA_Checks inside Power BI: 35 checks, all PASS - []
+[PASS] D. Refresh + data: Control totals (headcount, leavers, trainings, income, tenure) == Step 2/3 - {'Headcount': 1470, 'Leavers': 237, 'Trainings': 4115, 'Income': 9559309, 'Tenure': 10302}
+[PASS] E. Relationships: No fact row without a matching dimension row (all 9 relationships) - {'DimDepartment': None, 'DimJobRole': None, 'DimEducation': None, 'DimJobSatisfaction': None, 'DimAgeBand': None, 'DimTenureBand': None, 'DimIncomeBand': None, 'DimTrainingBand': None, 'DimEmployee': None}
+[PASS] E. Relationships: Filter flows dimension -> fact (Sales filter gives 446 fact rows) - {'DeptRowsWhenFactFiltered': 3, 'EmployeeRowsWhenFactFiltered': 1470, 'FactRowsWhenDeptFiltered': 446}
+[PASS] E. Relationships: Filter does NOT flow fact -> dimension (single direction; DimDepartment stays 3 rows) - {'DeptRowsWhenFactFiltered': 3, 'EmployeeRowsWhenFactFiltered': 1470, 'FactRowsWhenDeptFiltered': 446}
+[PASS] E. Relationships: Filter does NOT flow fact -> DimEmployee (stays 1,470 rows) - {'DeptRowsWhenFactFiltered': 3, 'EmployeeRowsWhenFactFiltered': 1470, 'FactRowsWhenDeptFiltered': 446}
+[PASS] F. Filter results: By DimDepartment[Department]: headcount, leavers, trainings == pandas (3 members, no blank member)
+[PASS] F. Filter results: By DimJobRole[JobRole]: headcount, leavers, trainings == pandas (9 members, no blank member)
+[PASS] F. Filter results: By DimEducation[EducationLevel]: headcount, leavers, trainings == pandas (5 members, no blank member)
+[PASS] F. Filter results: By DimJobSatisfaction[JobSatisfaction]: headcount, leavers, trainings == pandas (4 members, no blank member)
+[PASS] F. Filter results: By DimAgeBand[AgeBand]: headcount, leavers, trainings == pandas (5 members, no blank member)
+[PASS] F. Filter results: By DimTenureBand[TenureBand]: headcount, leavers, trainings == pandas (4 members, no blank member)
+[PASS] F. Filter results: By DimIncomeBand[IncomeBand]: headcount, leavers, trainings == pandas (5 members, no blank member)
+[PASS] F. Filter results: By DimTrainingBand[TrainingBand]: headcount, leavers, trainings == pandas (4 members, no blank member)
+[PASS] F. Filter results: By DimEmployee[EmployeeStatus]: headcount, leavers, trainings == pandas (2 members, no blank member)
+[PASS] F. Filter results: By DimEmployee[OverTime]: headcount, leavers == pandas
+[PASS] F. Filter results: By DimEmployee[BusinessTravel]: headcount, leavers == pandas
+[PASS] F. Filter results: By DimEmployee[WorkLifeBalance]: headcount, leavers == pandas
+[PASS] F. Filter results: By DimEmployee[EnvironmentSatisfaction]: headcount, leavers == pandas
+[PASS] F. Filter results: By DimEmployee[PerformanceRating]: headcount, leavers == pandas
+[PASS] F. Filter results: By DimEmployee[Gender]: headcount, leavers == pandas
+[PASS] F. Filter results: By DimEmployee[MaritalStatus]: headcount, leavers == pandas
+[PASS] F. Filter results: Two dimensions at once (Department x TenureBand, 12 cells) == pandas
+[PASS] F. Filter results: Step 2 headline still holds through the model: Sales attrition 20.6%

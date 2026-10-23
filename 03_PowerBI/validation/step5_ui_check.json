@@ -1,0 +1,12 @@
+﻿{
+    "windows":  [
+                    "Talent_Learning_Dashboard"
+                ],
+    "dialogs":  [
+                    "Run DAX queries on your model"
+                ],
+    "suspicious":  [
+                       "Problems 0"
+                   ],
+    "measures_table_visible":  true
+}

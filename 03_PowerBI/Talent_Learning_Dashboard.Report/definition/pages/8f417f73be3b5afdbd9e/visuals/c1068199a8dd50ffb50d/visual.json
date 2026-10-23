@@ -1,0 +1,60 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "c1068199a8dd50ffb50d",
+  "position": {
+    "x": 16,
+    "y": 184,
+    "z": 7000,
+    "height": 236,
+    "width": 618,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "1. Reduce sustained overtime",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1F3864",
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Attrition 30.5% with overtime vs 10.4% without; holds after controlling for role, tenure and pay.",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#262626"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Action: monthly overtime reviews, rebalance workload. Start with Sales Reps, Lab Technicians, HR, Research Scientists.",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#262626"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

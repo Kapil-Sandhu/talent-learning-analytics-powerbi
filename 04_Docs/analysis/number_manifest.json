@@ -1,0 +1,867 @@
+[
+ {
+  "text": "1,470",
+  "path": "company.headcount",
+  "value": 1470
+ },
+ {
+  "text": "16.1%",
+  "path": "company.attrition_rate",
+  "value": 0.16122448979591836
+ },
+ {
+  "text": "237",
+  "path": "company.leavers",
+  "value": 237
+ },
+ {
+  "text": "1,470",
+  "path": "company.headcount",
+  "value": 1470
+ },
+ {
+  "text": "30.5%",
+  "path": "overtime_rates.ot",
+  "value": 0.30528846153846156
+ },
+ {
+  "text": "10.4%",
+  "path": "overtime_rates.no_ot",
+  "value": 0.10436432637571158
+ },
+ {
+  "text": "2.9x",
+  "path": "overtime_rates.ratio",
+  "value": 2.9252185314685315
+ },
+ {
+  "text": "5.0",
+  "path": "logit.terms.Overtime.odds_ratio",
+  "value": 4.985860049696523
+ },
+ {
+  "text": "34.9%",
+  "path": "drivers.early_tenure.rate",
+  "value": 0.3488372093023256
+ },
+ {
+  "text": "55.1%",
+  "path": "segment_ot_early.rate",
+  "value": 0.5507246376811594
+ },
+ {
+  "text": "39.8%",
+  "path": "drivers.sales_rep.rate",
+  "value": 0.39759036144578314
+ },
+ {
+  "text": "+23.6 pts",
+  "path": "drivers.sales_rep.vs_company_pts",
+  "value": 23.636587164986476
+ },
+ {
+  "text": "22.8%",
+  "path": "drivers.low_job_sat.rate",
+  "value": 0.22837370242214533
+ },
+ {
+  "text": "31.3%",
+  "path": "drivers.bad_wlb.rate",
+  "value": 0.3125
+ },
+ {
+  "text": "416",
+  "path": "drivers.overtime.n",
+  "value": 416
+ },
+ {
+  "text": "30.5%",
+  "path": "drivers.overtime.rate",
+  "value": 0.30528846153846156
+ },
+ {
+  "text": "26.3",
+  "path": "drivers.overtime.ci_low",
+  "value": 0.26298229774087895
+ },
+ {
+  "text": "35.1",
+  "path": "drivers.overtime.ci_high",
+  "value": 0.35115776257697756
+ },
+ {
+  "text": "+20.1 pts",
+  "path": "drivers.overtime.diff_pts",
+  "value": 20.092413516275
+ },
+ {
+  "text": "p < 0.001",
+  "path": "drivers.overtime.p_value",
+  "value": 3.861517910432879e-21
+ },
+ {
+  "text": "5.0",
+  "path": "logit.terms.Overtime.odds_ratio",
+  "value": 4.985860049696523
+ },
+ {
+  "text": "3.6",
+  "path": "logit.terms.Overtime.ci_low",
+  "value": 3.5660817571452252
+ },
+ {
+  "text": "7.0",
+  "path": "logit.terms.Overtime.ci_high",
+  "value": 6.97090031246512
+ },
+ {
+  "text": "215",
+  "path": "drivers.early_tenure.n",
+  "value": 215
+ },
+ {
+  "text": "34.9%",
+  "path": "drivers.early_tenure.rate",
+  "value": 0.3488372093023256
+ },
+ {
+  "text": "28.8",
+  "path": "drivers.early_tenure.ci_low",
+  "value": 0.2882898613288089
+ },
+ {
+  "text": "41.5",
+  "path": "drivers.early_tenure.ci_high",
+  "value": 0.41469146436570986
+ },
+ {
+  "text": "+22.0 pts",
+  "path": "drivers.early_tenure.diff_pts",
+  "value": 21.975354396368015
+ },
+ {
+  "text": "p < 0.001",
+  "path": "drivers.early_tenure.p_value",
+  "value": 5.671378859830558e-16
+ },
+ {
+  "text": "2.9",
+  "path": "logit.terms.Tenure 0-1 yrs.odds_ratio",
+  "value": 2.8563946761113246
+ },
+ {
+  "text": "1.9",
+  "path": "logit.terms.Tenure 0-1 yrs.ci_low",
+  "value": 1.940640274745518
+ },
+ {
+  "text": "4.2",
+  "path": "logit.terms.Tenure 0-1 yrs.ci_high",
+  "value": 4.204277656139561
+ },
+ {
+  "text": "83",
+  "path": "drivers.sales_rep.n",
+  "value": 83
+ },
+ {
+  "text": "39.8%",
+  "path": "drivers.sales_rep.rate",
+  "value": 0.39759036144578314
+ },
+ {
+  "text": "29.9",
+  "path": "drivers.sales_rep.ci_low",
+  "value": 0.29908931639422454
+ },
+ {
+  "text": "50.5",
+  "path": "drivers.sales_rep.ci_high",
+  "value": 0.5051516507774881
+ },
+ {
+  "text": "+25.1 pts",
+  "path": "drivers.sales_rep.diff_pts",
+  "value": 25.05103326065618
+ },
+ {
+  "text": "p < 0.001",
+  "path": "drivers.sales_rep.p_value",
+  "value": 1.6553656373127593e-09
+ },
+ {
+  "text": "2.7",
+  "path": "logit.terms.Sales Representative.odds_ratio",
+  "value": 2.6546927510358387
+ },
+ {
+  "text": "1.5",
+  "path": "logit.terms.Sales Representative.ci_low",
+  "value": 1.4984711817054435
+ },
+ {
+  "text": "4.7",
+  "path": "logit.terms.Sales Representative.ci_high",
+  "value": 4.703055813446764
+ },
+ {
+  "text": "80",
+  "path": "drivers.bad_wlb.n",
+  "value": 80
+ },
+ {
+  "text": "31.3%",
+  "path": "drivers.bad_wlb.rate",
+  "value": 0.3125
+ },
+ {
+  "text": "22.2",
+  "path": "drivers.bad_wlb.ci_low",
+  "value": 0.22150404050315162
+ },
+ {
+  "text": "42.1",
+  "path": "drivers.bad_wlb.ci_high",
+  "value": 0.4206777583313075
+ },
+ {
+  "text": "+16.0 pts",
+  "path": "drivers.bad_wlb.diff_pts",
+  "value": 15.998201438848922
+ },
+ {
+  "text": "p < 0.001",
+  "path": "drivers.bad_wlb.p_value",
+  "value": 0.00015446094555261953
+ },
+ {
+  "text": "3.0",
+  "path": "logit.terms.Bad work-life balance.odds_ratio",
+  "value": 2.965630260693104
+ },
+ {
+  "text": "1.6",
+  "path": "logit.terms.Bad work-life balance.ci_low",
+  "value": 1.649937019654595
+ },
+ {
+  "text": "5.3",
+  "path": "logit.terms.Bad work-life balance.ci_high",
+  "value": 5.330483975067015
+ },
+ {
+  "text": "289",
+  "path": "drivers.low_job_sat.n",
+  "value": 289
+ },
+ {
+  "text": "22.8%",
+  "path": "drivers.low_job_sat.rate",
+  "value": 0.22837370242214533
+ },
+ {
+  "text": "18.4",
+  "path": "drivers.low_job_sat.ci_low",
+  "value": 0.18372568525365046
+ },
+ {
+  "text": "28.0",
+  "path": "drivers.low_job_sat.ci_high",
+  "value": 0.2801480415070117
+ },
+ {
+  "text": "+8.4 pts",
+  "path": "drivers.low_job_sat.diff_pts",
+  "value": 8.35811537345924
+ },
+ {
+  "text": "p < 0.001",
+  "path": "drivers.low_job_sat.p_value",
+  "value": 0.0005336710037877488
+ },
+ {
+  "text": "2.2",
+  "path": "logit.terms.Low job satisfaction.odds_ratio",
+  "value": 2.1637781888960217
+ },
+ {
+  "text": "1.5",
+  "path": "logit.terms.Low job satisfaction.ci_low",
+  "value": 1.4855273670995293
+ },
+ {
+  "text": "3.2",
+  "path": "logit.terms.Low job satisfaction.ci_high",
+  "value": 3.151699628316886
+ },
+ {
+  "text": "543",
+  "path": "drivers.job_level_1.n",
+  "value": 543
+ },
+ {
+  "text": "26.3%",
+  "path": "drivers.job_level_1.rate",
+  "value": 0.26335174953959484
+ },
+ {
+  "text": "22.8",
+  "path": "drivers.job_level_1.ci_low",
+  "value": 0.22806066857875534
+ },
+ {
+  "text": "30.2",
+  "path": "drivers.job_level_1.ci_high",
+  "value": 0.3019676498194889
+ },
+ {
+  "text": "+16.2 pts",
+  "path": "drivers.job_level_1.diff_pts",
+  "value": 16.194937629256138
+ },
+ {
+  "text": "p < 0.001",
+  "path": "drivers.job_level_1.p_value",
+  "value": 3.6593964820548827e-16
+ },
+ {
+  "text": "2.5",
+  "path": "logit.terms.Job level 1.odds_ratio",
+  "value": 2.522220739760827
+ },
+ {
+  "text": "1.8",
+  "path": "logit.terms.Job level 1.ci_low",
+  "value": 1.7931635569130682
+ },
+ {
+  "text": "3.5",
+  "path": "logit.terms.Job level 1.ci_high",
+  "value": 3.547695041846125
+ },
+ {
+  "text": "631",
+  "path": "drivers.no_stock.n",
+  "value": 631
+ },
+ {
+  "text": "24.4%",
+  "path": "drivers.no_stock.rate",
+  "value": 0.24405705229793978
+ },
+ {
+  "text": "21.2",
+  "path": "drivers.no_stock.ci_low",
+  "value": 0.21215765846753673
+ },
+ {
+  "text": "27.9",
+  "path": "drivers.no_stock.ci_high",
+  "value": 0.27905389446225504
+ },
+ {
+  "text": "+14.5 pts",
+  "path": "drivers.no_stock.diff_pts",
+  "value": 14.512975789984681
+ },
+ {
+  "text": "p < 0.001",
+  "path": "drivers.no_stock.p_value",
+  "value": 6.911594232205307e-14
+ },
+ {
+  "text": "2.5",
+  "path": "logit.terms.No stock options.odds_ratio",
+  "value": 2.464224822292233
+ },
+ {
+  "text": "1.5",
+  "path": "logit.terms.No stock options.ci_low",
+  "value": 1.503639714013895
+ },
+ {
+  "text": "4.0",
+  "path": "logit.terms.No stock options.ci_high",
+  "value": 4.03847006580532
+ },
+ {
+  "text": "277",
+  "path": "drivers.travel_freq.n",
+  "value": 277
+ },
+ {
+  "text": "24.9%",
+  "path": "drivers.travel_freq.rate",
+  "value": 0.2490974729241877
+ },
+ {
+  "text": "20.2",
+  "path": "drivers.travel_freq.ci_low",
+  "value": 0.20183136248196537
+ },
+ {
+  "text": "30.3",
+  "path": "drivers.travel_freq.ci_high",
+  "value": 0.30322746838405884
+ },
+ {
+  "text": "+10.8 pts",
+  "path": "drivers.travel_freq.diff_pts",
+  "value": 10.827601441622459
+ },
+ {
+  "text": "p < 0.001",
+  "path": "drivers.travel_freq.p_value",
+  "value": 1.0117807979601009e-05
+ },
+ {
+  "text": "2.2",
+  "path": "logit.terms.Travels frequently.odds_ratio",
+  "value": 2.2334381578101574
+ },
+ {
+  "text": "1.5",
+  "path": "logit.terms.Travels frequently.ci_low",
+  "value": 1.5341536315492694
+ },
+ {
+  "text": "3.3",
+  "path": "logit.terms.Travels frequently.ci_high",
+  "value": 3.2514644571319984
+ },
+ {
+  "text": "54",
+  "path": "drivers.no_training.n",
+  "value": 54
+ },
+ {
+  "text": "27.8%",
+  "path": "drivers.no_training.rate",
+  "value": 0.2777777777777778
+ },
+ {
+  "text": "17.6",
+  "path": "drivers.no_training.ci_low",
+  "value": 0.17616827587686873
+ },
+ {
+  "text": "40.9",
+  "path": "drivers.no_training.ci_high",
+  "value": 0.4089044303760367
+ },
+ {
+  "text": "+12.1 pts",
+  "path": "drivers.no_training.diff_pts",
+  "value": 12.099811676082863
+ },
+ {
+  "text": "p = 0.018",
+  "path": "drivers.no_training.p_value",
+  "value": 0.017641044390050604
+ },
+ {
+  "text": "2.6",
+  "path": "logit.terms.No training last year.odds_ratio",
+  "value": 2.555484122782927
+ },
+ {
+  "text": "1.2",
+  "path": "logit.terms.No training last year.ci_low",
+  "value": 1.2461293969154537
+ },
+ {
+  "text": "5.2",
+  "path": "logit.terms.No training last year.ci_high",
+  "value": 5.240626790412441
+ },
+ {
+  "text": "0.82",
+  "path": "logit.auc",
+  "value": 0.8194192066963017
+ },
+ {
+  "text": "8",
+  "path": "overtime_holds_count",
+  "value": 8
+ },
+ {
+  "text": "9",
+  "path": "roles_count",
+  "value": 9
+ },
+ {
+  "text": "37",
+  "path": "overtime_by_role.Healthcare Representative.n_ot",
+  "value": 37
+ },
+ {
+  "text": "4.3",
+  "path": "overtime_mh_or_by_role.or",
+  "value": 4.295757281381226
+ },
+ {
+  "text": "3.2",
+  "path": "overtime_mh_or_by_role.ci_low",
+  "value": 3.170844550779802
+ },
+ {
+  "text": "5.8",
+  "path": "overtime_mh_or_by_role.ci_high",
+  "value": 5.819752537538166
+ },
+ {
+  "text": "66.7%",
+  "path": "overtime_by_role.Sales Representative.rate_ot",
+  "value": 0.6666666666666666
+ },
+ {
+  "text": "28.8%",
+  "path": "overtime_by_role.Sales Representative.rate_no_ot",
+  "value": 0.288135593220339
+ },
+ {
+  "text": "50.0%",
+  "path": "overtime_by_role.Laboratory Technician.rate_ot",
+  "value": 0.5
+ },
+ {
+  "text": "15.7%",
+  "path": "overtime_by_role.Laboratory Technician.rate_no_ot",
+  "value": 0.15736040609137056
+ },
+ {
+  "text": "38.5%",
+  "path": "overtime_by_role.Human Resources.rate_ot",
+  "value": 0.38461538461538464
+ },
+ {
+  "text": "17.9%",
+  "path": "overtime_by_role.Human Resources.rate_no_ot",
+  "value": 0.1794871794871795
+ },
+ {
+  "text": "34.0%",
+  "path": "overtime_by_role.Research Scientist.rate_ot",
+  "value": 0.3402061855670103
+ },
+ {
+  "text": "7.2%",
+  "path": "overtime_by_role.Research Scientist.rate_no_ot",
+  "value": 0.07179487179487179
+ },
+ {
+  "text": "33.0%",
+  "path": "overtime_by_role.Sales Executive.rate_ot",
+  "value": 0.32978723404255317
+ },
+ {
+  "text": "11.2%",
+  "path": "overtime_by_role.Sales Executive.rate_no_ot",
+  "value": 0.11206896551724138
+ },
+ {
+  "text": "2,626",
+  "path": "sales_rep_profile.avg_income",
+  "value": 2626.0
+ },
+ {
+  "text": "6,503",
+  "path": "sales_rep_profile.company_avg_income",
+  "value": 6502.931292517007
+ },
+ {
+  "text": "91.6%",
+  "path": "sales_rep_profile.share_job_level_1",
+  "value": 0.9156626506024096
+ },
+ {
+  "text": "36.9%",
+  "path": "sales_rep_profile.company_share_job_level_1",
+  "value": 0.3693877551020408
+ },
+ {
+  "text": "53.0%",
+  "path": "sales_rep_profile.share_no_stock",
+  "value": 0.5301204819277109
+ },
+ {
+  "text": "42.9%",
+  "path": "sales_rep_profile.company_share_no_stock",
+  "value": 0.42925170068027213
+ },
+ {
+  "text": "2.9",
+  "path": "sales_rep_profile.avg_tenure",
+  "value": 2.9156626506024095
+ },
+ {
+  "text": "7.0",
+  "path": "sales_rep_profile.company_avg_tenure",
+  "value": 7.0081632653061225
+ },
+ {
+  "text": "66.7%",
+  "path": "segment_ot_salesrep.rate",
+  "value": 0.6666666666666666
+ },
+ {
+  "text": "16",
+  "path": "segment_ot_salesrep.leavers",
+  "value": 16
+ },
+ {
+  "text": "24",
+  "path": "segment_ot_salesrep.n",
+  "value": 24
+ },
+ {
+  "text": "16.4%",
+  "path": "drivers.outstanding_perf.rate",
+  "value": 0.16371681415929204
+ },
+ {
+  "text": "16.1%",
+  "path": "drivers.outstanding_perf.rest_rate",
+  "value": 0.1607717041800643
+ },
+ {
+  "text": "p = 0.912",
+  "path": "drivers.outstanding_perf.p_value",
+  "value": 0.9118095098007253
+ },
+ {
+  "text": "25.5%",
+  "path": "drivers.single.rate",
+  "value": 0.2553191489361702
+ },
+ {
+  "text": "1.25",
+  "path": "logit.terms.Single.odds_ratio",
+  "value": 1.2455958783432115
+ },
+ {
+  "text": "p = 0.381",
+  "path": "logit.terms.Single.p_value",
+  "value": 0.3809936687619587
+ },
+ {
+  "text": "27.8%",
+  "path": "drivers.no_training.rate",
+  "value": 0.2777777777777778
+ },
+ {
+  "text": "54",
+  "path": "drivers.no_training.n",
+  "value": 54
+ },
+ {
+  "text": "17.6",
+  "path": "drivers.no_training.ci_low",
+  "value": 0.17616827587686873
+ },
+ {
+  "text": "40.9",
+  "path": "drivers.no_training.ci_high",
+  "value": 0.4089044303760367
+ },
+ {
+  "text": "2.9x",
+  "path": "overtime_rates.ratio",
+  "value": 2.9252185314685315
+ },
+ {
+  "text": "5.0",
+  "path": "logit.terms.Overtime.odds_ratio",
+  "value": 4.985860049696523
+ },
+ {
+  "text": "28.3%",
+  "path": "overtime_rates.share_ot",
+  "value": 0.2829931972789116
+ },
+ {
+  "text": "85",
+  "path": "what_if.overtime_role_adjusted",
+  "value": 84.77010683831298
+ },
+ {
+  "text": "237",
+  "path": "company.leavers",
+  "value": 237
+ },
+ {
+  "text": "34.9%",
+  "path": "drivers.early_tenure.rate",
+  "value": 0.3488372093023256
+ },
+ {
+  "text": "55.1%",
+  "path": "segment_ot_early.rate",
+  "value": 0.5507246376811594
+ },
+ {
+  "text": "2.93",
+  "path": "training.by_tenure_band.0-1 yrs",
+  "value": 2.9348837209302325
+ },
+ {
+  "text": "2.76",
+  "path": "training.by_tenure_band.2-5 yrs",
+  "value": 2.7557932263814617
+ },
+ {
+  "text": "15.5%",
+  "path": "what_if.rate_2_5_yrs",
+  "value": 0.15508021390374332
+ },
+ {
+  "text": "42",
+  "path": "what_if.early_tenure",
+  "value": 41.657754010695186
+ },
+ {
+  "text": "39.8%",
+  "path": "drivers.sales_rep.rate",
+  "value": 0.39759036144578314
+ },
+ {
+  "text": "+23.6 pts",
+  "path": "drivers.sales_rep.vs_company_pts",
+  "value": 23.636587164986476
+ },
+ {
+  "text": "91.6%",
+  "path": "sales_rep_profile.share_job_level_1",
+  "value": 0.9156626506024096
+ },
+ {
+  "text": "2,626",
+  "path": "sales_rep_profile.avg_income",
+  "value": 2626.0
+ },
+ {
+  "text": "6,503",
+  "path": "sales_rep_profile.company_avg_income",
+  "value": 6502.931292517007
+ },
+ {
+  "text": "10",
+  "path": "what_if.sales_rep_halved_gap",
+  "value": 9.809183673469388
+ },
+ {
+  "text": "83",
+  "path": "drivers.sales_rep.n",
+  "value": 83
+ },
+ {
+  "text": "22.8%",
+  "path": "drivers.low_job_sat.rate",
+  "value": 0.22837370242214533
+ },
+ {
+  "text": "14.5%",
+  "path": "drivers.low_job_sat.rest_rate",
+  "value": 0.14479254868755292
+ },
+ {
+  "text": "31.3%",
+  "path": "drivers.bad_wlb.rate",
+  "value": 0.3125
+ },
+ {
+  "text": "2.8",
+  "path": "logit.terms.Low environment satisfaction.odds_ratio",
+  "value": 2.837601503315069
+ },
+ {
+  "text": "11",
+  "path": "logit_terms",
+  "value": 11
+ },
+ {
+  "text": "0.82",
+  "path": "logit.auc",
+  "value": 0.8194192066963017
+ },
+ {
+  "text": "0.24",
+  "path": "logit.pseudo_r2",
+  "value": 0.24241248347230293
+ },
+ {
+  "text": "2.7",
+  "path": "logit.max_vif",
+  "value": 2.6866965476215032
+ },
+ {
+  "text": "54",
+  "path": "drivers.no_training.n",
+  "value": 54
+ },
+ {
+  "text": "83",
+  "path": "drivers.sales_rep.n",
+  "value": 83
+ },
+ {
+  "text": "63",
+  "path": "overtime_by_department.Human Resources.n",
+  "value": 63
+ },
+ {
+  "text": "30.5%",
+  "path": "overtime_rates.ot",
+  "value": 0.30528846153846156
+ },
+ {
+  "text": "10.4%",
+  "path": "overtime_rates.no_ot",
+  "value": 0.10436432637571158
+ },
+ {
+  "text": "34.9%",
+  "path": "drivers.early_tenure.rate",
+  "value": 0.3488372093023256
+ },
+ {
+  "text": "55.1%",
+  "path": "segment_ot_early.rate",
+  "value": 0.5507246376811594
+ },
+ {
+  "text": "39.8%",
+  "path": "drivers.sales_rep.rate",
+  "value": 0.39759036144578314
+ },
+ {
+  "text": "+23.6 pts",
+  "path": "drivers.sales_rep.vs_company_pts",
+  "value": 23.636587164986476
+ },
+ {
+  "text": "91.6%",
+  "path": "sales_rep_profile.share_job_level_1",
+  "value": 0.9156626506024096
+ },
+ {
+  "text": "2,626",
+  "path": "sales_rep_profile.avg_income",
+  "value": 2626.0
+ },
+ {
+  "text": "6,503",
+  "path": "sales_rep_profile.company_avg_income",
+  "value": 6502.931292517007
+ },
+ {
+  "text": "22.8%",
+  "path": "drivers.low_job_sat.rate",
+  "value": 0.22837370242214533
+ },
+ {
+  "text": "31.3%",
+  "path": "drivers.bad_wlb.rate",
+  "value": 0.3125
+ }
+]

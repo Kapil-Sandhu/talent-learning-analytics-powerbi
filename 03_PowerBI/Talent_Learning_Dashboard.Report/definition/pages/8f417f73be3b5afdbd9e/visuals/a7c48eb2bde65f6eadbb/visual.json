@@ -1,0 +1,60 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "a7c48eb2bde65f6eadbb",
+  "position": {
+    "x": 646,
+    "y": 432,
+    "z": 10000,
+    "height": 236,
+    "width": 618,
+    "tabOrder": 10000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "4. Act on engagement signals",
+                    "textStyle": {
+                      "fontSize": "13pt",
+                      "color": "#1F3864",
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Low job satisfaction: 22.8% attrition; bad work-life balance: 31.3%.",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#262626"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Action: quarterly pulse survey, manager follow-up within 30 days, flexible work options.",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#262626"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

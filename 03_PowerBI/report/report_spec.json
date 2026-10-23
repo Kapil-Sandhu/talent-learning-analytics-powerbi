@@ -1,0 +1,1153 @@
+{
+  "pages": [
+    {
+      "id": "752e97a8ae9256f78cc6",
+      "name": "Overview",
+      "visuals": [
+        {
+          "key": "title",
+          "name": "22f81f402513537b9711",
+          "type": "textbox",
+          "x": 16,
+          "y": 6,
+          "w": 900,
+          "h": 68,
+          "text": [
+            "Talent & Learning Analytics - Overview",
+            "1,470 employees (IBM HR sample data, fictional) - point-in-time snapshot. Use the slicers to filter; right-click a job role to drill through."
+          ]
+        },
+        {
+          "key": "slicer_dept",
+          "name": "dd9cfd88f7765b13ae7d",
+          "type": "slicer",
+          "x": 948,
+          "y": 12,
+          "w": 150,
+          "h": 56,
+          "columns": [
+            "DimDepartment.Department"
+          ]
+        },
+        {
+          "key": "slicer_role",
+          "name": "3ccee10447275d0080db",
+          "type": "slicer",
+          "x": 1110,
+          "y": 12,
+          "w": 154,
+          "h": 56,
+          "columns": [
+            "DimJobRole.JobRole"
+          ]
+        },
+        {
+          "key": "card_Headcount",
+          "name": "5d6932ff3cf0586cb8b2",
+          "type": "card",
+          "x": 16.0,
+          "y": 80,
+          "w": 198.0,
+          "h": 92,
+          "measures": [
+            "Headcount"
+          ]
+        },
+        {
+          "key": "card_Leavers",
+          "name": "5417a0572edf5883b299",
+          "type": "card",
+          "x": 226.0,
+          "y": 80,
+          "w": 198.0,
+          "h": 92,
+          "measures": [
+            "Leavers"
+          ]
+        },
+        {
+          "key": "card_Attrition Rate",
+          "name": "af1e7392b187584f8593",
+          "type": "card",
+          "x": 436.0,
+          "y": 80,
+          "w": 198.0,
+          "h": 92,
+          "measures": [
+            "Attrition Rate"
+          ]
+        },
+        {
+          "key": "card_Avg Tenure (Years)",
+          "name": "f74b6083dba1534eb8de",
+          "type": "card",
+          "x": 646.0,
+          "y": 80,
+          "w": 198.0,
+          "h": 92,
+          "measures": [
+            "Avg Tenure (Years)"
+          ]
+        },
+        {
+          "key": "card_Training per Employee",
+          "name": "5bbb1ebd34b25afb980a",
+          "type": "card",
+          "x": 856.0,
+          "y": 80,
+          "w": 198.0,
+          "h": 92,
+          "measures": [
+            "Training per Employee"
+          ]
+        },
+        {
+          "key": "card_Overtime %",
+          "name": "4e92c20ce78a56a5a8d6",
+          "type": "card",
+          "x": 1066.0,
+          "y": 80,
+          "w": 198.0,
+          "h": 92,
+          "measures": [
+            "Overtime %"
+          ]
+        },
+        {
+          "key": "role",
+          "name": "e496a98419ec524e8435",
+          "type": "clusteredBarChart",
+          "x": 16.0,
+          "y": 184,
+          "w": 408.0,
+          "h": 524,
+          "columns": [
+            "DimJobRole.JobRole"
+          ],
+          "measures": [
+            "Attrition Rate"
+          ],
+          "title": "Attrition rate by job role",
+          "sort": "measure"
+        },
+        {
+          "key": "dept",
+          "name": "6e9a9f5e3e465a9aa2fe",
+          "type": "clusteredBarChart",
+          "x": 436.0,
+          "y": 184,
+          "w": 408.0,
+          "h": 256,
+          "columns": [
+            "DimDepartment.Department"
+          ],
+          "measures": [
+            "Attrition Rate"
+          ],
+          "title": "Attrition rate by department",
+          "sort": "measure"
+        },
+        {
+          "key": "overtime",
+          "name": "7ffd759b8e165ca69af8",
+          "type": "columnChart",
+          "x": 436.0,
+          "y": 452,
+          "w": 408.0,
+          "h": 256,
+          "columns": [
+            "DimEmployee.OverTime"
+          ],
+          "measures": [
+            "Attrition Rate"
+          ],
+          "title": "Attrition rate: overtime vs no overtime",
+          "sort": "category"
+        },
+        {
+          "key": "tenure",
+          "name": "305363f8f01553ff8be3",
+          "type": "columnChart",
+          "x": 856.0,
+          "y": 184,
+          "w": 408.0,
+          "h": 256,
+          "columns": [
+            "DimTenureBand.TenureBand"
+          ],
+          "measures": [
+            "Attrition Rate"
+          ],
+          "title": "Attrition rate by tenure (years at company)",
+          "sort": "category"
+        },
+        {
+          "key": "trainingband",
+          "name": "d73a50259a8d5e28975c",
+          "type": "columnChart",
+          "x": 856.0,
+          "y": 452,
+          "w": 408.0,
+          "h": 256,
+          "columns": [
+            "DimTrainingBand.TrainingBand"
+          ],
+          "measures": [
+            "Attrition Rate"
+          ],
+          "title": "Attrition rate by trainings last year",
+          "sort": "category"
+        }
+      ]
+    },
+    {
+      "id": "8f417f73be3b5afdbd9e",
+      "name": "Insights & Actions",
+      "visuals": [
+        {
+          "key": "title",
+          "name": "1df95ffee8f75579a5e6",
+          "type": "textbox",
+          "x": 16,
+          "y": 6,
+          "w": 900,
+          "h": 68,
+          "text": [
+            "Insights & Actions",
+            "Four evidence-based actions for HR and L&D. Cards are live; details in 04_Docs/Insights_and_Recommendations.md."
+          ]
+        },
+        {
+          "key": "card_Overtime Attrition Ratio",
+          "name": "a5e053cf0c675fac8357",
+          "type": "card",
+          "x": 16.0,
+          "y": 80,
+          "w": 303.0,
+          "h": 92,
+          "measures": [
+            "Overtime Attrition Ratio"
+          ]
+        },
+        {
+          "key": "card_Early Tenure Attrition Rate (0-1 yrs)",
+          "name": "5077315b8abd5be08c12",
+          "type": "card",
+          "x": 331.0,
+          "y": 80,
+          "w": 303.0,
+          "h": 92,
+          "measures": [
+            "Early Tenure Attrition Rate (0-1 yrs)"
+          ]
+        },
+        {
+          "key": "card_Attrition Rate - Low Job Satisfaction",
+          "name": "5b75477975185c39b69e",
+          "type": "card",
+          "x": 646.0,
+          "y": 80,
+          "w": 303.0,
+          "h": 92,
+          "measures": [
+            "Attrition Rate - Low Job Satisfaction"
+          ]
+        },
+        {
+          "key": "card_Company Attrition Rate",
+          "name": "f6cedf8db9e3595d88f0",
+          "type": "card",
+          "x": 961.0,
+          "y": 80,
+          "w": 303.0,
+          "h": 92,
+          "measures": [
+            "Company Attrition Rate"
+          ]
+        },
+        {
+          "key": "panel1",
+          "name": "c1068199a8dd50ffb50d",
+          "type": "textbox",
+          "x": 16.0,
+          "y": 184,
+          "w": 618.0,
+          "h": 236,
+          "text": [
+            "1. Reduce sustained overtime",
+            "Attrition 30.5% with overtime vs 10.4% without; holds after controlling for role, tenure and pay.",
+            "Action: monthly overtime reviews, rebalance workload. Start with Sales Reps, Lab Technicians, HR, Research Scientists."
+          ],
+          "title": "1. Reduce sustained overtime"
+        },
+        {
+          "key": "panel2",
+          "name": "6ebec9b5ec21531f948f",
+          "type": "textbox",
+          "x": 646.0,
+          "y": 184,
+          "w": 618.0,
+          "h": 236,
+          "text": [
+            "2. Make the first year stick",
+            "34.9% of 0-1 year employees left (55.1% with overtime). New joiners get no extra training.",
+            "Action: 90-day onboarding, mentor per new hire, front-loaded learning path, no routine overtime in year 1."
+          ],
+          "title": "2. Make the first year stick"
+        },
+        {
+          "key": "panel3",
+          "name": "01d5bac2f0b05eb5b624",
+          "type": "textbox",
+          "x": 16.0,
+          "y": 432,
+          "w": 618.0,
+          "h": 236,
+          "text": [
+            "3. Retention plan for Sales Representatives",
+            "39.8% attrition (+23.6 pts); 91.6% are level 1, avg income 2,626 vs 6,503.",
+            "Action: pay and incentive benchmark, career path to Sales Executive, coaching."
+          ],
+          "title": "3. Retention plan for Sales Representatives"
+        },
+        {
+          "key": "panel4",
+          "name": "a7c48eb2bde65f6eadbb",
+          "type": "textbox",
+          "x": 646.0,
+          "y": 432,
+          "w": 618.0,
+          "h": 236,
+          "text": [
+            "4. Act on engagement signals",
+            "Low job satisfaction: 22.8% attrition; bad work-life balance: 31.3%.",
+            "Action: quarterly pulse survey, manager follow-up within 30 days, flexible work options."
+          ],
+          "title": "4. Act on engagement signals"
+        },
+        {
+          "key": "footnote",
+          "name": "92a6e97bf9d35131ad08",
+          "type": "textbox",
+          "x": 16,
+          "y": 680,
+          "w": 1248,
+          "h": 34,
+          "text": [
+            "Associations in a fictional snapshot (IBM sample), not proven causes - test actions with a pilot first. Also improve learning data: course type, hours, completion, dates. Full analysis: 04_Docs/Insights_and_Recommendations.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "da25989d55475e8f9bae",
+      "name": "Attrition Drivers",
+      "visuals": [
+        {
+          "key": "title",
+          "name": "0a13a03663bd54d8a5cc",
+          "type": "textbox",
+          "x": 16,
+          "y": 6,
+          "w": 900,
+          "h": 68,
+          "text": [
+            "Attrition Drivers",
+            "Which groups leave most? Compare each bar with the company rate of 16.1%."
+          ]
+        },
+        {
+          "key": "slicer_dept",
+          "name": "b9d817969def5cdbaab5",
+          "type": "slicer",
+          "x": 948,
+          "y": 12,
+          "w": 150,
+          "h": 56,
+          "columns": [
+            "DimDepartment.Department"
+          ]
+        },
+        {
+          "key": "slicer_role",
+          "name": "b483e5b1af1159e3aaad",
+          "type": "slicer",
+          "x": 1110,
+          "y": 12,
+          "w": 154,
+          "h": 56,
+          "columns": [
+            "DimJobRole.JobRole"
+          ]
+        },
+        {
+          "key": "card_Attrition Rate - Overtime",
+          "name": "a4df49b150a95b849eca",
+          "type": "card",
+          "x": 16.0,
+          "y": 80,
+          "w": 240.0,
+          "h": 92,
+          "measures": [
+            "Attrition Rate - Overtime"
+          ]
+        },
+        {
+          "key": "card_Attrition Rate - No Overtime",
+          "name": "ac7592e1ec1d5d4f8519",
+          "type": "card",
+          "x": 268.0,
+          "y": 80,
+          "w": 240.0,
+          "h": 92,
+          "measures": [
+            "Attrition Rate - No Overtime"
+          ]
+        },
+        {
+          "key": "card_Overtime Attrition Ratio",
+          "name": "6b7101b0dd685e33b674",
+          "type": "card",
+          "x": 520.0,
+          "y": 80,
+          "w": 240.0,
+          "h": 92,
+          "measures": [
+            "Overtime Attrition Ratio"
+          ]
+        },
+        {
+          "key": "card_Early Tenure Attrition Rate (0-1 yrs)",
+          "name": "a444c0c3e50351279d95",
+          "type": "card",
+          "x": 772.0,
+          "y": 80,
+          "w": 240.0,
+          "h": 92,
+          "measures": [
+            "Early Tenure Attrition Rate (0-1 yrs)"
+          ]
+        },
+        {
+          "key": "card_Attrition Rate - Low Job Satisfaction",
+          "name": "a81f22ccb8c75653b8fb",
+          "type": "card",
+          "x": 1024.0,
+          "y": 80,
+          "w": 240.0,
+          "h": 92,
+          "measures": [
+            "Attrition Rate - Low Job Satisfaction"
+          ]
+        },
+        {
+          "key": "age",
+          "name": "23190a676df55ee9b40d",
+          "type": "columnChart",
+          "x": 16.0,
+          "y": 184,
+          "w": 408.0,
+          "h": 256,
+          "columns": [
+            "DimAgeBand.AgeBand"
+          ],
+          "measures": [
+            "Attrition Rate"
+          ],
+          "title": "Attrition rate by age band",
+          "sort": "category"
+        },
+        {
+          "key": "joblevel",
+          "name": "ea875216b4a3553680c0",
+          "type": "columnChart",
+          "x": 436.0,
+          "y": 184,
+          "w": 408.0,
+          "h": 256,
+          "columns": [
+            "DimEmployee.JobLevel"
+          ],
+          "measures": [
+            "Attrition Rate"
+          ],
+          "title": "Attrition rate by job level (1 = junior)",
+          "sort": "category"
+        },
+        {
+          "key": "stock",
+          "name": "4a5f9d6ae0ca525baf5b",
+          "type": "columnChart",
+          "x": 856.0,
+          "y": 184,
+          "w": 408.0,
+          "h": 256,
+          "columns": [
+            "DimEmployee.StockOptionLevel"
+          ],
+          "measures": [
+            "Attrition Rate"
+          ],
+          "title": "Attrition rate by stock option level",
+          "sort": "category"
+        },
+        {
+          "key": "marital",
+          "name": "8e64bf6cac7952a39158",
+          "type": "clusteredBarChart",
+          "x": 16.0,
+          "y": 452,
+          "w": 408.0,
+          "h": 256,
+          "columns": [
+            "DimEmployee.MaritalStatus"
+          ],
+          "measures": [
+            "Attrition Rate"
+          ],
+          "title": "Attrition rate by marital status",
+          "sort": "measure"
+        },
+        {
+          "key": "travel",
+          "name": "917c83422ca85f539f5b",
+          "type": "columnChart",
+          "x": 436.0,
+          "y": 452,
+          "w": 408.0,
+          "h": 256,
+          "columns": [
+            "DimEmployee.BusinessTravel"
+          ],
+          "measures": [
+            "Attrition Rate"
+          ],
+          "title": "Attrition rate by business travel",
+          "sort": "category"
+        },
+        {
+          "key": "income",
+          "name": "1fe8d0937a1651d693e8",
+          "type": "clusteredBarChart",
+          "x": 856.0,
+          "y": 452,
+          "w": 408.0,
+          "h": 256,
+          "columns": [
+            "DimIncomeBand.IncomeBand"
+          ],
+          "measures": [
+            "Attrition Rate"
+          ],
+          "title": "Attrition rate by monthly income band",
+          "sort": "category"
+        }
+      ]
+    },
+    {
+      "id": "6a1baf51d8cb5512a99e",
+      "name": "Training & Learning",
+      "visuals": [
+        {
+          "key": "title",
+          "name": "401e7c8ed5ef5adfac6e",
+          "type": "textbox",
+          "x": 16,
+          "y": 6,
+          "w": 900,
+          "h": 68,
+          "text": [
+            "Training & Learning",
+            "Trainings attended last year (0-6). Note: only 54 employees had no training - treat that group as indicative."
+          ]
+        },
+        {
+          "key": "slicer_dept",
+          "name": "68ace2fb3305595896dd",
+          "type": "slicer",
+          "x": 948,
+          "y": 12,
+          "w": 150,
+          "h": 56,
+          "columns": [
+            "DimDepartment.Department"
+          ]
+        },
+        {
+          "key": "slicer_role",
+          "name": "cb33946c2e595eccbe58",
+          "type": "slicer",
+          "x": 1110,
+          "y": 12,
+          "w": 154,
+          "h": 56,
+          "columns": [
+            "DimJobRole.JobRole"
+          ]
+        },
+        {
+          "key": "card_Total Trainings",
+          "name": "adc9a110acff51739145",
+          "type": "card",
+          "x": 16.0,
+          "y": 80,
+          "w": 240.0,
+          "h": 92,
+          "measures": [
+            "Total Trainings"
+          ]
+        },
+        {
+          "key": "card_Training per Employee",
+          "name": "d329bf45c9fc5fd785c7",
+          "type": "card",
+          "x": 268.0,
+          "y": 80,
+          "w": 240.0,
+          "h": 92,
+          "measures": [
+            "Training per Employee"
+          ]
+        },
+        {
+          "key": "card_Employees with No Training",
+          "name": "0aaa21986aca5bd1a854",
+          "type": "card",
+          "x": 520.0,
+          "y": 80,
+          "w": 240.0,
+          "h": 92,
+          "measures": [
+            "Employees with No Training"
+          ]
+        },
+        {
+          "key": "card_% No Training",
+          "name": "88dc9614b5fd5b1a8876",
+          "type": "card",
+          "x": 772.0,
+          "y": 80,
+          "w": 240.0,
+          "h": 92,
+          "measures": [
+            "% No Training"
+          ]
+        },
+        {
+          "key": "card_% High Training (5-6)",
+          "name": "78fe417162745531a383",
+          "type": "card",
+          "x": 1024.0,
+          "y": 80,
+          "w": 240.0,
+          "h": 92,
+          "measures": [
+            "% High Training (5-6)"
+          ]
+        },
+        {
+          "key": "role_tpe",
+          "name": "66a02ea103dd5d1c9213",
+          "type": "clusteredBarChart",
+          "x": 16.0,
+          "y": 184,
+          "w": 408.0,
+          "h": 524,
+          "columns": [
+            "DimJobRole.JobRole"
+          ],
+          "measures": [
+            "Training per Employee"
+          ],
+          "title": "Trainings per employee by job role",
+          "sort": "measure"
+        },
+        {
+          "key": "band_hc",
+          "name": "f60411fd58cf53b48640",
+          "type": "columnChart",
+          "x": 436.0,
+          "y": 184,
+          "w": 408.0,
+          "h": 256,
+          "columns": [
+            "DimTrainingBand.TrainingBand"
+          ],
+          "measures": [
+            "Headcount"
+          ],
+          "title": "Employees by training band",
+          "sort": "category"
+        },
+        {
+          "key": "band_rate",
+          "name": "b128e35c62f45a33ba37",
+          "type": "columnChart",
+          "x": 436.0,
+          "y": 452,
+          "w": 408.0,
+          "h": 256,
+          "columns": [
+            "DimTrainingBand.TrainingBand"
+          ],
+          "measures": [
+            "Attrition Rate"
+          ],
+          "title": "Attrition rate by training band",
+          "sort": "category"
+        },
+        {
+          "key": "dept_tpe",
+          "name": "f8cf612bb0d55f13bf9c",
+          "type": "clusteredBarChart",
+          "x": 856.0,
+          "y": 184,
+          "w": 408.0,
+          "h": 256,
+          "columns": [
+            "DimDepartment.Department"
+          ],
+          "measures": [
+            "Training per Employee"
+          ],
+          "title": "Trainings per employee by department",
+          "sort": "measure"
+        },
+        {
+          "key": "tenure_tpe",
+          "name": "715638d54df95da68fee",
+          "type": "columnChart",
+          "x": 856.0,
+          "y": 452,
+          "w": 408.0,
+          "h": 256,
+          "columns": [
+            "DimTenureBand.TenureBand"
+          ],
+          "measures": [
+            "Training per Employee"
+          ],
+          "title": "Trainings per employee by tenure",
+          "sort": "category"
+        }
+      ]
+    },
+    {
+      "id": "65a51a67c36e59b6b974",
+      "name": "Satisfaction & Performance",
+      "visuals": [
+        {
+          "key": "title",
+          "name": "231135851ea05129a677",
+          "type": "textbox",
+          "x": 16,
+          "y": 6,
+          "w": 900,
+          "h": 68,
+          "text": [
+            "Satisfaction & Performance",
+            "Ratings 1-4. Low job satisfaction and bad work-life balance go with higher attrition; performance rating does not."
+          ]
+        },
+        {
+          "key": "slicer_dept",
+          "name": "4e4fa827ba9456edb8f8",
+          "type": "slicer",
+          "x": 948,
+          "y": 12,
+          "w": 150,
+          "h": 56,
+          "columns": [
+            "DimDepartment.Department"
+          ]
+        },
+        {
+          "key": "slicer_role",
+          "name": "cf75dbf0be8d53b79196",
+          "type": "slicer",
+          "x": 1110,
+          "y": 12,
+          "w": 154,
+          "h": 56,
+          "columns": [
+            "DimJobRole.JobRole"
+          ]
+        },
+        {
+          "key": "card_Avg Job Satisfaction",
+          "name": "1c74942e605b574db0c8",
+          "type": "card",
+          "x": 16.0,
+          "y": 80,
+          "w": 240.0,
+          "h": 92,
+          "measures": [
+            "Avg Job Satisfaction"
+          ]
+        },
+        {
+          "key": "card_% Low Job Satisfaction",
+          "name": "8fb5d6b5bb8b521ab868",
+          "type": "card",
+          "x": 268.0,
+          "y": 80,
+          "w": 240.0,
+          "h": 92,
+          "measures": [
+            "% Low Job Satisfaction"
+          ]
+        },
+        {
+          "key": "card_Attrition Rate - Low Job Satisfaction",
+          "name": "9bc0a0f836945da88924",
+          "type": "card",
+          "x": 520.0,
+          "y": 80,
+          "w": 240.0,
+          "h": 92,
+          "measures": [
+            "Attrition Rate - Low Job Satisfaction"
+          ]
+        },
+        {
+          "key": "card_Avg Work-Life Balance",
+          "name": "7ab6fa3b7eb159bb8c0d",
+          "type": "card",
+          "x": 772.0,
+          "y": 80,
+          "w": 240.0,
+          "h": 92,
+          "measures": [
+            "Avg Work-Life Balance"
+          ]
+        },
+        {
+          "key": "card_Avg Performance Rating",
+          "name": "62cb6afa4cf555ee815b",
+          "type": "card",
+          "x": 1024.0,
+          "y": 80,
+          "w": 240.0,
+          "h": 92,
+          "measures": [
+            "Avg Performance Rating"
+          ]
+        },
+        {
+          "key": "jobsat",
+          "name": "0af72790941b512ba249",
+          "type": "columnChart",
+          "x": 16.0,
+          "y": 184,
+          "w": 618.0,
+          "h": 256,
+          "columns": [
+            "DimJobSatisfaction.JobSatisfaction"
+          ],
+          "measures": [
+            "Attrition Rate"
+          ],
+          "title": "Attrition rate by job satisfaction",
+          "sort": "category"
+        },
+        {
+          "key": "wlb",
+          "name": "47278665b2b85b619fb1",
+          "type": "columnChart",
+          "x": 646.0,
+          "y": 184,
+          "w": 618.0,
+          "h": 256,
+          "columns": [
+            "DimEmployee.WorkLifeBalance"
+          ],
+          "measures": [
+            "Attrition Rate"
+          ],
+          "title": "Attrition rate by work-life balance",
+          "sort": "category"
+        },
+        {
+          "key": "env",
+          "name": "72bd10e05ade5d6db705",
+          "type": "columnChart",
+          "x": 16.0,
+          "y": 452,
+          "w": 618.0,
+          "h": 256,
+          "columns": [
+            "DimEmployee.EnvironmentSatisfaction"
+          ],
+          "measures": [
+            "Attrition Rate"
+          ],
+          "title": "Attrition rate by environment satisfaction",
+          "sort": "category"
+        },
+        {
+          "key": "perf",
+          "name": "f68fdbb203d35d70a3ea",
+          "type": "columnChart",
+          "x": 646.0,
+          "y": 452,
+          "w": 618.0,
+          "h": 256,
+          "columns": [
+            "DimEmployee.PerformanceRating"
+          ],
+          "measures": [
+            "Attrition Rate"
+          ],
+          "title": "Attrition rate by performance rating",
+          "sort": "category"
+        }
+      ]
+    },
+    {
+      "id": "8d303568cd4f5548b647",
+      "name": "Job Role Summary",
+      "visuals": [
+        {
+          "key": "title",
+          "name": "8155c2cae24a5ff299a7",
+          "type": "textbox",
+          "x": 16,
+          "y": 6,
+          "w": 900,
+          "h": 68,
+          "text": [
+            "Job Role Summary",
+            "All key measures per job role. Right-click a job role and choose Drill through > Employee Details to see its employees."
+          ]
+        },
+        {
+          "key": "slicer_dept",
+          "name": "7e02205280585bdd887b",
+          "type": "slicer",
+          "x": 948,
+          "y": 12,
+          "w": 150,
+          "h": 56,
+          "columns": [
+            "DimDepartment.Department"
+          ]
+        },
+        {
+          "key": "slicer_role",
+          "name": "773c59bf0e13526abcfe",
+          "type": "slicer",
+          "x": 1110,
+          "y": 12,
+          "w": 154,
+          "h": 56,
+          "columns": [
+            "DimJobRole.JobRole"
+          ]
+        },
+        {
+          "key": "matrix_roles",
+          "name": "7f5c2a826f765eff8ec6",
+          "type": "pivotTable",
+          "x": 16,
+          "y": 80,
+          "w": 1248,
+          "h": 316,
+          "columns": [
+            "DimJobRole.JobRole"
+          ],
+          "measures": [
+            "Headcount",
+            "Leavers",
+            "Attrition Rate",
+            "Attrition vs Company (pts)",
+            "Avg Tenure (Years)",
+            "Training per Employee",
+            "% No Training",
+            "Overtime %",
+            "Avg Job Satisfaction"
+          ],
+          "title": "Key measures by job role (sorted by attrition gap vs company)",
+          "sort_by": "Attrition vs Company (pts)"
+        },
+        {
+          "key": "gap",
+          "name": "6d42d69799e459b2b0d3",
+          "type": "clusteredBarChart",
+          "x": 16,
+          "y": 408,
+          "w": 1248,
+          "h": 300,
+          "columns": [
+            "DimJobRole.JobRole"
+          ],
+          "measures": [
+            "Attrition vs Company (pts)"
+          ],
+          "title": "Attrition gap vs company rate, in percentage points (positive = more leavers than average)",
+          "sort": "measure"
+        }
+      ]
+    },
+    {
+      "id": "52555cd265ec541089f7",
+      "name": "Employee Details",
+      "visuals": [
+        {
+          "key": "title",
+          "name": "1ae9720c9533577e9c98",
+          "type": "textbox",
+          "x": 16,
+          "y": 6,
+          "w": 900,
+          "h": 68,
+          "text": [
+            "Employee Details",
+            "Drill-through page: right-click a job role on any page > Drill through > Employee Details. Opened directly it shows all employees."
+          ]
+        },
+        {
+          "key": "card_Headcount",
+          "name": "2a3e64fa5c875d7ea380",
+          "type": "card",
+          "x": 16.0,
+          "y": 80,
+          "w": 303.0,
+          "h": 92,
+          "measures": [
+            "Headcount"
+          ]
+        },
+        {
+          "key": "card_Leavers",
+          "name": "edcbd8078d5b550e91fa",
+          "type": "card",
+          "x": 331.0,
+          "y": 80,
+          "w": 303.0,
+          "h": 92,
+          "measures": [
+            "Leavers"
+          ]
+        },
+        {
+          "key": "card_Attrition Rate",
+          "name": "26ff61c5428250c9a107",
+          "type": "card",
+          "x": 646.0,
+          "y": 80,
+          "w": 303.0,
+          "h": 92,
+          "measures": [
+            "Attrition Rate"
+          ]
+        },
+        {
+          "key": "card_Training per Employee",
+          "name": "8d95dc973ecc59b3b7fa",
+          "type": "card",
+          "x": 961.0,
+          "y": 80,
+          "w": 303.0,
+          "h": 92,
+          "measures": [
+            "Training per Employee"
+          ]
+        },
+        {
+          "key": "employees",
+          "name": "c5a756c92af154ba9aa0",
+          "type": "tableEx",
+          "x": 16,
+          "y": 184,
+          "w": 1248,
+          "h": 524,
+          "columns": [
+            "DimEmployee.EmployeeID",
+            "DimEmployee.EmployeeStatus",
+            "DimDepartment.Department",
+            "DimJobRole.JobRole",
+            "DimEmployee.Gender",
+            "DimEmployee.OverTime"
+          ],
+          "measures": [],
+          "aggs": [
+            {
+              "col": "FactEmployee.Age",
+              "func": "Sum",
+              "alias": "Sum(FactEmployee.Age)"
+            },
+            {
+              "col": "FactEmployee.YearsAtCompany",
+              "func": "Sum",
+              "alias": "Sum(FactEmployee.YearsAtCompany)"
+            },
+            {
+              "col": "FactEmployee.TrainingTimesLastYear",
+              "func": "Sum",
+              "alias": "Sum(FactEmployee.TrainingTimesLastYear)"
+            },
+            {
+              "col": "FactEmployee.JobSatisfactionScore",
+              "func": "Sum",
+              "alias": "Sum(FactEmployee.JobSatisfactionScore)"
+            },
+            {
+              "col": "FactEmployee.MonthlyIncome",
+              "func": "Sum",
+              "alias": "Sum(FactEmployee.MonthlyIncome)"
+            }
+          ],
+          "title": "Employees in the current selection"
+        },
+        {
+          "key": "back",
+          "name": "ee71184a4e862a767556",
+          "type": "actionButton",
+          "x": 1164,
+          "y": 16,
+          "w": 100,
+          "h": 40
+        }
+      ],
+      "drillthrough": "DimJobRole.JobRole"
+    },
+    {
+      "id": "c6c8d6a3f15c5ea78eab",
+      "name": "Data Quality",
+      "visuals": [
+        {
+          "key": "title",
+          "name": "93510658a60152ed8f3f",
+          "type": "textbox",
+          "x": 16,
+          "y": 6,
+          "w": 900,
+          "h": 68,
+          "text": [
+            "Data Quality (self-testing model)",
+            "35 automatic checks recalculated on every refresh: row counts, duplicates, nulls, orphan keys and control totals. All must be PASS."
+          ]
+        },
+        {
+          "key": "qa",
+          "name": "55c3d58bcd4b55519b4a",
+          "type": "tableEx",
+          "x": 16,
+          "y": 80,
+          "w": 1248,
+          "h": 628,
+          "columns": [
+            "QA_Checks.CheckNo",
+            "QA_Checks.Check",
+            "QA_Checks.Actual",
+            "QA_Checks.Expected",
+            "QA_Checks.Result"
+          ],
+          "measures": [],
+          "aggs": [],
+          "title": "QA_Checks - recalculated on every refresh"
+        }
+      ]
+    }
+  ]
+}

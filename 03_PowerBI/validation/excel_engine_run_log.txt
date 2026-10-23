@@ -1,0 +1,37 @@
+﻿ADDED   ProjectFolder  =  "D:\Ai Projects\Power BI\" meta [IsParameterQuery = true, Type = "Text", IsParameterQueryRequired = true]
+ADDED   fnGetLookup
+ADDED   fnBandKey
+ADDED   src_HR
+ADDED   lkp_Education
+ADDED   lkp_Satisfaction
+ADDED   lkp_WorkLifeBalance
+ADDED   lkp_PerformanceRating
+ADDED   lkp_BusinessTravel
+ADDED   lkp_AgeBand
+ADDED   lkp_TenureBand
+ADDED   lkp_IncomeBand
+ADDED   lkp_TrainingBand
+ADDED   stg_HR
+ADDED   DimDepartment
+ADDED   DimJobRole
+ADDED   DimEducation
+ADDED   DimJobSatisfaction
+ADDED   DimAgeBand
+ADDED   DimTenureBand
+ADDED   DimIncomeBand
+ADDED   DimTrainingBand
+ADDED   DimEmployee
+ADDED   FactEmployee
+ADDED   QA_Checks
+LOADED  DimDepartment        rows=3     cols=2   (31615 ms)
+LOADED  DimJobRole           rows=9     cols=2   (39335 ms)
+LOADED  DimEducation         rows=5     cols=2   (3196 ms)
+LOADED  DimJobSatisfaction   rows=4     cols=2   (13455 ms)
+LOADED  DimAgeBand           rows=5     cols=4   (3230 ms)
+LOADED  DimTenureBand        rows=4     cols=4   (2954 ms)
+LOADED  DimIncomeBand        rows=5     cols=4   (3094 ms)
+LOADED  DimTrainingBand      rows=4     cols=4   (2926 ms)
+LOADED  DimEmployee          rows=1470  cols=20  (23487 ms)
+LOADED  FactEmployee         rows=1470  cols=28  (4551 ms)
+LOADED  QA_Checks            rows=35    cols=5   (28692 ms)
+SAVED   D:\Ai Projects\Power BI\03_PowerBI\validation\excel_engine_run.xlsx

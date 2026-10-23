@@ -1,0 +1,225 @@
+{
+  "DimDepartment": {
+    "rows": 3,
+    "columns": [
+      "DepartmentKey",
+      "Department"
+    ],
+    "types": {
+      "DepartmentKey": "Int64",
+      "Department": "text"
+    }
+  },
+  "DimJobRole": {
+    "rows": 9,
+    "columns": [
+      "JobRoleKey",
+      "JobRole"
+    ],
+    "types": {
+      "JobRoleKey": "Int64",
+      "JobRole": "text"
+    }
+  },
+  "DimEducation": {
+    "rows": 5,
+    "columns": [
+      "EducationKey",
+      "EducationLevel"
+    ],
+    "types": {
+      "EducationKey": "Int64",
+      "EducationLevel": "text"
+    }
+  },
+  "DimJobSatisfaction": {
+    "rows": 4,
+    "columns": [
+      "JobSatisfactionKey",
+      "JobSatisfaction"
+    ],
+    "types": {
+      "JobSatisfactionKey": "Int64",
+      "JobSatisfaction": "text"
+    }
+  },
+  "DimAgeBand": {
+    "rows": 5,
+    "columns": [
+      "AgeBandKey",
+      "AgeBand",
+      "MinAge",
+      "MaxAge"
+    ],
+    "types": {
+      "AgeBandKey": "Int64",
+      "AgeBand": "text",
+      "MinAge": "Int64",
+      "MaxAge": "Int64"
+    }
+  },
+  "DimTenureBand": {
+    "rows": 4,
+    "columns": [
+      "TenureBandKey",
+      "TenureBand",
+      "MinYears",
+      "MaxYears"
+    ],
+    "types": {
+      "TenureBandKey": "Int64",
+      "TenureBand": "text",
+      "MinYears": "Int64",
+      "MaxYears": "Int64"
+    }
+  },
+  "DimIncomeBand": {
+    "rows": 5,
+    "columns": [
+      "IncomeBandKey",
+      "IncomeBand",
+      "MinIncome",
+      "MaxIncome"
+    ],
+    "types": {
+      "IncomeBandKey": "Int64",
+      "IncomeBand": "text",
+      "MinIncome": "Int64",
+      "MaxIncome": "Int64"
+    }
+  },
+  "DimTrainingBand": {
+    "rows": 4,
+    "columns": [
+      "TrainingBandKey",
+      "TrainingBand",
+      "MinTrainings",
+      "MaxTrainings"
+    ],
+    "types": {
+      "TrainingBandKey": "Int64",
+      "TrainingBand": "text",
+      "MinTrainings": "Int64",
+      "MaxTrainings": "Int64"
+    }
+  },
+  "DimEmployee": {
+    "rows": 1470,
+    "columns": [
+      "EmployeeID",
+      "EmployeeStatus",
+      "Gender",
+      "MaritalStatus",
+      "EducationField",
+      "BusinessTravel",
+      "BusinessTravelSort",
+      "OverTime",
+      "JobLevel",
+      "StockOptionLevel",
+      "EnvironmentSatisfaction",
+      "EnvironmentSatisfactionSort",
+      "RelationshipSatisfaction",
+      "RelationshipSatisfactionSort",
+      "JobInvolvement",
+      "JobInvolvementSort",
+      "WorkLifeBalance",
+      "WorkLifeBalanceSort",
+      "PerformanceRating",
+      "PerformanceRatingSort"
+    ],
+    "types": {
+      "EmployeeID": "Int64",
+      "EmployeeStatus": "text",
+      "Gender": "text",
+      "MaritalStatus": "text",
+      "EducationField": "text",
+      "BusinessTravel": "text",
+      "BusinessTravelSort": "Int64",
+      "OverTime": "text",
+      "JobLevel": "Int64",
+      "StockOptionLevel": "Int64",
+      "EnvironmentSatisfaction": "text",
+      "EnvironmentSatisfactionSort": "Int64",
+      "RelationshipSatisfaction": "text",
+      "RelationshipSatisfactionSort": "Int64",
+      "JobInvolvement": "text",
+      "JobInvolvementSort": "Int64",
+      "WorkLifeBalance": "text",
+      "WorkLifeBalanceSort": "Int64",
+      "PerformanceRating": "text",
+      "PerformanceRatingSort": "Int64"
+    }
+  },
+  "FactEmployee": {
+    "rows": 1470,
+    "columns": [
+      "EmployeeID",
+      "DepartmentKey",
+      "JobRoleKey",
+      "EducationKey",
+      "JobSatisfactionKey",
+      "AgeBandKey",
+      "TenureBandKey",
+      "IncomeBandKey",
+      "TrainingBandKey",
+      "AttritionFlag",
+      "OverTimeFlag",
+      "Age",
+      "MonthlyIncome",
+      "PercentSalaryHike",
+      "DistanceFromHome",
+      "NumCompaniesWorked",
+      "TotalWorkingYears",
+      "YearsAtCompany",
+      "YearsInCurrentRole",
+      "YearsSinceLastPromotion",
+      "YearsWithCurrManager",
+      "TrainingTimesLastYear",
+      "JobSatisfactionScore",
+      "EnvironmentSatisfactionScore",
+      "RelationshipSatisfactionScore",
+      "JobInvolvementScore",
+      "WorkLifeBalanceScore",
+      "PerformanceRatingScore"
+    ],
+    "types": {
+      "EmployeeID": "Int64",
+      "DepartmentKey": "Int64",
+      "JobRoleKey": "Int64",
+      "EducationKey": "Int64",
+      "JobSatisfactionKey": "Int64",
+      "AgeBandKey": "Int64",
+      "TenureBandKey": "Int64",
+      "IncomeBandKey": "Int64",
+      "TrainingBandKey": "Int64",
+      "AttritionFlag": "Int64",
+      "OverTimeFlag": "Int64",
+      "Age": "Int64",
+      "MonthlyIncome": "Int64",
+      "PercentSalaryHike": "Int64",
+      "DistanceFromHome": "Int64",
+      "NumCompaniesWorked": "Int64",
+      "TotalWorkingYears": "Int64",
+      "YearsAtCompany": "Int64",
+      "YearsInCurrentRole": "Int64",
+      "YearsSinceLastPromotion": "Int64",
+      "YearsWithCurrManager": "Int64",
+      "TrainingTimesLastYear": "Int64",
+      "JobSatisfactionScore": "Int64",
+      "EnvironmentSatisfactionScore": "Int64",
+      "RelationshipSatisfactionScore": "Int64",
+      "JobInvolvementScore": "Int64",
+      "WorkLifeBalanceScore": "Int64",
+      "PerformanceRatingScore": "Int64"
+    }
+  },
+  "_totals": {
+    "Sum AttritionFlag": 237,
+    "Sum OverTimeFlag": 416,
+    "Sum TrainingTimesLastYear": 4115,
+    "Sum MonthlyIncome": 9559309,
+    "Sum YearsAtCompany": 10302,
+    "Sum EmployeeID": 1506552,
+    "Sum JobSatisfactionScore": 4011
+  }
+}

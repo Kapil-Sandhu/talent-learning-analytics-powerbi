@@ -1,0 +1,57 @@
+/// Tenure bands on YearsAtCompany (inclusive Min/Max).
+table DimTenureBand
+	lineageTag: 0170bd95-052d-575d-b874-4a71701d2e97
+
+	column TenureBandKey
+		dataType: int64
+		isHidden
+		isKey
+		formatString: 0
+		lineageTag: 99ed920b-37a1-54bd-bda7-f150d125e00a
+		summarizeBy: none
+		sourceColumn: TenureBandKey
+
+		annotation SummarizationSetBy = User
+
+	column TenureBand
+		dataType: string
+		lineageTag: 0bb76936-e657-5b9b-a7a4-1f6a8b42e398
+		summarizeBy: none
+		sourceColumn: TenureBand
+		sortByColumn: TenureBandKey
+
+		annotation SummarizationSetBy = User
+
+	column MinYears
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 9d85e585-eecf-5256-9d00-e7444fc49051
+		summarizeBy: none
+		sourceColumn: MinYears
+
+		annotation SummarizationSetBy = User
+
+	column MaxYears
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: c4538564-ec79-5cda-952d-869eb5df80ee
+		summarizeBy: none
+		sourceColumn: MaxYears
+
+		annotation SummarizationSetBy = User
+
+	partition DimTenureBand = m
+		mode: import
+		source =
+				let
+				    Source  = lkp_TenureBand,
+				    Renamed = Table.RenameColumns(Source, {{"BandKey", "TenureBandKey"}, {"Band", "TenureBand"}, {"Min", "MinYears"}, {"Max", "MaxYears"}}),
+				    Final   = Table.SelectColumns(Renamed, {"TenureBandKey", "TenureBand", "MinYears", "MaxYears"}),
+				    Typed   = Table.TransformColumnTypes(Final, {{"TenureBandKey", Int64.Type}, {"TenureBand", type text}, {"MinYears", Int64.Type}, {"MaxYears", Int64.Type}})
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table
+

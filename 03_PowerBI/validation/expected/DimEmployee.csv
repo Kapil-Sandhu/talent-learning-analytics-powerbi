@@ -1,0 +1,1471 @@
+EmployeeID,EmployeeStatus,Gender,MaritalStatus,EducationField,BusinessTravel,BusinessTravelSort,OverTime,JobLevel,StockOptionLevel,EnvironmentSatisfaction,EnvironmentSatisfactionSort,RelationshipSatisfaction,RelationshipSatisfactionSort,JobInvolvement,JobInvolvementSort,WorkLifeBalance,WorkLifeBalanceSort,PerformanceRating,PerformanceRatingSort
+1,Left,Female,Single,Life Sciences,Travels Rarely,2,Yes,2,0,Medium,2,Low,1,High,3,Bad,1,Excellent,3
+2,Active,Male,Married,Life Sciences,Travels Frequently,3,No,2,1,High,3,Very High,4,Medium,2,Better,3,Outstanding,4
+4,Left,Male,Single,Other,Travels Rarely,2,Yes,1,0,Very High,4,Medium,2,Medium,2,Better,3,Excellent,3
+5,Active,Female,Married,Life Sciences,Travels Frequently,3,Yes,1,0,Very High,4,High,3,High,3,Better,3,Excellent,3
+7,Active,Male,Married,Medical,Travels Rarely,2,No,1,1,Low,1,Very High,4,High,3,Better,3,Excellent,3
+8,Active,Male,Single,Life Sciences,Travels Frequently,3,No,1,0,Very High,4,High,3,High,3,Good,2,Excellent,3
+10,Active,Female,Married,Medical,Travels Rarely,2,Yes,1,3,High,3,Low,1,Very High,4,Good,2,Outstanding,4
+11,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,1,1,Very High,4,Medium,2,High,3,Better,3,Outstanding,4
+12,Active,Male,Single,Life Sciences,Travels Frequently,3,No,3,0,Very High,4,Medium,2,Medium,2,Better,3,Outstanding,4
+13,Active,Male,Married,Medical,Travels Rarely,2,No,2,2,High,3,Medium,2,High,3,Good,2,Excellent,3
+14,Active,Male,Married,Medical,Travels Rarely,2,No,1,1,Low,1,High,3,Very High,4,Better,3,Excellent,3
+15,Active,Female,Single,Life Sciences,Travels Rarely,2,Yes,2,0,Very High,4,Very High,4,Medium,2,Better,3,Excellent,3
+16,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,1,1,Low,1,Very High,4,High,3,Good,2,Excellent,3
+18,Active,Male,Divorced,Medical,Travels Rarely,2,No,1,1,Medium,2,High,3,High,3,Better,3,Excellent,3
+19,Left,Male,Single,Life Sciences,Travels Rarely,2,Yes,1,0,High,3,Medium,2,Medium,2,Better,3,Excellent,3
+20,Active,Female,Divorced,Life Sciences,Travels Rarely,2,No,3,1,Medium,2,High,3,Very High,4,Better,3,Excellent,3
+21,Active,Male,Divorced,Life Sciences,Travels Rarely,2,Yes,1,2,Low,1,Very High,4,Very High,4,Good,2,Excellent,3
+22,Active,Male,Divorced,Medical,No Travel,1,Yes,1,2,Very High,4,Medium,2,Very High,4,Good,2,Excellent,3
+23,Active,Female,Married,Life Sciences,Travels Rarely,2,No,4,0,Low,1,High,3,Medium,2,Better,3,Excellent,3
+24,Active,Male,Single,Life Sciences,Travels Rarely,2,Yes,1,0,Very High,4,High,3,High,3,Better,3,Excellent,3
+26,Active,Female,Divorced,Other,No Travel,1,No,2,1,Low,1,Very High,4,Very High,4,Good,2,Excellent,3
+27,Left,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,High,3,Medium,2,Medium,2,Better,3,Outstanding,4
+28,Active,Female,Single,Life Sciences,Travels Rarely,2,No,3,0,Low,1,High,3,High,3,Better,3,Excellent,3
+30,Active,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,High,3,Very High,4,High,3,Better,3,Excellent,3
+31,Left,Male,Single,Medical,Travels Rarely,2,No,1,0,Medium,2,High,3,High,3,Better,3,Excellent,3
+32,Active,Female,Divorced,Other,Travels Rarely,2,No,5,1,High,3,Very High,4,High,3,Good,2,Excellent,3
+33,Left,Female,Single,Life Sciences,Travels Frequently,3,Yes,1,0,Medium,2,Medium,2,Low,1,Better,3,Outstanding,4
+35,Active,Male,Married,Marketing,Travels Rarely,2,No,2,1,High,3,Very High,4,High,3,Better,3,Excellent,3
+36,Active,Female,Married,Medical,Travels Rarely,2,No,3,1,Low,1,Very High,4,Medium,2,Better,3,Excellent,3
+38,Active,Female,Single,Marketing,Travels Rarely,2,No,5,0,Medium,2,Very High,4,High,3,Good,2,Excellent,3
+39,Active,Male,Single,Medical,Travels Rarely,2,No,1,0,High,3,Very High,4,High,3,Better,3,Excellent,3
+40,Active,Male,Married,Other,Travels Rarely,2,Yes,2,0,Very High,4,Very High,4,High,3,Best,4,Excellent,3
+41,Active,Male,Single,Medical,Travels Rarely,2,No,1,0,Very High,4,Low,1,Medium,2,Better,3,Excellent,3
+42,Left,Male,Married,Technical Degree,Travels Rarely,2,No,2,1,Very High,4,High,3,High,3,Best,4,Excellent,3
+45,Left,Male,Married,Medical,Travels Rarely,2,Yes,1,1,Medium,2,Low,1,High,3,Good,2,Excellent,3
+46,Active,Female,Divorced,Medical,Travels Rarely,2,No,1,2,Very High,4,Very High,4,Very High,4,Good,2,Excellent,3
+47,Left,Male,Married,Marketing,Travels Rarely,2,Yes,1,0,Low,1,High,3,Medium,2,Better,3,Excellent,3
+49,Active,Female,Married,Marketing,Travels Rarely,2,No,1,0,Very High,4,Low,1,High,3,Better,3,Excellent,3
+51,Active,Female,Married,Life Sciences,Travels Rarely,2,Yes,1,1,Medium,2,Very High,4,Medium,2,Best,4,Excellent,3
+52,Active,Female,Married,Life Sciences,Travels Frequently,3,No,2,2,High,3,Low,1,Very High,4,Better,3,Excellent,3
+53,Active,Male,Divorced,Other,Travels Rarely,2,No,1,1,High,3,High,3,High,3,Better,3,Excellent,3
+54,Active,Female,Divorced,Life Sciences,Travels Rarely,2,No,1,1,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+55,Left,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,Low,1,High,3,Low,1,Good,2,Excellent,3
+56,Active,Male,Single,Life Sciences,Travels Frequently,3,No,3,0,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+57,Active,Female,Single,Medical,Travels Frequently,3,No,2,0,High,3,Very High,4,High,3,Better,3,Outstanding,4
+58,Left,Female,Married,Technical Degree,Travels Rarely,2,No,5,0,Medium,2,Very High,4,High,3,Better,3,Excellent,3
+60,Active,Male,Single,Marketing,No Travel,1,No,2,0,Medium,2,High,3,High,3,Better,3,Outstanding,4
+61,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,0,Medium,2,Low,1,High,3,Better,3,Outstanding,4
+62,Active,Male,Single,Marketing,Travels Frequently,3,Yes,2,0,Low,1,High,3,High,3,Better,3,Outstanding,4
+63,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,0,Very High,4,Very High,4,Very High,4,Better,3,Excellent,3
+64,Left,Male,Single,Life Sciences,Travels Rarely,2,Yes,3,0,Low,1,Very High,4,Medium,2,Better,3,Excellent,3
+65,Left,Male,Single,Technical Degree,Travels Rarely,2,Yes,1,0,High,3,High,3,High,3,Good,2,Excellent,3
+68,Active,Female,Divorced,Marketing,Travels Rarely,2,Yes,2,1,Medium,2,High,3,High,3,Good,2,Outstanding,4
+70,Active,Male,Married,Medical,No Travel,1,Yes,3,1,High,3,High,3,Medium,2,Better,3,Excellent,3
+72,Active,Female,Married,Marketing,Travels Rarely,2,Yes,2,1,High,3,High,3,Medium,2,Good,2,Excellent,3
+73,Active,Female,Single,Life Sciences,Travels Frequently,3,Yes,3,0,Low,1,High,3,High,3,Better,3,Excellent,3
+74,Active,Male,Married,Life Sciences,Travels Frequently,3,No,3,1,Medium,2,Very High,4,High,3,Good,2,Outstanding,4
+75,Active,Female,Married,Medical,Travels Rarely,2,Yes,1,1,High,3,High,3,High,3,Better,3,Excellent,3
+76,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,2,1,Very High,4,Very High,4,High,3,Good,2,Outstanding,4
+77,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,2,1,Low,1,High,3,Medium,2,Best,4,Excellent,3
+78,Active,Male,Married,Medical,Travels Rarely,2,Yes,2,1,Low,1,Medium,2,High,3,Better,3,Outstanding,4
+79,Active,Female,Single,Life Sciences,Travels Frequently,3,No,2,0,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+80,Active,Female,Divorced,Medical,Travels Rarely,2,Yes,5,1,Medium,2,Very High,4,Medium,2,Good,2,Excellent,3
+81,Active,Female,Single,Life Sciences,Travels Rarely,2,No,3,0,Low,1,Very High,4,High,3,Good,2,Excellent,3
+83,Active,Female,Divorced,Technical Degree,Travels Rarely,2,No,3,3,High,3,Medium,2,High,3,Better,3,Excellent,3
+84,Active,Female,Divorced,Medical,Travels Rarely,2,Yes,4,3,Very High,4,High,3,High,3,Better,3,Excellent,3
+85,Active,Male,Single,Life Sciences,Travels Frequently,3,No,2,0,Medium,2,High,3,Medium,2,Better,3,Excellent,3
+86,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,3,1,Medium,2,High,3,High,3,Better,3,Excellent,3
+88,Active,Male,Married,Medical,Travels Frequently,3,No,1,1,Medium,2,Very High,4,High,3,Good,2,Excellent,3
+90,Left,Male,Married,Medical,Travels Rarely,2,Yes,1,1,Very High,4,Low,1,Medium,2,Good,2,Excellent,3
+91,Active,Female,Single,Life Sciences,Travels Frequently,3,No,2,0,Low,1,Very High,4,Medium,2,Good,2,Excellent,3
+94,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,1,High,3,Very High,4,High,3,Better,3,Outstanding,4
+95,Active,Male,Single,Medical,Travels Rarely,2,No,1,0,High,3,Medium,2,High,3,Better,3,Excellent,3
+96,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,2,Medium,2,Medium,2,High,3,Better,3,Excellent,3
+97,Active,Female,Married,Life Sciences,Travels Rarely,2,No,1,0,Medium,2,Medium,2,Very High,4,Better,3,Excellent,3
+98,Active,Female,Single,Life Sciences,Travels Rarely,2,No,2,0,High,3,Very High,4,High,3,Better,3,Outstanding,4
+100,Active,Male,Single,Marketing,Travels Rarely,2,No,2,0,High,3,Medium,2,Medium,2,Better,3,Excellent,3
+101,Active,Male,Married,Other,Travels Rarely,2,Yes,3,0,Very High,4,Medium,2,High,3,Best,4,Excellent,3
+102,Active,Male,Single,Medical,Travels Rarely,2,No,3,0,Low,1,Low,1,High,3,Best,4,Excellent,3
+103,Active,Male,Divorced,Medical,Travels Rarely,2,Yes,2,1,Medium,2,Very High,4,High,3,Better,3,Outstanding,4
+104,Active,Male,Married,Life Sciences,Travels Rarely,2,Yes,2,2,Very High,4,High,3,Medium,2,Good,2,Excellent,3
+105,Active,Male,Single,Medical,Travels Rarely,2,No,1,0,Medium,2,Low,1,Medium,2,Better,3,Excellent,3
+106,Active,Male,Married,Life Sciences,Travels Rarely,2,No,3,1,Low,1,Very High,4,High,3,Better,3,Excellent,3
+107,Active,Female,Divorced,Medical,No Travel,1,Yes,2,3,Medium,2,Very High,4,Low,1,Better,3,Excellent,3
+110,Active,Male,Married,Medical,Travels Rarely,2,No,2,0,Low,1,High,3,High,3,Better,3,Excellent,3
+112,Active,Male,Single,Life Sciences,Travels Rarely,2,No,3,0,Very High,4,Low,1,Low,1,Good,2,Excellent,3
+113,Active,Male,Divorced,Technical Degree,Travels Rarely,2,No,1,1,High,3,High,3,High,3,Better,3,Excellent,3
+116,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,2,Very High,4,Medium,2,High,3,Better,3,Outstanding,4
+117,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,3,High,3,Low,1,Medium,2,Better,3,Excellent,3
+118,Left,Male,Single,Medical,Travels Rarely,2,No,3,0,High,3,Very High,4,Medium,2,Better,3,Excellent,3
+119,Active,Male,Married,Life Sciences,Travels Frequently,3,No,4,1,High,3,Very High,4,Medium,2,Good,2,Outstanding,4
+120,Active,Male,Single,Marketing,Travels Rarely,2,Yes,2,0,High,3,Very High,4,High,3,Bad,1,Outstanding,4
+121,Active,Female,Divorced,Medical,Travels Rarely,2,Yes,2,3,High,3,Medium,2,Medium,2,Good,2,Excellent,3
+124,Active,Male,Married,Medical,Travels Frequently,3,Yes,3,1,High,3,High,3,Medium,2,Good,2,Excellent,3
+125,Active,Male,Single,Medical,Travels Rarely,2,No,2,0,Medium,2,Low,1,High,3,Better,3,Excellent,3
+126,Active,Female,Married,Technical Degree,Travels Rarely,2,No,3,1,Low,1,Low,1,High,3,Bad,1,Excellent,3
+128,Active,Female,Married,Other,Travels Rarely,2,No,2,1,Low,1,Low,1,High,3,Good,2,Outstanding,4
+129,Active,Male,Married,Medical,No Travel,1,No,2,0,Medium,2,Medium,2,High,3,Best,4,Excellent,3
+131,Active,Male,Single,Medical,Travels Rarely,2,No,4,0,Very High,4,High,3,High,3,Good,2,Excellent,3
+132,Active,Male,Married,Medical,No Travel,1,No,2,1,Medium,2,High,3,High,3,Best,4,Excellent,3
+133,Left,Male,Divorced,Human Resources,Travels Rarely,2,Yes,1,0,High,3,Very High,4,High,3,Better,3,Outstanding,4
+134,Active,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+137,Left,Female,Single,Life Sciences,Travels Frequently,3,Yes,1,0,Very High,4,Medium,2,Medium,2,Better,3,Excellent,3
+138,Active,Female,Single,Other,Travels Rarely,2,No,2,0,Low,1,High,3,High,3,Better,3,Excellent,3
+139,Active,Male,Divorced,Life Sciences,No Travel,1,No,2,1,High,3,Very High,4,Medium,2,Best,4,Excellent,3
+140,Active,Female,Married,Human Resources,No Travel,1,No,5,1,High,3,Very High,4,Medium,2,Better,3,Outstanding,4
+141,Active,Female,Married,Life Sciences,Travels Frequently,3,Yes,5,0,Low,1,Low,1,High,3,Good,2,Excellent,3
+142,Left,Male,Single,Marketing,Travels Rarely,2,Yes,2,0,High,3,Very High,4,Medium,2,Better,3,Excellent,3
+143,Active,Male,Married,Medical,Travels Rarely,2,No,1,2,Very High,4,High,3,Medium,2,Better,3,Excellent,3
+144,Active,Female,Single,Medical,Travels Rarely,2,No,1,0,Medium,2,High,3,High,3,Better,3,Excellent,3
+145,Active,Female,Single,Medical,Travels Frequently,3,No,3,0,Low,1,High,3,Medium,2,Good,2,Outstanding,4
+147,Left,Male,Single,Life Sciences,Travels Frequently,3,Yes,2,0,Low,1,Very High,4,Low,1,Better,3,Outstanding,4
+148,Active,Female,Single,Human Resources,No Travel,1,Yes,4,0,Very High,4,High,3,Very High,4,Better,3,Excellent,3
+150,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,1,Medium,2,High,3,High,3,Better,3,Excellent,3
+151,Active,Female,Divorced,Life Sciences,Travels Rarely,2,No,2,1,High,3,High,3,Medium,2,Better,3,Excellent,3
+152,Active,Male,Single,Life Sciences,Travels Rarely,2,No,3,0,High,3,Low,1,High,3,Better,3,Excellent,3
+153,Active,Female,Single,Medical,Travels Rarely,2,No,3,0,High,3,Very High,4,Medium,2,Better,3,Excellent,3
+154,Active,Female,Married,Technical Degree,Travels Frequently,3,No,3,1,Medium,2,High,3,High,3,Better,3,Excellent,3
+155,Active,Female,Divorced,Life Sciences,Travels Rarely,2,No,1,1,Low,1,Low,1,High,3,Better,3,Outstanding,4
+158,Active,Male,Married,Life Sciences,Travels Frequently,3,Yes,4,2,High,3,Very High,4,High,3,Best,4,Excellent,3
+159,Active,Male,Divorced,Life Sciences,Travels Frequently,3,No,1,3,Low,1,High,3,Low,1,Good,2,Outstanding,4
+160,Active,Male,Married,Marketing,No Travel,1,No,2,1,High,3,Low,1,High,3,Best,4,Excellent,3
+161,Left,Female,Married,Life Sciences,Travels Rarely,2,Yes,1,3,Medium,2,Low,1,High,3,Better,3,Excellent,3
+162,Active,Male,Single,Life Sciences,Travels Rarely,2,No,5,0,Low,1,High,3,High,3,Better,3,Excellent,3
+163,Left,Male,Married,Life Sciences,Travels Rarely,2,Yes,2,0,Medium,2,Medium,2,Low,1,Good,2,Excellent,3
+164,Active,Female,Married,Other,Travels Rarely,2,No,1,0,High,3,High,3,Medium,2,Good,2,Excellent,3
+165,Left,Female,Married,Medical,Travels Rarely,2,No,3,1,Very High,4,Very High,4,High,3,Good,2,Excellent,3
+167,Left,Male,Single,Marketing,Travels Rarely,2,Yes,1,0,Very High,4,Very High,4,High,3,Good,2,Excellent,3
+169,Active,Male,Married,Technical Degree,Travels Rarely,2,No,1,1,High,3,High,3,High,3,Better,3,Excellent,3
+170,Active,Female,Married,Medical,Travels Rarely,2,No,2,0,High,3,High,3,High,3,Good,2,Excellent,3
+171,Active,Female,Single,Medical,Travels Frequently,3,No,1,0,Medium,2,Very High,4,Very High,4,Better,3,Excellent,3
+174,Active,Female,Single,Marketing,Travels Frequently,3,No,3,0,High,3,Very High,4,High,3,Better,3,Excellent,3
+175,Left,Female,Married,Life Sciences,Travels Rarely,2,Yes,2,1,Medium,2,High,3,Low,1,Better,3,Excellent,3
+176,Active,Male,Divorced,Life Sciences,Travels Rarely,2,Yes,3,1,High,3,High,3,High,3,Better,3,Excellent,3
+177,Active,Female,Married,Life Sciences,Travels Rarely,2,No,1,1,High,3,Very High,4,High,3,Better,3,Outstanding,4
+178,Active,Male,Divorced,Medical,Travels Rarely,2,No,2,2,Medium,2,Very High,4,High,3,Better,3,Outstanding,4
+179,Left,Male,Single,Life Sciences,Travels Frequently,3,No,3,0,Low,1,Very High,4,Low,1,Better,3,Excellent,3
+182,Active,Female,Married,Life Sciences,Travels Rarely,2,No,2,1,Very High,4,High,3,Medium,2,Best,4,Excellent,3
+183,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,0,Low,1,Very High,4,Medium,2,Better,3,Excellent,3
+184,Active,Male,Married,Human Resources,Travels Rarely,2,Yes,2,0,High,3,Very High,4,High,3,Bad,1,Excellent,3
+190,Left,Female,Single,Medical,Travels Rarely,2,No,1,0,Low,1,Low,1,High,3,Best,4,Outstanding,4
+192,Active,Male,Single,Medical,Travels Rarely,2,No,1,0,High,3,Medium,2,High,3,Good,2,Excellent,3
+193,Active,Female,Single,Technical Degree,Travels Rarely,2,Yes,2,0,Very High,4,Medium,2,High,3,Better,3,Outstanding,4
+194,Active,Female,Single,Life Sciences,Travels Rarely,2,No,1,0,Low,1,High,3,High,3,Good,2,Excellent,3
+195,Active,Male,Divorced,Medical,Travels Frequently,3,No,2,3,Very High,4,Very High,4,Low,1,Best,4,Excellent,3
+197,Active,Female,Divorced,Technical Degree,Travels Rarely,2,No,1,1,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+198,Active,Male,Single,Medical,Travels Rarely,2,No,1,0,Medium,2,Very High,4,Medium,2,Better,3,Excellent,3
+199,Active,Male,Divorced,Life Sciences,Travels Frequently,3,No,4,1,Very High,4,Medium,2,Medium,2,Good,2,Excellent,3
+200,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,1,High,3,Very High,4,High,3,Better,3,Outstanding,4
+201,Active,Female,Single,Medical,Travels Rarely,2,No,1,0,Medium,2,Very High,4,High,3,Better,3,Excellent,3
+202,Active,Female,Divorced,Medical,Travels Frequently,3,No,2,1,Medium,2,Low,1,High,3,Better,3,Excellent,3
+204,Active,Male,Married,Marketing,Travels Rarely,2,No,3,2,High,3,Low,1,High,3,Better,3,Excellent,3
+205,Active,Male,Married,Marketing,Travels Rarely,2,Yes,2,1,Medium,2,Very High,4,High,3,Bad,1,Outstanding,4
+206,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,2,1,Medium,2,High,3,High,3,Bad,1,Excellent,3
+207,Active,Female,Single,Marketing,Travels Frequently,3,No,3,0,Medium,2,Very High,4,High,3,Better,3,Excellent,3
+208,Active,Male,Married,Technical Degree,No Travel,1,No,2,1,Very High,4,Low,1,High,3,Better,3,Excellent,3
+211,Active,Male,Married,Medical,Travels Rarely,2,No,2,0,Medium,2,High,3,Medium,2,Better,3,Excellent,3
+214,Active,Female,Married,Medical,Travels Rarely,2,Yes,1,1,Medium,2,Medium,2,Medium,2,Good,2,Outstanding,4
+215,Active,Male,Married,Marketing,Travels Rarely,2,No,3,1,High,3,Low,1,Medium,2,Good,2,Excellent,3
+216,Active,Female,Married,Marketing,Travels Frequently,3,No,1,1,High,3,Very High,4,High,3,Better,3,Excellent,3
+217,Active,Male,Married,Medical,Travels Rarely,2,No,1,2,High,3,Low,1,High,3,Better,3,Outstanding,4
+218,Active,Male,Divorced,Medical,No Travel,1,No,1,1,Very High,4,Very High,4,High,3,Bad,1,Excellent,3
+221,Active,Male,Married,Medical,Travels Rarely,2,No,1,1,High,3,High,3,High,3,Bad,1,Excellent,3
+223,Active,Male,Divorced,Life Sciences,Travels Rarely,2,Yes,3,1,High,3,Medium,2,Very High,4,Bad,1,Excellent,3
+224,Active,Male,Divorced,Medical,No Travel,1,Yes,1,1,High,3,Very High,4,Medium,2,Good,2,Excellent,3
+226,Active,Female,Single,Life Sciences,Travels Rarely,2,No,5,0,High,3,Medium,2,High,3,Better,3,Excellent,3
+227,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,1,1,Low,1,Low,1,High,3,Better,3,Excellent,3
+228,Active,Female,Married,Life Sciences,Travels Rarely,2,No,3,1,Medium,2,High,3,High,3,Better,3,Excellent,3
+230,Active,Female,Single,Life Sciences,Travels Rarely,2,No,2,0,Low,1,High,3,Medium,2,Best,4,Outstanding,4
+231,Active,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,High,3,Low,1,High,3,Better,3,Outstanding,4
+233,Active,Male,Married,Technical Degree,Travels Rarely,2,Yes,1,1,High,3,Very High,4,High,3,Good,2,Excellent,3
+235,Left,Female,Single,Technical Degree,Travels Frequently,3,No,1,0,High,3,Low,1,Low,1,Best,4,Outstanding,4
+238,Active,Male,Single,Medical,Travels Frequently,3,No,1,0,Very High,4,High,3,High,3,Good,2,Excellent,3
+239,Active,Male,Divorced,Medical,No Travel,1,No,2,2,High,3,High,3,High,3,Better,3,Excellent,3
+240,Active,Female,Divorced,Life Sciences,Travels Rarely,2,Yes,2,1,High,3,Low,1,High,3,Best,4,Excellent,3
+241,Active,Female,Divorced,Life Sciences,Travels Rarely,2,Yes,1,1,High,3,High,3,High,3,Better,3,Excellent,3
+242,Active,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,High,3,Low,1,High,3,Best,4,Excellent,3
+243,Left,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,Medium,2,High,3,Medium,2,Good,2,Outstanding,4
+244,Active,Female,Divorced,Marketing,Travels Rarely,2,No,3,3,Medium,2,High,3,High,3,Better,3,Outstanding,4
+245,Active,Female,Single,Life Sciences,Travels Rarely,2,No,1,0,High,3,High,3,High,3,Better,3,Excellent,3
+246,Active,Female,Married,Medical,Travels Rarely,2,Yes,1,1,High,3,High,3,High,3,Better,3,Outstanding,4
+247,Active,Female,Single,Medical,Travels Rarely,2,No,1,0,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+248,Left,Female,Single,Marketing,Travels Rarely,2,Yes,1,0,Medium,2,Very High,4,High,3,Good,2,Outstanding,4
+249,Active,Male,Married,Medical,Travels Rarely,2,No,1,1,High,3,Very High,4,Medium,2,Good,2,Excellent,3
+250,Active,Female,Divorced,Medical,Travels Rarely,2,No,2,2,Very High,4,High,3,Very High,4,Better,3,Excellent,3
+252,Active,Female,Married,Medical,Travels Rarely,2,No,1,1,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+253,Active,Female,Married,Medical,Travels Rarely,2,No,5,1,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+254,Active,Male,Single,Medical,Travels Rarely,2,No,5,0,High,3,Very High,4,Very High,4,Better,3,Excellent,3
+256,Active,Male,Married,Life Sciences,Travels Frequently,3,No,2,0,Very High,4,High,3,Medium,2,Good,2,Excellent,3
+258,Active,Female,Single,Medical,Travels Rarely,2,No,4,0,Very High,4,High,3,High,3,Better,3,Excellent,3
+259,Active,Male,Married,Life Sciences,Travels Rarely,2,No,5,1,High,3,Low,1,Medium,2,Better,3,Excellent,3
+260,Active,Female,Single,Medical,Travels Rarely,2,No,1,0,Very High,4,Very High,4,High,3,Good,2,Excellent,3
+261,Left,Male,Married,Life Sciences,Travels Rarely,2,Yes,2,0,Medium,2,Low,1,Medium,2,Better,3,Excellent,3
+262,Active,Male,Divorced,Medical,No Travel,1,No,1,3,Very High,4,Very High,4,Very High,4,Best,4,Excellent,3
+264,Active,Male,Married,Medical,No Travel,1,No,4,1,Low,1,Very High,4,Medium,2,Better,3,Outstanding,4
+267,Active,Male,Married,Life Sciences,Travels Rarely,2,Yes,1,1,Medium,2,Low,1,Very High,4,Good,2,Excellent,3
+269,Active,Female,Single,Medical,Travels Frequently,3,No,2,0,Medium,2,Very High,4,High,3,Better,3,Excellent,3
+270,Active,Female,Divorced,Medical,No Travel,1,No,2,1,High,3,Medium,2,High,3,Better,3,Excellent,3
+271,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,0,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+273,Active,Male,Married,Technical Degree,Travels Rarely,2,No,2,1,Very High,4,Low,1,High,3,Bad,1,Excellent,3
+274,Active,Male,Married,Technical Degree,Travels Frequently,3,No,2,1,High,3,High,3,Medium,2,Better,3,Excellent,3
+275,Active,Male,Divorced,Life Sciences,No Travel,1,Yes,2,2,Very High,4,Low,1,High,3,Better,3,Excellent,3
+277,Active,Male,Divorced,Medical,Travels Frequently,3,Yes,1,1,Very High,4,Very High,4,High,3,Best,4,Excellent,3
+281,Active,Male,Married,Medical,Travels Rarely,2,Yes,2,1,High,3,High,3,High,3,Best,4,Excellent,3
+282,Left,Male,Married,Medical,Travels Rarely,2,Yes,2,0,Medium,2,Medium,2,High,3,Better,3,Excellent,3
+283,Left,Female,Married,Marketing,Travels Rarely,2,No,3,3,Medium,2,Very High,4,High,3,Good,2,Outstanding,4
+284,Active,Male,Divorced,Life Sciences,Travels Rarely,2,Yes,1,1,Very High,4,Low,1,Very High,4,Good,2,Excellent,3
+286,Active,Female,Single,Medical,Travels Frequently,3,No,1,0,Medium,2,Low,1,High,3,Better,3,Excellent,3
+287,Active,Male,Married,Life Sciences,No Travel,1,No,2,1,Very High,4,Very High,4,Medium,2,Bad,1,Excellent,3
+288,Active,Male,Divorced,Medical,Travels Rarely,2,No,3,1,Very High,4,High,3,High,3,Better,3,Excellent,3
+291,Left,Male,Married,Medical,Travels Rarely,2,No,3,0,Very High,4,High,3,Low,1,Good,2,Excellent,3
+292,Active,Male,Single,Life Sciences,No Travel,1,No,3,0,High,3,High,3,Medium,2,Better,3,Outstanding,4
+293,Active,Female,Single,Life Sciences,Travels Frequently,3,No,2,0,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+296,Active,Male,Married,Life Sciences,Travels Rarely,2,No,3,2,Medium,2,Very High,4,Medium,2,Bad,1,Excellent,3
+297,Left,Female,Single,Technical Degree,Travels Rarely,2,Yes,1,0,Very High,4,High,3,High,3,Better,3,Excellent,3
+298,Active,Female,Single,Life Sciences,Travels Rarely,2,Yes,3,0,Very High,4,High,3,High,3,Better,3,Excellent,3
+299,Left,Female,Single,Marketing,Travels Frequently,3,No,2,0,High,3,High,3,Medium,2,Good,2,Excellent,3
+300,Left,Male,Single,Technical Degree,Travels Rarely,2,No,1,0,High,3,Very High,4,High,3,Good,2,Excellent,3
+302,Active,Female,Single,Medical,No Travel,1,No,3,0,Very High,4,Very High,4,Medium,2,Better,3,Excellent,3
+303,Active,Female,Married,Marketing,Travels Rarely,2,No,2,1,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+304,Active,Male,Single,Life Sciences,Travels Rarely,2,No,2,0,Very High,4,Very High,4,High,3,Best,4,Excellent,3
+305,Active,Female,Married,Medical,Travels Rarely,2,No,1,0,High,3,Very High,4,Medium,2,Better,3,Outstanding,4
+306,Active,Male,Divorced,Other,Travels Frequently,3,Yes,3,3,Medium,2,High,3,High,3,Better,3,Excellent,3
+307,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,3,2,Low,1,High,3,High,3,Good,2,Excellent,3
+308,Active,Male,Married,Medical,No Travel,1,No,2,1,High,3,Very High,4,Low,1,Better,3,Excellent,3
+309,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,1,High,3,Low,1,Medium,2,Better,3,Excellent,3
+311,Active,Male,Divorced,Marketing,Travels Frequently,3,No,1,1,Low,1,High,3,High,3,Better,3,Excellent,3
+312,Active,Female,Married,Medical,Travels Frequently,3,No,3,1,Medium,2,Very High,4,High,3,Better,3,Excellent,3
+314,Active,Female,Single,Marketing,Travels Frequently,3,No,3,0,High,3,Low,1,High,3,Best,4,Excellent,3
+315,Left,Male,Single,Medical,Travels Rarely,2,Yes,1,0,High,3,High,3,Medium,2,Good,2,Excellent,3
+316,Active,Female,Single,Life Sciences,Travels Rarely,2,No,1,0,High,3,Medium,2,Medium,2,Good,2,Excellent,3
+319,Active,Male,Married,Technical Degree,Travels Rarely,2,No,5,0,High,3,Very High,4,High,3,Better,3,Excellent,3
+321,Active,Male,Married,Medical,Travels Rarely,2,No,1,0,Medium,2,Very High,4,High,3,Good,2,Excellent,3
+323,Active,Female,Divorced,Medical,Travels Rarely,2,No,5,1,Very High,4,High,3,High,3,Good,2,Excellent,3
+325,Left,Male,Married,Medical,Travels Rarely,2,Yes,1,1,High,3,High,3,High,3,Bad,1,Excellent,3
+327,Active,Female,Married,Marketing,Travels Rarely,2,Yes,4,1,Very High,4,High,3,High,3,Better,3,Outstanding,4
+328,Left,Female,Married,Life Sciences,Travels Rarely,2,No,1,0,Low,1,Low,1,High,3,Best,4,Outstanding,4
+329,Active,Male,Single,Life Sciences,No Travel,1,Yes,5,0,Low,1,Very High,4,Medium,2,Best,4,Excellent,3
+330,Active,Female,Married,Life Sciences,Travels Rarely,2,No,1,1,High,3,Low,1,High,3,Better,3,Excellent,3
+331,Left,Male,Single,Life Sciences,Travels Rarely,2,Yes,1,0,Very High,4,Very High,4,Medium,2,Bad,1,Excellent,3
+332,Active,Female,Divorced,Medical,Travels Rarely,2,No,1,3,High,3,High,3,High,3,Better,3,Excellent,3
+333,Active,Male,Married,Marketing,No Travel,1,No,2,0,High,3,Low,1,High,3,Better,3,Excellent,3
+334,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,2,2,High,3,Low,1,High,3,Good,2,Excellent,3
+335,Active,Male,Divorced,Technical Degree,Travels Rarely,2,No,2,2,Low,1,Low,1,High,3,Better,3,Excellent,3
+336,Active,Male,Married,Other,Travels Rarely,2,No,5,1,High,3,High,3,Very High,4,Better,3,Excellent,3
+337,Active,Male,Divorced,Medical,Travels Frequently,3,No,3,1,Medium,2,Low,1,High,3,Better,3,Excellent,3
+338,Active,Female,Married,Life Sciences,Travels Rarely,2,No,1,1,High,3,High,3,Medium,2,Good,2,Excellent,3
+339,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,1,Very High,4,Medium,2,Medium,2,Better,3,Excellent,3
+340,Active,Female,Married,Medical,Travels Rarely,2,No,1,1,High,3,Low,1,Medium,2,Good,2,Excellent,3
+341,Active,Male,Married,Life Sciences,Travels Frequently,3,No,2,1,Low,1,Very High,4,Very High,4,Better,3,Excellent,3
+342,Left,Male,Divorced,Medical,Travels Frequently,3,No,3,2,Low,1,Medium,2,High,3,Better,3,Excellent,3
+343,Active,Female,Single,Technical Degree,Travels Frequently,3,No,3,0,High,3,Very High,4,High,3,Better,3,Outstanding,4
+346,Active,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,High,3,Low,1,High,3,Better,3,Excellent,3
+347,Active,Female,Single,Life Sciences,Travels Rarely,2,Yes,2,0,Very High,4,High,3,Very High,4,Better,3,Excellent,3
+349,Active,Male,Divorced,Marketing,Travels Rarely,2,No,2,1,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+350,Active,Female,Married,Life Sciences,Travels Rarely,2,No,2,2,Low,1,Very High,4,High,3,Better,3,Excellent,3
+351,Active,Female,Divorced,Medical,Travels Rarely,2,Yes,1,1,Very High,4,High,3,Medium,2,Better,3,Excellent,3
+352,Active,Male,Divorced,Medical,Travels Rarely,2,No,5,1,Low,1,Very High,4,High,3,Better,3,Excellent,3
+353,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,0,High,3,Medium,2,High,3,Good,2,Excellent,3
+355,Left,Male,Single,Medical,Travels Frequently,3,No,1,0,High,3,Medium,2,Medium,2,Best,4,Excellent,3
+359,Active,Male,Married,Life Sciences,Travels Frequently,3,No,1,0,Medium,2,High,3,Very High,4,Bad,1,Outstanding,4
+361,Active,Male,Married,Life Sciences,No Travel,1,No,2,1,Very High,4,Very High,4,Medium,2,Better,3,Excellent,3
+362,Active,Male,Single,Technical Degree,Travels Rarely,2,No,2,0,Very High,4,Very High,4,Medium,2,Better,3,Excellent,3
+363,Active,Female,Married,Technical Degree,Travels Rarely,2,Yes,4,1,High,3,Medium,2,Low,1,Good,2,Excellent,3
+364,Left,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,Low,1,High,3,High,3,Bad,1,Excellent,3
+366,Active,Male,Married,Medical,Travels Rarely,2,No,2,2,Low,1,Medium,2,Medium,2,Better,3,Excellent,3
+367,Active,Male,Married,Medical,Travels Rarely,2,No,2,1,Medium,2,Medium,2,Medium,2,Better,3,Outstanding,4
+369,Active,Male,Divorced,Life Sciences,No Travel,1,No,2,2,Medium,2,Very High,4,Very High,4,Better,3,Excellent,3
+372,Active,Male,Married,Medical,Travels Rarely,2,Yes,4,0,High,3,Medium,2,High,3,Better,3,Excellent,3
+373,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,1,Very High,4,High,3,High,3,Better,3,Excellent,3
+374,Active,Male,Single,Medical,Travels Rarely,2,Yes,5,0,Very High,4,High,3,High,3,Better,3,Excellent,3
+376,Left,Male,Married,Life Sciences,No Travel,1,Yes,3,1,Low,1,Very High,4,High,3,Good,2,Excellent,3
+377,Active,Male,Married,Medical,Travels Rarely,2,No,1,1,Very High,4,Very High,4,High,3,Good,2,Outstanding,4
+378,Active,Male,Married,Medical,Travels Rarely,2,No,2,1,High,3,Medium,2,High,3,Best,4,Excellent,3
+379,Active,Male,Single,Medical,Travels Rarely,2,No,1,0,Very High,4,Low,1,Medium,2,Best,4,Excellent,3
+380,Active,Female,Divorced,Medical,No Travel,1,Yes,3,2,Low,1,Low,1,High,3,Better,3,Excellent,3
+381,Active,Female,Divorced,Life Sciences,Travels Rarely,2,No,3,1,Medium,2,Medium,2,Very High,4,Good,2,Excellent,3
+382,Active,Female,Divorced,Medical,Travels Rarely,2,Yes,2,1,Low,1,High,3,Very High,4,Better,3,Outstanding,4
+384,Active,Female,Divorced,Life Sciences,Travels Frequently,3,No,2,1,High,3,Low,1,High,3,Bad,1,Outstanding,4
+385,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,5,2,Low,1,Low,1,High,3,Good,2,Excellent,3
+386,Active,Male,Married,Medical,Travels Rarely,2,Yes,4,3,High,3,Very High,4,High,3,Good,2,Excellent,3
+387,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,0,Medium,2,High,3,High,3,Better,3,Outstanding,4
+388,Active,Male,Single,Life Sciences,Travels Frequently,3,No,2,0,Medium,2,Low,1,High,3,Good,2,Excellent,3
+389,Active,Male,Married,Technical Degree,Travels Rarely,2,Yes,2,1,Medium,2,Very High,4,High,3,Better,3,Excellent,3
+390,Active,Male,Married,Medical,Travels Frequently,3,Yes,2,1,Low,1,High,3,High,3,Better,3,Excellent,3
+391,Active,Female,Single,Life Sciences,Travels Rarely,2,No,1,0,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+392,Left,Male,Divorced,Life Sciences,Travels Frequently,3,Yes,1,1,Very High,4,Very High,4,High,3,Bad,1,Outstanding,4
+393,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,2,1,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+394,Left,Male,Divorced,Medical,Travels Rarely,2,Yes,1,1,Low,1,Very High,4,High,3,Better,3,Excellent,3
+395,Active,Female,Single,Life Sciences,Travels Rarely,2,No,1,0,Very High,4,Very High,4,High,3,Better,3,Outstanding,4
+396,Active,Female,Single,Life Sciences,Travels Frequently,3,Yes,5,0,High,3,Very High,4,High,3,Better,3,Excellent,3
+397,Active,Male,Single,Technical Degree,Travels Rarely,2,No,2,0,High,3,Very High,4,High,3,Better,3,Excellent,3
+399,Active,Female,Divorced,Marketing,Travels Frequently,3,No,1,1,Very High,4,High,3,High,3,Good,2,Excellent,3
+401,Left,Male,Single,Marketing,Travels Rarely,2,Yes,2,0,Very High,4,Medium,2,Medium,2,Better,3,Excellent,3
+403,Active,Male,Married,Medical,Travels Frequently,3,Yes,1,3,Medium,2,High,3,High,3,Good,2,Excellent,3
+404,Active,Female,Married,Marketing,Travels Frequently,3,No,4,1,High,3,Very High,4,High,3,Best,4,Excellent,3
+405,Left,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,High,3,High,3,High,3,Better,3,Excellent,3
+406,Active,Male,Married,Marketing,Travels Rarely,2,No,3,2,High,3,High,3,High,3,Good,2,Excellent,3
+407,Active,Male,Married,Life Sciences,Travels Frequently,3,No,1,2,High,3,Very High,4,Very High,4,Better,3,Excellent,3
+408,Active,Male,Divorced,Medical,Travels Rarely,2,No,2,1,Very High,4,Very High,4,Low,1,Better,3,Excellent,3
+410,Active,Male,Single,Life Sciences,Travels Rarely,2,No,4,0,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+411,Active,Female,Single,Medical,Travels Rarely,2,No,1,0,Very High,4,Low,1,Medium,2,Better,3,Excellent,3
+412,Active,Male,Single,Medical,Travels Rarely,2,No,2,0,Medium,2,High,3,Very High,4,Better,3,Excellent,3
+416,Active,Male,Married,Technical Degree,Travels Rarely,2,No,2,1,Medium,2,Medium,2,Very High,4,Good,2,Excellent,3
+417,Active,Male,Divorced,Medical,Travels Rarely,2,No,3,3,High,3,Low,1,Very High,4,Good,2,Excellent,3
+419,Active,Female,Married,Life Sciences,No Travel,1,No,2,1,Medium,2,High,3,High,3,Better,3,Excellent,3
+420,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,1,Very High,4,High,3,Medium,2,Good,2,Excellent,3
+421,Active,Female,Married,Life Sciences,Travels Rarely,2,No,3,1,Low,1,High,3,Medium,2,Better,3,Excellent,3
+422,Active,Male,Divorced,Life Sciences,No Travel,1,Yes,2,1,Very High,4,Very High,4,Low,1,Better,3,Excellent,3
+423,Active,Male,Married,Technical Degree,Travels Rarely,2,Yes,1,1,High,3,High,3,High,3,Better,3,Excellent,3
+424,Active,Male,Married,Human Resources,Travels Rarely,2,No,2,0,Low,1,Very High,4,Medium,2,Better,3,Excellent,3
+425,Active,Male,Divorced,Life Sciences,Travels Frequently,3,No,3,1,Low,1,Low,1,High,3,Better,3,Excellent,3
+426,Active,Male,Divorced,Life Sciences,Travels Rarely,2,Yes,1,1,High,3,Medium,2,High,3,Bad,1,Excellent,3
+428,Active,Female,Married,Life Sciences,Travels Frequently,3,No,3,2,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+429,Active,Male,Married,Medical,Travels Rarely,2,Yes,4,0,High,3,Very High,4,High,3,Better,3,Excellent,3
+430,Active,Female,Single,Life Sciences,Travels Frequently,3,No,1,0,High,3,Low,1,High,3,Better,3,Excellent,3
+431,Active,Female,Single,Technical Degree,Travels Rarely,2,Yes,4,0,High,3,Very High,4,Medium,2,Better,3,Excellent,3
+433,Left,Male,Married,Medical,Travels Rarely,2,No,2,0,High,3,Low,1,Medium,2,Good,2,Excellent,3
+434,Active,Female,Single,Life Sciences,Travels Rarely,2,Yes,1,0,High,3,Medium,2,High,3,Good,2,Excellent,3
+436,Active,Female,Married,Technical Degree,Travels Rarely,2,Yes,2,0,High,3,Very High,4,Medium,2,Better,3,Excellent,3
+437,Active,Male,Single,Life Sciences,Travels Rarely,2,Yes,2,0,Very High,4,Low,1,High,3,Better,3,Excellent,3
+438,Active,Male,Divorced,Marketing,Travels Rarely,2,No,2,3,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+439,Active,Female,Single,Medical,Travels Rarely,2,No,2,0,Low,1,High,3,Very High,4,Good,2,Excellent,3
+440,Left,Male,Married,Medical,Travels Rarely,2,Yes,1,0,Low,1,Very High,4,Low,1,Good,2,Excellent,3
+441,Active,Female,Married,Medical,Travels Rarely,2,No,2,2,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+442,Active,Female,Married,Life Sciences,Travels Frequently,3,No,3,1,High,3,Low,1,Medium,2,Better,3,Outstanding,4
+444,Active,Male,Married,Medical,Travels Frequently,3,No,5,1,High,3,Low,1,Medium,2,Better,3,Excellent,3
+445,Left,Female,Married,Medical,Travels Rarely,2,Yes,2,0,Very High,4,Low,1,High,3,Good,2,Excellent,3
+446,Active,Male,Single,Marketing,Travels Frequently,3,No,2,0,Medium,2,High,3,Medium,2,Good,2,Excellent,3
+447,Active,Male,Married,Life Sciences,Travels Rarely,2,No,5,1,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+448,Active,Female,Divorced,Life Sciences,Travels Frequently,3,No,2,1,High,3,Medium,2,Medium,2,Best,4,Excellent,3
+449,Active,Male,Married,Marketing,No Travel,1,Yes,2,1,High,3,Very High,4,High,3,Better,3,Excellent,3
+450,Active,Female,Single,Life Sciences,Travels Frequently,3,No,2,0,Very High,4,Very High,4,High,3,Good,2,Excellent,3
+451,Active,Female,Married,Life Sciences,Travels Rarely,2,No,3,1,High,3,Low,1,High,3,Good,2,Excellent,3
+452,Active,Male,Married,Other,Travels Rarely,2,No,2,2,Very High,4,Low,1,High,3,Better,3,Excellent,3
+453,Active,Male,Married,Medical,Travels Rarely,2,Yes,2,3,Medium,2,High,3,Low,1,Good,2,Outstanding,4
+454,Left,Male,Married,Other,Travels Rarely,2,Yes,1,0,Medium,2,Very High,4,Low,1,Good,2,Excellent,3
+455,Active,Male,Single,Other,Travels Rarely,2,No,1,0,Medium,2,High,3,Medium,2,Better,3,Excellent,3
+456,Active,Female,Divorced,Marketing,Travels Rarely,2,No,2,3,Very High,4,High,3,Medium,2,Better,3,Excellent,3
+458,Active,Female,Married,Marketing,Travels Rarely,2,No,2,1,Medium,2,Low,1,High,3,Better,3,Excellent,3
+460,Active,Male,Divorced,Medical,Travels Rarely,2,No,2,2,Very High,4,High,3,High,3,Good,2,Excellent,3
+461,Active,Male,Divorced,Life Sciences,Travels Rarely,2,Yes,3,1,High,3,Medium,2,Medium,2,Better,3,Excellent,3
+462,Active,Female,Single,Medical,Travels Rarely,2,Yes,3,0,High,3,High,3,High,3,Good,2,Excellent,3
+463,Active,Female,Divorced,Marketing,Travels Rarely,2,Yes,2,2,Very High,4,Low,1,Medium,2,Better,3,Excellent,3
+464,Active,Male,Single,Technical Degree,Travels Rarely,2,No,3,0,High,3,Very High,4,High,3,Better,3,Excellent,3
+465,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,1,2,High,3,High,3,High,3,Good,2,Excellent,3
+466,Active,Male,Single,Medical,Travels Rarely,2,Yes,2,0,Very High,4,Very High,4,Medium,2,Better,3,Excellent,3
+467,Active,Male,Single,Medical,Travels Frequently,3,No,2,0,Medium,2,Low,1,High,3,Better,3,Excellent,3
+468,Active,Female,Single,Life Sciences,Travels Rarely,2,No,4,0,Low,1,Medium,2,High,3,Better,3,Excellent,3
+469,Active,Male,Married,Life Sciences,No Travel,1,No,2,1,Very High,4,Low,1,High,3,Good,2,Excellent,3
+470,Active,Male,Divorced,Technical Degree,Travels Rarely,2,Yes,1,1,High,3,High,3,High,3,Better,3,Excellent,3
+471,Active,Female,Married,Medical,Travels Rarely,2,No,1,1,High,3,High,3,High,3,Better,3,Excellent,3
+473,Active,Female,Married,Medical,Travels Rarely,2,No,3,1,Low,1,Medium,2,High,3,Bad,1,Outstanding,4
+474,Active,Male,Divorced,Medical,Travels Rarely,2,Yes,2,2,High,3,Low,1,Very High,4,Better,3,Excellent,3
+475,Active,Female,Married,Technical Degree,No Travel,1,Yes,2,1,Very High,4,Medium,2,High,3,Best,4,Excellent,3
+476,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,1,High,3,Medium,2,High,3,Better,3,Excellent,3
+477,Active,Male,Single,Other,Travels Rarely,2,No,2,0,Low,1,Medium,2,Medium,2,Better,3,Outstanding,4
+478,Left,Female,Single,Technical Degree,Travels Frequently,3,Yes,1,0,Low,1,High,3,Medium,2,Better,3,Excellent,3
+479,Active,Female,Single,Medical,No Travel,1,No,2,0,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+481,Active,Male,Married,Medical,Travels Frequently,3,No,3,1,Low,1,Low,1,Medium,2,Better,3,Excellent,3
+482,Active,Male,Married,Medical,Travels Rarely,2,No,2,0,Very High,4,High,3,High,3,Better,3,Excellent,3
+483,Active,Female,Married,Life Sciences,Travels Rarely,2,Yes,1,1,Very High,4,High,3,Very High,4,Better,3,Excellent,3
+484,Active,Male,Single,Medical,No Travel,1,No,1,0,Low,1,High,3,High,3,Good,2,Outstanding,4
+485,Left,Female,Single,Marketing,Travels Rarely,2,Yes,1,0,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+486,Active,Female,Married,Medical,Travels Rarely,2,No,1,1,High,3,Medium,2,High,3,Better,3,Outstanding,4
+487,Active,Female,Married,Medical,No Travel,1,No,2,0,High,3,High,3,High,3,Best,4,Excellent,3
+488,Left,Male,Single,Marketing,Travels Frequently,3,No,2,0,Low,1,High,3,High,3,Better,3,Excellent,3
+491,Active,Male,Single,Technical Degree,Travels Rarely,2,No,3,0,Very High,4,Very High,4,Medium,2,Better,3,Excellent,3
+492,Left,Male,Married,Marketing,Travels Rarely,2,Yes,2,2,High,3,Low,1,Medium,2,Better,3,Excellent,3
+493,Active,Male,Single,Life Sciences,Travels Rarely,2,Yes,1,0,High,3,Very High,4,Medium,2,Better,3,Excellent,3
+494,Left,Female,Single,Life Sciences,Travels Rarely,2,No,1,0,High,3,Very High,4,Very High,4,Better,3,Excellent,3
+495,Active,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+496,Active,Male,Single,Life Sciences,Travels Rarely,2,No,2,0,High,3,High,3,Medium,2,Better,3,Excellent,3
+497,Active,Male,Divorced,Medical,Travels Rarely,2,No,1,1,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+498,Active,Male,Single,Life Sciences,Travels Rarely,2,No,2,0,Medium,2,Very High,4,High,3,Better,3,Excellent,3
+499,Active,Male,Single,Other,Travels Rarely,2,No,3,0,Medium,2,High,3,Medium,2,Better,3,Outstanding,4
+500,Active,Female,Married,Life Sciences,Travels Rarely,2,No,2,1,High,3,High,3,High,3,Good,2,Excellent,3
+501,Active,Female,Married,Life Sciences,Travels Rarely,2,No,1,1,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+502,Left,Male,Single,Marketing,No Travel,1,Yes,2,0,Low,1,Medium,2,Very High,4,Good,2,Excellent,3
+505,Active,Female,Single,Life Sciences,Travels Rarely,2,Yes,4,0,High,3,High,3,High,3,Better,3,Excellent,3
+507,Active,Female,Divorced,Marketing,Travels Rarely,2,Yes,2,1,Very High,4,Very High,4,High,3,Best,4,Excellent,3
+508,Active,Male,Married,Technical Degree,Travels Rarely,2,No,1,1,High,3,Low,1,High,3,Better,3,Excellent,3
+510,Left,Male,Single,Technical Degree,Travels Frequently,3,No,1,0,High,3,High,3,High,3,Better,3,Outstanding,4
+511,Active,Female,Married,Medical,Travels Rarely,2,No,1,1,Low,1,Very High,4,High,3,Better,3,Excellent,3
+513,Active,Male,Married,Medical,Travels Rarely,2,No,3,2,Medium,2,Medium,2,Medium,2,Better,3,Excellent,3
+514,Left,Male,Single,Technical Degree,Travels Frequently,3,Yes,1,0,High,3,High,3,High,3,Better,3,Outstanding,4
+515,Active,Female,Divorced,Life Sciences,Travels Rarely,2,No,1,1,Very High,4,High,3,High,3,Good,2,Excellent,3
+516,Active,Female,Divorced,Marketing,Travels Rarely,2,No,2,2,Very High,4,High,3,High,3,Better,3,Excellent,3
+517,Active,Female,Divorced,Life Sciences,Travels Rarely,2,No,1,1,Medium,2,Medium,2,High,3,Better,3,Excellent,3
+518,Active,Male,Single,Life Sciences,Travels Rarely,2,Yes,2,0,High,3,Very High,4,High,3,Good,2,Excellent,3
+520,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,4,1,Low,1,High,3,Medium,2,Better,3,Excellent,3
+521,Active,Female,Married,Medical,Travels Rarely,2,No,2,1,Medium,2,Medium,2,Medium,2,Better,3,Outstanding,4
+522,Active,Male,Married,Medical,Travels Rarely,2,No,5,1,Low,1,High,3,High,3,Good,2,Excellent,3
+523,Active,Female,Married,Marketing,No Travel,1,No,2,1,High,3,Low,1,High,3,Better,3,Excellent,3
+524,Active,Female,Married,Medical,Travels Rarely,2,No,2,1,Medium,2,Medium,2,High,3,Bad,1,Excellent,3
+525,Active,Male,Married,Medical,Travels Frequently,3,No,1,1,Very High,4,Low,1,High,3,Better,3,Outstanding,4
+526,Active,Female,Divorced,Other,Travels Rarely,2,Yes,2,0,High,3,Very High,4,High,3,Better,3,Excellent,3
+527,Active,Female,Single,Life Sciences,Travels Rarely,2,Yes,2,0,Medium,2,Medium,2,Medium,2,Better,3,Excellent,3
+529,Active,Female,Married,Medical,No Travel,1,Yes,2,2,Medium,2,Low,1,High,3,Better,3,Excellent,3
+530,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,1,Very High,4,High,3,Medium,2,Better,3,Excellent,3
+531,Active,Male,Divorced,Life Sciences,Travels Frequently,3,Yes,5,1,Medium,2,High,3,High,3,Better,3,Excellent,3
+532,Active,Female,Married,Life Sciences,Travels Frequently,3,No,4,3,High,3,Very High,4,Very High,4,Good,2,Excellent,3
+533,Active,Female,Single,Technical Degree,Travels Rarely,2,No,2,0,Medium,2,Medium,2,High,3,Better,3,Excellent,3
+534,Active,Male,Married,Marketing,Travels Rarely,2,No,3,1,Medium,2,High,3,Very High,4,Better,3,Excellent,3
+536,Active,Male,Divorced,Medical,Travels Rarely,2,No,2,1,High,3,Very High,4,High,3,Better,3,Excellent,3
+538,Left,Male,Married,Medical,Travels Rarely,2,No,1,1,Low,1,High,3,High,3,Better,3,Excellent,3
+543,Active,Male,Married,Medical,Travels Rarely,2,Yes,3,0,Very High,4,High,3,Medium,2,Better,3,Excellent,3
+544,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,2,Low,1,Very High,4,High,3,Good,2,Outstanding,4
+546,Active,Female,Married,Life Sciences,Travels Rarely,2,No,4,0,Very High,4,Very High,4,High,3,Bad,1,Excellent,3
+547,Active,Female,Divorced,Life Sciences,Travels Frequently,3,No,2,1,Low,1,Medium,2,High,3,Better,3,Excellent,3
+548,Active,Female,Single,Life Sciences,Travels Rarely,2,No,2,0,High,3,High,3,Low,1,Better,3,Outstanding,4
+549,Active,Female,Married,Life Sciences,Travels Rarely,2,No,5,0,Low,1,Very High,4,High,3,Bad,1,Excellent,3
+550,Active,Female,Divorced,Medical,Travels Rarely,2,No,2,1,High,3,High,3,High,3,Good,2,Excellent,3
+551,Active,Female,Married,Technical Degree,Travels Frequently,3,No,2,3,Very High,4,Very High,4,Medium,2,Best,4,Excellent,3
+554,Left,Female,Single,Technical Degree,Travels Rarely,2,Yes,1,0,Low,1,Medium,2,High,3,Better,3,Excellent,3
+555,Left,Female,Divorced,Marketing,Travels Frequently,3,No,1,1,Very High,4,Very High,4,Low,1,Good,2,Excellent,3
+556,Active,Male,Married,Life Sciences,Travels Frequently,3,Yes,1,1,Very High,4,High,3,High,3,Better,3,Outstanding,4
+558,Active,Female,Married,Life Sciences,Travels Rarely,2,No,5,0,High,3,Very High,4,High,3,Better,3,Excellent,3
+560,Active,Female,Divorced,Life Sciences,Travels Rarely,2,No,1,2,Low,1,Medium,2,High,3,Bad,1,Outstanding,4
+562,Active,Male,Married,Life Sciences,No Travel,1,No,1,1,High,3,High,3,High,3,Bad,1,Excellent,3
+564,Active,Male,Married,Medical,Travels Rarely,2,No,3,0,Medium,2,High,3,Medium,2,Better,3,Excellent,3
+565,Left,Female,Married,Technical Degree,Travels Rarely,2,No,1,0,High,3,Medium,2,Medium,2,Best,4,Excellent,3
+566,Left,Male,Single,Technical Degree,Travels Rarely,2,No,1,0,Low,1,High,3,Medium,2,Best,4,Excellent,3
+567,Active,Female,Married,Other,No Travel,1,No,3,0,High,3,High,3,High,3,Better,3,Excellent,3
+568,Active,Male,Divorced,Marketing,Travels Rarely,2,No,4,1,Low,1,High,3,Medium,2,Good,2,Excellent,3
+569,Active,Male,Married,Life Sciences,Travels Rarely,2,No,4,1,Medium,2,Medium,2,Medium,2,Better,3,Excellent,3
+571,Active,Female,Single,Medical,No Travel,1,No,1,0,High,3,High,3,High,3,Good,2,Excellent,3
+573,Active,Female,Married,Marketing,Travels Frequently,3,No,3,0,High,3,Very High,4,Medium,2,Best,4,Excellent,3
+574,Active,Female,Divorced,Medical,Travels Rarely,2,No,2,3,Low,1,High,3,High,3,Better,3,Excellent,3
+575,Active,Male,Married,Life Sciences,Travels Rarely,2,No,4,0,Low,1,High,3,High,3,Bad,1,Excellent,3
+577,Active,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,Very High,4,High,3,Low,1,Better,3,Excellent,3
+578,Active,Female,Single,Life Sciences,Travels Rarely,2,No,2,0,High,3,High,3,High,3,Better,3,Excellent,3
+579,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,1,1,Very High,4,High,3,Medium,2,Better,3,Excellent,3
+580,Active,Female,Married,Marketing,Travels Rarely,2,Yes,3,1,High,3,High,3,Medium,2,Better,3,Excellent,3
+581,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,3,1,High,3,Very High,4,High,3,Best,4,Outstanding,4
+582,Left,Male,Married,Medical,Travels Rarely,2,Yes,3,0,Medium,2,Very High,4,High,3,Best,4,Excellent,3
+584,Left,Male,Divorced,Medical,Travels Rarely,2,No,1,3,Low,1,Low,1,Low,1,Better,3,Excellent,3
+585,Active,Male,Single,Marketing,Travels Rarely,2,No,1,0,Very High,4,Low,1,High,3,Better,3,Excellent,3
+586,Active,Male,Married,Life Sciences,Travels Rarely,2,Yes,3,0,Very High,4,High,3,High,3,Better,3,Excellent,3
+587,Left,Male,Married,Life Sciences,Travels Frequently,3,No,3,0,Low,1,Low,1,High,3,Better,3,Excellent,3
+590,Left,Female,Divorced,Human Resources,Travels Frequently,3,Yes,3,3,Medium,2,High,3,High,3,Better,3,Excellent,3
+591,Active,Male,Married,Other,Travels Frequently,3,No,1,1,Medium,2,Very High,4,High,3,Better,3,Excellent,3
+592,Active,Male,Single,Medical,No Travel,1,No,3,0,Medium,2,Very High,4,High,3,Good,2,Excellent,3
+593,Left,Male,Single,Technical Degree,Travels Frequently,3,No,1,0,High,3,High,3,Medium,2,Better,3,Excellent,3
+595,Active,Female,Married,Marketing,Travels Rarely,2,No,2,1,Medium,2,Low,1,High,3,Better,3,Excellent,3
+597,Active,Female,Single,Life Sciences,Travels Rarely,2,No,4,0,Low,1,Very High,4,High,3,Better,3,Outstanding,4
+599,Active,Male,Single,Life Sciences,No Travel,1,No,2,0,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+600,Active,Male,Married,Marketing,Travels Rarely,2,No,2,0,Medium,2,High,3,High,3,Better,3,Excellent,3
+601,Active,Female,Single,Life Sciences,Travels Rarely,2,No,4,0,Medium,2,High,3,High,3,Better,3,Excellent,3
+602,Active,Female,Married,Life Sciences,Travels Frequently,3,No,1,1,High,3,Low,1,High,3,Better,3,Excellent,3
+604,Active,Male,Single,Life Sciences,Travels Rarely,2,Yes,2,0,Medium,2,High,3,High,3,Best,4,Excellent,3
+605,Active,Male,Married,Medical,Travels Rarely,2,Yes,3,1,Very High,4,Very High,4,High,3,Good,2,Outstanding,4
+606,Active,Male,Married,Other,Travels Rarely,2,No,2,1,Very High,4,Medium,2,High,3,Best,4,Excellent,3
+608,Left,Female,Divorced,Life Sciences,Travels Frequently,3,Yes,1,1,Medium,2,Medium,2,High,3,Good,2,Excellent,3
+611,Active,Male,Divorced,Technical Degree,Travels Rarely,2,No,2,2,Very High,4,Medium,2,High,3,Best,4,Excellent,3
+612,Active,Female,Divorced,Medical,Travels Rarely,2,No,4,1,Low,1,High,3,Very High,4,Better,3,Excellent,3
+613,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,3,1,High,3,High,3,Medium,2,Good,2,Outstanding,4
+614,Left,Male,Single,Marketing,Travels Frequently,3,Yes,1,0,Medium,2,Very High,4,High,3,Better,3,Excellent,3
+615,Active,Male,Divorced,Other,No Travel,1,No,3,1,High,3,High,3,Low,1,Better,3,Excellent,3
+616,Active,Female,Single,Other,No Travel,1,Yes,2,0,Low,1,Low,1,Medium,2,Better,3,Excellent,3
+618,Active,Male,Divorced,Medical,Travels Rarely,2,No,2,2,Low,1,Low,1,High,3,Better,3,Excellent,3
+620,Active,Female,Single,Medical,Travels Rarely,2,No,2,0,Low,1,Very High,4,High,3,Better,3,Excellent,3
+621,Active,Male,Single,Life Sciences,Travels Rarely,2,No,2,0,Very High,4,Very High,4,Very High,4,Better,3,Excellent,3
+622,Left,Male,Single,Technical Degree,Travels Rarely,2,Yes,1,0,High,3,Medium,2,Low,1,Bad,1,Excellent,3
+623,Active,Female,Single,Technical Degree,Travels Rarely,2,No,3,0,Medium,2,Very High,4,High,3,Best,4,Excellent,3
+624,Active,Female,Married,Medical,Travels Frequently,3,No,3,0,Low,1,Very High,4,High,3,Good,2,Excellent,3
+625,Active,Female,Married,Life Sciences,Travels Rarely,2,No,4,1,Medium,2,Medium,2,High,3,Better,3,Excellent,3
+626,Active,Male,Divorced,Medical,No Travel,1,No,3,1,Low,1,Very High,4,High,3,Better,3,Excellent,3
+630,Active,Male,Divorced,Technical Degree,Travels Rarely,2,Yes,2,2,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+631,Left,Male,Married,Other,No Travel,1,No,2,0,Very High,4,Very High,4,Very High,4,Better,3,Excellent,3
+632,Active,Male,Married,Medical,Travels Frequently,3,No,1,2,Very High,4,High,3,High,3,Better,3,Excellent,3
+634,Active,Female,Married,Medical,Travels Rarely,2,No,2,1,High,3,High,3,High,3,Better,3,Excellent,3
+635,Active,Female,Married,Life Sciences,Travels Rarely,2,No,2,1,Medium,2,Medium,2,High,3,Good,2,Excellent,3
+638,Active,Male,Divorced,Life Sciences,Travels Rarely,2,Yes,5,1,Very High,4,High,3,Medium,2,Better,3,Excellent,3
+639,Active,Male,Married,Medical,Travels Rarely,2,Yes,1,2,Medium,2,Medium,2,Very High,4,Better,3,Excellent,3
+641,Active,Male,Married,Marketing,Travels Rarely,2,No,2,2,Low,1,Very High,4,High,3,Best,4,Outstanding,4
+643,Active,Male,Married,Other,Travels Rarely,2,No,1,1,Very High,4,Very High,4,Medium,2,Better,3,Outstanding,4
+644,Active,Male,Married,Medical,Travels Frequently,3,No,5,1,Low,1,High,3,High,3,Better,3,Excellent,3
+645,Active,Male,Married,Medical,Travels Rarely,2,No,1,0,Medium,2,High,3,High,3,Better,3,Excellent,3
+647,Left,Female,Married,Life Sciences,Travels Frequently,3,Yes,1,1,Low,1,Very High,4,High,3,Better,3,Excellent,3
+648,Left,Male,Married,Life Sciences,Travels Frequently,3,No,1,1,Medium,2,High,3,Medium,2,Best,4,Excellent,3
+649,Active,Male,Married,Life Sciences,Travels Rarely,2,Yes,1,1,Medium,2,Very High,4,Medium,2,Better,3,Excellent,3
+650,Left,Male,Divorced,Medical,Travels Rarely,2,No,2,0,Medium,2,High,3,High,3,Bad,1,Excellent,3
+652,Active,Male,Single,Other,Travels Rarely,2,No,2,0,Low,1,Very High,4,Medium,2,Better,3,Excellent,3
+653,Active,Male,Divorced,Medical,Travels Rarely,2,No,2,2,Low,1,Very High,4,Very High,4,Best,4,Outstanding,4
+655,Active,Female,Divorced,Medical,Travels Rarely,2,No,1,2,Low,1,High,3,Medium,2,Good,2,Excellent,3
+656,Active,Male,Married,Marketing,Travels Rarely,2,Yes,2,1,Very High,4,High,3,High,3,Good,2,Excellent,3
+657,Active,Female,Single,Life Sciences,Travels Rarely,2,No,1,0,Very High,4,Very High,4,Medium,2,Best,4,Excellent,3
+659,Active,Female,Married,Life Sciences,Travels Rarely,2,No,2,2,High,3,Medium,2,High,3,Better,3,Excellent,3
+661,Active,Male,Divorced,Other,Travels Rarely,2,Yes,4,1,Medium,2,High,3,Medium,2,Good,2,Excellent,3
+662,Active,Female,Single,Life Sciences,Travels Rarely,2,No,1,0,High,3,Very High,4,High,3,Good,2,Excellent,3
+663,Active,Male,Divorced,Medical,Travels Frequently,3,Yes,2,1,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+664,Active,Female,Married,Life Sciences,Travels Rarely,2,No,4,1,Very High,4,Low,1,Medium,2,Bad,1,Excellent,3
+665,Active,Female,Single,Life Sciences,Travels Rarely,2,No,2,0,Low,1,Medium,2,Medium,2,Best,4,Excellent,3
+666,Active,Female,Divorced,Technical Degree,Travels Rarely,2,Yes,1,2,High,3,Very High,4,High,3,Better,3,Excellent,3
+667,Left,Male,Divorced,Marketing,Travels Rarely,2,No,1,1,High,3,Medium,2,High,3,Better,3,Excellent,3
+669,Active,Male,Single,Technical Degree,Travels Rarely,2,No,1,0,High,3,High,3,High,3,Better,3,Excellent,3
+671,Active,Male,Married,Other,Travels Rarely,2,Yes,5,1,Very High,4,Low,1,High,3,Best,4,Excellent,3
+675,Active,Male,Married,Medical,Travels Rarely,2,No,1,0,Low,1,Very High,4,High,3,Better,3,Outstanding,4
+677,Active,Male,Divorced,Marketing,Travels Rarely,2,No,2,0,High,3,Very High,4,High,3,Better,3,Excellent,3
+679,Active,Female,Married,Life Sciences,Travels Rarely,2,Yes,2,1,Low,1,Very High,4,High,3,Good,2,Excellent,3
+680,Active,Female,Divorced,Medical,Travels Frequently,3,No,1,1,High,3,High,3,High,3,Better,3,Outstanding,4
+682,Active,Female,Single,Medical,Travels Rarely,2,No,2,0,Very High,4,Very High,4,High,3,Best,4,Outstanding,4
+683,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,1,Medium,2,Very High,4,High,3,Good,2,Excellent,3
+684,Left,Female,Married,Life Sciences,Travels Frequently,3,No,2,2,Low,1,Very High,4,High,3,Better,3,Excellent,3
+686,Active,Female,Married,Life Sciences,Travels Rarely,2,Yes,1,1,High,3,High,3,High,3,Better,3,Excellent,3
+689,Active,Male,Married,Other,Travels Rarely,2,No,3,1,High,3,High,3,High,3,Better,3,Excellent,3
+690,Active,Female,Married,Medical,Travels Rarely,2,No,2,1,Medium,2,Low,1,High,3,Good,2,Excellent,3
+691,Active,Male,Single,Life Sciences,Travels Rarely,2,No,2,0,Medium,2,Medium,2,Low,1,Better,3,Excellent,3
+692,Active,Male,Divorced,Life Sciences,Travels Frequently,3,No,2,1,High,3,High,3,High,3,Bad,1,Outstanding,4
+698,Active,Male,Married,Medical,Travels Rarely,2,No,3,1,High,3,High,3,High,3,Best,4,Excellent,3
+699,Active,Male,Divorced,Medical,Travels Rarely,2,Yes,2,1,Medium,2,High,3,Medium,2,Better,3,Excellent,3
+700,Active,Male,Single,Medical,Travels Rarely,2,No,1,0,Low,1,Very High,4,Medium,2,Better,3,Excellent,3
+701,Left,Male,Single,Medical,Travels Rarely,2,Yes,1,0,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+702,Left,Male,Single,Life Sciences,Travels Frequently,3,Yes,1,0,Low,1,Low,1,High,3,Better,3,Excellent,3
+704,Active,Male,Married,Life Sciences,No Travel,1,No,1,2,High,3,High,3,Medium,2,Better,3,Excellent,3
+705,Active,Male,Married,Medical,Travels Rarely,2,No,1,1,Low,1,Low,1,Very High,4,Best,4,Excellent,3
+707,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,1,Very High,4,High,3,Very High,4,Better,3,Outstanding,4
+709,Active,Female,Single,Marketing,Travels Rarely,2,No,2,0,Very High,4,Low,1,Medium,2,Better,3,Outstanding,4
+710,Active,Male,Divorced,Life Sciences,Travels Frequently,3,No,1,1,Medium,2,Very High,4,Low,1,Better,3,Excellent,3
+712,Active,Male,Married,Marketing,Travels Rarely,2,No,2,0,Medium,2,Very High,4,Very High,4,Better,3,Excellent,3
+714,Active,Female,Divorced,Medical,Travels Frequently,3,Yes,2,2,Very High,4,Medium,2,Very High,4,Better,3,Outstanding,4
+715,Active,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,Very High,4,Low,1,Very High,4,Better,3,Excellent,3
+716,Active,Male,Married,Medical,Travels Rarely,2,Yes,1,3,Very High,4,High,3,Very High,4,Better,3,Excellent,3
+717,Active,Female,Single,Medical,Travels Rarely,2,No,3,0,Very High,4,Medium,2,Medium,2,Best,4,Excellent,3
+720,Left,Female,Single,Life Sciences,Travels Rarely,2,No,2,0,Low,1,Low,1,High,3,Better,3,Excellent,3
+721,Active,Female,Single,Technical Degree,Travels Rarely,2,No,2,0,Very High,4,Low,1,Medium,2,Better,3,Excellent,3
+722,Active,Male,Single,Marketing,Travels Rarely,2,No,2,0,Very High,4,Very High,4,High,3,Good,2,Excellent,3
+723,Left,Male,Married,Technical Degree,Travels Frequently,3,Yes,2,1,Medium,2,Low,1,High,3,Better,3,Excellent,3
+724,Active,Female,Single,Life Sciences,Travels Rarely,2,No,2,0,Medium,2,High,3,Very High,4,Good,2,Excellent,3
+725,Active,Female,Married,Life Sciences,Travels Rarely,2,No,3,0,High,3,Very High,4,High,3,Better,3,Excellent,3
+727,Active,Female,Single,Life Sciences,Travels Rarely,2,No,3,0,High,3,Very High,4,High,3,Better,3,Excellent,3
+728,Active,Male,Single,Marketing,Travels Rarely,2,No,2,0,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+729,Active,Male,Married,Life Sciences,Travels Frequently,3,Yes,3,1,Very High,4,High,3,Medium,2,Better,3,Outstanding,4
+730,Active,Male,Married,Life Sciences,Travels Rarely,2,No,4,0,High,3,High,3,Very High,4,Better,3,Excellent,3
+731,Active,Male,Divorced,Human Resources,Travels Rarely,2,No,5,3,Medium,2,Medium,2,Medium,2,Good,2,Excellent,3
+732,Active,Male,Single,Marketing,Travels Rarely,2,No,2,0,Low,1,Very High,4,High,3,Better,3,Excellent,3
+733,Active,Male,Divorced,Life Sciences,Travels Frequently,3,No,3,2,Very High,4,High,3,High,3,Good,2,Outstanding,4
+734,Active,Male,Married,Human Resources,Travels Rarely,2,No,5,1,Very High,4,Medium,2,Medium,2,Better,3,Excellent,3
+738,Active,Male,Married,Marketing,Travels Rarely,2,No,1,1,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+741,Left,Female,Single,Life Sciences,Travels Rarely,2,Yes,1,0,Low,1,Very High,4,Low,1,Better,3,Excellent,3
+742,Active,Female,Married,Life Sciences,No Travel,1,No,3,1,Low,1,Low,1,Very High,4,Better,3,Excellent,3
+743,Active,Female,Single,Life Sciences,Travels Rarely,2,Yes,3,0,High,3,Very High,4,High,3,Best,4,Excellent,3
+744,Active,Male,Single,Medical,No Travel,1,No,1,0,Low,1,High,3,Low,1,Better,3,Excellent,3
+746,Active,Female,Divorced,Medical,Travels Frequently,3,Yes,4,2,Very High,4,Very High,4,High,3,Good,2,Excellent,3
+747,Active,Male,Divorced,Marketing,Travels Rarely,2,No,2,1,High,3,Very High,4,High,3,Good,2,Outstanding,4
+749,Active,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,High,3,High,3,High,3,Better,3,Excellent,3
+752,Left,Male,Divorced,Medical,Travels Frequently,3,Yes,1,0,High,3,Very High,4,Very High,4,Better,3,Excellent,3
+754,Active,Male,Married,Life Sciences,Travels Frequently,3,No,2,1,Very High,4,High,3,Medium,2,Better,3,Excellent,3
+757,Active,Female,Single,Medical,Travels Rarely,2,No,2,0,Medium,2,Very High,4,High,3,Better,3,Excellent,3
+758,Active,Male,Married,Medical,Travels Rarely,2,No,1,1,Medium,2,Very High,4,High,3,Best,4,Excellent,3
+760,Active,Female,Married,Human Resources,Travels Rarely,2,No,2,1,High,3,High,3,Very High,4,Bad,1,Excellent,3
+762,Active,Male,Married,Medical,Travels Rarely,2,No,4,0,High,3,High,3,High,3,Good,2,Excellent,3
+763,Active,Female,Single,Medical,Travels Rarely,2,Yes,1,0,Very High,4,Very High,4,Medium,2,Good,2,Outstanding,4
+764,Active,Female,Single,Medical,Travels Rarely,2,No,2,0,Very High,4,Low,1,Medium,2,Bad,1,Excellent,3
+766,Active,Male,Divorced,Marketing,Travels Rarely,2,No,1,2,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+769,Active,Male,Single,Life Sciences,Travels Rarely,2,No,2,0,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+771,Active,Female,Divorced,Life Sciences,No Travel,1,No,2,1,Very High,4,Low,1,High,3,Best,4,Excellent,3
+772,Active,Male,Married,Life Sciences,Travels Frequently,3,No,2,2,Low,1,Very High,4,High,3,Better,3,Excellent,3
+773,Active,Male,Married,Medical,Travels Rarely,2,Yes,1,1,Very High,4,Medium,2,High,3,Bad,1,Excellent,3
+775,Active,Female,Divorced,Life Sciences,Travels Rarely,2,No,2,1,Medium,2,High,3,High,3,Better,3,Excellent,3
+776,Active,Male,Married,Marketing,Travels Rarely,2,No,4,0,High,3,Low,1,Medium,2,Best,4,Excellent,3
+780,Left,Male,Single,Other,Travels Rarely,2,Yes,1,0,Very High,4,High,3,High,3,Good,2,Excellent,3
+781,Active,Female,Single,Medical,Travels Rarely,2,No,2,0,High,3,Medium,2,High,3,Good,2,Outstanding,4
+783,Active,Male,Single,Technical Degree,Travels Rarely,2,No,2,0,Medium,2,Low,1,Low,1,Better,3,Excellent,3
+784,Active,Male,Single,Medical,Travels Rarely,2,No,1,0,Low,1,Very High,4,Very High,4,Better,3,Excellent,3
+785,Left,Female,Single,Life Sciences,Travels Frequently,3,Yes,2,0,Medium,2,Very High,4,Very High,4,Better,3,Excellent,3
+786,Active,Male,Single,Other,Travels Rarely,2,No,2,0,Very High,4,High,3,High,3,Better,3,Outstanding,4
+787,Left,Male,Married,Medical,Travels Rarely,2,Yes,5,1,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+789,Active,Male,Single,Life Sciences,No Travel,1,No,3,0,Low,1,Medium,2,Medium,2,Better,3,Excellent,3
+791,Active,Male,Married,Medical,No Travel,1,No,1,1,Very High,4,Low,1,High,3,Better,3,Excellent,3
+792,Active,Female,Divorced,Life Sciences,Travels Frequently,3,No,1,1,Low,1,Low,1,Low,1,Better,3,Excellent,3
+793,Active,Female,Married,Medical,Travels Rarely,2,No,2,1,Medium,2,Low,1,High,3,Good,2,Excellent,3
+796,Left,Male,Single,Technical Degree,Travels Rarely,2,No,2,0,Very High,4,High,3,Medium,2,Good,2,Excellent,3
+797,Active,Female,Single,Life Sciences,Travels Rarely,2,No,1,0,Medium,2,High,3,Very High,4,Better,3,Excellent,3
+799,Active,Female,Divorced,Medical,Travels Rarely,2,Yes,2,2,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+800,Active,Male,Married,Marketing,Travels Frequently,3,No,2,1,High,3,Medium,2,High,3,Better,3,Excellent,3
+802,Active,Female,Divorced,Life Sciences,Travels Rarely,2,Yes,1,2,Very High,4,Medium,2,High,3,Good,2,Excellent,3
+803,Active,Female,Single,Life Sciences,Travels Frequently,3,Yes,2,0,Low,1,Very High,4,Very High,4,Better,3,Excellent,3
+804,Active,Female,Single,Medical,Travels Rarely,2,No,1,0,High,3,High,3,Medium,2,Better,3,Excellent,3
+805,Active,Female,Married,Life Sciences,Travels Rarely,2,No,1,1,Low,1,Medium,2,High,3,Good,2,Excellent,3
+806,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,2,Very High,4,High,3,Low,1,Better,3,Outstanding,4
+807,Active,Female,Married,Medical,Travels Frequently,3,No,2,1,High,3,Very High,4,Very High,4,Better,3,Outstanding,4
+808,Active,Female,Married,Life Sciences,Travels Rarely,2,No,2,1,High,3,Medium,2,High,3,Better,3,Excellent,3
+809,Active,Male,Divorced,Life Sciences,Travels Frequently,3,No,5,1,Medium,2,Medium,2,High,3,Good,2,Excellent,3
+811,Left,Male,Married,Life Sciences,Travels Rarely,2,Yes,1,2,High,3,High,3,Very High,4,Better,3,Outstanding,4
+812,Active,Male,Divorced,Life Sciences,No Travel,1,No,1,3,High,3,High,3,Medium,2,Better,3,Excellent,3
+813,Active,Female,Married,Life Sciences,Travels Rarely,2,No,2,1,Very High,4,Medium,2,High,3,Better,3,Outstanding,4
+815,Active,Male,Married,Medical,Travels Rarely,2,No,4,0,High,3,Very High,4,High,3,Better,3,Excellent,3
+816,Left,Female,Married,Life Sciences,Travels Rarely,2,Yes,1,1,Medium,2,Very High,4,Medium,2,Better,3,Excellent,3
+817,Active,Male,Married,Medical,Travels Rarely,2,No,3,0,High,3,Very High,4,High,3,Best,4,Excellent,3
+819,Left,Female,Single,Marketing,Travels Rarely,2,No,2,0,Low,1,High,3,High,3,Better,3,Excellent,3
+820,Active,Female,Married,Other,Travels Rarely,2,Yes,4,1,High,3,High,3,High,3,Good,2,Excellent,3
+823,Active,Female,Married,Other,Travels Rarely,2,No,2,1,High,3,Low,1,High,3,Better,3,Excellent,3
+824,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,1,High,3,High,3,Very High,4,Better,3,Outstanding,4
+825,Left,Male,Single,Life Sciences,Travels Rarely,2,Yes,5,0,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+826,Active,Female,Single,Life Sciences,Travels Rarely,2,No,1,0,Very High,4,High,3,Very High,4,Better,3,Excellent,3
+827,Active,Female,Married,Life Sciences,Travels Rarely,2,Yes,2,1,Very High,4,Very High,4,Medium,2,Better,3,Excellent,3
+828,Left,Male,Single,Medical,Travels Rarely,2,No,1,0,High,3,Very High,4,High,3,Good,2,Excellent,3
+829,Active,Male,Married,Human Resources,Travels Rarely,2,No,1,1,High,3,Medium,2,High,3,Better,3,Excellent,3
+830,Active,Female,Married,Life Sciences,Travels Rarely,2,No,2,1,High,3,High,3,Medium,2,Better,3,Excellent,3
+832,Active,Male,Single,Medical,Travels Frequently,3,No,2,0,Low,1,Very High,4,Medium,2,Better,3,Excellent,3
+833,Active,Female,Single,Medical,Travels Rarely,2,Yes,2,0,High,3,Medium,2,Medium,2,Good,2,Outstanding,4
+834,Active,Female,Single,Life Sciences,Travels Rarely,2,No,1,0,Medium,2,Very High,4,Medium,2,Better,3,Excellent,3
+836,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,1,Medium,2,Very High,4,High,3,Good,2,Excellent,3
+837,Active,Male,Divorced,Life Sciences,Travels Frequently,3,No,2,1,Low,1,High,3,Medium,2,Good,2,Excellent,3
+838,Active,Female,Single,Life Sciences,Travels Frequently,3,No,1,0,High,3,High,3,Medium,2,Better,3,Excellent,3
+840,Left,Female,Married,Marketing,Travels Rarely,2,No,3,2,High,3,Low,1,High,3,Best,4,Excellent,3
+842,Left,Male,Single,Medical,Travels Rarely,2,No,2,0,High,3,High,3,High,3,Good,2,Excellent,3
+843,Active,Male,Married,Life Sciences,Travels Rarely,2,No,4,1,Medium,2,High,3,High,3,Better,3,Outstanding,4
+844,Active,Male,Divorced,Technical Degree,Travels Rarely,2,Yes,3,1,High,3,Medium,2,Medium,2,Better,3,Excellent,3
+845,Active,Male,Single,Other,Travels Rarely,2,No,3,0,High,3,Medium,2,High,3,Best,4,Outstanding,4
+846,Active,Female,Married,Marketing,Travels Rarely,2,Yes,2,0,Medium,2,Low,1,High,3,Better,3,Outstanding,4
+847,Active,Male,Married,Human Resources,Travels Rarely,2,No,1,1,High,3,High,3,High,3,Bad,1,Excellent,3
+848,Left,Female,Married,Medical,Travels Frequently,3,Yes,1,1,High,3,Low,1,Medium,2,Better,3,Excellent,3
+850,Active,Male,Married,Medical,No Travel,1,No,1,3,Very High,4,High,3,High,3,Good,2,Excellent,3
+851,Active,Female,Married,Marketing,Travels Rarely,2,No,4,1,Low,1,High,3,High,3,Good,2,Excellent,3
+852,Active,Male,Single,Medical,Travels Rarely,2,No,2,0,Very High,4,Very High,4,High,3,Good,2,Excellent,3
+854,Active,Male,Single,Medical,Travels Rarely,2,No,1,0,Low,1,High,3,Very High,4,Good,2,Excellent,3
+855,Active,Male,Divorced,Medical,Travels Rarely,2,No,2,1,Low,1,Low,1,Very High,4,Better,3,Outstanding,4
+856,Active,Female,Single,Medical,Travels Rarely,2,No,1,0,High,3,Very High,4,Medium,2,Good,2,Excellent,3
+857,Active,Male,Married,Life Sciences,Travels Rarely,2,Yes,2,1,Medium,2,Very High,4,High,3,Good,2,Excellent,3
+859,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,2,1,Medium,2,High,3,High,3,Good,2,Excellent,3
+861,Active,Male,Divorced,Life Sciences,Travels Frequently,3,No,1,1,Medium,2,Medium,2,Medium,2,Good,2,Excellent,3
+862,Active,Female,Married,Marketing,Travels Rarely,2,Yes,3,1,Low,1,Very High,4,Medium,2,Better,3,Excellent,3
+864,Active,Male,Divorced,Marketing,Travels Rarely,2,Yes,3,1,Very High,4,High,3,High,3,Better,3,Excellent,3
+865,Active,Female,Married,Medical,Travels Rarely,2,No,2,1,High,3,High,3,Very High,4,Good,2,Excellent,3
+867,Active,Female,Married,Medical,Travels Frequently,3,No,4,0,High,3,High,3,Medium,2,Better,3,Outstanding,4
+868,Active,Male,Divorced,Marketing,Travels Rarely,2,No,2,2,Very High,4,Very High,4,Medium,2,Better,3,Excellent,3
+869,Active,Male,Divorced,Medical,Travels Rarely,2,No,1,1,Medium,2,Very High,4,Medium,2,Better,3,Excellent,3
+872,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,2,Very High,4,Low,1,Medium,2,Bad,1,Outstanding,4
+874,Active,Male,Married,Life Sciences,Travels Rarely,2,Yes,1,1,Low,1,High,3,Very High,4,Good,2,Outstanding,4
+875,Active,Male,Single,Medical,Travels Frequently,3,Yes,1,0,Medium,2,Very High,4,High,3,Better,3,Excellent,3
+878,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,0,Low,1,High,3,Medium,2,Better,3,Outstanding,4
+879,Active,Male,Married,Other,Travels Rarely,2,Yes,2,0,High,3,Very High,4,High,3,Better,3,Excellent,3
+880,Active,Female,Married,Life Sciences,Travels Rarely,2,Yes,3,1,Very High,4,Medium,2,Medium,2,Better,3,Outstanding,4
+881,Left,Female,Divorced,Life Sciences,Travels Frequently,3,Yes,1,1,Very High,4,Low,1,High,3,Good,2,Excellent,3
+882,Active,Male,Divorced,Life Sciences,No Travel,1,No,1,1,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+885,Active,Male,Married,Marketing,Travels Rarely,2,No,2,0,High,3,Low,1,Medium,2,Best,4,Excellent,3
+887,Active,Female,Married,Technical Degree,Travels Rarely,2,No,1,1,High,3,Medium,2,High,3,Better,3,Excellent,3
+888,Active,Male,Married,Life Sciences,No Travel,1,No,1,0,Low,1,Very High,4,Medium,2,Good,2,Excellent,3
+889,Active,Male,Married,Life Sciences,Travels Frequently,3,No,2,1,Medium,2,Very High,4,High,3,Better,3,Excellent,3
+893,Active,Male,Married,Marketing,Travels Rarely,2,No,1,1,Medium,2,Very High,4,Medium,2,Better,3,Excellent,3
+894,Active,Female,Married,Life Sciences,Travels Rarely,2,Yes,2,1,High,3,Medium,2,Very High,4,Good,2,Excellent,3
+895,Active,Male,Married,Life Sciences,Travels Rarely,2,Yes,1,1,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+896,Left,Female,Divorced,Medical,Travels Rarely,2,Yes,1,3,Medium,2,High,3,Medium,2,Better,3,Excellent,3
+897,Active,Male,Married,Marketing,Travels Rarely,2,No,4,1,Low,1,High,3,High,3,Better,3,Excellent,3
+899,Active,Male,Married,Technical Degree,Travels Rarely,2,No,3,0,Very High,4,Low,1,Medium,2,Better,3,Excellent,3
+900,Active,Female,Married,Medical,Travels Frequently,3,No,1,1,High,3,Medium,2,High,3,Better,3,Excellent,3
+901,Active,Female,Single,Life Sciences,Travels Rarely,2,No,4,0,Very High,4,High,3,High,3,Better,3,Excellent,3
+902,Active,Female,Married,Life Sciences,Travels Frequently,3,No,2,1,Very High,4,Medium,2,High,3,Good,2,Excellent,3
+903,Active,Female,Married,Marketing,Travels Rarely,2,Yes,2,1,High,3,Low,1,High,3,Better,3,Outstanding,4
+904,Active,Male,Single,Medical,No Travel,1,Yes,3,0,Low,1,Very High,4,High,3,Better,3,Excellent,3
+905,Active,Male,Divorced,Life Sciences,No Travel,1,No,4,1,Low,1,Very High,4,High,3,Better,3,Excellent,3
+909,Active,Female,Married,Life Sciences,Travels Rarely,2,No,2,2,Very High,4,High,3,Medium,2,Better,3,Excellent,3
+910,Active,Male,Divorced,Human Resources,Travels Rarely,2,Yes,1,1,Very High,4,High,3,High,3,Best,4,Excellent,3
+911,Left,Male,Single,Life Sciences,Travels Rarely,2,Yes,1,0,Low,1,High,3,High,3,Bad,1,Outstanding,4
+912,Active,Female,Divorced,Medical,Travels Rarely,2,No,1,3,Low,1,High,3,Medium,2,Better,3,Excellent,3
+913,Active,Male,Married,Life Sciences,Travels Rarely,2,Yes,1,0,Medium,2,Very High,4,High,3,Better,3,Excellent,3
+916,Active,Male,Single,Medical,Travels Rarely,2,No,2,0,Low,1,Medium,2,High,3,Better,3,Excellent,3
+918,Left,Male,Divorced,Life Sciences,Travels Frequently,3,Yes,1,1,Very High,4,Very High,4,Medium,2,Good,2,Excellent,3
+920,Active,Female,Divorced,Life Sciences,Travels Rarely,2,No,2,1,Low,1,High,3,High,3,Best,4,Outstanding,4
+922,Left,Female,Single,Medical,Travels Rarely,2,No,1,0,High,3,Very High,4,Medium,2,Good,2,Excellent,3
+923,Left,Female,Single,Other,Travels Rarely,2,No,1,0,Very High,4,Low,1,High,3,Good,2,Excellent,3
+924,Active,Male,Married,Life Sciences,Travels Rarely,2,Yes,2,1,High,3,Low,1,High,3,Good,2,Excellent,3
+925,Active,Female,Single,Life Sciences,Travels Rarely,2,Yes,1,0,Very High,4,Low,1,Medium,2,Good,2,Excellent,3
+926,Left,Female,Married,Life Sciences,Travels Rarely,2,Yes,2,1,Medium,2,Low,1,High,3,Best,4,Excellent,3
+927,Left,Female,Divorced,Life Sciences,Travels Rarely,2,Yes,1,1,Medium,2,High,3,Low,1,Good,2,Excellent,3
+930,Active,Female,Divorced,Medical,Travels Rarely,2,No,1,1,High,3,Medium,2,High,3,Better,3,Excellent,3
+932,Left,Male,Married,Medical,Travels Rarely,2,Yes,1,0,Very High,4,Very High,4,High,3,Bad,1,Outstanding,4
+933,Active,Female,Single,Life Sciences,Travels Rarely,2,No,1,0,Medium,2,High,3,High,3,Better,3,Excellent,3
+934,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,1,2,Medium,2,Medium,2,High,3,Better,3,Excellent,3
+936,Active,Female,Single,Medical,Travels Rarely,2,No,2,0,High,3,Low,1,Medium,2,Better,3,Excellent,3
+939,Active,Male,Single,Other,Travels Rarely,2,Yes,1,0,High,3,Medium,2,Medium,2,Better,3,Excellent,3
+940,Active,Female,Divorced,Technical Degree,Travels Rarely,2,Yes,3,1,High,3,Very High,4,Medium,2,Better,3,Excellent,3
+941,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,0,Medium,2,Medium,2,Medium,2,Best,4,Excellent,3
+942,Active,Female,Married,Life Sciences,Travels Rarely,2,Yes,2,1,Very High,4,Very High,4,High,3,Bad,1,Outstanding,4
+944,Active,Female,Married,Other,Travels Rarely,2,No,3,1,Low,1,High,3,High,3,Good,2,Excellent,3
+945,Active,Male,Married,Medical,Travels Rarely,2,No,1,2,Very High,4,Low,1,High,3,Good,2,Excellent,3
+947,Active,Female,Married,Marketing,No Travel,1,No,2,1,Very High,4,Very High,4,High,3,Good,2,Excellent,3
+949,Active,Male,Single,Other,Travels Rarely,2,No,1,0,Medium,2,High,3,High,3,Better,3,Excellent,3
+950,Active,Female,Married,Technical Degree,Travels Rarely,2,No,3,1,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+951,Active,Female,Married,Life Sciences,No Travel,1,No,1,0,High,3,High,3,Medium,2,Better,3,Outstanding,4
+952,Left,Male,Married,Marketing,Travels Rarely,2,Yes,1,3,High,3,High,3,Medium,2,Better,3,Excellent,3
+954,Active,Male,Divorced,Marketing,Travels Rarely,2,No,3,1,Low,1,Medium,2,Medium,2,Good,2,Excellent,3
+956,Active,Male,Single,Medical,Travels Frequently,3,No,2,0,High,3,Medium,2,Medium,2,Better,3,Excellent,3
+957,Active,Male,Single,Medical,Travels Rarely,2,Yes,1,0,Very High,4,High,3,High,3,Better,3,Excellent,3
+958,Active,Male,Single,Medical,Travels Rarely,2,No,1,0,High,3,High,3,High,3,Better,3,Outstanding,4
+959,Left,Male,Single,Other,Travels Rarely,2,Yes,1,0,Very High,4,Medium,2,Medium,2,Best,4,Excellent,3
+960,Left,Male,Single,Technical Degree,Travels Rarely,2,No,1,0,Low,1,Medium,2,High,3,Better,3,Excellent,3
+961,Active,Female,Married,Medical,Travels Rarely,2,Yes,2,2,Very High,4,High,3,High,3,Bad,1,Excellent,3
+964,Active,Male,Divorced,Medical,Travels Frequently,3,Yes,1,1,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+966,Active,Female,Married,Medical,Travels Rarely,2,No,2,1,High,3,High,3,High,3,Best,4,Excellent,3
+967,Left,Male,Married,Life Sciences,Travels Rarely,2,Yes,3,1,High,3,Low,1,Medium,2,Better,3,Excellent,3
+969,Active,Female,Single,Life Sciences,Travels Rarely,2,No,2,0,Medium,2,Low,1,Medium,2,Better,3,Excellent,3
+970,Left,Male,Married,Life Sciences,Travels Rarely,2,No,3,0,Low,1,High,3,Medium,2,Bad,1,Excellent,3
+972,Active,Male,Married,Life Sciences,No Travel,1,No,2,0,High,3,Medium,2,High,3,Good,2,Excellent,3
+974,Active,Female,Married,Technical Degree,Travels Frequently,3,No,1,1,High,3,Medium,2,High,3,Better,3,Excellent,3
+975,Active,Female,Married,Medical,Travels Rarely,2,No,2,0,High,3,Medium,2,High,3,Better,3,Excellent,3
+976,Active,Male,Married,Life Sciences,Travels Rarely,2,No,4,1,Very High,4,Medium,2,High,3,Good,2,Excellent,3
+977,Left,Male,Single,Technical Degree,Travels Rarely,2,No,1,0,Very High,4,Low,1,High,3,Better,3,Outstanding,4
+981,Active,Male,Divorced,Medical,Travels Rarely,2,No,4,1,High,3,High,3,High,3,Best,4,Excellent,3
+982,Active,Male,Divorced,Other,Travels Rarely,2,No,3,1,High,3,Low,1,High,3,Best,4,Excellent,3
+983,Active,Female,Single,Technical Degree,No Travel,1,Yes,2,0,High,3,Medium,2,High,3,Better,3,Excellent,3
+984,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,3,1,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+985,Active,Male,Single,Life Sciences,Travels Rarely,2,No,3,0,Low,1,Very High,4,Very High,4,Better,3,Excellent,3
+986,Left,Female,Single,Life Sciences,No Travel,1,Yes,4,0,Medium,2,Very High,4,Very High,4,Good,2,Excellent,3
+987,Active,Male,Divorced,Medical,Travels Frequently,3,Yes,2,0,High,3,High,3,Very High,4,Best,4,Excellent,3
+990,Active,Male,Divorced,Technical Degree,No Travel,1,No,2,2,Low,1,Very High,4,High,3,Better,3,Excellent,3
+991,Left,Male,Single,Medical,No Travel,1,Yes,1,0,High,3,Low,1,Medium,2,Better,3,Outstanding,4
+992,Active,Male,Single,Life Sciences,No Travel,1,No,4,0,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+994,Left,Female,Single,Life Sciences,Travels Rarely,2,Yes,1,0,Very High,4,High,3,Medium,2,Better,3,Outstanding,4
+995,Active,Female,Single,Life Sciences,Travels Rarely,2,No,1,0,Medium,2,Low,1,High,3,Better,3,Excellent,3
+996,Active,Female,Divorced,Medical,Travels Rarely,2,No,1,2,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+997,Active,Male,Divorced,Medical,Travels Rarely,2,No,4,1,Very High,4,High,3,High,3,Good,2,Outstanding,4
+998,Active,Female,Married,Other,Travels Frequently,3,Yes,2,1,High,3,Low,1,Very High,4,Better,3,Excellent,3
+999,Active,Male,Divorced,Medical,Travels Frequently,3,No,5,1,Low,1,Medium,2,High,3,Best,4,Excellent,3
+1001,Active,Female,Married,Technical Degree,Travels Rarely,2,No,1,1,High,3,Medium,2,High,3,Better,3,Excellent,3
+1002,Active,Male,Married,Life Sciences,No Travel,1,Yes,2,1,Very High,4,High,3,High,3,Better,3,Excellent,3
+1003,Active,Female,Single,Life Sciences,Travels Rarely,2,Yes,2,0,Very High,4,High,3,High,3,Better,3,Excellent,3
+1004,Left,Female,Married,Life Sciences,Travels Rarely,2,Yes,1,0,Low,1,Medium,2,High,3,Better,3,Excellent,3
+1005,Active,Male,Married,Life Sciences,Travels Rarely,2,Yes,4,1,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+1006,Active,Male,Married,Medical,Travels Frequently,3,No,1,1,High,3,Medium,2,High,3,Good,2,Excellent,3
+1007,Active,Male,Divorced,Medical,Travels Rarely,2,No,3,1,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+1009,Active,Female,Divorced,Medical,Travels Rarely,2,No,2,2,Very High,4,Medium,2,Medium,2,Better,3,Excellent,3
+1010,Left,Male,Divorced,Other,Travels Rarely,2,Yes,1,1,High,3,Very High,4,Medium,2,Bad,1,Outstanding,4
+1011,Active,Female,Married,Life Sciences,Travels Frequently,3,No,2,1,High,3,High,3,High,3,Better,3,Excellent,3
+1012,Active,Male,Single,Life Sciences,No Travel,1,No,1,0,Medium,2,Very High,4,High,3,Better,3,Excellent,3
+1013,Active,Female,Married,Technical Degree,Travels Rarely,2,No,3,1,High,3,High,3,High,3,Better,3,Excellent,3
+1014,Active,Female,Divorced,Medical,Travels Rarely,2,Yes,3,1,High,3,High,3,High,3,Good,2,Excellent,3
+1015,Active,Female,Married,Life Sciences,Travels Rarely,2,Yes,3,3,Medium,2,High,3,Very High,4,Good,2,Excellent,3
+1016,Left,Female,Single,Medical,Travels Rarely,2,Yes,1,0,Very High,4,Low,1,Medium,2,Better,3,Excellent,3
+1017,Left,Female,Single,Medical,Travels Frequently,3,No,1,0,Medium,2,Low,1,High,3,Better,3,Excellent,3
+1018,Active,Male,Married,Medical,Travels Rarely,2,No,2,0,Very High,4,Medium,2,Very High,4,Better,3,Excellent,3
+1019,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,1,Medium,2,Low,1,Low,1,Good,2,Excellent,3
+1022,Active,Male,Single,Life Sciences,Travels Rarely,2,No,2,0,Low,1,Very High,4,Medium,2,Better,3,Excellent,3
+1024,Active,Male,Single,Life Sciences,Travels Rarely,2,No,3,0,High,3,Medium,2,Medium,2,Better,3,Excellent,3
+1025,Active,Female,Single,Medical,Travels Rarely,2,No,2,0,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+1026,Active,Female,Married,Life Sciences,Travels Rarely,2,No,4,1,Very High,4,High,3,Medium,2,Better,3,Excellent,3
+1027,Active,Female,Married,Life Sciences,Travels Rarely,2,No,2,1,Low,1,Medium,2,High,3,Better,3,Excellent,3
+1028,Active,Male,Divorced,Other,Travels Rarely,2,No,1,1,Medium,2,Low,1,High,3,Good,2,Outstanding,4
+1029,Active,Male,Married,Marketing,Travels Rarely,2,No,5,0,Very High,4,Medium,2,High,3,Best,4,Excellent,3
+1030,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,0,Low,1,Medium,2,High,3,Better,3,Excellent,3
+1032,Active,Female,Single,Life Sciences,Travels Rarely,2,Yes,4,0,High,3,Low,1,Medium,2,Better,3,Excellent,3
+1033,Left,Female,Married,Medical,Travels Rarely,2,No,2,0,Low,1,Low,1,Low,1,Bad,1,Excellent,3
+1034,Active,Male,Married,Medical,Travels Frequently,3,Yes,2,2,High,3,Very High,4,High,3,Better,3,Excellent,3
+1035,Active,Female,Divorced,Life Sciences,No Travel,1,No,5,2,Medium,2,Medium,2,Low,1,Better,3,Outstanding,4
+1036,Active,Male,Single,Life Sciences,Travels Rarely,2,Yes,2,0,Medium,2,High,3,High,3,Better,3,Excellent,3
+1037,Left,Male,Single,Medical,No Travel,1,No,2,0,Medium,2,Very High,4,Low,1,Better,3,Excellent,3
+1038,Left,Female,Married,Marketing,Travels Rarely,2,No,5,1,Low,1,Very High,4,Low,1,Better,3,Excellent,3
+1039,Active,Female,Married,Medical,Travels Rarely,2,Yes,4,1,Very High,4,High,3,Very High,4,Better,3,Excellent,3
+1040,Active,Female,Married,Life Sciences,No Travel,1,No,2,1,Very High,4,Low,1,High,3,Better,3,Excellent,3
+1042,Left,Female,Single,Life Sciences,Travels Rarely,2,No,1,0,High,3,High,3,Very High,4,Better,3,Excellent,3
+1043,Active,Female,Single,Medical,Travels Frequently,3,Yes,3,0,Very High,4,High,3,High,3,Better,3,Excellent,3
+1044,Active,Female,Single,Life Sciences,No Travel,1,No,1,0,Medium,2,Very High,4,Medium,2,Good,2,Excellent,3
+1045,Active,Female,Married,Life Sciences,Travels Rarely,2,No,4,1,Very High,4,Medium,2,High,3,Best,4,Excellent,3
+1046,Active,Female,Single,Medical,No Travel,1,No,1,0,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+1047,Active,Male,Divorced,Marketing,Travels Rarely,2,No,2,1,Medium,2,Very High,4,Very High,4,Good,2,Excellent,3
+1048,Active,Male,Married,Technical Degree,Travels Rarely,2,Yes,3,1,Medium,2,High,3,High,3,Bad,1,Excellent,3
+1049,Active,Male,Single,Medical,Travels Rarely,2,No,1,0,Medium,2,Low,1,High,3,Better,3,Excellent,3
+1050,Active,Female,Married,Marketing,Travels Frequently,3,No,3,1,High,3,Low,1,Medium,2,Better,3,Excellent,3
+1052,Left,Male,Divorced,Other,Travels Rarely,2,No,2,1,Low,1,Medium,2,High,3,Good,2,Excellent,3
+1053,Left,Male,Married,Life Sciences,Travels Frequently,3,Yes,1,1,Low,1,Medium,2,High,3,Better,3,Excellent,3
+1055,Active,Female,Married,Life Sciences,Travels Rarely,2,Yes,1,1,High,3,Very High,4,High,3,Better,3,Excellent,3
+1056,Active,Male,Married,Medical,Travels Rarely,2,No,1,0,Very High,4,Medium,2,High,3,Better,3,Outstanding,4
+1060,Active,Male,Married,Other,Travels Frequently,3,No,1,1,High,3,Low,1,High,3,Better,3,Excellent,3
+1061,Active,Male,Married,Medical,Travels Rarely,2,Yes,5,1,Medium,2,Very High,4,High,3,Good,2,Excellent,3
+1062,Active,Female,Single,Other,Travels Rarely,2,No,2,0,Very High,4,Low,1,High,3,Good,2,Excellent,3
+1066,Active,Male,Married,Marketing,Travels Rarely,2,No,2,1,High,3,Medium,2,High,3,Good,2,Excellent,3
+1068,Active,Female,Divorced,Medical,Travels Frequently,3,No,1,2,Low,1,High,3,Medium,2,Better,3,Excellent,3
+1069,Active,Male,Divorced,Medical,Travels Rarely,2,No,5,2,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+1070,Active,Female,Married,Life Sciences,Travels Rarely,2,No,3,1,High,3,Medium,2,Medium,2,Better,3,Excellent,3
+1071,Active,Female,Married,Medical,Travels Frequently,3,No,1,1,Low,1,Medium,2,High,3,Better,3,Excellent,3
+1073,Active,Female,Single,Medical,Travels Rarely,2,No,3,0,Very High,4,Medium,2,Medium,2,Good,2,Excellent,3
+1074,Active,Male,Single,Medical,No Travel,1,No,4,0,High,3,Medium,2,Medium,2,Best,4,Excellent,3
+1076,Active,Male,Divorced,Medical,Travels Rarely,2,No,3,1,High,3,High,3,Medium,2,Better,3,Excellent,3
+1077,Left,Female,Single,Marketing,Travels Frequently,3,Yes,1,0,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+1079,Left,Female,Single,Life Sciences,Travels Rarely,2,No,1,0,High,3,Low,1,Medium,2,Good,2,Excellent,3
+1080,Active,Female,Divorced,Life Sciences,Travels Rarely,2,Yes,2,3,Very High,4,Low,1,Medium,2,Better,3,Outstanding,4
+1081,Left,Male,Married,Life Sciences,Travels Rarely,2,Yes,1,3,Low,1,High,3,High,3,Best,4,Excellent,3
+1082,Left,Male,Single,Technical Degree,No Travel,1,No,3,0,Medium,2,Low,1,Medium,2,Good,2,Excellent,3
+1083,Active,Male,Married,Medical,Travels Rarely,2,No,1,2,Low,1,Low,1,Medium,2,Better,3,Excellent,3
+1084,Active,Male,Married,Other,Travels Rarely,2,No,2,1,High,3,High,3,High,3,Good,2,Excellent,3
+1085,Active,Female,Married,Technical Degree,Travels Rarely,2,No,1,0,Medium,2,High,3,Very High,4,Better,3,Excellent,3
+1088,Active,Female,Married,Life Sciences,Travels Rarely,2,No,3,1,High,3,Low,1,Medium,2,Good,2,Excellent,3
+1092,Active,Male,Married,Technical Degree,Travels Rarely,2,No,3,1,Low,1,Very High,4,High,3,Better,3,Outstanding,4
+1094,Active,Male,Married,Life Sciences,No Travel,1,No,1,3,Low,1,Very High,4,Low,1,Better,3,Excellent,3
+1096,Active,Male,Married,Life Sciences,Travels Frequently,3,No,3,1,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+1097,Active,Female,Single,Other,Travels Rarely,2,No,2,0,High,3,Very High,4,High,3,Best,4,Excellent,3
+1098,Left,Male,Married,Medical,Travels Rarely,2,No,3,1,Medium,2,Very High,4,Medium,2,Better,3,Excellent,3
+1099,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,3,1,Very High,4,High,3,Medium,2,Better,3,Excellent,3
+1100,Left,Male,Single,Technical Degree,Travels Rarely,2,Yes,3,0,Very High,4,Low,1,High,3,Better,3,Outstanding,4
+1101,Left,Female,Single,Medical,Travels Frequently,3,No,2,0,Low,1,Medium,2,Medium,2,Better,3,Outstanding,4
+1102,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,1,1,Low,1,Very High,4,High,3,Good,2,Excellent,3
+1103,Active,Male,Single,Life Sciences,Travels Frequently,3,No,2,0,Low,1,High,3,High,3,Good,2,Excellent,3
+1105,Active,Female,Divorced,Life Sciences,Travels Rarely,2,Yes,2,3,Very High,4,High,3,Medium,2,Better,3,Excellent,3
+1106,Left,Male,Married,Technical Degree,Travels Rarely,2,Yes,1,1,Very High,4,Medium,2,High,3,Best,4,Excellent,3
+1107,Left,Male,Divorced,Medical,Travels Rarely,2,No,1,1,Low,1,High,3,High,3,Good,2,Outstanding,4
+1108,Left,Male,Single,Medical,Travels Rarely,2,Yes,1,0,Low,1,Medium,2,Medium,2,Better,3,Outstanding,4
+1109,Active,Male,Married,Medical,Travels Rarely,2,No,4,1,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+1111,Left,Male,Divorced,Medical,Travels Frequently,3,No,1,2,Low,1,Low,1,Medium,2,Better,3,Excellent,3
+1113,Left,Male,Single,Other,Travels Frequently,3,Yes,2,0,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+1114,Active,Female,Married,Life Sciences,Travels Frequently,3,No,2,1,Very High,4,High,3,High,3,Better,3,Excellent,3
+1115,Active,Male,Married,Life Sciences,No Travel,1,No,1,3,High,3,Very High,4,Medium,2,Better,3,Excellent,3
+1116,Active,Male,Single,Medical,No Travel,1,No,4,0,Low,1,High,3,Very High,4,Good,2,Outstanding,4
+1117,Active,Female,Married,Life Sciences,No Travel,1,No,2,1,Medium,2,Very High,4,Medium,2,Better,3,Excellent,3
+1118,Active,Male,Single,Life Sciences,Travels Rarely,2,No,3,0,Medium,2,Very High,4,High,3,Better,3,Excellent,3
+1119,Active,Male,Divorced,Marketing,Travels Rarely,2,Yes,3,2,High,3,Medium,2,Medium,2,Better,3,Excellent,3
+1120,Active,Female,Divorced,Life Sciences,Travels Rarely,2,No,1,1,High,3,Low,1,High,3,Better,3,Outstanding,4
+1121,Active,Female,Divorced,Medical,Travels Rarely,2,No,3,3,Very High,4,Medium,2,High,3,Good,2,Excellent,3
+1124,Active,Male,Married,Marketing,Travels Rarely,2,No,4,1,Low,1,Very High,4,High,3,Better,3,Excellent,3
+1125,Active,Male,Single,Marketing,Travels Rarely,2,No,3,0,Very High,4,High,3,High,3,Better,3,Excellent,3
+1126,Active,Female,Married,Life Sciences,Travels Frequently,3,No,3,1,High,3,High,3,High,3,Better,3,Excellent,3
+1127,Left,Male,Divorced,Life Sciences,Travels Frequently,3,No,4,3,Low,1,Very High,4,High,3,Better,3,Excellent,3
+1128,Active,Male,Single,Medical,Travels Rarely,2,No,5,0,High,3,Low,1,Medium,2,Best,4,Excellent,3
+1131,Active,Female,Single,Technical Degree,Travels Rarely,2,Yes,1,0,Very High,4,High,3,Medium,2,Best,4,Excellent,3
+1132,Active,Male,Single,Life Sciences,No Travel,1,No,2,0,High,3,High,3,High,3,Good,2,Excellent,3
+1133,Active,Male,Single,Life Sciences,No Travel,1,No,2,0,Low,1,Low,1,High,3,Better,3,Outstanding,4
+1135,Active,Male,Married,Life Sciences,Travels Frequently,3,No,1,1,High,3,Low,1,Very High,4,Better,3,Excellent,3
+1136,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,0,Low,1,Low,1,Medium,2,Bad,1,Excellent,3
+1137,Active,Male,Divorced,Marketing,Travels Frequently,3,No,2,1,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+1138,Active,Male,Married,Technical Degree,Travels Rarely,2,No,4,1,Very High,4,Medium,2,Medium,2,Better,3,Excellent,3
+1140,Active,Male,Single,Life Sciences,Travels Frequently,3,No,2,0,Very High,4,Very High,4,High,3,Good,2,Excellent,3
+1143,Active,Female,Divorced,Life Sciences,Travels Frequently,3,No,1,2,Very High,4,Very High,4,High,3,Good,2,Excellent,3
+1148,Active,Male,Single,Medical,Travels Rarely,2,No,2,0,Medium,2,Low,1,Low,1,Better,3,Excellent,3
+1150,Active,Male,Married,Medical,Travels Rarely,2,Yes,2,1,Medium,2,High,3,Medium,2,Good,2,Excellent,3
+1152,Active,Male,Married,Human Resources,Travels Rarely,2,No,1,1,High,3,Very High,4,Very High,4,Best,4,Excellent,3
+1154,Active,Male,Divorced,Life Sciences,Travels Frequently,3,Yes,1,1,High,3,Very High,4,Medium,2,Better,3,Excellent,3
+1156,Left,Male,Single,Medical,No Travel,1,No,1,0,High,3,Very High,4,High,3,Better,3,Excellent,3
+1157,Left,Female,Single,Marketing,Travels Rarely,2,Yes,2,0,Low,1,Low,1,High,3,Better,3,Excellent,3
+1158,Active,Male,Married,Life Sciences,Travels Rarely,2,Yes,1,1,Medium,2,Low,1,High,3,Better,3,Excellent,3
+1160,Left,Male,Married,Medical,Travels Frequently,3,No,1,1,High,3,High,3,High,3,Good,2,Excellent,3
+1161,Active,Female,Divorced,Medical,Travels Rarely,2,No,2,2,High,3,High,3,Medium,2,Better,3,Excellent,3
+1162,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,1,Very High,4,High,3,Medium,2,Better,3,Excellent,3
+1163,Active,Female,Married,Life Sciences,Travels Rarely,2,No,2,0,Medium,2,Low,1,High,3,Good,2,Outstanding,4
+1164,Active,Male,Single,Technical Degree,Travels Rarely,2,No,1,0,High,3,Medium,2,High,3,Bad,1,Excellent,3
+1165,Left,Female,Married,Life Sciences,Travels Rarely,2,No,3,1,Very High,4,Low,1,Medium,2,Bad,1,Excellent,3
+1166,Active,Female,Single,Medical,Travels Frequently,3,No,3,0,Medium,2,High,3,High,3,Good,2,Excellent,3
+1167,Left,Male,Single,Life Sciences,Travels Frequently,3,Yes,4,0,High,3,Medium,2,High,3,Good,2,Excellent,3
+1171,Active,Male,Single,Marketing,Travels Rarely,2,No,2,0,Medium,2,Very High,4,High,3,Best,4,Excellent,3
+1172,Active,Male,Married,Medical,Travels Rarely,2,No,1,1,Very High,4,Medium,2,Medium,2,Better,3,Excellent,3
+1173,Active,Male,Single,Medical,Travels Rarely,2,No,1,0,Very High,4,Very High,4,High,3,Better,3,Outstanding,4
+1175,Left,Female,Married,Life Sciences,Travels Rarely,2,Yes,1,0,High,3,Very High,4,High,3,Good,2,Excellent,3
+1177,Active,Male,Married,Medical,Travels Rarely,2,No,1,1,Low,1,Medium,2,Very High,4,Better,3,Outstanding,4
+1179,Active,Male,Married,Marketing,Travels Rarely,2,No,2,1,High,3,Low,1,Medium,2,Better,3,Excellent,3
+1180,Active,Female,Married,Medical,Travels Frequently,3,Yes,2,1,High,3,Very High,4,Medium,2,Bad,1,Excellent,3
+1182,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,3,1,High,3,Medium,2,Medium,2,Best,4,Excellent,3
+1184,Active,Male,Single,Medical,Travels Frequently,3,No,2,0,Very High,4,High,3,Medium,2,Better,3,Outstanding,4
+1185,Active,Male,Married,Other,Travels Frequently,3,No,1,1,Very High,4,Medium,2,Medium,2,Best,4,Excellent,3
+1188,Left,Female,Single,Marketing,Travels Rarely,2,No,2,0,Low,1,Medium,2,Low,1,Good,2,Excellent,3
+1190,Active,Female,Divorced,Life Sciences,No Travel,1,No,1,3,High,3,High,3,High,3,Better,3,Excellent,3
+1191,Active,Female,Divorced,Technical Degree,Travels Rarely,2,No,5,1,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+1192,Active,Female,Married,Medical,Travels Rarely,2,No,1,1,Medium,2,Low,1,High,3,Better,3,Excellent,3
+1193,Active,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,High,3,High,3,High,3,Better,3,Outstanding,4
+1195,Active,Female,Married,Medical,Travels Rarely,2,Yes,1,1,Low,1,High,3,High,3,Good,2,Excellent,3
+1196,Active,Female,Married,Life Sciences,Travels Rarely,2,No,2,1,Very High,4,Medium,2,Medium,2,Good,2,Excellent,3
+1198,Active,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,Low,1,Low,1,Medium,2,Good,2,Excellent,3
+1200,Left,Male,Single,Life Sciences,Travels Rarely,2,Yes,1,0,High,3,High,3,High,3,Better,3,Excellent,3
+1201,Active,Female,Divorced,Medical,Travels Rarely,2,No,5,1,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+1202,Active,Female,Married,Life Sciences,Travels Rarely,2,Yes,1,1,Medium,2,Low,1,Low,1,Good,2,Excellent,3
+1203,Left,Male,Married,Life Sciences,Travels Frequently,3,Yes,1,1,High,3,Medium,2,Medium,2,Better,3,Excellent,3
+1204,Active,Female,Married,Marketing,Travels Rarely,2,No,4,0,High,3,Low,1,High,3,Better,3,Outstanding,4
+1206,Active,Male,Single,Life Sciences,No Travel,1,No,1,0,Very High,4,Very High,4,Low,1,Better,3,Excellent,3
+1207,Active,Male,Married,Human Resources,Travels Rarely,2,No,1,1,Medium,2,Very High,4,High,3,Better,3,Excellent,3
+1210,Left,Male,Divorced,Life Sciences,No Travel,1,No,1,1,Low,1,Low,1,Medium,2,Bad,1,Excellent,3
+1211,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,2,3,High,3,High,3,High,3,Better,3,Excellent,3
+1212,Active,Male,Married,Medical,Travels Frequently,3,No,2,3,Medium,2,Very High,4,High,3,Better,3,Excellent,3
+1215,Active,Female,Married,Medical,Travels Frequently,3,No,4,1,Very High,4,High,3,High,3,Better,3,Outstanding,4
+1216,Active,Male,Married,Medical,Travels Rarely,2,No,1,3,Very High,4,High,3,Medium,2,Better,3,Excellent,3
+1217,Active,Male,Married,Life Sciences,Travels Rarely,2,No,5,1,Very High,4,Low,1,High,3,Better,3,Excellent,3
+1218,Active,Male,Married,Life Sciences,Travels Rarely,2,Yes,2,3,High,3,Very High,4,High,3,Better,3,Excellent,3
+1219,Left,Female,Married,Life Sciences,Travels Rarely,2,No,1,1,Very High,4,Low,1,High,3,Bad,1,Excellent,3
+1220,Active,Female,Married,Medical,Travels Frequently,3,No,2,1,Medium,2,Low,1,High,3,Good,2,Excellent,3
+1221,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,1,1,High,3,High,3,Low,1,Better,3,Excellent,3
+1224,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,2,3,High,3,Low,1,High,3,Good,2,Excellent,3
+1225,Active,Male,Single,Other,Travels Rarely,2,No,2,0,Very High,4,Medium,2,High,3,Better,3,Outstanding,4
+1226,Active,Male,Single,Marketing,Travels Rarely,2,No,1,0,High,3,Very High,4,Very High,4,Better,3,Excellent,3
+1228,Active,Male,Divorced,Technical Degree,Travels Rarely,2,No,2,1,Very High,4,High,3,High,3,Good,2,Excellent,3
+1231,Active,Male,Married,Medical,No Travel,1,No,2,1,Very High,4,Low,1,Very High,4,Best,4,Excellent,3
+1233,Active,Male,Divorced,Marketing,Travels Rarely,2,Yes,2,1,Medium,2,Medium,2,Very High,4,Better,3,Excellent,3
+1234,Active,Female,Married,Other,Travels Frequently,3,No,1,1,High,3,High,3,Medium,2,Better,3,Outstanding,4
+1235,Active,Female,Single,Life Sciences,Travels Frequently,3,Yes,2,0,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+1237,Active,Female,Divorced,Technical Degree,Travels Rarely,2,Yes,3,1,High,3,High,3,Low,1,Better,3,Outstanding,4
+1238,Active,Male,Married,Medical,Travels Rarely,2,No,1,1,Low,1,Medium,2,High,3,Better,3,Excellent,3
+1239,Active,Female,Divorced,Technical Degree,Travels Rarely,2,No,2,1,Medium,2,Medium,2,Medium,2,Best,4,Excellent,3
+1240,Active,Male,Single,Life Sciences,Travels Rarely,2,No,2,0,High,3,Medium,2,High,3,Better,3,Excellent,3
+1241,Active,Male,Married,Medical,Travels Rarely,2,Yes,1,1,Very High,4,Low,1,High,3,Better,3,Outstanding,4
+1242,Active,Female,Married,Medical,Travels Frequently,3,Yes,3,0,Low,1,High,3,High,3,Better,3,Excellent,3
+1243,Active,Female,Married,Marketing,No Travel,1,Yes,3,1,High,3,Medium,2,Medium,2,Good,2,Excellent,3
+1244,Active,Male,Married,Life Sciences,Travels Rarely,2,Yes,1,2,Low,1,Very High,4,High,3,Good,2,Excellent,3
+1245,Active,Female,Divorced,Life Sciences,Travels Frequently,3,No,3,1,Very High,4,Low,1,High,3,Bad,1,Excellent,3
+1246,Active,Female,Married,Life Sciences,Travels Rarely,2,No,1,1,Low,1,Very High,4,Very High,4,Better,3,Excellent,3
+1248,Left,Female,Single,Medical,No Travel,1,Yes,1,0,Low,1,Medium,2,Medium,2,Best,4,Outstanding,4
+1249,Active,Female,Divorced,Life Sciences,Travels Rarely,2,No,1,3,Low,1,Low,1,High,3,Better,3,Excellent,3
+1250,Active,Male,Married,Life Sciences,Travels Rarely,2,No,4,0,Very High,4,Low,1,High,3,Better,3,Excellent,3
+1251,Active,Male,Married,Medical,Travels Rarely,2,Yes,2,0,High,3,Very High,4,High,3,Good,2,Excellent,3
+1252,Active,Female,Single,Medical,Travels Rarely,2,No,2,0,High,3,Medium,2,Medium,2,Better,3,Excellent,3
+1254,Active,Female,Single,Life Sciences,Travels Rarely,2,No,2,0,High,3,Very High,4,Medium,2,Better,3,Excellent,3
+1255,Active,Male,Married,Life Sciences,Travels Rarely,2,No,5,1,High,3,Medium,2,Low,1,Better,3,Excellent,3
+1256,Active,Male,Married,Medical,Travels Rarely,2,No,5,1,Low,1,High,3,Medium,2,Best,4,Excellent,3
+1257,Active,Male,Married,Technical Degree,Travels Frequently,3,No,1,0,High,3,High,3,High,3,Good,2,Excellent,3
+1258,Active,Male,Single,Technical Degree,Travels Rarely,2,No,1,0,Very High,4,High,3,Very High,4,Good,2,Excellent,3
+1259,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,1,3,Low,1,Medium,2,High,3,Better,3,Excellent,3
+1260,Active,Male,Divorced,Life Sciences,Travels Rarely,2,Yes,2,2,High,3,Medium,2,High,3,Better,3,Excellent,3
+1263,Active,Male,Single,Life Sciences,Travels Rarely,2,No,5,0,Very High,4,High,3,Medium,2,Best,4,Excellent,3
+1264,Active,Female,Divorced,Life Sciences,Travels Rarely,2,No,4,2,Very High,4,Medium,2,Medium,2,Good,2,Excellent,3
+1265,Active,Female,Married,Technical Degree,Travels Rarely,2,No,1,0,High,3,Very High,4,Very High,4,Good,2,Excellent,3
+1267,Active,Male,Married,Marketing,Travels Rarely,2,No,5,1,Medium,2,High,3,High,3,Better,3,Excellent,3
+1268,Active,Male,Divorced,Marketing,Travels Rarely,2,Yes,3,2,Very High,4,Very High,4,Very High,4,Better,3,Excellent,3
+1269,Active,Female,Single,Life Sciences,Travels Rarely,2,Yes,1,0,Medium,2,Very High,4,Very High,4,Better,3,Excellent,3
+1270,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,1,Very High,4,Very High,4,High,3,Better,3,Outstanding,4
+1273,Left,Male,Single,Life Sciences,Travels Frequently,3,Yes,1,0,High,3,Very High,4,Low,1,Better,3,Excellent,3
+1275,Active,Male,Single,Life Sciences,Travels Rarely,2,Yes,1,0,High,3,Medium,2,High,3,Good,2,Outstanding,4
+1277,Left,Female,Single,Marketing,Travels Rarely,2,Yes,5,0,Low,1,Low,1,Low,1,Better,3,Excellent,3
+1278,Active,Male,Divorced,Medical,No Travel,1,Yes,4,1,Very High,4,Very High,4,Medium,2,Better,3,Excellent,3
+1279,Left,Female,Single,Life Sciences,Travels Frequently,3,No,1,0,Low,1,High,3,Medium,2,Bad,1,Outstanding,4
+1280,Active,Female,Married,Marketing,Travels Rarely,2,No,5,1,Very High,4,High,3,Medium,2,Better,3,Excellent,3
+1281,Active,Female,Single,Marketing,Travels Rarely,2,Yes,2,0,High,3,Very High,4,High,3,Better,3,Excellent,3
+1282,Active,Male,Divorced,Life Sciences,Travels Frequently,3,Yes,5,1,Very High,4,Low,1,High,3,Good,2,Outstanding,4
+1283,Active,Male,Single,Medical,Travels Rarely,2,No,3,0,Very High,4,Very High,4,High,3,Good,2,Excellent,3
+1285,Active,Female,Divorced,Medical,Travels Frequently,3,No,2,2,High,3,High,3,High,3,Best,4,Excellent,3
+1286,Active,Male,Single,Medical,Travels Frequently,3,Yes,1,0,Very High,4,High,3,High,3,Good,2,Excellent,3
+1288,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,5,2,High,3,Very High,4,Very High,4,Good,2,Excellent,3
+1289,Active,Male,Married,Life Sciences,Travels Frequently,3,No,2,2,High,3,Very High,4,Medium,2,Best,4,Excellent,3
+1291,Active,Male,Married,Life Sciences,Travels Rarely,2,Yes,1,0,High,3,Very High,4,High,3,Better,3,Excellent,3
+1292,Active,Female,Married,Medical,Travels Rarely,2,Yes,2,0,Medium,2,Very High,4,Very High,4,Better,3,Excellent,3
+1293,Active,Female,Single,Marketing,Travels Rarely,2,No,3,0,Very High,4,Very High,4,Medium,2,Best,4,Excellent,3
+1294,Active,Female,Single,Life Sciences,Travels Rarely,2,Yes,2,0,High,3,Very High,4,High,3,Better,3,Excellent,3
+1295,Left,Female,Married,Medical,Travels Rarely,2,No,3,1,Low,1,Very High,4,High,3,Better,3,Excellent,3
+1296,Active,Male,Married,Life Sciences,Travels Frequently,3,Yes,1,1,Very High,4,Medium,2,Medium,2,Better,3,Excellent,3
+1297,Active,Female,Single,Medical,Travels Frequently,3,No,1,0,Medium,2,Medium,2,Medium,2,Good,2,Excellent,3
+1298,Active,Female,Single,Medical,No Travel,1,Yes,2,0,High,3,High,3,High,3,Better,3,Excellent,3
+1299,Left,Female,Divorced,Technical Degree,Travels Rarely,2,Yes,1,2,Medium,2,Low,1,High,3,Better,3,Excellent,3
+1301,Active,Male,Single,Technical Degree,Travels Rarely,2,No,1,0,Very High,4,Medium,2,High,3,Good,2,Excellent,3
+1303,Active,Female,Single,Medical,Travels Rarely,2,No,1,0,Very High,4,Very High,4,High,3,Good,2,Excellent,3
+1304,Active,Male,Married,Medical,Travels Rarely,2,No,2,2,High,3,High,3,Very High,4,Best,4,Excellent,3
+1306,Active,Female,Single,Medical,Travels Frequently,3,No,5,0,Medium,2,High,3,High,3,Better,3,Outstanding,4
+1307,Active,Female,Divorced,Medical,Travels Rarely,2,Yes,4,2,High,3,Very High,4,Medium,2,Better,3,Excellent,3
+1308,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,1,2,Low,1,Very High,4,High,3,Better,3,Excellent,3
+1309,Left,Male,Married,Life Sciences,Travels Rarely,2,No,2,1,Very High,4,Low,1,High,3,Better,3,Excellent,3
+1310,Left,Male,Single,Medical,Travels Rarely,2,No,1,0,High,3,Low,1,High,3,Better,3,Excellent,3
+1311,Active,Female,Married,Technical Degree,Travels Rarely,2,No,2,1,Low,1,Low,1,Medium,2,Better,3,Excellent,3
+1312,Active,Female,Married,Technical Degree,Travels Rarely,2,No,3,0,Very High,4,Low,1,High,3,Better,3,Excellent,3
+1314,Active,Female,Single,Life Sciences,Travels Rarely,2,No,1,0,Very High,4,High,3,High,3,Best,4,Excellent,3
+1315,Active,Female,Married,Life Sciences,No Travel,1,No,2,3,High,3,Low,1,Low,1,Better,3,Excellent,3
+1317,Active,Female,Married,Life Sciences,Travels Rarely,2,Yes,4,0,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+1318,Left,Male,Single,Marketing,Travels Rarely,2,Yes,3,0,Very High,4,High,3,Medium,2,Better,3,Excellent,3
+1319,Left,Male,Single,Life Sciences,Travels Rarely,2,Yes,3,0,Medium,2,High,3,High,3,Good,2,Excellent,3
+1321,Active,Female,Married,Medical,Travels Rarely,2,Yes,3,2,Medium,2,Very High,4,High,3,Better,3,Outstanding,4
+1322,Active,Male,Single,Life Sciences,Travels Rarely,2,No,2,0,Low,1,Low,1,High,3,Better,3,Excellent,3
+1324,Active,Female,Divorced,Life Sciences,No Travel,1,Yes,3,1,Very High,4,Low,1,High,3,Good,2,Excellent,3
+1329,Active,Male,Single,Medical,No Travel,1,No,2,0,High,3,Low,1,Low,1,Better,3,Excellent,3
+1331,Left,Female,Single,Life Sciences,Travels Frequently,3,Yes,1,0,Very High,4,Low,1,High,3,Best,4,Excellent,3
+1333,Left,Male,Married,Life Sciences,Travels Rarely,2,No,1,0,Low,1,High,3,High,3,Best,4,Excellent,3
+1334,Active,Male,Married,Life Sciences,No Travel,1,Yes,4,0,High,3,Very High,4,High,3,Good,2,Excellent,3
+1336,Active,Female,Married,Medical,Travels Rarely,2,No,5,1,Very High,4,Very High,4,Low,1,Better,3,Excellent,3
+1338,Active,Male,Single,Life Sciences,Travels Rarely,2,No,5,0,Very High,4,Low,1,High,3,Better,3,Excellent,3
+1340,Active,Male,Divorced,Life Sciences,No Travel,1,No,1,1,High,3,Medium,2,High,3,Better,3,Excellent,3
+1344,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,3,1,Very High,4,Very High,4,High,3,Good,2,Excellent,3
+1346,Active,Male,Single,Life Sciences,Travels Rarely,2,No,2,0,High,3,High,3,High,3,Better,3,Excellent,3
+1349,Active,Female,Divorced,Marketing,Travels Frequently,3,No,2,1,High,3,Very High,4,High,3,Better,3,Excellent,3
+1350,Active,Male,Single,Life Sciences,Travels Frequently,3,Yes,2,0,High,3,Medium,2,High,3,Better,3,Excellent,3
+1352,Active,Male,Divorced,Life Sciences,Travels Rarely,2,Yes,4,1,High,3,Medium,2,High,3,Better,3,Excellent,3
+1355,Active,Female,Divorced,Life Sciences,Travels Rarely,2,No,2,1,Medium,2,Very High,4,High,3,Better,3,Excellent,3
+1356,Active,Female,Single,Medical,Travels Rarely,2,No,2,0,High,3,Very High,4,High,3,Best,4,Excellent,3
+1358,Active,Male,Married,Medical,Travels Rarely,2,No,1,3,Very High,4,High,3,High,3,Good,2,Excellent,3
+1360,Left,Female,Married,Medical,Travels Rarely,2,Yes,3,0,High,3,Very High,4,Medium,2,Good,2,Excellent,3
+1361,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,1,Medium,2,High,3,High,3,Better,3,Outstanding,4
+1362,Active,Female,Married,Marketing,Travels Frequently,3,No,2,1,Low,1,Very High,4,Very High,4,Good,2,Excellent,3
+1363,Active,Male,Single,Life Sciences,Travels Rarely,2,No,3,0,Very High,4,High,3,High,3,Better,3,Excellent,3
+1364,Active,Female,Married,Medical,Travels Rarely,2,No,1,1,High,3,Medium,2,Very High,4,Better,3,Excellent,3
+1367,Active,Female,Single,Technical Degree,Travels Rarely,2,No,4,0,Very High,4,Medium,2,Medium,2,Good,2,Excellent,3
+1368,Active,Female,Single,Life Sciences,No Travel,1,No,1,0,Very High,4,High,3,High,3,Best,4,Excellent,3
+1369,Active,Female,Married,Medical,Travels Rarely,2,No,2,1,Very High,4,Medium,2,Medium,2,Better,3,Excellent,3
+1371,Active,Male,Single,Life Sciences,Travels Frequently,3,No,2,0,Very High,4,Medium,2,Low,1,Better,3,Outstanding,4
+1372,Left,Male,Single,Marketing,Travels Rarely,2,Yes,4,0,Low,1,High,3,Very High,4,Good,2,Excellent,3
+1373,Active,Male,Married,Life Sciences,Travels Rarely,2,Yes,4,1,Very High,4,Low,1,High,3,Better,3,Excellent,3
+1374,Active,Female,Divorced,Technical Degree,No Travel,1,No,1,3,Low,1,High,3,Medium,2,Better,3,Outstanding,4
+1375,Active,Female,Divorced,Medical,Travels Rarely,2,No,2,3,Medium,2,Medium,2,Very High,4,Better,3,Outstanding,4
+1377,Active,Male,Married,Medical,Travels Rarely,2,No,2,2,Medium,2,Low,1,High,3,Better,3,Excellent,3
+1379,Left,Female,Single,Life Sciences,Travels Frequently,3,No,1,0,High,3,High,3,Medium,2,Best,4,Excellent,3
+1380,Left,Female,Married,Marketing,Travels Frequently,3,Yes,2,1,Very High,4,High,3,High,3,Good,2,Excellent,3
+1382,Active,Male,Divorced,Life Sciences,Travels Frequently,3,No,1,3,Very High,4,Very High,4,Very High,4,Better,3,Excellent,3
+1383,Active,Female,Single,Technical Degree,Travels Rarely,2,No,2,0,High,3,Very High,4,High,3,Best,4,Excellent,3
+1387,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,1,High,3,High,3,Medium,2,Better,3,Excellent,3
+1389,Left,Male,Married,Medical,Travels Rarely,2,Yes,2,2,Very High,4,Very High,4,High,3,Good,2,Excellent,3
+1390,Active,Male,Married,Life Sciences,Travels Rarely,2,Yes,2,2,Low,1,Very High,4,Medium,2,Best,4,Excellent,3
+1391,Active,Male,Married,Marketing,Travels Frequently,3,No,3,0,Medium,2,Medium,2,High,3,Better,3,Excellent,3
+1392,Active,Female,Divorced,Life Sciences,Travels Frequently,3,Yes,2,2,Very High,4,Low,1,High,3,Good,2,Excellent,3
+1394,Active,Male,Married,Life Sciences,Travels Rarely,2,Yes,1,0,High,3,Very High,4,High,3,Better,3,Excellent,3
+1395,Active,Male,Married,Life Sciences,Travels Frequently,3,No,2,0,Medium,2,Low,1,High,3,Best,4,Excellent,3
+1396,Active,Male,Married,Marketing,Travels Rarely,2,Yes,2,3,High,3,Low,1,High,3,Good,2,Excellent,3
+1397,Active,Male,Married,Life Sciences,No Travel,1,No,3,1,High,3,Medium,2,High,3,Better,3,Outstanding,4
+1399,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,0,Low,1,Medium,2,Very High,4,Good,2,Excellent,3
+1401,Active,Female,Married,Medical,Travels Frequently,3,Yes,4,1,Very High,4,Medium,2,Very High,4,Good,2,Excellent,3
+1402,Active,Female,Single,Medical,Travels Rarely,2,Yes,2,0,Low,1,Low,1,Medium,2,Bad,1,Excellent,3
+1403,Active,Female,Married,Marketing,Travels Rarely,2,Yes,2,0,Very High,4,Very High,4,Medium,2,Better,3,Excellent,3
+1405,Left,Female,Single,Life Sciences,Travels Rarely,2,Yes,1,0,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+1407,Active,Male,Single,Medical,Travels Rarely,2,No,1,0,Low,1,Very High,4,Medium,2,Better,3,Excellent,3
+1408,Active,Female,Married,Human Resources,Travels Rarely,2,No,4,1,High,3,High,3,High,3,Better,3,Excellent,3
+1409,Active,Female,Married,Other,Travels Rarely,2,No,1,0,High,3,High,3,High,3,Bad,1,Excellent,3
+1411,Active,Female,Single,Medical,Travels Rarely,2,No,1,0,Low,1,Low,1,High,3,Better,3,Excellent,3
+1412,Active,Male,Single,Life Sciences,Travels Frequently,3,No,3,0,High,3,High,3,High,3,Better,3,Excellent,3
+1415,Active,Male,Married,Technical Degree,Travels Rarely,2,No,1,1,Low,1,Medium,2,High,3,Good,2,Excellent,3
+1417,Active,Male,Single,Other,Travels Rarely,2,No,1,0,High,3,Very High,4,Very High,4,Better,3,Excellent,3
+1419,Active,Male,Single,Other,Travels Rarely,2,No,3,0,Medium,2,Low,1,Medium,2,Good,2,Excellent,3
+1420,Left,Male,Single,Life Sciences,Travels Frequently,3,No,2,0,Low,1,Low,1,Medium,2,Better,3,Outstanding,4
+1421,Left,Female,Single,Other,Travels Frequently,3,Yes,3,0,High,3,Low,1,High,3,Better,3,Excellent,3
+1422,Active,Female,Single,Medical,Travels Rarely,2,No,4,0,Very High,4,Very High,4,High,3,Good,2,Excellent,3
+1423,Active,Female,Married,Medical,Travels Rarely,2,Yes,5,1,Very High,4,High,3,High,3,Better,3,Outstanding,4
+1424,Active,Male,Divorced,Medical,Travels Rarely,2,No,4,2,Medium,2,Very High,4,Very High,4,Best,4,Excellent,3
+1425,Active,Female,Single,Marketing,Travels Rarely,2,Yes,2,0,Low,1,Very High,4,High,3,Better,3,Excellent,3
+1427,Left,Female,Single,Life Sciences,Travels Frequently,3,No,1,0,Medium,2,Medium,2,Low,1,Better,3,Excellent,3
+1428,Active,Female,Divorced,Marketing,Travels Rarely,2,No,2,2,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+1430,Active,Female,Single,Life Sciences,Travels Rarely,2,No,4,0,Low,1,High,3,High,3,Best,4,Excellent,3
+1431,Active,Male,Divorced,Other,Travels Frequently,3,No,1,2,Very High,4,High,3,High,3,Better,3,Excellent,3
+1433,Left,Female,Single,Life Sciences,Travels Rarely,2,No,1,0,Low,1,High,3,Medium,2,Best,4,Excellent,3
+1434,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,0,Medium,2,Medium,2,High,3,Best,4,Excellent,3
+1435,Active,Male,Single,Life Sciences,Travels Rarely,2,No,2,0,Low,1,High,3,Medium,2,Good,2,Excellent,3
+1436,Active,Female,Married,Marketing,Travels Rarely,2,No,2,2,High,3,Low,1,Medium,2,Good,2,Excellent,3
+1438,Active,Male,Married,Technical Degree,Travels Rarely,2,No,1,1,Low,1,High,3,High,3,Good,2,Excellent,3
+1439,Left,Male,Married,Life Sciences,Travels Rarely,2,No,1,0,Low,1,Low,1,Medium,2,Better,3,Excellent,3
+1440,Active,Male,Single,Technical Degree,No Travel,1,No,1,0,High,3,Low,1,Very High,4,Bad,1,Excellent,3
+1441,Active,Female,Married,Life Sciences,Travels Rarely,2,No,1,1,Low,1,Very High,4,High,3,Best,4,Outstanding,4
+1443,Active,Female,Married,Medical,Travels Rarely,2,No,4,2,Low,1,Medium,2,High,3,Best,4,Excellent,3
+1445,Active,Female,Married,Medical,Travels Rarely,2,Yes,2,2,Very High,4,High,3,High,3,Better,3,Excellent,3
+1446,Active,Male,Married,Marketing,Travels Rarely,2,No,2,1,Very High,4,High,3,High,3,Good,2,Excellent,3
+1447,Active,Female,Married,Life Sciences,Travels Rarely,2,No,1,1,Very High,4,Low,1,Medium,2,Good,2,Excellent,3
+1448,Active,Male,Married,Medical,Travels Rarely,2,Yes,1,0,Medium,2,Low,1,Very High,4,Good,2,Excellent,3
+1449,Active,Male,Divorced,Other,No Travel,1,No,2,2,High,3,High,3,High,3,Best,4,Excellent,3
+1453,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,3,1,Low,1,Low,1,High,3,Better,3,Excellent,3
+1457,Left,Male,Divorced,Marketing,Travels Rarely,2,No,3,1,Low,1,Low,1,High,3,Best,4,Excellent,3
+1458,Left,Female,Single,Life Sciences,No Travel,1,Yes,1,0,Low,1,Medium,2,Medium,2,Best,4,Outstanding,4
+1459,Left,Female,Single,Life Sciences,Travels Frequently,3,No,3,0,High,3,Low,1,Very High,4,Better,3,Excellent,3
+1460,Active,Male,Divorced,Medical,Travels Rarely,2,Yes,3,1,Medium,2,Medium,2,Low,1,Better,3,Excellent,3
+1461,Active,Female,Single,Medical,Travels Rarely,2,No,1,0,Very High,4,Very High,4,Very High,4,Better,3,Excellent,3
+1464,Left,Male,Married,Life Sciences,Travels Frequently,3,Yes,1,1,Medium,2,High,3,High,3,Bad,1,Excellent,3
+1465,Active,Male,Married,Technical Degree,Travels Rarely,2,Yes,3,2,Medium,2,Very High,4,High,3,Best,4,Excellent,3
+1466,Active,Male,Divorced,Marketing,Travels Rarely,2,No,2,3,High,3,Low,1,High,3,Better,3,Excellent,3
+1467,Left,Female,Married,Technical Degree,Travels Rarely,2,No,1,0,Low,1,Very High,4,High,3,Better,3,Excellent,3
+1468,Active,Male,Divorced,Medical,No Travel,1,No,3,1,Very High,4,High,3,Medium,2,Better,3,Excellent,3
+1469,Active,Male,Single,Medical,Travels Rarely,2,No,2,0,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+1471,Active,Male,Single,Life Sciences,No Travel,1,No,1,0,High,3,Very High,4,Medium,2,Better,3,Excellent,3
+1472,Active,Male,Single,Medical,Travels Rarely,2,No,4,0,Very High,4,Medium,2,Very High,4,Good,2,Excellent,3
+1473,Active,Male,Married,Technical Degree,Travels Rarely,2,No,2,1,Low,1,Medium,2,High,3,Good,2,Excellent,3
+1474,Active,Male,Divorced,Medical,Travels Rarely,2,No,1,1,High,3,High,3,High,3,Best,4,Excellent,3
+1475,Active,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,Very High,4,High,3,High,3,Good,2,Excellent,3
+1477,Active,Male,Married,Medical,Travels Frequently,3,No,2,2,Very High,4,Low,1,High,3,Better,3,Excellent,3
+1478,Active,Male,Single,Other,Travels Rarely,2,No,2,0,Very High,4,Very High,4,Low,1,Better,3,Excellent,3
+1479,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,2,Very High,4,High,3,High,3,Good,2,Excellent,3
+1480,Active,Female,Single,Medical,Travels Frequently,3,No,1,0,Low,1,High,3,High,3,Better,3,Excellent,3
+1481,Active,Female,Married,Marketing,Travels Frequently,3,No,2,1,Low,1,High,3,High,3,Good,2,Excellent,3
+1482,Active,Male,Divorced,Technical Degree,No Travel,1,No,1,2,High,3,Medium,2,High,3,Good,2,Excellent,3
+1483,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,1,Medium,2,Low,1,Very High,4,Good,2,Outstanding,4
+1484,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,3,2,High,3,Medium,2,High,3,Better,3,Excellent,3
+1485,Active,Male,Divorced,Medical,Travels Frequently,3,No,4,2,Medium,2,Very High,4,High,3,Good,2,Excellent,3
+1486,Left,Male,Married,Technical Degree,Travels Frequently,3,No,1,1,Low,1,Very High,4,High,3,Best,4,Excellent,3
+1487,Left,Female,Single,Technical Degree,Travels Frequently,3,No,2,0,Low,1,Low,1,High,3,Bad,1,Excellent,3
+1489,Left,Female,Single,Medical,Travels Rarely,2,Yes,2,0,Low,1,High,3,Medium,2,Best,4,Outstanding,4
+1492,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,1,Very High,4,Low,1,High,3,Better,3,Excellent,3
+1494,Left,Male,Single,Medical,Travels Frequently,3,Yes,1,0,Medium,2,High,3,High,3,Good,2,Excellent,3
+1495,Active,Female,Married,Life Sciences,No Travel,1,No,1,1,Very High,4,High,3,High,3,Better,3,Excellent,3
+1496,Active,Male,Single,Medical,Travels Frequently,3,Yes,3,0,Medium,2,Medium,2,High,3,Good,2,Excellent,3
+1497,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,2,2,High,3,High,3,Medium,2,Better,3,Excellent,3
+1499,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,1,1,High,3,Low,1,High,3,Best,4,Outstanding,4
+1501,Active,Male,Married,Life Sciences,Travels Rarely,2,Yes,2,0,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+1502,Active,Female,Married,Medical,Travels Rarely,2,No,1,0,Low,1,Very High,4,Medium,2,Better,3,Excellent,3
+1503,Active,Female,Married,Medical,Travels Rarely,2,Yes,2,1,High,3,High,3,High,3,Good,2,Excellent,3
+1504,Left,Male,Single,Medical,Travels Frequently,3,No,1,0,High,3,High,3,Medium,2,Good,2,Excellent,3
+1506,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,1,1,Low,1,Very High,4,Medium,2,Bad,1,Excellent,3
+1507,Active,Male,Single,Life Sciences,Travels Frequently,3,No,2,0,High,3,Very High,4,High,3,Better,3,Excellent,3
+1509,Active,Female,Married,Medical,Travels Rarely,2,No,2,1,High,3,Low,1,Medium,2,Better,3,Outstanding,4
+1513,Active,Female,Married,Life Sciences,Travels Frequently,3,No,1,3,Very High,4,High,3,High,3,Better,3,Excellent,3
+1514,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,2,High,3,Medium,2,Low,1,Good,2,Excellent,3
+1515,Active,Male,Single,Life Sciences,Travels Rarely,2,Yes,2,0,Very High,4,Low,1,High,3,Better,3,Excellent,3
+1516,Active,Male,Single,Medical,Travels Rarely,2,No,3,0,High,3,Medium,2,High,3,Best,4,Outstanding,4
+1520,Active,Female,Divorced,Medical,Travels Frequently,3,No,4,1,Medium,2,Low,1,High,3,Better,3,Outstanding,4
+1522,Left,Male,Single,Technical Degree,Travels Rarely,2,No,1,0,Low,1,High,3,Medium,2,Bad,1,Excellent,3
+1523,Active,Male,Married,Life Sciences,Travels Rarely,2,No,4,1,Very High,4,High,3,High,3,Best,4,Excellent,3
+1525,Active,Female,Single,Life Sciences,Travels Rarely,2,No,3,0,Medium,2,Very High,4,High,3,Better,3,Excellent,3
+1527,Active,Female,Married,Life Sciences,Travels Rarely,2,No,4,1,High,3,Very High,4,High,3,Best,4,Excellent,3
+1529,Active,Female,Single,Life Sciences,Travels Rarely,2,No,3,0,Very High,4,Very High,4,Medium,2,Bad,1,Excellent,3
+1533,Active,Male,Single,Life Sciences,Travels Rarely,2,No,2,0,Low,1,Medium,2,High,3,Better,3,Excellent,3
+1534,Left,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,Very High,4,Medium,2,High,3,Bad,1,Excellent,3
+1535,Active,Male,Married,Technical Degree,Travels Rarely,2,Yes,3,0,Very High,4,Very High,4,Medium,2,Better,3,Excellent,3
+1537,Left,Female,Single,Life Sciences,Travels Frequently,3,No,1,0,Very High,4,Low,1,High,3,Bad,1,Excellent,3
+1539,Active,Male,Single,Medical,Travels Frequently,3,Yes,4,0,High,3,Very High,4,Low,1,Better,3,Excellent,3
+1541,Active,Male,Married,Technical Degree,Travels Rarely,2,Yes,1,1,Medium,2,Medium,2,High,3,Better,3,Outstanding,4
+1542,Active,Male,Married,Medical,Travels Rarely,2,No,1,1,High,3,Medium,2,Medium,2,Better,3,Excellent,3
+1543,Active,Male,Married,Medical,Travels Rarely,2,No,2,0,Low,1,Low,1,High,3,Better,3,Excellent,3
+1544,Active,Female,Married,Other,Travels Rarely,2,No,2,1,High,3,High,3,Low,1,Better,3,Excellent,3
+1545,Active,Male,Single,Life Sciences,Travels Rarely,2,No,2,0,Very High,4,Very High,4,Medium,2,Better,3,Excellent,3
+1546,Active,Male,Married,Technical Degree,Travels Rarely,2,No,1,1,Very High,4,Very High,4,High,3,Better,3,Outstanding,4
+1547,Active,Male,Married,Life Sciences,Travels Frequently,3,Yes,3,1,Very High,4,High,3,High,3,Bad,1,Excellent,3
+1548,Active,Male,Married,Medical,Travels Rarely,2,No,2,0,Low,1,Very High,4,High,3,Best,4,Excellent,3
+1549,Active,Male,Married,Life Sciences,Travels Rarely,2,Yes,2,1,Medium,2,Medium,2,High,3,Better,3,Excellent,3
+1550,Active,Male,Single,Medical,Travels Rarely,2,Yes,4,0,High,3,Very High,4,High,3,Better,3,Outstanding,4
+1551,Active,Male,Divorced,Technical Degree,Travels Rarely,2,No,1,3,High,3,Medium,2,Medium,2,Better,3,Excellent,3
+1552,Active,Male,Divorced,Life Sciences,No Travel,1,Yes,2,0,Very High,4,High,3,High,3,Better,3,Excellent,3
+1553,Active,Male,Divorced,Technical Degree,Travels Rarely,2,No,3,3,Low,1,Low,1,High,3,Better,3,Excellent,3
+1554,Active,Female,Married,Life Sciences,Travels Rarely,2,No,1,2,Medium,2,Low,1,Medium,2,Better,3,Outstanding,4
+1555,Active,Female,Married,Life Sciences,Travels Rarely,2,No,2,1,Very High,4,Low,1,Medium,2,Better,3,Excellent,3
+1556,Active,Male,Single,Life Sciences,Travels Rarely,2,Yes,1,0,High,3,Very High,4,High,3,Good,2,Outstanding,4
+1557,Active,Female,Divorced,Life Sciences,Travels Rarely,2,No,2,1,High,3,High,3,High,3,Better,3,Excellent,3
+1558,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,2,High,3,Low,1,Very High,4,Good,2,Excellent,3
+1560,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,1,Low,1,Very High,4,High,3,Bad,1,Excellent,3
+1562,Left,Male,Married,Life Sciences,Travels Rarely,2,No,2,1,Medium,2,Very High,4,Medium,2,Better,3,Excellent,3
+1563,Active,Male,Married,Human Resources,Travels Frequently,3,No,2,0,High,3,High,3,High,3,Better,3,Excellent,3
+1564,Active,Male,Single,Medical,Travels Rarely,2,No,1,0,Very High,4,Medium,2,Medium,2,Better,3,Excellent,3
+1568,Active,Male,Married,Technical Degree,Travels Rarely,2,No,3,1,High,3,Medium,2,High,3,Better,3,Excellent,3
+1569,Left,Female,Divorced,Life Sciences,Travels Rarely,2,Yes,1,1,Low,1,Very High,4,High,3,Better,3,Excellent,3
+1572,Left,Female,Married,Technical Degree,Travels Rarely,2,No,3,1,High,3,Medium,2,Medium,2,Better,3,Excellent,3
+1573,Left,Male,Married,Medical,Travels Rarely,2,No,2,2,High,3,Low,1,High,3,Better,3,Excellent,3
+1574,Active,Male,Married,Technical Degree,No Travel,1,No,2,1,Very High,4,Medium,2,High,3,Good,2,Excellent,3
+1576,Active,Female,Married,Other,Travels Rarely,2,No,1,1,High,3,Very High,4,High,3,Good,2,Excellent,3
+1577,Active,Male,Single,Medical,Travels Rarely,2,No,1,0,Low,1,High,3,High,3,Bad,1,Excellent,3
+1578,Active,Male,Married,Marketing,Travels Rarely,2,No,5,1,High,3,High,3,Medium,2,Better,3,Outstanding,4
+1580,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,1,Medium,2,Medium,2,High,3,Good,2,Excellent,3
+1581,Active,Female,Married,Life Sciences,Travels Rarely,2,No,1,0,Low,1,Low,1,High,3,Better,3,Outstanding,4
+1582,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,1,High,3,Very High,4,High,3,Better,3,Excellent,3
+1583,Active,Female,Single,Life Sciences,Travels Rarely,2,No,2,0,Medium,2,Medium,2,High,3,Best,4,Excellent,3
+1585,Active,Female,Single,Life Sciences,Travels Rarely,2,No,2,0,Medium,2,Low,1,High,3,Better,3,Excellent,3
+1586,Active,Male,Single,Medical,Travels Rarely,2,Yes,1,0,Medium,2,Very High,4,High,3,Better,3,Excellent,3
+1587,Active,Female,Single,Medical,Travels Rarely,2,Yes,2,0,Low,1,High,3,High,3,Better,3,Excellent,3
+1588,Active,Male,Married,Medical,Travels Rarely,2,No,3,1,Very High,4,Low,1,Very High,4,Better,3,Excellent,3
+1590,Active,Male,Divorced,Life Sciences,Travels Frequently,3,No,2,1,Low,1,Very High,4,High,3,Best,4,Excellent,3
+1591,Active,Male,Married,Marketing,Travels Rarely,2,Yes,5,1,High,3,High,3,High,3,Better,3,Excellent,3
+1592,Active,Male,Married,Technical Degree,Travels Rarely,2,No,1,1,Very High,4,Very High,4,Very High,4,Better,3,Excellent,3
+1594,Active,Male,Married,Life Sciences,Travels Frequently,3,Yes,2,1,Low,1,Very High,4,Very High,4,Better,3,Excellent,3
+1595,Active,Male,Single,Other,Travels Rarely,2,No,5,0,Very High,4,Very High,4,Medium,2,Better,3,Outstanding,4
+1596,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,2,Medium,2,Very High,4,Very High,4,Good,2,Excellent,3
+1597,Active,Male,Married,Technical Degree,Travels Frequently,3,No,2,1,Very High,4,Medium,2,Medium,2,Good,2,Excellent,3
+1598,Active,Female,Married,Life Sciences,Travels Rarely,2,No,2,1,Very High,4,High,3,High,3,Better,3,Excellent,3
+1599,Active,Male,Divorced,Technical Degree,Travels Rarely,2,No,1,1,Very High,4,High,3,Very High,4,Better,3,Excellent,3
+1601,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,1,High,3,Very High,4,Medium,2,Good,2,Excellent,3
+1602,Active,Male,Single,Life Sciences,Travels Rarely,2,No,4,0,Very High,4,Medium,2,Very High,4,Bad,1,Excellent,3
+1604,Left,Male,Married,Medical,Travels Rarely,2,Yes,1,3,High,3,High,3,High,3,Better,3,Excellent,3
+1605,Active,Female,Married,Other,No Travel,1,Yes,1,0,Medium,2,Medium,2,Medium,2,Good,2,Excellent,3
+1606,Active,Male,Married,Medical,Travels Frequently,3,Yes,4,1,Medium,2,High,3,High,3,Better,3,Excellent,3
+1607,Active,Female,Married,Other,Travels Rarely,2,No,1,2,Medium,2,Very High,4,Very High,4,Better,3,Excellent,3
+1608,Active,Female,Divorced,Medical,Travels Rarely,2,Yes,5,1,Medium,2,Very High,4,High,3,Good,2,Excellent,3
+1609,Active,Male,Married,Medical,Travels Rarely,2,No,1,1,Medium,2,Medium,2,Medium,2,Good,2,Excellent,3
+1611,Active,Female,Single,Medical,Travels Rarely,2,Yes,2,0,High,3,Low,1,Low,1,Better,3,Excellent,3
+1612,Active,Male,Married,Marketing,No Travel,1,No,2,1,Low,1,Low,1,Medium,2,Better,3,Excellent,3
+1613,Active,Male,Single,Other,Travels Frequently,3,No,2,0,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+1614,Active,Female,Married,Life Sciences,Travels Rarely,2,Yes,2,2,High,3,Medium,2,High,3,Better,3,Excellent,3
+1615,Active,Male,Divorced,Life Sciences,Travels Frequently,3,No,2,1,High,3,Low,1,Very High,4,Better,3,Excellent,3
+1617,Active,Female,Married,Life Sciences,Travels Rarely,2,No,1,1,High,3,Very High,4,High,3,Good,2,Excellent,3
+1618,Active,Male,Married,Medical,Travels Rarely,2,No,2,3,Medium,2,Very High,4,High,3,Better,3,Excellent,3
+1619,Active,Male,Divorced,Other,Travels Rarely,2,No,1,2,Very High,4,Low,1,Medium,2,Better,3,Excellent,3
+1621,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,0,Medium,2,Very High,4,Very High,4,Better,3,Excellent,3
+1622,Active,Female,Divorced,Medical,Travels Rarely,2,No,2,1,Medium,2,Medium,2,Low,1,Good,2,Outstanding,4
+1623,Active,Male,Single,Medical,Travels Rarely,2,No,1,0,High,3,High,3,High,3,Better,3,Excellent,3
+1624,Left,Female,Single,Medical,Travels Frequently,3,Yes,1,0,Medium,2,High,3,High,3,Best,4,Excellent,3
+1625,Active,Female,Married,Life Sciences,Travels Rarely,2,No,5,1,Very High,4,High,3,High,3,Better,3,Excellent,3
+1627,Active,Male,Divorced,Medical,Travels Rarely,2,No,2,1,High,3,Very High,4,Medium,2,Better,3,Excellent,3
+1628,Active,Female,Married,Life Sciences,Travels Rarely,2,No,3,2,Low,1,Very High,4,Medium,2,Better,3,Excellent,3
+1630,Active,Female,Married,Life Sciences,No Travel,1,No,2,1,High,3,Very High,4,High,3,Better,3,Excellent,3
+1631,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,3,High,3,Low,1,High,3,Good,2,Excellent,3
+1633,Active,Female,Single,Medical,Travels Frequently,3,No,2,0,Low,1,Very High,4,High,3,Bad,1,Excellent,3
+1635,Active,Female,Divorced,Other,Travels Rarely,2,No,2,2,Very High,4,Low,1,Medium,2,Better,3,Excellent,3
+1638,Active,Female,Married,Medical,Travels Rarely,2,Yes,3,1,Very High,4,Very High,4,Medium,2,Best,4,Excellent,3
+1639,Left,Male,Married,Medical,Travels Rarely,2,No,3,0,Very High,4,High,3,Medium,2,Better,3,Excellent,3
+1640,Active,Female,Married,Medical,Travels Rarely,2,No,1,1,Medium,2,Low,1,High,3,Bad,1,Excellent,3
+1641,Active,Female,Single,Life Sciences,Travels Rarely,2,Yes,3,0,High,3,Very High,4,High,3,Good,2,Excellent,3
+1642,Active,Male,Married,Human Resources,Travels Frequently,3,Yes,2,0,Low,1,High,3,High,3,Better,3,Excellent,3
+1644,Active,Male,Married,Medical,Travels Frequently,3,No,4,1,High,3,Medium,2,Medium,2,Better,3,Outstanding,4
+1645,Left,Male,Divorced,Medical,Travels Rarely,2,Yes,2,2,Low,1,Very High,4,Low,1,Good,2,Excellent,3
+1646,Active,Female,Single,Technical Degree,Travels Frequently,3,Yes,1,0,Low,1,High,3,High,3,Better,3,Excellent,3
+1647,Active,Female,Married,Medical,Travels Rarely,2,No,1,0,Medium,2,Low,1,Very High,4,Better,3,Excellent,3
+1648,Active,Male,Single,Medical,Travels Frequently,3,No,1,0,Very High,4,High,3,High,3,Good,2,Excellent,3
+1649,Left,Male,Single,Life Sciences,Travels Rarely,2,Yes,1,0,Low,1,Medium,2,High,3,Bad,1,Excellent,3
+1650,Active,Male,Single,Medical,Travels Rarely,2,No,2,0,High,3,High,3,Medium,2,Better,3,Excellent,3
+1651,Active,Female,Married,Life Sciences,Travels Rarely,2,No,3,2,Medium,2,High,3,High,3,Better,3,Excellent,3
+1653,Active,Male,Divorced,Life Sciences,Travels Frequently,3,No,2,2,Very High,4,High,3,Very High,4,Better,3,Excellent,3
+1654,Active,Male,Married,Medical,Travels Rarely,2,No,2,0,Very High,4,High,3,High,3,Better,3,Outstanding,4
+1655,Active,Female,Married,Other,Travels Rarely,2,No,4,2,Low,1,Medium,2,High,3,Better,3,Excellent,3
+1656,Active,Female,Divorced,Life Sciences,Travels Rarely,2,No,3,3,Very High,4,High,3,Medium,2,Better,3,Excellent,3
+1657,Active,Female,Single,Medical,Travels Rarely,2,No,1,0,High,3,Low,1,High,3,Better,3,Excellent,3
+1658,Active,Female,Divorced,Life Sciences,Travels Rarely,2,No,2,1,Very High,4,High,3,High,3,Better,3,Excellent,3
+1659,Active,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,Low,1,High,3,High,3,Better,3,Excellent,3
+1661,Active,Female,Married,Life Sciences,Travels Rarely,2,Yes,4,1,High,3,Medium,2,Medium,2,Better,3,Excellent,3
+1662,Active,Female,Married,Medical,No Travel,1,No,2,0,Very High,4,High,3,Medium,2,Better,3,Excellent,3
+1664,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,2,1,Very High,4,Low,1,Very High,4,Better,3,Outstanding,4
+1665,Active,Female,Married,Medical,Travels Rarely,2,No,4,1,Medium,2,High,3,High,3,Better,3,Outstanding,4
+1666,Active,Male,Married,Life Sciences,Travels Rarely,2,No,4,1,High,3,Low,1,Medium,2,Better,3,Outstanding,4
+1667,Left,Male,Single,Other,Travels Frequently,3,Yes,2,0,Very High,4,Low,1,High,3,Best,4,Outstanding,4
+1668,Active,Male,Married,Life Sciences,Travels Frequently,3,No,2,2,Very High,4,Very High,4,High,3,Best,4,Excellent,3
+1669,Active,Male,Divorced,Medical,Travels Rarely,2,Yes,2,1,Low,1,Medium,2,Medium,2,Good,2,Excellent,3
+1670,Active,Male,Divorced,Medical,Travels Rarely,2,No,2,2,Very High,4,High,3,High,3,Better,3,Excellent,3
+1671,Active,Male,Divorced,Medical,Travels Rarely,2,No,2,2,Very High,4,High,3,High,3,Good,2,Excellent,3
+1673,Active,Female,Married,Life Sciences,Travels Rarely,2,No,2,2,Low,1,Low,1,High,3,Better,3,Excellent,3
+1674,Active,Female,Divorced,Medical,Travels Rarely,2,Yes,1,1,Very High,4,Medium,2,High,3,Good,2,Excellent,3
+1675,Active,Female,Single,Medical,Travels Frequently,3,No,1,0,Very High,4,Medium,2,Medium,2,Better,3,Outstanding,4
+1676,Active,Female,Divorced,Life Sciences,Travels Rarely,2,No,4,3,Medium,2,High,3,Very High,4,Better,3,Excellent,3
+1677,Active,Male,Single,Life Sciences,Travels Rarely,2,No,4,0,High,3,Low,1,High,3,Better,3,Excellent,3
+1678,Active,Male,Single,Life Sciences,Travels Rarely,2,Yes,3,0,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+1680,Active,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,Very High,4,Low,1,High,3,Better,3,Excellent,3
+1681,Active,Female,Divorced,Life Sciences,No Travel,1,Yes,2,1,High,3,High,3,High,3,Better,3,Outstanding,4
+1682,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,2,Low,1,Medium,2,High,3,Good,2,Excellent,3
+1683,Active,Female,Divorced,Life Sciences,Travels Rarely,2,Yes,1,3,High,3,Low,1,High,3,Better,3,Excellent,3
+1684,Left,Male,Single,Medical,Travels Rarely,2,Yes,1,0,Very High,4,Low,1,Medium,2,Better,3,Excellent,3
+1687,Active,Female,Married,Medical,Travels Rarely,2,No,1,1,Very High,4,Very High,4,High,3,Good,2,Excellent,3
+1689,Active,Male,Married,Medical,Travels Rarely,2,No,3,0,Medium,2,High,3,Very High,4,Better,3,Excellent,3
+1691,Left,Female,Married,Medical,Travels Frequently,3,Yes,1,2,Very High,4,High,3,High,3,Better,3,Excellent,3
+1692,Left,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,Very High,4,Low,1,High,3,Better,3,Excellent,3
+1693,Active,Male,Single,Medical,No Travel,1,No,1,0,Very High,4,High,3,High,3,Better,3,Outstanding,4
+1694,Active,Male,Divorced,Technical Degree,Travels Rarely,2,No,1,1,Low,1,Very High,4,Medium,2,Better,3,Excellent,3
+1696,Active,Male,Married,Medical,Travels Rarely,2,No,2,1,Medium,2,High,3,Medium,2,Best,4,Excellent,3
+1697,Active,Male,Divorced,Medical,Travels Rarely,2,No,3,1,High,3,High,3,Low,1,Best,4,Outstanding,4
+1698,Active,Male,Married,Medical,Travels Rarely,2,No,1,3,Medium,2,Very High,4,Very High,4,Better,3,Excellent,3
+1700,Active,Male,Divorced,Medical,Travels Frequently,3,No,2,2,High,3,High,3,Low,1,Good,2,Excellent,3
+1701,Active,Female,Married,Life Sciences,Travels Rarely,2,No,1,0,Medium,2,Medium,2,Medium,2,Better,3,Excellent,3
+1702,Left,Male,Divorced,Life Sciences,Travels Rarely,2,Yes,1,1,High,3,Medium,2,High,3,Better,3,Outstanding,4
+1703,Active,Female,Married,Life Sciences,Travels Rarely,2,Yes,3,1,High,3,Medium,2,Very High,4,Better,3,Excellent,3
+1704,Active,Male,Single,Medical,Travels Frequently,3,Yes,1,0,Low,1,High,3,Medium,2,Best,4,Excellent,3
+1706,Active,Male,Married,Medical,Travels Rarely,2,Yes,2,1,Very High,4,Low,1,High,3,Better,3,Excellent,3
+1707,Active,Male,Married,Medical,Travels Rarely,2,No,1,1,High,3,Very High,4,Very High,4,Better,3,Excellent,3
+1708,Active,Male,Single,Marketing,Travels Rarely,2,No,3,0,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+1709,Active,Female,Married,Medical,Travels Rarely,2,No,1,1,Very High,4,High,3,High,3,Better,3,Excellent,3
+1710,Active,Female,Single,Life Sciences,Travels Rarely,2,No,2,0,High,3,High,3,High,3,Good,2,Excellent,3
+1712,Active,Male,Married,Life Sciences,No Travel,1,No,3,1,High,3,Very High,4,Medium,2,Good,2,Outstanding,4
+1714,Left,Male,Married,Human Resources,Travels Rarely,2,No,1,1,Very High,4,High,3,Low,1,Better,3,Excellent,3
+1716,Left,Male,Married,Life Sciences,Travels Frequently,3,No,4,0,High,3,High,3,Low,1,Bad,1,Excellent,3
+1718,Active,Male,Married,Medical,Travels Rarely,2,No,1,3,Very High,4,High,3,Low,1,Best,4,Excellent,3
+1719,Active,Female,Single,Technical Degree,Travels Rarely,2,No,4,0,Very High,4,High,3,Medium,2,Better,3,Excellent,3
+1720,Active,Male,Married,Life Sciences,Travels Frequently,3,No,1,1,Low,1,Low,1,High,3,Good,2,Excellent,3
+1721,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,1,Medium,2,Very High,4,High,3,Best,4,Excellent,3
+1722,Active,Male,Married,Human Resources,No Travel,1,No,2,1,High,3,Medium,2,Low,1,Better,3,Excellent,3
+1724,Active,Female,Married,Life Sciences,Travels Rarely,2,Yes,2,1,Medium,2,Medium,2,High,3,Better,3,Excellent,3
+1725,Active,Male,Divorced,Medical,Travels Rarely,2,No,1,3,Medium,2,Medium,2,High,3,Best,4,Excellent,3
+1727,Active,Male,Single,Life Sciences,Travels Rarely,2,No,2,0,High,3,Very High,4,High,3,Better,3,Excellent,3
+1728,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,1,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+1729,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,1,Medium,2,Medium,2,High,3,Good,2,Excellent,3
+1731,Active,Male,Married,Marketing,No Travel,1,No,2,1,High,3,Very High,4,High,3,Bad,1,Excellent,3
+1732,Active,Male,Divorced,Life Sciences,Travels Rarely,2,Yes,3,1,High,3,Medium,2,High,3,Good,2,Excellent,3
+1733,Left,Male,Divorced,Marketing,Travels Rarely,2,Yes,2,3,Medium,2,Medium,2,Medium,2,Better,3,Excellent,3
+1734,Left,Male,Single,Life Sciences,Travels Rarely,2,No,2,0,Low,1,Medium,2,Low,1,Better,3,Excellent,3
+1735,Active,Female,Single,Medical,Travels Rarely,2,No,1,0,High,3,High,3,High,3,Bad,1,Excellent,3
+1736,Active,Female,Single,Technical Degree,Travels Frequently,3,No,2,0,Very High,4,Very High,4,High,3,Good,2,Outstanding,4
+1737,Active,Male,Married,Life Sciences,No Travel,1,Yes,2,1,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+1739,Active,Male,Married,Life Sciences,Travels Rarely,2,No,3,1,Very High,4,High,3,Low,1,Bad,1,Excellent,3
+1740,Active,Male,Single,Medical,Travels Rarely,2,No,5,0,Medium,2,Medium,2,High,3,Good,2,Excellent,3
+1744,Active,Female,Married,Life Sciences,Travels Rarely,2,No,3,2,High,3,High,3,Low,1,Best,4,Outstanding,4
+1745,Active,Female,Single,Technical Degree,Travels Frequently,3,No,1,0,Very High,4,Very High,4,Medium,2,Better,3,Excellent,3
+1746,Active,Male,Married,Medical,Travels Frequently,3,No,1,1,Low,1,Very High,4,High,3,Better,3,Excellent,3
+1747,Left,Female,Divorced,Human Resources,Travels Frequently,3,No,1,1,High,3,High,3,Medium,2,Good,2,Excellent,3
+1749,Active,Male,Married,Technical Degree,Travels Rarely,2,No,2,1,Low,1,High,3,High,3,Better,3,Excellent,3
+1751,Active,Female,Single,Medical,Travels Rarely,2,No,1,0,High,3,High,3,High,3,Good,2,Excellent,3
+1752,Left,Female,Single,Marketing,Travels Rarely,2,No,1,0,Medium,2,High,3,Low,1,Better,3,Excellent,3
+1753,Active,Male,Single,Life Sciences,Travels Frequently,3,Yes,2,0,Very High,4,Very High,4,Very High,4,Best,4,Excellent,3
+1754,Active,Male,Divorced,Marketing,Travels Rarely,2,No,3,1,High,3,Low,1,Medium,2,Better,3,Excellent,3
+1755,Active,Male,Married,Medical,Travels Rarely,2,Yes,1,3,Very High,4,Low,1,Very High,4,Better,3,Excellent,3
+1756,Active,Female,Single,Marketing,No Travel,1,No,2,0,Very High,4,Very High,4,High,3,Good,2,Excellent,3
+1757,Active,Female,Single,Marketing,Travels Rarely,2,No,2,0,Very High,4,High,3,High,3,Best,4,Excellent,3
+1758,Left,Female,Single,Life Sciences,Travels Rarely,2,Yes,3,0,Low,1,High,3,High,3,Good,2,Outstanding,4
+1760,Active,Female,Married,Medical,Travels Frequently,3,No,1,1,High,3,Medium,2,Medium,2,Good,2,Excellent,3
+1761,Left,Male,Married,Marketing,Travels Rarely,2,No,3,3,Low,1,Low,1,High,3,Better,3,Excellent,3
+1762,Active,Female,Divorced,Technical Degree,Travels Rarely,2,No,1,1,Very High,4,High,3,Medium,2,Better,3,Excellent,3
+1763,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,1,High,3,High,3,Very High,4,Better,3,Excellent,3
+1764,Active,Male,Single,Technical Degree,No Travel,1,No,1,0,Medium,2,Medium,2,High,3,Better,3,Excellent,3
+1766,Active,Male,Married,Medical,Travels Rarely,2,Yes,2,1,Medium,2,High,3,Low,1,Better,3,Excellent,3
+1767,Left,Male,Married,Technical Degree,Travels Frequently,3,Yes,1,1,High,3,Very High,4,Medium,2,Better,3,Excellent,3
+1768,Active,Male,Divorced,Medical,Travels Rarely,2,No,1,3,Medium,2,Medium,2,High,3,Good,2,Outstanding,4
+1770,Active,Male,Married,Medical,Travels Rarely,2,No,5,3,High,3,Medium,2,Medium,2,Better,3,Excellent,3
+1771,Active,Male,Divorced,Technical Degree,No Travel,1,No,2,2,Very High,4,Very High,4,High,3,Good,2,Excellent,3
+1772,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,1,2,High,3,Medium,2,High,3,Better,3,Outstanding,4
+1774,Active,Male,Divorced,Life Sciences,No Travel,1,Yes,2,1,Very High,4,High,3,High,3,Better,3,Excellent,3
+1775,Active,Female,Married,Medical,No Travel,1,Yes,4,3,Low,1,Very High,4,Medium,2,Good,2,Outstanding,4
+1778,Active,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,Medium,2,Medium,2,High,3,Better,3,Excellent,3
+1779,Active,Female,Single,Life Sciences,Travels Rarely,2,No,2,0,Very High,4,Low,1,Low,1,Better,3,Excellent,3
+1780,Left,Male,Single,Marketing,Travels Rarely,2,No,1,0,Medium,2,Medium,2,High,3,Better,3,Excellent,3
+1782,Active,Female,Married,Other,Travels Rarely,2,No,1,1,Very High,4,Medium,2,Medium,2,Better,3,Excellent,3
+1783,Left,Female,Married,Medical,Travels Rarely,2,Yes,1,0,High,3,High,3,High,3,Better,3,Excellent,3
+1784,Active,Female,Married,Marketing,Travels Rarely,2,No,2,2,Low,1,Low,1,Medium,2,Better,3,Excellent,3
+1786,Active,Female,Married,Technical Degree,Travels Rarely,2,No,3,0,Low,1,Very High,4,High,3,Better,3,Excellent,3
+1787,Active,Male,Married,Marketing,Travels Rarely,2,No,2,2,Medium,2,Low,1,Medium,2,Better,3,Excellent,3
+1789,Active,Male,Divorced,Medical,Travels Rarely,2,Yes,5,1,High,3,High,3,High,3,Better,3,Excellent,3
+1790,Active,Male,Married,Life Sciences,Travels Rarely,2,Yes,3,1,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+1792,Left,Male,Divorced,Medical,Travels Frequently,3,Yes,1,3,High,3,High,3,High,3,Good,2,Excellent,3
+1794,Active,Male,Divorced,Other,Travels Rarely,2,No,2,0,High,3,High,3,High,3,Good,2,Excellent,3
+1797,Left,Male,Single,Life Sciences,Travels Rarely,2,Yes,2,0,High,3,Very High,4,High,3,Better,3,Excellent,3
+1798,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,1,Very High,4,Medium,2,Very High,4,Better,3,Excellent,3
+1799,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,1,High,3,High,3,High,3,Best,4,Excellent,3
+1800,Active,Male,Single,Medical,Travels Rarely,2,No,3,0,High,3,High,3,High,3,Better,3,Outstanding,4
+1801,Active,Male,Single,Life Sciences,No Travel,1,No,2,0,Medium,2,High,3,Medium,2,Better,3,Excellent,3
+1802,Active,Female,Married,Life Sciences,Travels Rarely,2,No,1,1,High,3,Very High,4,High,3,Good,2,Excellent,3
+1803,Active,Male,Married,Medical,Travels Rarely,2,No,2,2,Medium,2,High,3,Very High,4,Good,2,Excellent,3
+1804,Active,Male,Divorced,Medical,No Travel,1,No,2,1,Medium,2,High,3,High,3,Better,3,Excellent,3
+1805,Active,Male,Divorced,Human Resources,No Travel,1,No,1,3,Low,1,Very High,4,High,3,Better,3,Excellent,3
+1807,Left,Male,Married,Life Sciences,Travels Frequently,3,No,2,1,Very High,4,High,3,High,3,Good,2,Excellent,3
+1809,Left,Male,Single,Medical,Travels Rarely,2,No,2,0,Very High,4,Medium,2,High,3,Bad,1,Excellent,3
+1812,Active,Male,Divorced,Life Sciences,Travels Frequently,3,No,2,1,High,3,Very High,4,High,3,Better,3,Excellent,3
+1813,Active,Male,Single,Life Sciences,No Travel,1,No,1,0,Low,1,High,3,High,3,Good,2,Excellent,3
+1814,Active,Male,Single,Life Sciences,Travels Rarely,2,No,2,0,Medium,2,Low,1,Very High,4,Bad,1,Excellent,3
+1815,Active,Female,Divorced,Marketing,Travels Rarely,2,Yes,3,1,High,3,Very High,4,High,3,Best,4,Excellent,3
+1816,Active,Female,Single,Medical,Travels Rarely,2,No,3,0,Low,1,Medium,2,High,3,Better,3,Excellent,3
+1818,Left,Female,Married,Medical,Travels Rarely,2,Yes,1,0,Very High,4,High,3,High,3,Better,3,Excellent,3
+1821,Left,Female,Married,Medical,Travels Rarely,2,No,2,1,Very High,4,Very High,4,High,3,Best,4,Outstanding,4
+1822,Active,Female,Divorced,Life Sciences,Travels Rarely,2,No,2,1,High,3,Very High,4,High,3,Better,3,Excellent,3
+1823,Active,Male,Married,Technical Degree,Travels Rarely,2,No,2,2,Medium,2,High,3,Very High,4,Better,3,Outstanding,4
+1824,Active,Male,Divorced,Medical,No Travel,1,No,4,1,Medium,2,Very High,4,High,3,Good,2,Outstanding,4
+1826,Active,Male,Married,Medical,Travels Rarely,2,No,1,1,Medium,2,Medium,2,Low,1,Best,4,Excellent,3
+1827,Active,Female,Divorced,Life Sciences,Travels Rarely,2,Yes,3,1,High,3,High,3,Medium,2,Better,3,Excellent,3
+1829,Active,Female,Divorced,Life Sciences,Travels Rarely,2,No,2,1,Medium,2,Medium,2,High,3,Better,3,Excellent,3
+1830,Active,Female,Married,Medical,Travels Rarely,2,No,2,1,Very High,4,Medium,2,High,3,Good,2,Excellent,3
+1833,Active,Female,Married,Marketing,Travels Frequently,3,No,3,2,Low,1,Very High,4,High,3,Better,3,Excellent,3
+1834,Active,Female,Married,Medical,Travels Rarely,2,No,1,1,High,3,High,3,High,3,Better,3,Outstanding,4
+1835,Active,Female,Married,Marketing,Travels Rarely,2,Yes,2,2,Medium,2,Low,1,Low,1,Good,2,Outstanding,4
+1836,Active,Male,Single,Medical,Travels Rarely,2,No,2,0,High,3,Low,1,High,3,Better,3,Excellent,3
+1837,Active,Male,Married,Life Sciences,Travels Frequently,3,Yes,4,0,Low,1,Medium,2,High,3,Better,3,Excellent,3
+1839,Active,Female,Single,Medical,No Travel,1,No,1,0,Medium,2,High,3,High,3,Bad,1,Excellent,3
+1842,Left,Male,Married,Human Resources,Travels Rarely,2,No,1,0,Very High,4,High,3,Very High,4,Better,3,Excellent,3
+1844,Left,Male,Divorced,Human Resources,Travels Rarely,2,Yes,1,3,Low,1,Very High,4,Medium,2,Better,3,Excellent,3
+1845,Active,Female,Married,Life Sciences,No Travel,1,No,2,2,High,3,Medium,2,High,3,Best,4,Outstanding,4
+1847,Active,Female,Married,Other,Travels Rarely,2,Yes,2,1,Very High,4,Very High,4,High,3,Better,3,Outstanding,4
+1849,Active,Male,Married,Life Sciences,Travels Frequently,3,No,2,1,Low,1,High,3,High,3,Better,3,Outstanding,4
+1850,Active,Female,Single,Life Sciences,Travels Frequently,3,Yes,1,0,Very High,4,High,3,High,3,Good,2,Excellent,3
+1852,Active,Male,Married,Medical,Travels Frequently,3,No,1,0,Very High,4,Medium,2,High,3,Best,4,Excellent,3
+1853,Active,Male,Single,Marketing,Travels Frequently,3,No,2,0,Very High,4,High,3,High,3,Best,4,Excellent,3
+1854,Active,Male,Married,Technical Degree,No Travel,1,No,1,2,High,3,Medium,2,High,3,Good,2,Outstanding,4
+1856,Active,Female,Single,Life Sciences,Travels Rarely,2,No,1,0,Medium,2,High,3,High,3,Better,3,Excellent,3
+1857,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,3,1,Very High,4,High,3,High,3,Good,2,Excellent,3
+1858,Active,Male,Divorced,Life Sciences,No Travel,1,No,1,1,High,3,Medium,2,High,3,Better,3,Excellent,3
+1859,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,2,2,Very High,4,Very High,4,Low,1,Better,3,Excellent,3
+1860,Active,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+1862,Left,Male,Single,Marketing,Travels Rarely,2,Yes,2,0,High,3,High,3,Medium,2,Good,2,Excellent,3
+1863,Active,Female,Divorced,Technical Degree,Travels Rarely,2,No,4,1,Low,1,Very High,4,Very High,4,Better,3,Excellent,3
+1864,Active,Female,Married,Medical,Travels Rarely,2,No,2,1,Medium,2,Very High,4,Medium,2,Better,3,Outstanding,4
+1865,Active,Male,Married,Medical,Travels Rarely,2,No,1,0,Very High,4,Very High,4,Medium,2,Better,3,Excellent,3
+1866,Active,Female,Married,Medical,Travels Rarely,2,No,5,0,Low,1,Very High,4,Medium,2,Better,3,Excellent,3
+1867,Active,Male,Married,Life Sciences,Travels Rarely,2,No,5,0,Very High,4,Very High,4,Medium,2,Better,3,Excellent,3
+1868,Left,Male,Single,Life Sciences,Travels Frequently,3,Yes,1,0,Very High,4,Medium,2,Medium,2,Good,2,Outstanding,4
+1869,Left,Female,Married,Life Sciences,Travels Rarely,2,No,3,3,High,3,High,3,High,3,Better,3,Outstanding,4
+1870,Active,Female,Married,Life Sciences,Travels Frequently,3,No,1,1,Very High,4,Very High,4,Medium,2,Good,2,Excellent,3
+1871,Active,Male,Divorced,Other,Travels Rarely,2,No,2,3,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+1873,Active,Male,Married,Technical Degree,Travels Rarely,2,No,1,1,Medium,2,Medium,2,Medium,2,Best,4,Outstanding,4
+1875,Active,Female,Married,Medical,Travels Rarely,2,No,1,1,Medium,2,Very High,4,High,3,Better,3,Excellent,3
+1876,Left,Male,Single,Medical,Travels Rarely,2,No,1,0,Medium,2,High,3,High,3,Good,2,Excellent,3
+1878,Left,Male,Single,Life Sciences,Travels Rarely,2,Yes,1,0,Very High,4,Low,1,High,3,Better,3,Outstanding,4
+1880,Active,Female,Married,Technical Degree,Travels Rarely,2,Yes,2,1,Medium,2,Low,1,Medium,2,Better,3,Excellent,3
+1881,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,2,1,Medium,2,Low,1,High,3,Better,3,Excellent,3
+1882,Active,Male,Married,Life Sciences,Travels Rarely,2,Yes,3,3,High,3,Very High,4,High,3,Better,3,Excellent,3
+1883,Active,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+1885,Active,Male,Married,Medical,Travels Rarely,2,Yes,2,1,Very High,4,High,3,High,3,Better,3,Outstanding,4
+1886,Active,Female,Married,Other,Travels Rarely,2,Yes,2,0,Very High,4,Very High,4,Medium,2,Better,3,Excellent,3
+1888,Active,Female,Married,Life Sciences,Travels Rarely,2,No,2,2,Medium,2,Very High,4,Medium,2,Good,2,Excellent,3
+1890,Active,Male,Single,Human Resources,Travels Frequently,3,No,2,0,Medium,2,Very High,4,Medium,2,Good,2,Outstanding,4
+1892,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,4,1,Low,1,Low,1,High,3,Better,3,Excellent,3
+1893,Active,Female,Married,Life Sciences,Travels Rarely,2,Yes,1,1,Medium,2,High,3,Medium,2,Good,2,Excellent,3
+1898,Active,Female,Single,Medical,Travels Rarely,2,No,2,0,Low,1,Medium,2,Very High,4,Good,2,Excellent,3
+1900,Active,Female,Divorced,Medical,Travels Frequently,3,No,4,1,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+1903,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,1,Medium,2,Very High,4,Very High,4,Better,3,Excellent,3
+1905,Left,Male,Married,Technical Degree,No Travel,1,Yes,1,1,Very High,4,Medium,2,Low,1,Better,3,Outstanding,4
+1907,Left,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,Low,1,Very High,4,High,3,Better,3,Excellent,3
+1908,Active,Male,Married,Marketing,Travels Rarely,2,No,2,2,High,3,High,3,Medium,2,Bad,1,Excellent,3
+1909,Active,Female,Married,Marketing,Travels Rarely,2,No,2,1,High,3,High,3,High,3,Better,3,Outstanding,4
+1911,Active,Male,Married,Medical,Travels Rarely,2,No,3,1,High,3,Medium,2,High,3,Best,4,Excellent,3
+1912,Active,Female,Divorced,Medical,Travels Rarely,2,Yes,2,1,High,3,Very High,4,High,3,Better,3,Excellent,3
+1915,Active,Female,Married,Medical,Travels Rarely,2,Yes,2,0,Very High,4,High,3,Medium,2,Good,2,Excellent,3
+1916,Active,Female,Divorced,Medical,Travels Rarely,2,No,1,1,Low,1,Medium,2,Very High,4,Good,2,Excellent,3
+1918,Active,Male,Married,Other,Travels Frequently,3,No,1,1,High,3,Low,1,Very High,4,Better,3,Excellent,3
+1922,Active,Male,Single,Medical,Travels Frequently,3,No,2,0,Medium,2,High,3,High,3,Better,3,Excellent,3
+1924,Active,Male,Single,Marketing,Travels Rarely,2,No,2,0,Medium,2,Medium,2,High,3,Good,2,Excellent,3
+1927,Active,Male,Married,Life Sciences,Travels Frequently,3,Yes,2,1,High,3,High,3,Medium,2,Better,3,Excellent,3
+1928,Left,Male,Single,Technical Degree,Travels Frequently,3,No,1,0,High,3,Very High,4,Very High,4,Better,3,Excellent,3
+1929,Active,Female,Married,Life Sciences,No Travel,1,No,2,1,Low,1,High,3,Low,1,Better,3,Excellent,3
+1931,Active,Male,Married,Technical Degree,Travels Rarely,2,No,1,1,Medium,2,High,3,High,3,Good,2,Excellent,3
+1932,Active,Male,Married,Other,Travels Frequently,3,Yes,2,0,High,3,Medium,2,Medium,2,Better,3,Excellent,3
+1933,Left,Female,Single,Marketing,Travels Rarely,2,Yes,2,0,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+1934,Active,Male,Married,Technical Degree,No Travel,1,No,2,1,High,3,High,3,High,3,Best,4,Excellent,3
+1935,Active,Female,Married,Marketing,Travels Rarely,2,No,2,1,Very High,4,High,3,Medium,2,Better,3,Excellent,3
+1936,Active,Male,Married,Medical,Travels Rarely,2,No,2,1,Low,1,Very High,4,High,3,Better,3,Outstanding,4
+1937,Active,Female,Divorced,Medical,Travels Frequently,3,Yes,2,1,Very High,4,High,3,Medium,2,Better,3,Excellent,3
+1938,Active,Female,Married,Life Sciences,Travels Rarely,2,Yes,4,1,Very High,4,High,3,High,3,Good,2,Excellent,3
+1939,Left,Female,Single,Life Sciences,Travels Frequently,3,Yes,1,0,Low,1,Low,1,Very High,4,Better,3,Excellent,3
+1940,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,1,2,Medium,2,Very High,4,High,3,Best,4,Excellent,3
+1941,Active,Male,Married,Life Sciences,Travels Frequently,3,No,5,0,Medium,2,Very High,4,High,3,Better,3,Excellent,3
+1943,Active,Male,Divorced,Marketing,Travels Rarely,2,Yes,2,2,Medium,2,High,3,High,3,Better,3,Excellent,3
+1944,Left,Female,Married,Human Resources,Travels Frequently,3,No,1,0,Low,1,Low,1,Medium,2,Better,3,Excellent,3
+1945,Active,Male,Married,Medical,Travels Rarely,2,No,2,1,Medium,2,Very High,4,High,3,Bad,1,Excellent,3
+1947,Active,Male,Single,Medical,No Travel,1,No,1,0,High,3,High,3,High,3,Good,2,Excellent,3
+1948,Active,Male,Divorced,Medical,No Travel,1,Yes,1,1,High,3,Very High,4,High,3,Best,4,Excellent,3
+1949,Active,Male,Married,Life Sciences,No Travel,1,No,1,0,Low,1,Medium,2,Very High,4,Better,3,Outstanding,4
+1950,Active,Male,Single,Marketing,Travels Rarely,2,No,3,0,Low,1,Low,1,High,3,Good,2,Outstanding,4
+1951,Active,Male,Divorced,Medical,Travels Rarely,2,No,3,1,Very High,4,High,3,High,3,Good,2,Excellent,3
+1952,Active,Male,Single,Medical,Travels Rarely,2,No,1,0,High,3,Very High,4,High,3,Good,2,Excellent,3
+1954,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,1,Low,1,Low,1,High,3,Good,2,Excellent,3
+1955,Active,Female,Divorced,Medical,No Travel,1,No,2,1,High,3,Medium,2,High,3,Better,3,Excellent,3
+1956,Active,Male,Married,Life Sciences,Travels Frequently,3,No,2,0,Very High,4,Medium,2,Low,1,Better,3,Outstanding,4
+1960,Left,Male,Divorced,Technical Degree,Travels Rarely,2,No,1,1,High,3,Low,1,Medium,2,Good,2,Excellent,3
+1961,Active,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,Low,1,Low,1,Medium,2,Good,2,Excellent,3
+1962,Active,Female,Married,Life Sciences,Travels Rarely,2,Yes,2,0,High,3,Very High,4,High,3,Better,3,Excellent,3
+1965,Active,Male,Single,Marketing,Travels Rarely,2,No,2,0,Very High,4,Low,1,High,3,Better,3,Excellent,3
+1966,Active,Male,Single,Life Sciences,Travels Rarely,2,No,2,0,Very High,4,Medium,2,Medium,2,Better,3,Outstanding,4
+1967,Left,Male,Married,Marketing,Travels Frequently,3,Yes,2,0,Low,1,High,3,High,3,Better,3,Excellent,3
+1968,Left,Male,Single,Life Sciences,Travels Rarely,2,Yes,3,0,Low,1,Medium,2,High,3,Good,2,Excellent,3
+1969,Active,Female,Married,Life Sciences,Travels Rarely,2,No,2,2,Low,1,High,3,High,3,Good,2,Excellent,3
+1970,Active,Male,Divorced,Life Sciences,Travels Frequently,3,No,2,3,Very High,4,High,3,High,3,Better,3,Outstanding,4
+1971,Active,Male,Married,Life Sciences,Travels Rarely,2,No,3,1,Low,1,Medium,2,High,3,Better,3,Excellent,3
+1972,Active,Male,Married,Other,Travels Frequently,3,Yes,1,1,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+1973,Active,Male,Married,Human Resources,Travels Rarely,2,Yes,5,1,High,3,Low,1,Very High,4,Better,3,Excellent,3
+1974,Active,Female,Divorced,Medical,Travels Rarely,2,Yes,1,3,Very High,4,High,3,Low,1,Better,3,Excellent,3
+1975,Active,Male,Single,Marketing,Travels Rarely,2,No,4,0,Medium,2,Low,1,High,3,Better,3,Excellent,3
+1976,Active,Male,Single,Life Sciences,No Travel,1,No,2,0,Very High,4,Very High,4,Medium,2,Better,3,Excellent,3
+1979,Active,Female,Married,Medical,No Travel,1,No,3,1,High,3,High,3,High,3,Best,4,Outstanding,4
+1980,Active,Female,Single,Medical,Travels Rarely,2,Yes,2,0,High,3,Very High,4,High,3,Better,3,Excellent,3
+1981,Active,Male,Single,Life Sciences,Travels Rarely,2,No,2,0,Medium,2,Medium,2,Medium,2,Good,2,Excellent,3
+1982,Active,Male,Single,Other,Travels Rarely,2,No,1,0,Very High,4,High,3,High,3,Best,4,Excellent,3
+1985,Active,Female,Married,Technical Degree,Travels Frequently,3,No,2,1,Very High,4,Low,1,High,3,Best,4,Excellent,3
+1986,Active,Female,Married,Marketing,Travels Rarely,2,No,2,1,Medium,2,High,3,High,3,Better,3,Excellent,3
+1987,Active,Female,Married,Human Resources,Travels Rarely,2,No,1,0,High,3,High,3,High,3,Better,3,Excellent,3
+1989,Active,Male,Married,Medical,Travels Rarely,2,No,1,0,Very High,4,High,3,High,3,Good,2,Excellent,3
+1992,Active,Male,Divorced,Other,Travels Rarely,2,Yes,1,1,Very High,4,High,3,High,3,Good,2,Excellent,3
+1993,Active,Male,Single,Medical,Travels Rarely,2,No,3,0,Low,1,Medium,2,High,3,Better,3,Outstanding,4
+1994,Active,Male,Divorced,Medical,No Travel,1,No,1,3,Medium,2,High,3,Medium,2,Good,2,Excellent,3
+1995,Active,Male,Married,Life Sciences,Travels Rarely,2,No,2,2,Very High,4,Low,1,High,3,Better,3,Excellent,3
+1996,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,1,Low,1,High,3,High,3,Better,3,Excellent,3
+1997,Active,Male,Married,Life Sciences,Travels Frequently,3,No,2,1,Low,1,Very High,4,Medium,2,Better,3,Excellent,3
+1998,Active,Male,Divorced,Life Sciences,Travels Rarely,2,Yes,2,1,Very High,4,High,3,High,3,Good,2,Excellent,3
+1999,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,1,Very High,4,Low,1,High,3,Better,3,Outstanding,4
+2000,Active,Female,Married,Medical,No Travel,1,No,3,2,High,3,Low,1,High,3,Bad,1,Excellent,3
+2003,Active,Male,Married,Medical,Travels Rarely,2,Yes,1,1,Very High,4,High,3,High,3,Better,3,Excellent,3
+2007,Active,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,Very High,4,Very High,4,High,3,Best,4,Excellent,3
+2008,Active,Male,Single,Medical,Travels Rarely,2,No,2,0,Medium,2,Medium,2,High,3,Better,3,Excellent,3
+2009,Active,Female,Married,Medical,Travels Rarely,2,Yes,2,1,Medium,2,Low,1,High,3,Better,3,Excellent,3
+2010,Active,Female,Single,Life Sciences,Travels Rarely,2,No,1,0,High,3,High,3,Medium,2,Better,3,Excellent,3
+2012,Active,Male,Married,Life Sciences,Travels Rarely,2,No,1,2,Low,1,High,3,High,3,Good,2,Excellent,3
+2013,Active,Male,Married,Medical,Travels Rarely,2,No,1,1,Medium,2,Medium,2,Medium,2,Better,3,Excellent,3
+2014,Active,Male,Single,Life Sciences,Travels Rarely,2,No,2,0,Low,1,Low,1,High,3,Better,3,Excellent,3
+2015,Active,Female,Married,Medical,Travels Rarely,2,No,3,1,Medium,2,Low,1,Low,1,Better,3,Excellent,3
+2016,Active,Female,Married,Marketing,Travels Rarely,2,No,3,2,High,3,High,3,High,3,Better,3,Excellent,3
+2017,Active,Female,Married,Life Sciences,Travels Rarely,2,Yes,3,1,High,3,Low,1,Very High,4,Better,3,Outstanding,4
+2018,Active,Female,Divorced,Other,Travels Rarely,2,Yes,2,1,Low,1,Medium,2,High,3,Good,2,Outstanding,4
+2019,Active,Male,Divorced,Life Sciences,No Travel,1,No,1,2,Low,1,Medium,2,High,3,Good,2,Excellent,3
+2020,Active,Male,Single,Medical,Travels Rarely,2,Yes,1,0,Medium,2,High,3,High,3,Better,3,Excellent,3
+2021,Active,Male,Single,Medical,Travels Rarely,2,Yes,1,0,High,3,Very High,4,High,3,Better,3,Excellent,3
+2022,Active,Male,Single,Life Sciences,No Travel,1,No,5,0,Very High,4,High,3,High,3,Good,2,Excellent,3
+2023,Left,Male,Married,Marketing,Travels Frequently,3,No,1,1,Very High,4,Low,1,High,3,Good,2,Excellent,3
+2024,Active,Female,Married,Medical,Travels Rarely,2,No,3,2,Low,1,High,3,Medium,2,Better,3,Excellent,3
+2025,Active,Female,Divorced,Life Sciences,Travels Frequently,3,No,2,3,Very High,4,Medium,2,High,3,Better,3,Excellent,3
+2026,Active,Male,Divorced,Life Sciences,No Travel,1,No,2,1,High,3,Low,1,High,3,Good,2,Outstanding,4
+2027,Left,Male,Married,Medical,Travels Rarely,2,Yes,1,3,Low,1,Medium,2,High,3,Best,4,Excellent,3
+2031,Active,Male,Married,Life Sciences,Travels Rarely,2,No,5,0,Low,1,Low,1,High,3,Good,2,Excellent,3
+2032,Left,Male,Married,Technical Degree,Travels Rarely,2,No,1,1,Very High,4,Very High,4,High,3,Bad,1,Excellent,3
+2034,Active,Female,Married,Life Sciences,Travels Rarely,2,No,4,1,Low,1,High,3,Medium,2,Better,3,Outstanding,4
+2035,Active,Female,Married,Marketing,Travels Rarely,2,No,2,2,Very High,4,Very High,4,Medium,2,Better,3,Outstanding,4
+2036,Active,Male,Divorced,Marketing,No Travel,1,No,2,1,Very High,4,Low,1,Low,1,Good,2,Outstanding,4
+2037,Active,Male,Divorced,Life Sciences,Travels Rarely,2,No,2,1,High,3,High,3,Medium,2,Better,3,Excellent,3
+2038,Active,Male,Single,Technical Degree,Travels Rarely,2,No,1,0,Very High,4,Very High,4,High,3,Better,3,Excellent,3
+2040,Active,Female,Single,Life Sciences,Travels Rarely,2,Yes,3,0,High,3,High,3,High,3,Better,3,Excellent,3
+2041,Active,Female,Married,Life Sciences,Travels Rarely,2,No,2,1,Low,1,High,3,High,3,Better,3,Excellent,3
+2044,Left,Male,Divorced,Life Sciences,Travels Frequently,3,No,2,2,Medium,2,Very High,4,High,3,Better,3,Excellent,3
+2045,Active,Female,Married,Marketing,Travels Rarely,2,No,2,1,Medium,2,Low,1,Medium,2,Good,2,Excellent,3
+2046,Active,Female,Single,Life Sciences,Travels Rarely,2,No,2,0,Very High,4,High,3,High,3,Better,3,Excellent,3
+2048,Active,Male,Single,Life Sciences,Travels Rarely,2,No,1,0,High,3,Very High,4,Medium,2,Better,3,Excellent,3
+2049,Active,Male,Married,Life Sciences,Travels Frequently,3,Yes,2,2,High,3,Very High,4,High,3,Best,4,Excellent,3
+2051,Active,Female,Married,Medical,Travels Rarely,2,No,1,3,High,3,Medium,2,High,3,Better,3,Excellent,3
+2052,Active,Female,Married,Life Sciences,Travels Rarely,2,No,1,1,High,3,Very High,4,Low,1,Better,3,Excellent,3
+2053,Active,Male,Married,Other,Travels Rarely,2,Yes,2,1,Very High,4,Low,1,Medium,2,Better,3,Excellent,3
+2054,Active,Female,Single,Medical,Travels Rarely,2,No,1,0,Very High,4,Medium,2,Medium,2,Bad,1,Excellent,3
+2055,Left,Male,Divorced,Marketing,Travels Rarely,2,Yes,3,1,Very High,4,Medium,2,Medium,2,Better,3,Excellent,3
+2056,Active,Female,Married,Marketing,Travels Rarely,2,No,4,1,Medium,2,Low,1,Medium,2,Good,2,Excellent,3
+2057,Active,Male,Single,Medical,No Travel,1,No,2,0,Medium,2,Medium,2,High,3,Better,3,Excellent,3
+2060,Active,Female,Single,Other,Travels Rarely,2,No,1,0,Very High,4,Very High,4,Medium,2,Better,3,Excellent,3
+2061,Active,Male,Married,Medical,Travels Frequently,3,No,2,1,High,3,High,3,Very High,4,Better,3,Excellent,3
+2062,Active,Male,Married,Medical,Travels Rarely,2,No,3,1,Very High,4,Low,1,Medium,2,Better,3,Excellent,3
+2064,Active,Male,Married,Life Sciences,Travels Rarely,2,Yes,2,1,Medium,2,Medium,2,Very High,4,Better,3,Outstanding,4
+2065,Active,Male,Married,Medical,Travels Frequently,3,No,2,0,Very High,4,Very High,4,Medium,2,Good,2,Excellent,3
+2068,Active,Male,Married,Medical,Travels Rarely,2,No,2,0,Medium,2,Low,1,Very High,4,Best,4,Excellent,3

@@ -1,0 +1,233 @@
+[
+ {
+  "name": "Headcount",
+  "folder": "1 Headcount & Attrition",
+  "fmt": "#,##0",
+  "expr": "COUNTROWS ( FactEmployee )",
+  "desc": "Number of employees in the current filter context (leavers included)."
+ },
+ {
+  "name": "Leavers",
+  "folder": "1 Headcount & Attrition",
+  "fmt": "#,##0",
+  "expr": "SUM ( FactEmployee[AttritionFlag] )",
+  "desc": "Employees who left (AttritionFlag = 1). 0 when nobody in the selection left."
+ },
+ {
+  "name": "Active Employees",
+  "folder": "1 Headcount & Attrition",
+  "fmt": "#,##0",
+  "expr": "[Headcount] - [Leavers]",
+  "desc": "Employees still employed."
+ },
+ {
+  "name": "Attrition Rate",
+  "folder": "1 Headcount & Attrition",
+  "fmt": "0.0%",
+  "expr": "DIVIDE ( [Leavers], [Headcount] )",
+  "desc": "Leavers / Headcount."
+ },
+ {
+  "name": "Retention Rate",
+  "folder": "1 Headcount & Attrition",
+  "fmt": "0.0%",
+  "expr": "DIVIDE ( [Active Employees], [Headcount] )",
+  "desc": "Active Employees / Headcount (= 1 - Attrition Rate)."
+ },
+ {
+  "name": "Company Attrition Rate",
+  "folder": "1 Headcount & Attrition",
+  "fmt": "0.0%",
+  "expr": "CALCULATE ( [Attrition Rate], REMOVEFILTERS () )",
+  "desc": "Attrition rate of the whole company, ignoring every filter and slicer. Baseline for comparisons."
+ },
+ {
+  "name": "Attrition vs Company (pts)",
+  "folder": "1 Headcount & Attrition",
+  "fmt": "+0.0%;-0.0%;0.0%",
+  "expr": "VAR rate = [Attrition Rate]\nRETURN\n    IF ( NOT ISBLANK ( rate ), rate - [Company Attrition Rate] )",
+  "desc": "Selected attrition rate minus company attrition rate, in percentage points. Positive = worse than company."
+ },
+ {
+  "name": "Avg Tenure (Years)",
+  "folder": "2 Tenure",
+  "fmt": "0.0",
+  "expr": "AVERAGE ( FactEmployee[YearsAtCompany] )",
+  "desc": "Average years at the company."
+ },
+ {
+  "name": "Median Tenure (Years)",
+  "folder": "2 Tenure",
+  "fmt": "0.0",
+  "expr": "MEDIAN ( FactEmployee[YearsAtCompany] )",
+  "desc": "Median years at the company (robust to very long tenures)."
+ },
+ {
+  "name": "Avg Tenure of Leavers (Years)",
+  "folder": "2 Tenure",
+  "fmt": "0.0",
+  "expr": "CALCULATE ( [Avg Tenure (Years)], KEEPFILTERS ( FactEmployee[AttritionFlag] = 1 ) )",
+  "desc": "Average years at the company of employees who left."
+ },
+ {
+  "name": "Early Tenure Attrition Rate (0-1 yrs)",
+  "folder": "2 Tenure",
+  "fmt": "0.0%",
+  "expr": "CALCULATE ( [Attrition Rate], KEEPFILTERS ( FactEmployee[YearsAtCompany] <= 1 ) )",
+  "desc": "Attrition rate of employees in their first 0-1 years. Basis for the onboarding recommendation."
+ },
+ {
+  "name": "Avg Years Since Promotion",
+  "folder": "2 Tenure",
+  "fmt": "0.0",
+  "expr": "AVERAGE ( FactEmployee[YearsSinceLastPromotion] )",
+  "desc": "Average years since the last promotion."
+ },
+ {
+  "name": "Total Trainings",
+  "folder": "3 Training & Learning",
+  "fmt": "#,##0",
+  "expr": "SUM ( FactEmployee[TrainingTimesLastYear] )",
+  "desc": "Total trainings attended last year."
+ },
+ {
+  "name": "Training per Employee",
+  "folder": "3 Training & Learning",
+  "fmt": "0.00",
+  "expr": "DIVIDE ( [Total Trainings], [Headcount] )",
+  "desc": "Average trainings per employee last year (Total Trainings / Headcount)."
+ },
+ {
+  "name": "Employees with No Training",
+  "folder": "3 Training & Learning",
+  "fmt": "#,##0",
+  "expr": "VAR hc = [Headcount]\nRETURN\n    IF (\n        NOT ISBLANK ( hc ),\n        COALESCE ( CALCULATE ( [Headcount], KEEPFILTERS ( FactEmployee[TrainingTimesLastYear] = 0 ) ), 0 )\n    )",
+  "desc": "Employees who attended no training last year."
+ },
+ {
+  "name": "% No Training",
+  "folder": "3 Training & Learning",
+  "fmt": "0.0%",
+  "expr": "DIVIDE ( [Employees with No Training], [Headcount] )",
+  "desc": "Share of employees with no training last year."
+ },
+ {
+  "name": "% High Training (5-6)",
+  "folder": "3 Training & Learning",
+  "fmt": "0.0%",
+  "expr": "VAR high =\n    CALCULATE ( [Headcount], KEEPFILTERS ( FactEmployee[TrainingTimesLastYear] >= 5 ) )\nRETURN\n    DIVIDE ( COALESCE ( high, 0 ), [Headcount] )",
+  "desc": "Share of employees with 5-6 trainings last year."
+ },
+ {
+  "name": "Attrition Rate - No Training",
+  "folder": "3 Training & Learning",
+  "fmt": "0.0%",
+  "expr": "CALCULATE ( [Attrition Rate], KEEPFILTERS ( FactEmployee[TrainingTimesLastYear] = 0 ) )",
+  "desc": "Attrition rate of employees with no training last year (small group - treat as indicative)."
+ },
+ {
+  "name": "Overtime Employees",
+  "folder": "4 Overtime",
+  "fmt": "#,##0",
+  "expr": "SUM ( FactEmployee[OverTimeFlag] )",
+  "desc": "Employees working overtime. 0 when nobody in the selection works overtime."
+ },
+ {
+  "name": "Overtime %",
+  "folder": "4 Overtime",
+  "fmt": "0.0%",
+  "expr": "DIVIDE ( [Overtime Employees], [Headcount] )",
+  "desc": "Share of employees working overtime."
+ },
+ {
+  "name": "Attrition Rate - Overtime",
+  "folder": "4 Overtime",
+  "fmt": "0.0%",
+  "expr": "CALCULATE ( [Attrition Rate], KEEPFILTERS ( FactEmployee[OverTimeFlag] = 1 ) )",
+  "desc": "Attrition rate of employees who work overtime."
+ },
+ {
+  "name": "Attrition Rate - No Overtime",
+  "folder": "4 Overtime",
+  "fmt": "0.0%",
+  "expr": "CALCULATE ( [Attrition Rate], KEEPFILTERS ( FactEmployee[OverTimeFlag] = 0 ) )",
+  "desc": "Attrition rate of employees who do not work overtime."
+ },
+ {
+  "name": "Overtime Attrition Ratio",
+  "folder": "4 Overtime",
+  "fmt": "0.0\"x\"",
+  "expr": "DIVIDE ( [Attrition Rate - Overtime], [Attrition Rate - No Overtime] )",
+  "desc": "How many times higher attrition is with overtime than without (e.g. 2.9x)."
+ },
+ {
+  "name": "Avg Job Satisfaction",
+  "folder": "5 Satisfaction & Performance",
+  "fmt": "0.00",
+  "expr": "AVERAGE ( FactEmployee[JobSatisfactionScore] )",
+  "desc": "Average job satisfaction, 1 (Low) to 4 (Very High)."
+ },
+ {
+  "name": "% Low Job Satisfaction",
+  "folder": "5 Satisfaction & Performance",
+  "fmt": "0.0%",
+  "expr": "VAR low =\n    CALCULATE ( [Headcount], KEEPFILTERS ( FactEmployee[JobSatisfactionScore] = 1 ) )\nRETURN\n    DIVIDE ( COALESCE ( low, 0 ), [Headcount] )",
+  "desc": "Share of employees rating job satisfaction 'Low' (1)."
+ },
+ {
+  "name": "Attrition Rate - Low Job Satisfaction",
+  "folder": "5 Satisfaction & Performance",
+  "fmt": "0.0%",
+  "expr": "CALCULATE ( [Attrition Rate], KEEPFILTERS ( FactEmployee[JobSatisfactionScore] = 1 ) )",
+  "desc": "Attrition rate of employees with 'Low' job satisfaction."
+ },
+ {
+  "name": "Avg Environment Satisfaction",
+  "folder": "5 Satisfaction & Performance",
+  "fmt": "0.00",
+  "expr": "AVERAGE ( FactEmployee[EnvironmentSatisfactionScore] )",
+  "desc": "Average environment satisfaction, 1 (Low) to 4 (Very High)."
+ },
+ {
+  "name": "Avg Work-Life Balance",
+  "folder": "5 Satisfaction & Performance",
+  "fmt": "0.00",
+  "expr": "AVERAGE ( FactEmployee[WorkLifeBalanceScore] )",
+  "desc": "Average work-life balance, 1 (Bad) to 4 (Best)."
+ },
+ {
+  "name": "Avg Job Involvement",
+  "folder": "5 Satisfaction & Performance",
+  "fmt": "0.00",
+  "expr": "AVERAGE ( FactEmployee[JobInvolvementScore] )",
+  "desc": "Average job involvement, 1 (Low) to 4 (Very High)."
+ },
+ {
+  "name": "Avg Performance Rating",
+  "folder": "5 Satisfaction & Performance",
+  "fmt": "0.00",
+  "expr": "AVERAGE ( FactEmployee[PerformanceRatingScore] )",
+  "desc": "Average performance rating (only 3 = Excellent and 4 = Outstanding occur)."
+ },
+ {
+  "name": "Avg Age",
+  "folder": "6 Demographics & Pay",
+  "fmt": "0.0",
+  "expr": "AVERAGE ( FactEmployee[Age] )",
+  "desc": "Average employee age."
+ },
+ {
+  "name": "Avg Monthly Income",
+  "folder": "6 Demographics & Pay",
+  "fmt": "#,##0",
+  "expr": "AVERAGE ( FactEmployee[MonthlyIncome] )",
+  "desc": "Average monthly income (currency not stated in the source data)."
+ },
+ {
+  "name": "Avg Salary Hike (%)",
+  "folder": "6 Demographics & Pay",
+  "fmt": "0.0",
+  "expr": "AVERAGE ( FactEmployee[PercentSalaryHike] )",
+  "desc": "Average last salary increase in percent (e.g. 15.2 = 15.2%)."
+ }
+]

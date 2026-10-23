@@ -1,0 +1,45 @@
+STEP 6 VALIDATION: 43/43 checks passed
+
+[PASS] A. Schemas: All 88 report definition files (77 visuals) pass Microsoft's official schemas incl. referenced sub-schemas - {}
+[PASS] A. Schemas: Negative control: a deliberately broken visual is rejected by the schema check
+[PASS] B. Fields: All 131 field references point to an existing model column / measure of the right kind
+[PASS] B. Fields: Every projection's queryRef / nativeQueryRef matches its field - []
+[PASS] B. Fields: Visuals use no hidden helper columns (keys, sort columns) - []
+[PASS] C. Visual roles: Every visual uses the expected data roles ({'textbox': 13, 'card': 29, 'tableEx': 2, 'actionButton': 1, 'columnChart': 14, 'slicer': 10, 'clusteredBarChart': 7, 'pivotTable': 1})
+[PASS] C. Visual roles: Every axis / row / slicer field shows a friendly name (no technical column names)
+[PASS] C. Visual roles: Matrix is sorted by the measure its title promises (attrition gap) - []
+[PASS] C. Visual roles: Employee table shows per-employee values from fact columns (no averaged measures per person)
+[PASS] D. Layout: Overview: 14 visuals inside the page, no overlaps, none too small - outside=[] overlaps=[] small=[]
+[PASS] D. Layout: Overview: visual files on disk == layout spec (no stray or missing visual files) - mismatch=[] files=14 spec=14
+[PASS] D. Layout: Insights & Actions: 10 visuals inside the page, no overlaps, none too small - outside=[] overlaps=[] small=[]
+[PASS] D. Layout: Insights & Actions: visual files on disk == layout spec (no stray or missing visual files) - mismatch=[] files=10 spec=10
+[PASS] D. Layout: Attrition Drivers: 14 visuals inside the page, no overlaps, none too small - outside=[] overlaps=[] small=[]
+[PASS] D. Layout: Attrition Drivers: visual files on disk == layout spec (no stray or missing visual files) - mismatch=[] files=14 spec=14
+[PASS] D. Layout: Training & Learning: 13 visuals inside the page, no overlaps, none too small - outside=[] overlaps=[] small=[]
+[PASS] D. Layout: Training & Learning: visual files on disk == layout spec (no stray or missing visual files) - mismatch=[] files=13 spec=13
+[PASS] D. Layout: Satisfaction & Performance: 12 visuals inside the page, no overlaps, none too small - outside=[] overlaps=[] small=[]
+[PASS] D. Layout: Satisfaction & Performance: visual files on disk == layout spec (no stray or missing visual files) - mismatch=[] files=12 spec=12
+[PASS] D. Layout: Job Role Summary: 5 visuals inside the page, no overlaps, none too small - outside=[] overlaps=[] small=[]
+[PASS] D. Layout: Job Role Summary: visual files on disk == layout spec (no stray or missing visual files) - mismatch=[] files=5 spec=5
+[PASS] D. Layout: Employee Details: 7 visuals inside the page, no overlaps, none too small - outside=[] overlaps=[] small=[]
+[PASS] D. Layout: Employee Details: visual files on disk == layout spec (no stray or missing visual files) - mismatch=[] files=7 spec=7
+[PASS] D. Layout: Data Quality: 2 visuals inside the page, no overlaps, none too small - outside=[] overlaps=[] small=[]
+[PASS] D. Layout: Data Quality: visual files on disk == layout spec (no stray or missing visual files) - mismatch=[] files=2 spec=2
+[PASS] E. Pages: pages.json lists exactly the 8 page folders; active page exists - ['752e97a8ae9256f78cc6', '8f417f73be3b5afdbd9e', 'da25989d55475e8f9bae', '6a1baf51d8cb5512a99e', '65a51a67c36e59b6b974', '8d303568cd4f5548b647', '52555cd265ec541089f7', 'c6c8d6a3f15c5ea78eab'] vs ['52555cd265ec541089f7', '65a51a67c36e59b6b974', '6a1baf51d8cb5512a99e', '752e97a8ae9256f78cc6', '8d303568cd4f5548b647', '8f417f73be3b5afdbd9e', 'c6c8d6a3f15c5ea78eab', 'da25989d55475e8f9bae']
+[PASS] E. Pages: Page names unique and in the planned order - ['Overview', 'Insights & Actions', 'Attrition Drivers', 'Training & Learning', 'Satisfaction & Performance', 'Job Role Summary', 'Employee Details', 'Data Quality']
+[PASS] E. Pages: Employee Details is a drill-through page: one filter marked howCreated=Drillthrough on DimJobRole[JobRole], bound by the page binding (as Power BI Desktop writes it)
+[PASS] E. Pages: Drill-through page has a Back button (actionButton with visualLink type Back)
+[PASS] E. Pages: At least one visual on another page shows JobRole, so drill-through can be started - ['Overview', 'Training & Learning', 'Job Role Summary', 'Job Role Summary']
+[PASS] F. Numbers: All visual queries ran in Power BI without error - []
+[PASS] F. Numbers: Every card, chart, slicer, matrix and table value == pandas from the raw CSV (7,614 of 7,614 expected values)
+[PASS] F. Numbers: Data Quality page table: 35 checks, all PASS
+[PASS] F. Numbers: Slicer simulation (Department = Sales): Overview cards show the Sales values (446 headcount, 20.6%) - {'[Headcount]': 446, '[Leavers]': 92, '[Attrition Rate]': 0.2062780269058296, '[Avg Tenure (Years)]': 7.2847533632287, '[Training per Employee]': 2.8475336322869955, '[Overtime %]': 0.28699551569506726}
+[PASS] G. Rendering: Power BI opened the project with no dialog (only built-in DAX query / TMDL panes) - []
+[PASS] G. Rendering: Overview: opened, no visual error text, all 5 chart titles and 6 card values visible - selected=True errors=[] missing_titles=[] missing_values=[]
+[PASS] G. Rendering: Insights & Actions: opened, no visual error text, all 4 chart titles and 4 card values visible - selected=True errors=[] missing_titles=[] missing_values=[]
+[PASS] G. Rendering: Attrition Drivers: opened, no visual error text, all 6 chart titles and 5 card values visible - selected=True errors=[] missing_titles=[] missing_values=[]
+[PASS] G. Rendering: Training & Learning: opened, no visual error text, all 5 chart titles and 5 card values visible - selected=True errors=[] missing_titles=[] missing_values=[]
+[PASS] G. Rendering: Satisfaction & Performance: opened, no visual error text, all 4 chart titles and 5 card values visible - selected=True errors=[] missing_titles=[] missing_values=[]
+[PASS] G. Rendering: Job Role Summary: opened, no visual error text, all 2 chart titles and 0 card values visible - selected=True errors=[] missing_titles=[] missing_values=[]
+[PASS] G. Rendering: Employee Details: opened, no visual error text, all 1 chart titles and 4 card values visible - selected=True errors=[] missing_titles=[] missing_values=[]
+[PASS] G. Rendering: Data Quality: opened, no visual error text, all 1 chart titles and 0 card values visible - selected=True errors=[] missing_titles=[] missing_values=[]

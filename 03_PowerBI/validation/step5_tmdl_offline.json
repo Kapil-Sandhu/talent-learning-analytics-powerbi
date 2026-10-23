@@ -1,0 +1,1275 @@
+﻿{
+    "ok":  true,
+    "error":  null,
+    "tables":  [
+                   {
+                       "name":  "DimDepartment",
+                       "isHidden":  false,
+                       "description":  "One row per department (3).",
+                       "columns":  [
+                                       {
+                                           "name":  "DepartmentKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  true,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "Department",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  null
+                                       }
+                                   ],
+                       "partitions":  [
+                                          {
+                                              "name":  "DimDepartment",
+                                              "kind":  "M",
+                                              "mode":  "Import"
+                                          }
+                                      ]
+                   },
+                   {
+                       "name":  "DimJobRole",
+                       "isHidden":  false,
+                       "description":  "One row per job role (9).",
+                       "columns":  [
+                                       {
+                                           "name":  "JobRoleKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  true,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "JobRole",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  null
+                                       }
+                                   ],
+                       "partitions":  [
+                                          {
+                                              "name":  "DimJobRole",
+                                              "kind":  "M",
+                                              "mode":  "Import"
+                                          }
+                                      ]
+                   },
+                   {
+                       "name":  "DimEducation",
+                       "isHidden":  false,
+                       "description":  "Education level 1-5 (Below College ... Doctor).",
+                       "columns":  [
+                                       {
+                                           "name":  "EducationKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  true,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "EducationLevel",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  "EducationKey"
+                                       }
+                                   ],
+                       "partitions":  [
+                                          {
+                                              "name":  "DimEducation",
+                                              "kind":  "M",
+                                              "mode":  "Import"
+                                          }
+                                      ]
+                   },
+                   {
+                       "name":  "DimJobSatisfaction",
+                       "isHidden":  false,
+                       "description":  "Job satisfaction scale 1-4 (Low ... Very High) - a key attrition driver.",
+                       "columns":  [
+                                       {
+                                           "name":  "JobSatisfactionKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  true,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "JobSatisfaction",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  "JobSatisfactionKey"
+                                       }
+                                   ],
+                       "partitions":  [
+                                          {
+                                              "name":  "DimJobSatisfaction",
+                                              "kind":  "M",
+                                              "mode":  "Import"
+                                          }
+                                      ]
+                   },
+                   {
+                       "name":  "DimAgeBand",
+                       "isHidden":  false,
+                       "description":  "Age bands (inclusive Min/Max from HR_Lookups.xlsx).",
+                       "columns":  [
+                                       {
+                                           "name":  "AgeBandKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  true,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "AgeBand",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  "AgeBandKey"
+                                       },
+                                       {
+                                           "name":  "MinAge",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "MaxAge",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       }
+                                   ],
+                       "partitions":  [
+                                          {
+                                              "name":  "DimAgeBand",
+                                              "kind":  "M",
+                                              "mode":  "Import"
+                                          }
+                                      ]
+                   },
+                   {
+                       "name":  "DimTenureBand",
+                       "isHidden":  false,
+                       "description":  "Tenure bands on YearsAtCompany (inclusive Min/Max).",
+                       "columns":  [
+                                       {
+                                           "name":  "TenureBandKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  true,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "TenureBand",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  "TenureBandKey"
+                                       },
+                                       {
+                                           "name":  "MinYears",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "MaxYears",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       }
+                                   ],
+                       "partitions":  [
+                                          {
+                                              "name":  "DimTenureBand",
+                                              "kind":  "M",
+                                              "mode":  "Import"
+                                          }
+                                      ]
+                   },
+                   {
+                       "name":  "DimIncomeBand",
+                       "isHidden":  false,
+                       "description":  "Monthly income bands (currency not stated in the source data).",
+                       "columns":  [
+                                       {
+                                           "name":  "IncomeBandKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  true,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "IncomeBand",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  "IncomeBandKey"
+                                       },
+                                       {
+                                           "name":  "MinIncome",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "MaxIncome",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       }
+                                   ],
+                       "partitions":  [
+                                          {
+                                              "name":  "DimIncomeBand",
+                                              "kind":  "M",
+                                              "mode":  "Import"
+                                          }
+                                      ]
+                   },
+                   {
+                       "name":  "DimTrainingBand",
+                       "isHidden":  false,
+                       "description":  "Training bands on TrainingTimesLastYear (0-6).",
+                       "columns":  [
+                                       {
+                                           "name":  "TrainingBandKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  true,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "TrainingBand",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  "TrainingBandKey"
+                                       },
+                                       {
+                                           "name":  "MinTrainings",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "MaxTrainings",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       }
+                                   ],
+                       "partitions":  [
+                                          {
+                                              "name":  "DimTrainingBand",
+                                              "kind":  "M",
+                                              "mode":  "Import"
+                                          }
+                                      ]
+                   },
+                   {
+                       "name":  "DimEmployee",
+                       "isHidden":  false,
+                       "description":  "One row per employee: descriptive attributes for slicers and the drill-through page.",
+                       "columns":  [
+                                       {
+                                           "name":  "EmployeeID",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  true,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "EmployeeStatus",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "Gender",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "MaritalStatus",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "EducationField",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "BusinessTravel",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  "BusinessTravelSort"
+                                       },
+                                       {
+                                           "name":  "BusinessTravelSort",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "OverTime",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "JobLevel",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "StockOptionLevel",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "EnvironmentSatisfaction",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  "EnvironmentSatisfactionSort"
+                                       },
+                                       {
+                                           "name":  "EnvironmentSatisfactionSort",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "RelationshipSatisfaction",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  "RelationshipSatisfactionSort"
+                                       },
+                                       {
+                                           "name":  "RelationshipSatisfactionSort",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "JobInvolvement",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  "JobInvolvementSort"
+                                       },
+                                       {
+                                           "name":  "JobInvolvementSort",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "WorkLifeBalance",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  "WorkLifeBalanceSort"
+                                       },
+                                       {
+                                           "name":  "WorkLifeBalanceSort",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "PerformanceRating",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  "PerformanceRatingSort"
+                                       },
+                                       {
+                                           "name":  "PerformanceRatingSort",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       }
+                                   ],
+                       "partitions":  [
+                                          {
+                                              "name":  "DimEmployee",
+                                              "kind":  "M",
+                                              "mode":  "Import"
+                                          }
+                                      ]
+                   },
+                   {
+                       "name":  "FactEmployee",
+                       "isHidden":  false,
+                       "description":  "Fact table. Grain: one row per employee (point-in-time snapshot). Foreign keys + numeric columns for DAX measures.",
+                       "columns":  [
+                                       {
+                                           "name":  "EmployeeID",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "DepartmentKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "JobRoleKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "EducationKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "JobSatisfactionKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "AgeBandKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "TenureBandKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "IncomeBandKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "TrainingBandKey",
+                                           "dataType":  "Int64",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "AttritionFlag",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Sum",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "OverTimeFlag",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Sum",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "Age",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "MonthlyIncome",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Sum",
+                                           "formatString":  "#,##0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "PercentSalaryHike",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "DistanceFromHome",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "NumCompaniesWorked",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "TotalWorkingYears",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "YearsAtCompany",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "YearsInCurrentRole",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "YearsSinceLastPromotion",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "YearsWithCurrManager",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "TrainingTimesLastYear",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Sum",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "JobSatisfactionScore",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "EnvironmentSatisfactionScore",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "RelationshipSatisfactionScore",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "JobInvolvementScore",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "WorkLifeBalanceScore",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "PerformanceRatingScore",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "Average",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       }
+                                   ],
+                       "partitions":  [
+                                          {
+                                              "name":  "FactEmployee",
+                                              "kind":  "M",
+                                              "mode":  "Import"
+                                          }
+                                      ]
+                   },
+                   {
+                       "name":  "QA_Checks",
+                       "isHidden":  true,
+                       "description":  "35 automatic data-quality checks, recalculated on every refresh. All must be PASS. Hidden from report view.",
+                       "columns":  [
+                                       {
+                                           "name":  "CheckNo",
+                                           "dataType":  "Int64",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "0",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "Check",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "Actual",
+                                           "dataType":  "Double",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "Expected",
+                                           "dataType":  "Double",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  null
+                                       },
+                                       {
+                                           "name":  "Result",
+                                           "dataType":  "String",
+                                           "isHidden":  false,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  null
+                                       }
+                                   ],
+                       "partitions":  [
+                                          {
+                                              "name":  "QA_Checks",
+                                              "kind":  "M",
+                                              "mode":  "Import"
+                                          }
+                                      ]
+                   },
+                   {
+                       "name":  "_Measures",
+                       "isHidden":  false,
+                       "description":  "Home table for all DAX measures (added in Step 5). The placeholder column is hidden.",
+                       "columns":  [
+                                       {
+                                           "name":  "Placeholder",
+                                           "dataType":  "String",
+                                           "isHidden":  true,
+                                           "isKey":  false,
+                                           "summarizeBy":  "None",
+                                           "formatString":  "",
+                                           "sortByColumn":  null
+                                       }
+                                   ],
+                       "partitions":  [
+                                          {
+                                              "name":  "_Measures",
+                                              "kind":  "M",
+                                              "mode":  "Import"
+                                          }
+                                      ]
+                   }
+               ],
+    "relationships":  [
+                          {
+                              "from":  "FactEmployee.DepartmentKey",
+                              "to":  "DimDepartment.DepartmentKey",
+                              "fromCardinality":  "Many",
+                              "toCardinality":  "One",
+                              "crossFilter":  "OneDirection",
+                              "active":  true
+                          },
+                          {
+                              "from":  "FactEmployee.JobRoleKey",
+                              "to":  "DimJobRole.JobRoleKey",
+                              "fromCardinality":  "Many",
+                              "toCardinality":  "One",
+                              "crossFilter":  "OneDirection",
+                              "active":  true
+                          },
+                          {
+                              "from":  "FactEmployee.EducationKey",
+                              "to":  "DimEducation.EducationKey",
+                              "fromCardinality":  "Many",
+                              "toCardinality":  "One",
+                              "crossFilter":  "OneDirection",
+                              "active":  true
+                          },
+                          {
+                              "from":  "FactEmployee.JobSatisfactionKey",
+                              "to":  "DimJobSatisfaction.JobSatisfactionKey",
+                              "fromCardinality":  "Many",
+                              "toCardinality":  "One",
+                              "crossFilter":  "OneDirection",
+                              "active":  true
+                          },
+                          {
+                              "from":  "FactEmployee.AgeBandKey",
+                              "to":  "DimAgeBand.AgeBandKey",
+                              "fromCardinality":  "Many",
+                              "toCardinality":  "One",
+                              "crossFilter":  "OneDirection",
+                              "active":  true
+                          },
+                          {
+                              "from":  "FactEmployee.TenureBandKey",
+                              "to":  "DimTenureBand.TenureBandKey",
+                              "fromCardinality":  "Many",
+                              "toCardinality":  "One",
+                              "crossFilter":  "OneDirection",
+                              "active":  true
+                          },
+                          {
+                              "from":  "FactEmployee.IncomeBandKey",
+                              "to":  "DimIncomeBand.IncomeBandKey",
+                              "fromCardinality":  "Many",
+                              "toCardinality":  "One",
+                              "crossFilter":  "OneDirection",
+                              "active":  true
+                          },
+                          {
+                              "from":  "FactEmployee.TrainingBandKey",
+                              "to":  "DimTrainingBand.TrainingBandKey",
+                              "fromCardinality":  "Many",
+                              "toCardinality":  "One",
+                              "crossFilter":  "OneDirection",
+                              "active":  true
+                          },
+                          {
+                              "from":  "FactEmployee.EmployeeID",
+                              "to":  "DimEmployee.EmployeeID",
+                              "fromCardinality":  "Many",
+                              "toCardinality":  "One",
+                              "crossFilter":  "OneDirection",
+                              "active":  true
+                          }
+                      ],
+    "expressions":  [
+                        {
+                            "name":  "ProjectFolder",
+                            "kind":  "M"
+                        },
+                        {
+                            "name":  "fnGetLookup",
+                            "kind":  "M"
+                        },
+                        {
+                            "name":  "fnBandKey",
+                            "kind":  "M"
+                        },
+                        {
+                            "name":  "src_HR",
+                            "kind":  "M"
+                        },
+                        {
+                            "name":  "lkp_Education",
+                            "kind":  "M"
+                        },
+                        {
+                            "name":  "lkp_Satisfaction",
+                            "kind":  "M"
+                        },
+                        {
+                            "name":  "lkp_WorkLifeBalance",
+                            "kind":  "M"
+                        },
+                        {
+                            "name":  "lkp_PerformanceRating",
+                            "kind":  "M"
+                        },
+                        {
+                            "name":  "lkp_BusinessTravel",
+                            "kind":  "M"
+                        },
+                        {
+                            "name":  "lkp_AgeBand",
+                            "kind":  "M"
+                        },
+                        {
+                            "name":  "lkp_TenureBand",
+                            "kind":  "M"
+                        },
+                        {
+                            "name":  "lkp_IncomeBand",
+                            "kind":  "M"
+                        },
+                        {
+                            "name":  "lkp_TrainingBand",
+                            "kind":  "M"
+                        },
+                        {
+                            "name":  "stg_HR",
+                            "kind":  "M"
+                        }
+                    ],
+    "measures":  [
+                     {
+                         "name":  "Headcount",
+                         "table":  "_Measures",
+                         "expression":  "COUNTROWS ( FactEmployee )",
+                         "formatString":  "#,##0",
+                         "displayFolder":  "1 Headcount \u0026 Attrition",
+                         "description":  "Number of employees in the current filter context (leavers included)."
+                     },
+                     {
+                         "name":  "Leavers",
+                         "table":  "_Measures",
+                         "expression":  "SUM ( FactEmployee[AttritionFlag] )",
+                         "formatString":  "#,##0",
+                         "displayFolder":  "1 Headcount \u0026 Attrition",
+                         "description":  "Employees who left (AttritionFlag = 1). 0 when nobody in the selection left."
+                     },
+                     {
+                         "name":  "Active Employees",
+                         "table":  "_Measures",
+                         "expression":  "[Headcount] - [Leavers]",
+                         "formatString":  "#,##0",
+                         "displayFolder":  "1 Headcount \u0026 Attrition",
+                         "description":  "Employees still employed."
+                     },
+                     {
+                         "name":  "Attrition Rate",
+                         "table":  "_Measures",
+                         "expression":  "DIVIDE ( [Leavers], [Headcount] )",
+                         "formatString":  "0.0%",
+                         "displayFolder":  "1 Headcount \u0026 Attrition",
+                         "description":  "Leavers / Headcount."
+                     },
+                     {
+                         "name":  "Retention Rate",
+                         "table":  "_Measures",
+                         "expression":  "DIVIDE ( [Active Employees], [Headcount] )",
+                         "formatString":  "0.0%",
+                         "displayFolder":  "1 Headcount \u0026 Attrition",
+                         "description":  "Active Employees / Headcount (= 1 - Attrition Rate)."
+                     },
+                     {
+                         "name":  "Company Attrition Rate",
+                         "table":  "_Measures",
+                         "expression":  "CALCULATE ( [Attrition Rate], REMOVEFILTERS () )",
+                         "formatString":  "0.0%",
+                         "displayFolder":  "1 Headcount \u0026 Attrition",
+                         "description":  "Attrition rate of the whole company, ignoring every filter and slicer. Baseline for comparisons."
+                     },
+                     {
+                         "name":  "Attrition vs Company (pts)",
+                         "table":  "_Measures",
+                         "expression":  "VAR rate = [Attrition Rate]\nRETURN\n    IF ( NOT ISBLANK ( rate ), rate - [Company Attrition Rate] )",
+                         "formatString":  "+0.0%;-0.0%;0.0%",
+                         "displayFolder":  "1 Headcount \u0026 Attrition",
+                         "description":  "Selected attrition rate minus company attrition rate, in percentage points. Positive = worse than company."
+                     },
+                     {
+                         "name":  "Avg Tenure (Years)",
+                         "table":  "_Measures",
+                         "expression":  "AVERAGE ( FactEmployee[YearsAtCompany] )",
+                         "formatString":  "0.0",
+                         "displayFolder":  "2 Tenure",
+                         "description":  "Average years at the company."
+                     },
+                     {
+                         "name":  "Median Tenure (Years)",
+                         "table":  "_Measures",
+                         "expression":  "MEDIAN ( FactEmployee[YearsAtCompany] )",
+                         "formatString":  "0.0",
+                         "displayFolder":  "2 Tenure",
+                         "description":  "Median years at the company (robust to very long tenures)."
+                     },
+                     {
+                         "name":  "Avg Tenure of Leavers (Years)",
+                         "table":  "_Measures",
+                         "expression":  "CALCULATE ( [Avg Tenure (Years)], KEEPFILTERS ( FactEmployee[AttritionFlag] = 1 ) )",
+                         "formatString":  "0.0",
+                         "displayFolder":  "2 Tenure",
+                         "description":  "Average years at the company of employees who left."
+                     },
+                     {
+                         "name":  "Early Tenure Attrition Rate (0-1 yrs)",
+                         "table":  "_Measures",
+                         "expression":  "CALCULATE ( [Attrition Rate], KEEPFILTERS ( FactEmployee[YearsAtCompany] \u003c= 1 ) )",
+                         "formatString":  "0.0%",
+                         "displayFolder":  "2 Tenure",
+                         "description":  "Attrition rate of employees in their first 0-1 years. Basis for the onboarding recommendation."
+                     },
+                     {
+                         "name":  "Avg Years Since Promotion",
+                         "table":  "_Measures",
+                         "expression":  "AVERAGE ( FactEmployee[YearsSinceLastPromotion] )",
+                         "formatString":  "0.0",
+                         "displayFolder":  "2 Tenure",
+                         "description":  "Average years since the last promotion."
+                     },
+                     {
+                         "name":  "Total Trainings",
+                         "table":  "_Measures",
+                         "expression":  "SUM ( FactEmployee[TrainingTimesLastYear] )",
+                         "formatString":  "#,##0",
+                         "displayFolder":  "3 Training \u0026 Learning",
+                         "description":  "Total trainings attended last year."
+                     },
+                     {
+                         "name":  "Training per Employee",
+                         "table":  "_Measures",
+                         "expression":  "DIVIDE ( [Total Trainings], [Headcount] )",
+                         "formatString":  "0.00",
+                         "displayFolder":  "3 Training \u0026 Learning",
+                         "description":  "Average trainings per employee last year (Total Trainings / Headcount)."
+                     },
+                     {
+                         "name":  "Employees with No Training",
+                         "table":  "_Measures",
+                         "expression":  "VAR hc = [Headcount]\nRETURN\n    IF (\n        NOT ISBLANK ( hc ),\n        COALESCE ( CALCULATE ( [Headcount], KEEPFILTERS ( FactEmployee[TrainingTimesLastYear] = 0 ) ), 0 )\n    )",
+                         "formatString":  "#,##0",
+                         "displayFolder":  "3 Training \u0026 Learning",
+                         "description":  "Employees who attended no training last year."
+                     },
+                     {
+                         "name":  "% No Training",
+                         "table":  "_Measures",
+                         "expression":  "DIVIDE ( [Employees with No Training], [Headcount] )",
+                         "formatString":  "0.0%",
+                         "displayFolder":  "3 Training \u0026 Learning",
+                         "description":  "Share of employees with no training last year."
+                     },
+                     {
+                         "name":  "% High Training (5-6)",
+                         "table":  "_Measures",
+                         "expression":  "VAR high =\n    CALCULATE ( [Headcount], KEEPFILTERS ( FactEmployee[TrainingTimesLastYear] \u003e= 5 ) )\nRETURN\n    DIVIDE ( COALESCE ( high, 0 ), [Headcount] )",
+                         "formatString":  "0.0%",
+                         "displayFolder":  "3 Training \u0026 Learning",
+                         "description":  "Share of employees with 5-6 trainings last year."
+                     },
+                     {
+                         "name":  "Attrition Rate - No Training",
+                         "table":  "_Measures",
+                         "expression":  "CALCULATE ( [Attrition Rate], KEEPFILTERS ( FactEmployee[TrainingTimesLastYear] = 0 ) )",
+                         "formatString":  "0.0%",
+                         "displayFolder":  "3 Training \u0026 Learning",
+                         "description":  "Attrition rate of employees with no training last year (small group - treat as indicative)."
+                     },
+                     {
+                         "name":  "Overtime Employees",
+                         "table":  "_Measures",
+                         "expression":  "SUM ( FactEmployee[OverTimeFlag] )",
+                         "formatString":  "#,##0",
+                         "displayFolder":  "4 Overtime",
+                         "description":  "Employees working overtime. 0 when nobody in the selection works overtime."
+                     },
+                     {
+                         "name":  "Overtime %",
+                         "table":  "_Measures",
+                         "expression":  "DIVIDE ( [Overtime Employees], [Headcount] )",
+                         "formatString":  "0.0%",
+                         "displayFolder":  "4 Overtime",
+                         "description":  "Share of employees working overtime."
+                     },
+                     {
+                         "name":  "Attrition Rate - Overtime",
+                         "table":  "_Measures",
+                         "expression":  "CALCULATE ( [Attrition Rate], KEEPFILTERS ( FactEmployee[OverTimeFlag] = 1 ) )",
+                         "formatString":  "0.0%",
+                         "displayFolder":  "4 Overtime",
+                         "description":  "Attrition rate of employees who work overtime."
+                     },
+                     {
+                         "name":  "Attrition Rate - No Overtime",
+                         "table":  "_Measures",
+                         "expression":  "CALCULATE ( [Attrition Rate], KEEPFILTERS ( FactEmployee[OverTimeFlag] = 0 ) )",
+                         "formatString":  "0.0%",
+                         "displayFolder":  "4 Overtime",
+                         "description":  "Attrition rate of employees who do not work overtime."
+                     },
+                     {
+                         "name":  "Overtime Attrition Ratio",
+                         "table":  "_Measures",
+                         "expression":  "DIVIDE ( [Attrition Rate - Overtime], [Attrition Rate - No Overtime] )",
+                         "formatString":  "0.0\"x\"",
+                         "displayFolder":  "4 Overtime",
+                         "description":  "How many times higher attrition is with overtime than without (e.g. 2.9x)."
+                     },
+                     {
+                         "name":  "Avg Job Satisfaction",
+                         "table":  "_Measures",
+                         "expression":  "AVERAGE ( FactEmployee[JobSatisfactionScore] )",
+                         "formatString":  "0.00",
+                         "displayFolder":  "5 Satisfaction \u0026 Performance",
+                         "description":  "Average job satisfaction, 1 (Low) to 4 (Very High)."
+                     },
+                     {
+                         "name":  "% Low Job Satisfaction",
+                         "table":  "_Measures",
+                         "expression":  "VAR low =\n    CALCULATE ( [Headcount], KEEPFILTERS ( FactEmployee[JobSatisfactionScore] = 1 ) )\nRETURN\n    DIVIDE ( COALESCE ( low, 0 ), [Headcount] )",
+                         "formatString":  "0.0%",
+                         "displayFolder":  "5 Satisfaction \u0026 Performance",
+                         "description":  "Share of employees rating job satisfaction \u0027Low\u0027 (1)."
+                     },
+                     {
+                         "name":  "Attrition Rate - Low Job Satisfaction",
+                         "table":  "_Measures",
+                         "expression":  "CALCULATE ( [Attrition Rate], KEEPFILTERS ( FactEmployee[JobSatisfactionScore] = 1 ) )",
+                         "formatString":  "0.0%",
+                         "displayFolder":  "5 Satisfaction \u0026 Performance",
+                         "description":  "Attrition rate of employees with \u0027Low\u0027 job satisfaction."
+                     },
+                     {
+                         "name":  "Avg Environment Satisfaction",
+                         "table":  "_Measures",
+                         "expression":  "AVERAGE ( FactEmployee[EnvironmentSatisfactionScore] )",
+                         "formatString":  "0.00",
+                         "displayFolder":  "5 Satisfaction \u0026 Performance",
+                         "description":  "Average environment satisfaction, 1 (Low) to 4 (Very High)."
+                     },
+                     {
+                         "name":  "Avg Work-Life Balance",
+                         "table":  "_Measures",
+                         "expression":  "AVERAGE ( FactEmployee[WorkLifeBalanceScore] )",
+                         "formatString":  "0.00",
+                         "displayFolder":  "5 Satisfaction \u0026 Performance",
+                         "description":  "Average work-life balance, 1 (Bad) to 4 (Best)."
+                     },
+                     {
+                         "name":  "Avg Job Involvement",
+                         "table":  "_Measures",
+                         "expression":  "AVERAGE ( FactEmployee[JobInvolvementScore] )",
+                         "formatString":  "0.00",
+                         "displayFolder":  "5 Satisfaction \u0026 Performance",
+                         "description":  "Average job involvement, 1 (Low) to 4 (Very High)."
+                     },
+                     {
+                         "name":  "Avg Performance Rating",
+                         "table":  "_Measures",
+                         "expression":  "AVERAGE ( FactEmployee[PerformanceRatingScore] )",
+                         "formatString":  "0.00",
+                         "displayFolder":  "5 Satisfaction \u0026 Performance",
+                         "description":  "Average performance rating (only 3 = Excellent and 4 = Outstanding occur)."
+                     },
+                     {
+                         "name":  "Avg Age",
+                         "table":  "_Measures",
+                         "expression":  "AVERAGE ( FactEmployee[Age] )",
+                         "formatString":  "0.0",
+                         "displayFolder":  "6 Demographics \u0026 Pay",
+                         "description":  "Average employee age."
+                     },
+                     {
+                         "name":  "Avg Monthly Income",
+                         "table":  "_Measures",
+                         "expression":  "AVERAGE ( FactEmployee[MonthlyIncome] )",
+                         "formatString":  "#,##0",
+                         "displayFolder":  "6 Demographics \u0026 Pay",
+                         "description":  "Average monthly income (currency not stated in the source data)."
+                     },
+                     {
+                         "name":  "Avg Salary Hike (%)",
+                         "table":  "_Measures",
+                         "expression":  "AVERAGE ( FactEmployee[PercentSalaryHike] )",
+                         "formatString":  "0.0",
+                         "displayFolder":  "6 Demographics \u0026 Pay",
+                         "description":  "Average last salary increase in percent (e.g. 15.2 = 15.2%)."
+                     }
+                 ],
+    "compatibilityLevel":  1606
+}

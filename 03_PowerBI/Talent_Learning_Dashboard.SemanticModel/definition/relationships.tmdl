@@ -1,0 +1,36 @@
+relationship 8e957547-fa0f-5974-9cef-924e6bd18321
+	fromColumn: FactEmployee.DepartmentKey
+	toColumn: DimDepartment.DepartmentKey
+
+relationship b81afd03-40b7-5dea-9f7b-ac7f3a251938
+	fromColumn: FactEmployee.JobRoleKey
+	toColumn: DimJobRole.JobRoleKey
+
+relationship 6347d514-4b9e-5dbc-b4cb-59f88edcd027
+	fromColumn: FactEmployee.EducationKey
+	toColumn: DimEducation.EducationKey
+
+relationship 2ce9613b-5c8f-564b-9b24-4b889aeb20eb
+	fromColumn: FactEmployee.JobSatisfactionKey
+	toColumn: DimJobSatisfaction.JobSatisfactionKey
+
+relationship 9b18c913-2cd2-5aee-bec6-af756c93b345
+	fromColumn: FactEmployee.AgeBandKey
+	toColumn: DimAgeBand.AgeBandKey
+
+relationship 8a331807-f705-59bb-b913-26c3a6bb3990
+	fromColumn: FactEmployee.TenureBandKey
+	toColumn: DimTenureBand.TenureBandKey
+
+relationship 1d09c9e9-7e1a-5410-88a4-ce4e8d89a01f
+	fromColumn: FactEmployee.IncomeBandKey
+	toColumn: DimIncomeBand.IncomeBandKey
+
+relationship ff0deab4-cd99-5ab5-a8a8-32cf73e66880
+	fromColumn: FactEmployee.TrainingBandKey
+	toColumn: DimTrainingBand.TrainingBandKey
+
+relationship cd45d3c4-4854-53ec-a6c2-a3d7b1d80cdd
+	fromColumn: FactEmployee.EmployeeID
+	toColumn: DimEmployee.EmployeeID
+

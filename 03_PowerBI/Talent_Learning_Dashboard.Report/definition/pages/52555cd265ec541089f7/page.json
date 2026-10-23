@@ -1,0 +1,49 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.4.0/schema.json",
+  "name": "52555cd265ec541089f7",
+  "displayName": "Employee Details",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "Filterce16a65713f15944997f",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DimJobRole"
+              }
+            },
+            "Property": "JobRole"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "cfa628c3e57859cfa829",
+    "type": "Drillthrough",
+    "parameters": [
+      {
+        "name": "Param_Filterce16a65713f15944997f",
+        "boundFilter": "Filterce16a65713f15944997f",
+        "asAggregation": false,
+        "qnaSingleSelectRequired": false,
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DimJobRole"
+              }
+            },
+            "Property": "JobRole"
+          }
+        }
+      }
+    ]
+  }
+}

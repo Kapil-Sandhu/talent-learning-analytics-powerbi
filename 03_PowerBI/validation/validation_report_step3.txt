@@ -1,0 +1,128 @@
+STEP 3 VALIDATION: 126/126 checks passed
+
+[PASS] A. Syntax: 25 query files found (expected 25)
+[PASS] A. Syntax: Every query parses with @microsoft/powerquery-parser
+[PASS] A. Syntax: Negative control: parser rejects deliberately broken M
+[PASS] B. Structure: Header comment of every file names its query - []
+[PASS] B. Structure: Query set = parameter + 13 staging + 11 loaded - diff=set()
+[PASS] B. Structure: Header marks Load vs 'do not load' correctly
+[PASS] B. Structure: Every referenced query exists - {}
+[PASS] B. Structure: Dependencies only point to earlier files (no cycles; numbering = build order) - []
+[PASS] B. Structure: Loaded tables never read files directly (only via staging)
+[PASS] B. Structure: Only src_HR and fnGetLookup touch files
+[PASS] B. Structure: Both file paths tolerate a missing trailing backslash
+[PASS] B. Structure: src_HR types all 35 CSV columns, in CSV order
+[PASS] B. Structure: src_HR type of each column matches the data (whole number vs text) - []
+[PASS] B. Structure: src_HR uses UTF-8 (65001) so the BOM is removed
+[PASS] B. Structure: lkp_Education: table Lkp_Education exists and typed columns = its headers - ['EducationCode', 'EducationLevel', 'SortOrder'] vs ['EducationCode', 'EducationLevel', 'SortOrder']
+[PASS] B. Structure: lkp_Satisfaction: table Lkp_Satisfaction exists and typed columns = its headers - ['RatingCode', 'RatingLabel', 'SortOrder'] vs ['RatingCode', 'RatingLabel', 'SortOrder']
+[PASS] B. Structure: lkp_WorkLifeBalance: table Lkp_WorkLifeBalance exists and typed columns = its headers - ['WLBCode', 'WLBLabel', 'SortOrder'] vs ['WLBCode', 'WLBLabel', 'SortOrder']
+[PASS] B. Structure: lkp_PerformanceRating: table Lkp_PerformanceRating exists and typed columns = its headers - ['PerformanceCode', 'PerformanceLabel', 'SortOrder'] vs ['PerformanceCode', 'PerformanceLabel', 'SortOrder']
+[PASS] B. Structure: lkp_BusinessTravel: table Lkp_BusinessTravel exists and typed columns = its headers - ['BusinessTravelCode', 'BusinessTravelLabel', 'SortOrder'] vs ['BusinessTravelCode', 'BusinessTravelLabel', 'SortOrder']
+[PASS] B. Structure: lkp_AgeBand: table Lkp_AgeBand exists and typed columns = its headers - ['AgeBand', 'MinAge', 'MaxAge', 'SortOrder'] vs ['AgeBand', 'MinAge', 'MaxAge', 'SortOrder']
+[PASS] B. Structure: lkp_TenureBand: table Lkp_TenureBand exists and typed columns = its headers - ['TenureBand', 'MinYears', 'MaxYears', 'SortOrder'] vs ['TenureBand', 'MinYears', 'MaxYears', 'SortOrder']
+[PASS] B. Structure: lkp_IncomeBand: table Lkp_IncomeBand exists and typed columns = its headers - ['IncomeBand', 'MinIncome', 'MaxIncome', 'SortOrder'] vs ['IncomeBand', 'MinIncome', 'MaxIncome', 'SortOrder']
+[PASS] B. Structure: lkp_TrainingBand: table Lkp_TrainingBand exists and typed columns = its headers - ['TrainingBand', 'MinTrainings', 'MaxTrainings', 'SortOrder'] vs ['TrainingBand', 'MinTrainings', 'MaxTrainings', 'SortOrder']
+[PASS] B. Structure: DimDepartment: final column names + types match design - M=[('DepartmentKey', 'Int64.Type'), ('Department', 'type text')] design=[('DepartmentKey', 'Int64.Type'), ('Department', 'type text')]
+[PASS] B. Structure: DimJobRole: final column names + types match design - M=[('JobRoleKey', 'Int64.Type'), ('JobRole', 'type text')] design=[('JobRoleKey', 'Int64.Type'), ('JobRole', 'type text')]
+[PASS] B. Structure: DimEducation: final column names + types match design - M=[('EducationKey', 'Int64.Type'), ('EducationLevel', 'type text')] design=[('EducationKey', 'Int64.Type'), ('EducationLevel', 'type text')]
+[PASS] B. Structure: DimJobSatisfaction: final column names + types match design - M=[('JobSatisfactionKey', 'Int64.Type'), ('JobSatisfaction', 'type text')] design=[('JobSatisfactionKey', 'Int64.Type'), ('JobSatisfaction', 'type text')]
+[PASS] B. Structure: DimAgeBand: final column names + types match design - M=[('AgeBandKey', 'Int64.Type'), ('AgeBand', 'type text'), ('MinAge', 'Int64.Type'), ('MaxAge', 'Int64.Type')] design=[('AgeBandKey', 'Int64.Type'), ('AgeBand', 'type text'), ('MinAge', 'Int64.Type'), ('MaxAge', 'Int64.Type')]
+[PASS] B. Structure: DimTenureBand: final column names + types match design - M=[('TenureBandKey', 'Int64.Type'), ('TenureBand', 'type text'), ('MinYears', 'Int64.Type'), ('MaxYears', 'Int64.Type')] design=[('TenureBandKey', 'Int64.Type'), ('TenureBand', 'type text'), ('MinYears', 'Int64.Type'), ('MaxYears', 'Int64.Type')]
+[PASS] B. Structure: DimIncomeBand: final column names + types match design - M=[('IncomeBandKey', 'Int64.Type'), ('IncomeBand', 'type text'), ('MinIncome', 'Int64.Type'), ('MaxIncome', 'Int64.Type')] design=[('IncomeBandKey', 'Int64.Type'), ('IncomeBand', 'type text'), ('MinIncome', 'Int64.Type'), ('MaxIncome', 'Int64.Type')]
+[PASS] B. Structure: DimTrainingBand: final column names + types match design - M=[('TrainingBandKey', 'Int64.Type'), ('TrainingBand', 'type text'), ('MinTrainings', 'Int64.Type'), ('MaxTrainings', 'Int64.Type')] design=[('TrainingBandKey', 'Int64.Type'), ('TrainingBand', 'type text'), ('MinTrainings', 'Int64.Type'), ('MaxTrainings', 'Int64.Type')]
+[PASS] B. Structure: DimEmployee: final column names + types match design - M=[('EmployeeID', 'Int64.Type'), ('EmployeeStatus', 'type text'), ('Gender', 'type text'), ('MaritalStatus', 'type text'), ('EducationField', 'type text'), ('BusinessTravel', 'type text'), ('BusinessTravelSort', 'Int64.Type'), ('OverTime', 'type text'), ('JobLevel', 'Int64.Type'), ('StockOptionLevel', 'Int64.Type'), ('EnvironmentSatisfaction', 'type text'), ('EnvironmentSatisfactionSort', 'Int64.Type'), ('RelationshipSatisfaction', 'type text'), ('RelationshipSatisfactionSort', 'Int64.Type'), ('JobInvolvement', 'type text'), ('JobInvolvementSort', 'Int64.Type'), ('WorkLifeBalance', 'type text'), ('WorkLifeBalanceSort', 'Int64.Type'), ('PerformanceRating', 'type text'), ('PerformanceRatingSort', 'Int64.Type')] design=[('EmployeeID', 'Int64.Type'), ('EmployeeStatus', 'type text'), ('Gender', 'type text'), ('MaritalStatus', 'type text'), ('EducationField', 'type text'), ('BusinessTravel', 'type text'), ('BusinessTravelSort', 'Int64.Type'), ('OverTime', 'type text'), ('JobLevel', 'Int64.Type'), ('StockOptionLevel', 'Int64.Type'), ('EnvironmentSatisfaction', 'type text'), ('EnvironmentSatisfactionSort', 'Int64.Type'), ('RelationshipSatisfaction', 'type text'), ('RelationshipSatisfactionSort', 'Int64.Type'), ('JobInvolvement', 'type text'), ('JobInvolvementSort', 'Int64.Type'), ('WorkLifeBalance', 'type text'), ('WorkLifeBalanceSort', 'Int64.Type'), ('PerformanceRating', 'type text'), ('PerformanceRatingSort', 'Int64.Type')]
+[PASS] B. Structure: FactEmployee: final column names + types match design - M=[('EmployeeID', 'Int64.Type'), ('DepartmentKey', 'Int64.Type'), ('JobRoleKey', 'Int64.Type'), ('EducationKey', 'Int64.Type'), ('JobSatisfactionKey', 'Int64.Type'), ('AgeBandKey', 'Int64.Type'), ('TenureBandKey', 'Int64.Type'), ('IncomeBandKey', 'Int64.Type'), ('TrainingBandKey', 'Int64.Type'), ('AttritionFlag', 'Int64.Type'), ('OverTimeFlag', 'Int64.Type'), ('Age', 'Int64.Type'), ('MonthlyIncome', 'Int64.Type'), ('PercentSalaryHike', 'Int64.Type'), ('DistanceFromHome', 'Int64.Type'), ('NumCompaniesWorked', 'Int64.Type'), ('TotalWorkingYears', 'Int64.Type'), ('YearsAtCompany', 'Int64.Type'), ('YearsInCurrentRole', 'Int64.Type'), ('YearsSinceLastPromotion', 'Int64.Type'), ('YearsWithCurrManager', 'Int64.Type'), ('TrainingTimesLastYear', 'Int64.Type'), ('JobSatisfactionScore', 'Int64.Type'), ('EnvironmentSatisfactionScore', 'Int64.Type'), ('RelationshipSatisfactionScore', 'Int64.Type'), ('JobInvolvementScore', 'Int64.Type'), ('WorkLifeBalanceScore', 'Int64.Type'), ('PerformanceRatingScore', 'Int64.Type')] design=[('EmployeeID', 'Int64.Type'), ('DepartmentKey', 'Int64.Type'), ('JobRoleKey', 'Int64.Type'), ('EducationKey', 'Int64.Type'), ('JobSatisfactionKey', 'Int64.Type'), ('AgeBandKey', 'Int64.Type'), ('TenureBandKey', 'Int64.Type'), ('IncomeBandKey', 'Int64.Type'), ('TrainingBandKey', 'Int64.Type'), ('AttritionFlag', 'Int64.Type'), ('OverTimeFlag', 'Int64.Type'), ('Age', 'Int64.Type'), ('MonthlyIncome', 'Int64.Type'), ('PercentSalaryHike', 'Int64.Type'), ('DistanceFromHome', 'Int64.Type'), ('NumCompaniesWorked', 'Int64.Type'), ('TotalWorkingYears', 'Int64.Type'), ('YearsAtCompany', 'Int64.Type'), ('YearsInCurrentRole', 'Int64.Type'), ('YearsSinceLastPromotion', 'Int64.Type'), ('YearsWithCurrManager', 'Int64.Type'), ('TrainingTimesLastYear', 'Int64.Type'), ('JobSatisfactionScore', 'Int64.Type'), ('EnvironmentSatisfactionScore', 'Int64.Type'), ('RelationshipSatisfactionScore', 'Int64.Type'), ('JobInvolvementScore', 'Int64.Type'), ('WorkLifeBalanceScore', 'Int64.Type'), ('PerformanceRatingScore', 'Int64.Type')]
+[PASS] B. Structure: stg_HR drops exactly the 6 columns decided in Step 2
+[PASS] C. Mirror vs Step 2: Headcount = Step 2
+[PASS] C. Mirror vs Step 2: Leavers = Step 2
+[PASS] C. Mirror vs Step 2: Attrition rate = Step 2
+[PASS] C. Mirror vs Step 2: Avg tenure = Step 2
+[PASS] C. Mirror vs Step 2: Training per employee = Step 2
+[PASS] C. Mirror vs Step 2: Overtime % = Step 2
+[PASS] C. Mirror vs Step 2: Avg job satisfaction = Step 2
+[PASS] C. Mirror vs Step 2: Avg monthly income = Step 2
+[PASS] C. Mirror vs Step 2: Headcount + leavers by Department via star-schema keys = Step 2 profile - []
+[PASS] C. Mirror vs Step 2: Headcount + leavers by JobRole via star-schema keys = Step 2 profile - []
+[PASS] C. Mirror vs Step 2: Headcount + leavers by TenureBand via star-schema keys = Step 2 profile - []
+[PASS] C. Mirror vs Step 2: Headcount + leavers by AgeBand via star-schema keys = Step 2 profile - []
+[PASS] C. Mirror vs Step 2: Headcount + leavers by IncomeBand via star-schema keys = Step 2 profile - []
+[PASS] C. Mirror vs Step 2: Headcount + leavers by TrainingBand = Step 2 profile
+[PASS] C. Mirror vs Step 2: DimEmployee Status 'Left' count = leavers
+[PASS] C. Mirror vs Step 2: DimEmployee OverTime 'Yes' = OverTimeFlag sum
+[PASS] C. Mirror vs Step 2: All mapped labels in DimEmployee are filled
+[PASS] C. Mirror vs Step 2: Every fact row traces back to its raw CSV row (age, tenure, attrition)
+[PASS] D. Engine vs Mirror: Engine workbook has all 11 loaded queries as sheets - []
+[PASS] D. Engine vs Mirror: DimDepartment: column names + order identical - ['DepartmentKey', 'Department']
+[PASS] D. Engine vs Mirror: DimDepartment: row count identical (3) - engine=3
+[PASS] D. Engine vs Mirror: DimDepartment: all 6 cells identical - 0 differing cells
+[PASS] D. Engine vs Mirror: DimDepartment: whole-number columns arrive as numbers (not text) - []
+[PASS] D. Engine vs Mirror: DimJobRole: column names + order identical - ['JobRoleKey', 'JobRole']
+[PASS] D. Engine vs Mirror: DimJobRole: row count identical (9) - engine=9
+[PASS] D. Engine vs Mirror: DimJobRole: all 18 cells identical - 0 differing cells
+[PASS] D. Engine vs Mirror: DimJobRole: whole-number columns arrive as numbers (not text) - []
+[PASS] D. Engine vs Mirror: DimEducation: column names + order identical - ['EducationKey', 'EducationLevel']
+[PASS] D. Engine vs Mirror: DimEducation: row count identical (5) - engine=5
+[PASS] D. Engine vs Mirror: DimEducation: all 10 cells identical - 0 differing cells
+[PASS] D. Engine vs Mirror: DimEducation: whole-number columns arrive as numbers (not text) - []
+[PASS] D. Engine vs Mirror: DimJobSatisfaction: column names + order identical - ['JobSatisfactionKey', 'JobSatisfaction']
+[PASS] D. Engine vs Mirror: DimJobSatisfaction: row count identical (4) - engine=4
+[PASS] D. Engine vs Mirror: DimJobSatisfaction: all 8 cells identical - 0 differing cells
+[PASS] D. Engine vs Mirror: DimJobSatisfaction: whole-number columns arrive as numbers (not text) - []
+[PASS] D. Engine vs Mirror: DimAgeBand: column names + order identical - ['AgeBandKey', 'AgeBand', 'MinAge', 'MaxAge']
+[PASS] D. Engine vs Mirror: DimAgeBand: row count identical (5) - engine=5
+[PASS] D. Engine vs Mirror: DimAgeBand: all 20 cells identical - 0 differing cells
+[PASS] D. Engine vs Mirror: DimAgeBand: whole-number columns arrive as numbers (not text) - []
+[PASS] D. Engine vs Mirror: DimTenureBand: column names + order identical - ['TenureBandKey', 'TenureBand', 'MinYears', 'MaxYears']
+[PASS] D. Engine vs Mirror: DimTenureBand: row count identical (4) - engine=4
+[PASS] D. Engine vs Mirror: DimTenureBand: all 16 cells identical - 0 differing cells
+[PASS] D. Engine vs Mirror: DimTenureBand: whole-number columns arrive as numbers (not text) - []
+[PASS] D. Engine vs Mirror: DimIncomeBand: column names + order identical - ['IncomeBandKey', 'IncomeBand', 'MinIncome', 'MaxIncome']
+[PASS] D. Engine vs Mirror: DimIncomeBand: row count identical (5) - engine=5
+[PASS] D. Engine vs Mirror: DimIncomeBand: all 20 cells identical - 0 differing cells
+[PASS] D. Engine vs Mirror: DimIncomeBand: whole-number columns arrive as numbers (not text) - []
+[PASS] D. Engine vs Mirror: DimTrainingBand: column names + order identical - ['TrainingBandKey', 'TrainingBand', 'MinTrainings', 'MaxTrainings']
+[PASS] D. Engine vs Mirror: DimTrainingBand: row count identical (4) - engine=4
+[PASS] D. Engine vs Mirror: DimTrainingBand: all 16 cells identical - 0 differing cells
+[PASS] D. Engine vs Mirror: DimTrainingBand: whole-number columns arrive as numbers (not text) - []
+[PASS] D. Engine vs Mirror: DimEmployee: column names + order identical - ['EmployeeID', 'EmployeeStatus', 'Gender', 'MaritalStatus', 'EducationField', 'BusinessTravel', 'BusinessTravelSort', 'OverTime', 'JobLevel', 'StockOptionLevel', 'EnvironmentSatisfaction', 'EnvironmentSatisfactionSort', 'RelationshipSatisfaction', 'RelationshipSatisfactionSort', 'JobInvolvement', 'JobInvolvementSort', 'WorkLifeBalance', 'WorkLifeBalanceSort', 'PerformanceRating', 'PerformanceRatingSort']
+[PASS] D. Engine vs Mirror: DimEmployee: row count identical (1470) - engine=1470
+[PASS] D. Engine vs Mirror: DimEmployee: all 29,400 cells identical - 0 differing cells
+[PASS] D. Engine vs Mirror: DimEmployee: whole-number columns arrive as numbers (not text) - []
+[PASS] D. Engine vs Mirror: FactEmployee: column names + order identical - ['EmployeeID', 'DepartmentKey', 'JobRoleKey', 'EducationKey', 'JobSatisfactionKey', 'AgeBandKey', 'TenureBandKey', 'IncomeBandKey', 'TrainingBandKey', 'AttritionFlag', 'OverTimeFlag', 'Age', 'MonthlyIncome', 'PercentSalaryHike', 'DistanceFromHome', 'NumCompaniesWorked', 'TotalWorkingYears', 'YearsAtCompany', 'YearsInCurrentRole', 'YearsSinceLastPromotion', 'YearsWithCurrManager', 'TrainingTimesLastYear', 'JobSatisfactionScore', 'EnvironmentSatisfactionScore', 'RelationshipSatisfactionScore', 'JobInvolvementScore', 'WorkLifeBalanceScore', 'PerformanceRatingScore']
+[PASS] D. Engine vs Mirror: FactEmployee: row count identical (1470) - engine=1470
+[PASS] D. Engine vs Mirror: FactEmployee: all 41,160 cells identical - 0 differing cells
+[PASS] D. Engine vs Mirror: FactEmployee: whole-number columns arrive as numbers (not text) - []
+[PASS] E. QA_Checks: QA_Checks returned 35 checks - 35
+[PASS] E. QA_Checks: All QA_Checks PASS inside the real engine
+[PASS] E. QA_Checks: Hardcoded expected values in QA_Checks = independent mirror - {}
+[PASS] F. Model readiness: FactEmployee grain: EmployeeID unique
+[PASS] F. Model readiness: No nulls anywhere in the 10 model tables
+[PASS] F. Model readiness: DimDepartment.DepartmentKey unique (can be the 1-side of a relationship)
+[PASS] F. Model readiness: FactEmployee.DepartmentKey -> DimDepartment: no orphan keys - set()
+[PASS] F. Model readiness: DimJobRole.JobRoleKey unique (can be the 1-side of a relationship)
+[PASS] F. Model readiness: FactEmployee.JobRoleKey -> DimJobRole: no orphan keys - set()
+[PASS] F. Model readiness: DimEducation.EducationKey unique (can be the 1-side of a relationship)
+[PASS] F. Model readiness: FactEmployee.EducationKey -> DimEducation: no orphan keys - set()
+[PASS] F. Model readiness: DimJobSatisfaction.JobSatisfactionKey unique (can be the 1-side of a relationship)
+[PASS] F. Model readiness: FactEmployee.JobSatisfactionKey -> DimJobSatisfaction: no orphan keys - set()
+[PASS] F. Model readiness: DimAgeBand.AgeBandKey unique (can be the 1-side of a relationship)
+[PASS] F. Model readiness: FactEmployee.AgeBandKey -> DimAgeBand: no orphan keys - set()
+[PASS] F. Model readiness: DimTenureBand.TenureBandKey unique (can be the 1-side of a relationship)
+[PASS] F. Model readiness: FactEmployee.TenureBandKey -> DimTenureBand: no orphan keys - set()
+[PASS] F. Model readiness: DimIncomeBand.IncomeBandKey unique (can be the 1-side of a relationship)
+[PASS] F. Model readiness: FactEmployee.IncomeBandKey -> DimIncomeBand: no orphan keys - set()
+[PASS] F. Model readiness: DimTrainingBand.TrainingBandKey unique (can be the 1-side of a relationship)
+[PASS] F. Model readiness: FactEmployee.TrainingBandKey -> DimTrainingBand: no orphan keys - set()
+[PASS] F. Model readiness: DimEmployee.EmployeeID unique (can be the 1-side of a relationship)
+[PASS] F. Model readiness: FactEmployee.EmployeeID -> DimEmployee: no orphan keys - set()
+[PASS] F. Model readiness: DimAgeBand: sort key gives logical order
+[PASS] F. Model readiness: DimTenureBand: sort key gives logical order
+[PASS] F. Model readiness: DimIncomeBand: sort key gives logical order
+[PASS] F. Model readiness: DimTrainingBand: sort key gives logical order
+[PASS] F. Model readiness: DimEmployee.EnvironmentSatisfaction <-> EnvironmentSatisfactionSort is 1:1 (Sort by column will work)
+[PASS] F. Model readiness: DimEmployee.RelationshipSatisfaction <-> RelationshipSatisfactionSort is 1:1 (Sort by column will work)
+[PASS] F. Model readiness: DimEmployee.JobInvolvement <-> JobInvolvementSort is 1:1 (Sort by column will work)
+[PASS] F. Model readiness: DimEmployee.WorkLifeBalance <-> WorkLifeBalanceSort is 1:1 (Sort by column will work)
+[PASS] F. Model readiness: DimEmployee.PerformanceRating <-> PerformanceRatingSort is 1:1 (Sort by column will work)
+[PASS] F. Model readiness: DimEmployee.BusinessTravel <-> BusinessTravelSort is 1:1 (Sort by column will work)

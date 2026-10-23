@@ -1,0 +1,57 @@
+/// Age bands (inclusive Min/Max from HR_Lookups.xlsx).
+table DimAgeBand
+	lineageTag: 6a38738b-56d5-551d-a0f5-0505e460d43e
+
+	column AgeBandKey
+		dataType: int64
+		isHidden
+		isKey
+		formatString: 0
+		lineageTag: 184e37f3-b3a3-5c13-a812-62bef7e8a18c
+		summarizeBy: none
+		sourceColumn: AgeBandKey
+
+		annotation SummarizationSetBy = User
+
+	column AgeBand
+		dataType: string
+		lineageTag: 6c387760-8ea5-5635-baec-9019726ed8a0
+		summarizeBy: none
+		sourceColumn: AgeBand
+		sortByColumn: AgeBandKey
+
+		annotation SummarizationSetBy = User
+
+	column MinAge
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: acf87bde-f2c8-500f-88f3-64809a2f954f
+		summarizeBy: none
+		sourceColumn: MinAge
+
+		annotation SummarizationSetBy = User
+
+	column MaxAge
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: b018691d-993c-5425-b2d5-29981a6c8ac2
+		summarizeBy: none
+		sourceColumn: MaxAge
+
+		annotation SummarizationSetBy = User
+
+	partition DimAgeBand = m
+		mode: import
+		source =
+				let
+				    Source  = lkp_AgeBand,
+				    Renamed = Table.RenameColumns(Source, {{"BandKey", "AgeBandKey"}, {"Band", "AgeBand"}, {"Min", "MinAge"}, {"Max", "MaxAge"}}),
+				    Final   = Table.SelectColumns(Renamed, {"AgeBandKey", "AgeBand", "MinAge", "MaxAge"}),
+				    Typed   = Table.TransformColumnTypes(Final, {{"AgeBandKey", Int64.Type}, {"AgeBand", type text}, {"MinAge", Int64.Type}, {"MaxAge", Int64.Type}})
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table
+

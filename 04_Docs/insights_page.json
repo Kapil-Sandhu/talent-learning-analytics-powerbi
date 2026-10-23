@@ -1,0 +1,39 @@
+{
+  "cards": [
+    "Overtime Attrition Ratio",
+    "Early Tenure Attrition Rate (0-1 yrs)",
+    "Attrition Rate - Low Job Satisfaction",
+    "Company Attrition Rate"
+  ],
+  "panels": [
+    {
+      "title": "1. Reduce sustained overtime",
+      "lines": [
+        "Attrition 30.5% with overtime vs 10.4% without; holds after controlling for role, tenure and pay.",
+        "Action: monthly overtime reviews, rebalance workload. Start with Sales Reps, Lab Technicians, HR, Research Scientists."
+      ]
+    },
+    {
+      "title": "2. Make the first year stick",
+      "lines": [
+        "34.9% of 0-1 year employees left (55.1% with overtime). New joiners get no extra training.",
+        "Action: 90-day onboarding, mentor per new hire, front-loaded learning path, no routine overtime in year 1."
+      ]
+    },
+    {
+      "title": "3. Retention plan for Sales Representatives",
+      "lines": [
+        "39.8% attrition (+23.6 pts); 91.6% are level 1, avg income 2,626 vs 6,503.",
+        "Action: pay and incentive benchmark, career path to Sales Executive, coaching."
+      ]
+    },
+    {
+      "title": "4. Act on engagement signals",
+      "lines": [
+        "Low job satisfaction: 22.8% attrition; bad work-life balance: 31.3%.",
+        "Action: quarterly pulse survey, manager follow-up within 30 days, flexible work options."
+      ]
+    }
+  ],
+  "footnote": "Associations in a fictional snapshot (IBM sample), not proven causes - test actions with a pilot first. Also improve learning data: course type, hours, completion, dates. Full analysis: 04_Docs/Insights_and_Recommendations.md"
+}

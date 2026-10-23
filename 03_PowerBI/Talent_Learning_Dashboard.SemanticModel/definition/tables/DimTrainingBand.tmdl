@@ -1,0 +1,57 @@
+/// Training bands on TrainingTimesLastYear (0-6).
+table DimTrainingBand
+	lineageTag: 5a44be27-ef85-5b2b-a22d-b445cb05f8c6
+
+	column TrainingBandKey
+		dataType: int64
+		isHidden
+		isKey
+		formatString: 0
+		lineageTag: 3956a322-b62b-51e6-918c-51d5128a9a63
+		summarizeBy: none
+		sourceColumn: TrainingBandKey
+
+		annotation SummarizationSetBy = User
+
+	column TrainingBand
+		dataType: string
+		lineageTag: 59e3d8cf-23c0-51c2-8d9a-6346e36788de
+		summarizeBy: none
+		sourceColumn: TrainingBand
+		sortByColumn: TrainingBandKey
+
+		annotation SummarizationSetBy = User
+
+	column MinTrainings
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: cbfdf721-3b6d-524e-97eb-0fe0f6b8d244
+		summarizeBy: none
+		sourceColumn: MinTrainings
+
+		annotation SummarizationSetBy = User
+
+	column MaxTrainings
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 6103d526-a97f-5171-87a8-a85e1c776bae
+		summarizeBy: none
+		sourceColumn: MaxTrainings
+
+		annotation SummarizationSetBy = User
+
+	partition DimTrainingBand = m
+		mode: import
+		source =
+				let
+				    Source  = lkp_TrainingBand,
+				    Renamed = Table.RenameColumns(Source, {{"BandKey", "TrainingBandKey"}, {"Band", "TrainingBand"}, {"Min", "MinTrainings"}, {"Max", "MaxTrainings"}}),
+				    Final   = Table.SelectColumns(Renamed, {"TrainingBandKey", "TrainingBand", "MinTrainings", "MaxTrainings"}),
+				    Typed   = Table.TransformColumnTypes(Final, {{"TrainingBandKey", Int64.Type}, {"TrainingBand", type text}, {"MinTrainings", Int64.Type}, {"MaxTrainings", Int64.Type}})
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table
+

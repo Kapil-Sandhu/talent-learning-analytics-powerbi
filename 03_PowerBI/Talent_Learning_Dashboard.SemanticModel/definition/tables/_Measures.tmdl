@@ -1,0 +1,234 @@
+/// Home table for all DAX measures (added in Step 5). The placeholder column is hidden.
+table _Measures
+	lineageTag: eed84867-5d7a-5995-af61-e51891e2996d
+
+	/// Number of employees in the current filter context (leavers included).
+	measure Headcount = COUNTROWS ( FactEmployee )
+		formatString: #,##0
+		displayFolder: 1 Headcount & Attrition
+		lineageTag: dfa6023d-26c6-5041-9db0-d5088036f2d8
+
+	/// Employees who left (AttritionFlag = 1). 0 when nobody in the selection left.
+	measure Leavers = SUM ( FactEmployee[AttritionFlag] )
+		formatString: #,##0
+		displayFolder: 1 Headcount & Attrition
+		lineageTag: 36bf8ffc-7834-5ff0-88f1-35ac2aa94f95
+
+	/// Employees still employed.
+	measure 'Active Employees' = [Headcount] - [Leavers]
+		formatString: #,##0
+		displayFolder: 1 Headcount & Attrition
+		lineageTag: 1228553f-b53f-50d4-b9ca-1fd90201d8a7
+
+	/// Leavers / Headcount.
+	measure 'Attrition Rate' = DIVIDE ( [Leavers], [Headcount] )
+		formatString: 0.0%
+		displayFolder: 1 Headcount & Attrition
+		lineageTag: b444f6d5-aa4e-5dee-a08a-4a665f1cf35f
+
+	/// Active Employees / Headcount (= 1 - Attrition Rate).
+	measure 'Retention Rate' = DIVIDE ( [Active Employees], [Headcount] )
+		formatString: 0.0%
+		displayFolder: 1 Headcount & Attrition
+		lineageTag: 887924d2-5bed-5bc8-b6f5-257e61485f5a
+
+	/// Attrition rate of the whole company, ignoring every filter and slicer. Baseline for comparisons.
+	measure 'Company Attrition Rate' = CALCULATE ( [Attrition Rate], REMOVEFILTERS () )
+		formatString: 0.0%
+		displayFolder: 1 Headcount & Attrition
+		lineageTag: 4af82b90-c6d0-5166-9e0b-458eec0be32a
+
+	/// Selected attrition rate minus company attrition rate, in percentage points. Positive = worse than company.
+	measure 'Attrition vs Company (pts)' =
+			VAR rate = [Attrition Rate]
+			RETURN
+			    IF ( NOT ISBLANK ( rate ), rate - [Company Attrition Rate] )
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: 1 Headcount & Attrition
+		lineageTag: 86d1c156-0374-5ecb-af03-c388236d9799
+
+	/// Average years at the company.
+	measure 'Avg Tenure (Years)' = AVERAGE ( FactEmployee[YearsAtCompany] )
+		formatString: 0.0
+		displayFolder: 2 Tenure
+		lineageTag: ce77d725-0412-5084-94d2-8b2cb218023a
+
+	/// Median years at the company (robust to very long tenures).
+	measure 'Median Tenure (Years)' = MEDIAN ( FactEmployee[YearsAtCompany] )
+		formatString: 0.0
+		displayFolder: 2 Tenure
+		lineageTag: 1b3f8461-b086-50bf-b0f6-185c1fff1533
+
+	/// Average years at the company of employees who left.
+	measure 'Avg Tenure of Leavers (Years)' = CALCULATE ( [Avg Tenure (Years)], KEEPFILTERS ( FactEmployee[AttritionFlag] = 1 ) )
+		formatString: 0.0
+		displayFolder: 2 Tenure
+		lineageTag: cbc945be-eb09-5e69-8221-d80a31cb7f61
+
+	/// Attrition rate of employees in their first 0-1 years. Basis for the onboarding recommendation.
+	measure 'Early Tenure Attrition Rate (0-1 yrs)' = CALCULATE ( [Attrition Rate], KEEPFILTERS ( FactEmployee[YearsAtCompany] <= 1 ) )
+		formatString: 0.0%
+		displayFolder: 2 Tenure
+		lineageTag: 6556a07f-0613-5459-9df3-3b7a127f36e5
+
+	/// Average years since the last promotion.
+	measure 'Avg Years Since Promotion' = AVERAGE ( FactEmployee[YearsSinceLastPromotion] )
+		formatString: 0.0
+		displayFolder: 2 Tenure
+		lineageTag: 3c6496d3-9a7d-5ffe-adae-9aeb89b643e8
+
+	/// Total trainings attended last year.
+	measure 'Total Trainings' = SUM ( FactEmployee[TrainingTimesLastYear] )
+		formatString: #,##0
+		displayFolder: 3 Training & Learning
+		lineageTag: b20f7c60-3a49-5521-aeaa-c9de5929730e
+
+	/// Average trainings per employee last year (Total Trainings / Headcount).
+	measure 'Training per Employee' = DIVIDE ( [Total Trainings], [Headcount] )
+		formatString: 0.00
+		displayFolder: 3 Training & Learning
+		lineageTag: 17dfc3cb-eb63-5e6b-b9c7-3dac1096bd58
+
+	/// Employees who attended no training last year.
+	measure 'Employees with No Training' =
+			VAR hc = [Headcount]
+			RETURN
+			    IF (
+			        NOT ISBLANK ( hc ),
+			        COALESCE ( CALCULATE ( [Headcount], KEEPFILTERS ( FactEmployee[TrainingTimesLastYear] = 0 ) ), 0 )
+			    )
+		formatString: #,##0
+		displayFolder: 3 Training & Learning
+		lineageTag: e35edb9f-7391-5c74-b255-1ae18830e8ef
+
+	/// Share of employees with no training last year.
+	measure '% No Training' = DIVIDE ( [Employees with No Training], [Headcount] )
+		formatString: 0.0%
+		displayFolder: 3 Training & Learning
+		lineageTag: dc4479cc-e979-56b4-82c2-354d6a11a17f
+
+	/// Share of employees with 5-6 trainings last year.
+	measure '% High Training (5-6)' =
+			VAR high =
+			    CALCULATE ( [Headcount], KEEPFILTERS ( FactEmployee[TrainingTimesLastYear] >= 5 ) )
+			RETURN
+			    DIVIDE ( COALESCE ( high, 0 ), [Headcount] )
+		formatString: 0.0%
+		displayFolder: 3 Training & Learning
+		lineageTag: b8c642c0-36a4-5f54-a073-4c47b946a918
+
+	/// Attrition rate of employees with no training last year (small group - treat as indicative).
+	measure 'Attrition Rate - No Training' = CALCULATE ( [Attrition Rate], KEEPFILTERS ( FactEmployee[TrainingTimesLastYear] = 0 ) )
+		formatString: 0.0%
+		displayFolder: 3 Training & Learning
+		lineageTag: 7da9d980-9a79-50e3-92b2-d8757b716802
+
+	/// Employees working overtime. 0 when nobody in the selection works overtime.
+	measure 'Overtime Employees' = SUM ( FactEmployee[OverTimeFlag] )
+		formatString: #,##0
+		displayFolder: 4 Overtime
+		lineageTag: 6aa2e6a0-26a5-5fcf-934b-05778fe1c38b
+
+	/// Share of employees working overtime.
+	measure 'Overtime %' = DIVIDE ( [Overtime Employees], [Headcount] )
+		formatString: 0.0%
+		displayFolder: 4 Overtime
+		lineageTag: 7eadf7d0-3375-5905-95e5-7a68358d24ca
+
+	/// Attrition rate of employees who work overtime.
+	measure 'Attrition Rate - Overtime' = CALCULATE ( [Attrition Rate], KEEPFILTERS ( FactEmployee[OverTimeFlag] = 1 ) )
+		formatString: 0.0%
+		displayFolder: 4 Overtime
+		lineageTag: 120de88a-d510-57e4-97c4-4499e3860b93
+
+	/// Attrition rate of employees who do not work overtime.
+	measure 'Attrition Rate - No Overtime' = CALCULATE ( [Attrition Rate], KEEPFILTERS ( FactEmployee[OverTimeFlag] = 0 ) )
+		formatString: 0.0%
+		displayFolder: 4 Overtime
+		lineageTag: 07a72772-1015-5bd0-a125-43211e094974
+
+	/// How many times higher attrition is with overtime than without (e.g. 2.9x).
+	measure 'Overtime Attrition Ratio' = DIVIDE ( [Attrition Rate - Overtime], [Attrition Rate - No Overtime] )
+		formatString: 0.0"x"
+		displayFolder: 4 Overtime
+		lineageTag: 51377e38-c97b-5302-ac9c-e6059bd9427b
+
+	/// Average job satisfaction, 1 (Low) to 4 (Very High).
+	measure 'Avg Job Satisfaction' = AVERAGE ( FactEmployee[JobSatisfactionScore] )
+		formatString: 0.00
+		displayFolder: 5 Satisfaction & Performance
+		lineageTag: 9b7f5329-4144-51ed-ba09-dda6599edf22
+
+	/// Share of employees rating job satisfaction 'Low' (1).
+	measure '% Low Job Satisfaction' =
+			VAR low =
+			    CALCULATE ( [Headcount], KEEPFILTERS ( FactEmployee[JobSatisfactionScore] = 1 ) )
+			RETURN
+			    DIVIDE ( COALESCE ( low, 0 ), [Headcount] )
+		formatString: 0.0%
+		displayFolder: 5 Satisfaction & Performance
+		lineageTag: 1296535b-e84c-5b77-81f9-73bc6aa801d0
+
+	/// Attrition rate of employees with 'Low' job satisfaction.
+	measure 'Attrition Rate - Low Job Satisfaction' = CALCULATE ( [Attrition Rate], KEEPFILTERS ( FactEmployee[JobSatisfactionScore] = 1 ) )
+		formatString: 0.0%
+		displayFolder: 5 Satisfaction & Performance
+		lineageTag: cfa4ae3a-be81-5933-a980-25cb7ab7069a
+
+	/// Average environment satisfaction, 1 (Low) to 4 (Very High).
+	measure 'Avg Environment Satisfaction' = AVERAGE ( FactEmployee[EnvironmentSatisfactionScore] )
+		formatString: 0.00
+		displayFolder: 5 Satisfaction & Performance
+		lineageTag: 83171f23-2abe-5954-837d-2a2e29cc429d
+
+	/// Average work-life balance, 1 (Bad) to 4 (Best).
+	measure 'Avg Work-Life Balance' = AVERAGE ( FactEmployee[WorkLifeBalanceScore] )
+		formatString: 0.00
+		displayFolder: 5 Satisfaction & Performance
+		lineageTag: b596ae66-a3f2-579e-bd43-b29f4e6e6993
+
+	/// Average job involvement, 1 (Low) to 4 (Very High).
+	measure 'Avg Job Involvement' = AVERAGE ( FactEmployee[JobInvolvementScore] )
+		formatString: 0.00
+		displayFolder: 5 Satisfaction & Performance
+		lineageTag: c859a33d-f9f6-5e1a-8ccd-ac2e9fe00bf8
+
+	/// Average performance rating (only 3 = Excellent and 4 = Outstanding occur).
+	measure 'Avg Performance Rating' = AVERAGE ( FactEmployee[PerformanceRatingScore] )
+		formatString: 0.00
+		displayFolder: 5 Satisfaction & Performance
+		lineageTag: c0acf9a9-f367-5979-aa1c-587ea1cc8308
+
+	/// Average employee age.
+	measure 'Avg Age' = AVERAGE ( FactEmployee[Age] )
+		formatString: 0.0
+		displayFolder: 6 Demographics & Pay
+		lineageTag: fb296670-628d-5188-89ee-351b117ed852
+
+	/// Average monthly income (currency not stated in the source data).
+	measure 'Avg Monthly Income' = AVERAGE ( FactEmployee[MonthlyIncome] )
+		formatString: #,##0
+		displayFolder: 6 Demographics & Pay
+		lineageTag: d8340800-d280-508d-8715-d5c7167cc4a2
+
+	/// Average last salary increase in percent (e.g. 15.2 = 15.2%).
+	measure 'Avg Salary Hike (%)' = AVERAGE ( FactEmployee[PercentSalaryHike] )
+		formatString: 0.0
+		displayFolder: 6 Demographics & Pay
+		lineageTag: 7b794a07-a4de-5f21-8bb9-0dd4eceef5fa
+
+	column Placeholder
+		dataType: string
+		isHidden
+		lineageTag: 155c1d35-534a-5aef-a6cc-b378f2d0a89b
+		summarizeBy: none
+		sourceColumn: Placeholder
+
+		annotation SummarizationSetBy = User
+
+	partition _Measures = m
+		mode: import
+		source = #table(type table [Placeholder = text], {})
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,50 @@
+STEP 7 VALIDATION: 28/28 checks passed
+
+[PASS] A. Reproducibility: 14 driver groups: n, leavers, rate, CI, differences, p-values == independent hand-written formulas
+[PASS] A. Reproducibility: Mantel-Haenszel overtime odds ratio (by job role) == hand formula - 4.295757281381226 vs 4.295757281381226
+[PASS] A. Reproducibility: Logistic-regression odds ratios re-fitted independently (scikit-learn) == statsmodels results - {}
+[PASS] A. Reproducibility: Training per employee by tenure band == independent recompute
+[PASS] A. Reproducibility: Sales Representative profile == independent recompute
+[PASS] A. Reproducibility: What-if sizes == independent arithmetic
+[PASS] B. Power BI: All reconciliation DAX queries ran in Power BI - []
+[PASS] B. Power BI: 16 segment rates, headcounts and leavers == Power BI model
+[PASS] B. Power BI: Every segment rate in the document is written exactly as Power BI displays it (same rounding)
+[PASS] B. Power BI: 22 headline numbers (company, overtime, measures, Sales Rep profile) == Power BI measures
+[PASS] B. Power BI: Document's overtime ratio and share match Power BI's displayed text - 2.9x / 28.3% vs {'2.9x'} / {'28.3%'}
+[PASS] B. Power BI: Overtime attrition in all 9 job roles == Power BI (values and displayed text) - []
+[PASS] B. Power BI: Overtime attrition in all 3 departments == Power BI - []
+[PASS] B. Power BI: Training per employee by tenure band == Power BI - []
+[PASS] C. Number audit: Every one of the 181 numbers in the document comes from the facts file or is a policy/scale literal - []
+[PASS] C. Number audit: All 173 logged numbers actually appear in the document / dashboard page - []
+[PASS] C. Number audit: Every logged value == the value in insights_facts.json - []
+[PASS] C. Number audit: Counts in text: overtime holds in 8 of 9 roles == facts
+[PASS] D. Content: 5 numbered recommendations - [('1', 'Reduce sustained overtime in the highest-risk roles'), ('2', 'Make the first year stick: onboarding, mentoring and front-loaded learning'), ('3', 'Targeted retention plan for Sales Representatives'), ('4', 'Act on engagement signals early'), ('5', 'Improve the learning and people data')]
+[PASS] D. Content: Each recommendation has Why / What / Track (data recommendation: Why / What) - []
+[PASS] D. Content: All 10 measures named in the document exist in the Power BI model - []
+[PASS] D. Content: Every dashboard page referenced exists (['Attrition Drivers', 'Job Role Summary', 'Satisfaction & Performance', 'Training & Learning']) - set()
+[PASS] D. Content: Causal disclaimer + limitations + method section present
+[PASS] D. Content: Illustrative sizes are labelled as upper bounds / not forecasts
+[PASS] D. Content: No time-based claims the snapshot cannot support (per year / per month / trend)
+[PASS] E. Insights page: Every number on the Insights & Actions page comes from the facts file - []
+[PASS] E. Insights page: Page has 4 panels and 4 live measure cards that exist in the model
+[PASS] E. Insights page: Page is in the report as page 2 with its 4 panels + 4 cards
+
+NEGATIVE CONTROLS: 18/18 deliberately planted faults were caught (each run on a throw-away copy)
+  CAUGHT doc: one rate mistyped (24.4%
+  CAUGHT doc: CI upper bound mistyped
+  CAUGHT doc: CI ends from two different CIs
+  CAUGHT doc: hand-typed unsupported number
+  CAUGHT doc: 'level 1,' changed to 'level 7,'
+  CAUGHT doc: references a page that doesn't exist
+  CAUGHT doc: names a measure not in the model
+  CAUGHT facts: overtime rate off by 0.1%
+  CAUGHT facts: Sales Rep avg income off by 1%
+  CAUGHT Power BI shows 30.6% where doc says 30.5%
+  CAUGHT Power BI headcount differs
+  CAUGHT Power BI missing one job role
+  CAUGHT Power BI query error
+  CAUGHT page: panel number mistyped (34.9%
+  CAUGHT page: card measure not in model
+  CAUGHT doc: a trend claim in the findings
+  CAUGHT doc: a per-year claim in the recommendations
+  CAUGHT doc: a Track line removed

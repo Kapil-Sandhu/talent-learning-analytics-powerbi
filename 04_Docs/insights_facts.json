@@ -1,0 +1,467 @@
+{
+  "company": {
+    "headcount": 1470,
+    "leavers": 237,
+    "attrition_rate": 0.16122448979591836
+  },
+  "drivers": {
+    "overtime": {
+      "label": "Works overtime",
+      "n": 416,
+      "leavers": 127,
+      "rate": 0.30528846153846156,
+      "ci_low": 0.26298229774087895,
+      "ci_high": 0.35115776257697756,
+      "rest_n": 1054,
+      "rest_rate": 0.10436432637571158,
+      "diff_pts": 20.092413516275,
+      "vs_company_pts": 14.406397174254321,
+      "rate_ratio": 2.9252185314685315,
+      "p_value": 3.861517910432879e-21,
+      "share_of_staff": 0.2829931972789116,
+      "share_of_leavers": 0.5358649789029536
+    },
+    "early_tenure": {
+      "label": "0-1 years at the company",
+      "n": 215,
+      "leavers": 75,
+      "rate": 0.3488372093023256,
+      "ci_low": 0.2882898613288089,
+      "ci_high": 0.41469146436570986,
+      "rest_n": 1255,
+      "rest_rate": 0.12908366533864543,
+      "diff_pts": 21.975354396368015,
+      "vs_company_pts": 18.761271950640722,
+      "rate_ratio": 2.702411714039621,
+      "p_value": 5.671378859830558e-16,
+      "share_of_staff": 0.14625850340136054,
+      "share_of_leavers": 0.31645569620253167
+    },
+    "sales_rep": {
+      "label": "Sales Representatives",
+      "n": 83,
+      "leavers": 33,
+      "rate": 0.39759036144578314,
+      "ci_low": 0.29908931639422454,
+      "ci_high": 0.5051516507774881,
+      "rest_n": 1387,
+      "rest_rate": 0.14708002883922133,
+      "diff_pts": 25.05103326065618,
+      "vs_company_pts": 23.636587164986476,
+      "rate_ratio": 2.70322466335932,
+      "p_value": 1.6553656373127593e-09,
+      "share_of_staff": 0.05646258503401361,
+      "share_of_leavers": 0.13924050632911392
+    },
+    "low_job_sat": {
+      "label": "Low job satisfaction",
+      "n": 289,
+      "leavers": 66,
+      "rate": 0.22837370242214533,
+      "ci_low": 0.18372568525365046,
+      "ci_high": 0.2801480415070117,
+      "rest_n": 1181,
+      "rest_rate": 0.14479254868755292,
+      "diff_pts": 8.35811537345924,
+      "vs_company_pts": 6.714921262622697,
+      "rate_ratio": 1.577247617313179,
+      "p_value": 0.0005336710037877488,
+      "share_of_staff": 0.19659863945578232,
+      "share_of_leavers": 0.27848101265822783
+    },
+    "bad_wlb": {
+      "label": "Bad work-life balance",
+      "n": 80,
+      "leavers": 25,
+      "rate": 0.3125,
+      "ci_low": 0.22150404050315162,
+      "ci_high": 0.4206777583313075,
+      "rest_n": 1390,
+      "rest_rate": 0.15251798561151078,
+      "diff_pts": 15.998201438848922,
+      "vs_company_pts": 15.127551020408164,
+      "rate_ratio": 2.0489386792452833,
+      "p_value": 0.00015446094555261953,
+      "share_of_staff": 0.05442176870748299,
+      "share_of_leavers": 0.10548523206751055
+    },
+    "single": {
+      "label": "Single",
+      "n": 470,
+      "leavers": 120,
+      "rate": 0.2553191489361702,
+      "ci_low": 0.21799198204445258,
+      "ci_high": 0.2966135981784923,
+      "rest_n": 1000,
+      "rest_rate": 0.117,
+      "diff_pts": 13.83191489361702,
+      "vs_company_pts": 9.409465914025184,
+      "rate_ratio": 2.1822149481723945,
+      "p_value": 1.7481160193061966e-11,
+      "share_of_staff": 0.3197278911564626,
+      "share_of_leavers": 0.5063291139240507
+    },
+    "age_18_25": {
+      "label": "Aged 18-25",
+      "n": 123,
+      "leavers": 44,
+      "rate": 0.35772357723577236,
+      "ci_low": 0.27850472124862435,
+      "ci_high": 0.44556026264000637,
+      "rest_n": 1347,
+      "rest_rate": 0.1432813659985152,
+      "diff_pts": 21.444221123725715,
+      "vs_company_pts": 19.6499087439854,
+      "rate_ratio": 2.4966510805004427,
+      "p_value": 5.984439681392391e-10,
+      "share_of_staff": 0.0836734693877551,
+      "share_of_leavers": 0.18565400843881857
+    },
+    "job_level_1": {
+      "label": "Job level 1",
+      "n": 543,
+      "leavers": 143,
+      "rate": 0.26335174953959484,
+      "ci_low": 0.22806066857875534,
+      "ci_high": 0.3019676498194889,
+      "rest_n": 927,
+      "rest_rate": 0.10140237324703344,
+      "diff_pts": 16.194937629256138,
+      "vs_company_pts": 10.212725974367649,
+      "rate_ratio": 2.597096508757494,
+      "p_value": 3.6593964820548827e-16,
+      "share_of_staff": 0.3693877551020408,
+      "share_of_leavers": 0.6033755274261603
+    },
+    "no_stock": {
+      "label": "No stock options",
+      "n": 631,
+      "leavers": 154,
+      "rate": 0.24405705229793978,
+      "ci_low": 0.21215765846753673,
+      "ci_high": 0.27905389446225504,
+      "rest_n": 839,
+      "rest_rate": 0.09892729439809297,
+      "diff_pts": 14.512975789984681,
+      "vs_company_pts": 8.283256250202143,
+      "rate_ratio": 2.4670345406984513,
+      "p_value": 6.911594232205307e-14,
+      "share_of_staff": 0.42925170068027213,
+      "share_of_leavers": 0.6497890295358649
+    },
+    "travel_freq": {
+      "label": "Travels frequently",
+      "n": 277,
+      "leavers": 69,
+      "rate": 0.2490974729241877,
+      "ci_low": 0.20183136248196537,
+      "ci_high": 0.30322746838405884,
+      "rest_n": 1193,
+      "rest_rate": 0.14082145850796313,
+      "diff_pts": 10.827601441622459,
+      "vs_company_pts": 8.787298312826936,
+      "rate_ratio": 1.7688886023723567,
+      "p_value": 1.0117807979601009e-05,
+      "share_of_staff": 0.18843537414965986,
+      "share_of_leavers": 0.2911392405063291
+    },
+    "income_lt3k": {
+      "label": "Monthly income under 3,000",
+      "n": 395,
+      "leavers": 113,
+      "rate": 0.28607594936708863,
+      "ci_low": 0.24373638984862497,
+      "ci_high": 0.3325363465062531,
+      "rest_n": 1075,
+      "rest_rate": 0.11534883720930232,
+      "diff_pts": 17.07271121577863,
+      "vs_company_pts": 12.485145957117027,
+      "rate_ratio": 2.4800939158840345,
+      "p_value": 3.0081585389714597e-15,
+      "share_of_staff": 0.2687074829931973,
+      "share_of_leavers": 0.4767932489451477
+    },
+    "no_training": {
+      "label": "No training last year",
+      "n": 54,
+      "leavers": 15,
+      "rate": 0.2777777777777778,
+      "ci_low": 0.17616827587686873,
+      "ci_high": 0.4089044303760367,
+      "rest_n": 1416,
+      "rest_rate": 0.15677966101694915,
+      "diff_pts": 12.099811676082863,
+      "vs_company_pts": 11.655328798185943,
+      "rate_ratio": 1.7717717717717718,
+      "p_value": 0.017641044390050604,
+      "share_of_staff": 0.036734693877551024,
+      "share_of_leavers": 0.06329113924050633
+    },
+    "high_training": {
+      "label": "5-6 trainings last year",
+      "n": 184,
+      "leavers": 20,
+      "rate": 0.10869565217391304,
+      "ci_low": 0.07147299011699255,
+      "ci_high": 0.16192308305235525,
+      "rest_n": 1286,
+      "rest_rate": 0.16874027993779162,
+      "diff_pts": -6.004462776387857,
+      "vs_company_pts": -5.252883762200532,
+      "rate_ratio": 0.6441594870767381,
+      "p_value": 0.03830248997514561,
+      "share_of_staff": 0.1251700680272109,
+      "share_of_leavers": 0.08438818565400844
+    },
+    "outstanding_perf": {
+      "label": "Outstanding performance rating",
+      "n": 226,
+      "leavers": 37,
+      "rate": 0.16371681415929204,
+      "ci_low": 0.12117197237334408,
+      "ci_high": 0.21750260470327476,
+      "rest_n": 1244,
+      "rest_rate": 0.1607717041800643,
+      "diff_pts": 0.2945109979227728,
+      "vs_company_pts": 0.24923243633736825,
+      "rate_ratio": 1.0183185840707965,
+      "p_value": 0.9118095098007253,
+      "share_of_staff": 0.15374149659863945,
+      "share_of_leavers": 0.15611814345991562
+    }
+  },
+  "overtime_rates": {
+    "ot": 0.30528846153846156,
+    "no_ot": 0.10436432637571158,
+    "ratio": 2.9252185314685315,
+    "share_ot": 0.2829931972789116
+  },
+  "overtime_by_role": {
+    "Healthcare Representative": {
+      "n": 131,
+      "ot_share": 0.2824427480916031,
+      "rate_ot": 0.05405405405405406,
+      "rate_no_ot": 0.07446808510638298,
+      "n_ot": 37,
+      "n_no_ot": 94
+    },
+    "Human Resources": {
+      "n": 52,
+      "ot_share": 0.25,
+      "rate_ot": 0.38461538461538464,
+      "rate_no_ot": 0.1794871794871795,
+      "n_ot": 13,
+      "n_no_ot": 39
+    },
+    "Laboratory Technician": {
+      "n": 259,
+      "ot_share": 0.23938223938223938,
+      "rate_ot": 0.5,
+      "rate_no_ot": 0.15736040609137056,
+      "n_ot": 62,
+      "n_no_ot": 197
+    },
+    "Manager": {
+      "n": 102,
+      "ot_share": 0.2647058823529412,
+      "rate_ot": 0.14814814814814814,
+      "rate_no_ot": 0.013333333333333334,
+      "n_ot": 27,
+      "n_no_ot": 75
+    },
+    "Manufacturing Director": {
+      "n": 145,
+      "ot_share": 0.2689655172413793,
+      "rate_ot": 0.10256410256410256,
+      "rate_no_ot": 0.05660377358490566,
+      "n_ot": 39,
+      "n_no_ot": 106
+    },
+    "Research Director": {
+      "n": 80,
+      "ot_share": 0.2875,
+      "rate_ot": 0.043478260869565216,
+      "rate_no_ot": 0.017543859649122806,
+      "n_ot": 23,
+      "n_no_ot": 57
+    },
+    "Research Scientist": {
+      "n": 292,
+      "ot_share": 0.3321917808219178,
+      "rate_ot": 0.3402061855670103,
+      "rate_no_ot": 0.07179487179487179,
+      "n_ot": 97,
+      "n_no_ot": 195
+    },
+    "Sales Executive": {
+      "n": 326,
+      "ot_share": 0.2883435582822086,
+      "rate_ot": 0.32978723404255317,
+      "rate_no_ot": 0.11206896551724138,
+      "n_ot": 94,
+      "n_no_ot": 232
+    },
+    "Sales Representative": {
+      "n": 83,
+      "ot_share": 0.2891566265060241,
+      "rate_ot": 0.6666666666666666,
+      "rate_no_ot": 0.288135593220339,
+      "n_ot": 24,
+      "n_no_ot": 59
+    }
+  },
+  "overtime_by_department": {
+    "Human Resources": {
+      "n": 63,
+      "ot_share": 0.2698412698412698,
+      "rate_ot": 0.29411764705882354,
+      "rate_no_ot": 0.15217391304347827,
+      "n_ot": 17,
+      "n_no_ot": 46
+    },
+    "Research & Development": {
+      "n": 961,
+      "ot_share": 0.28199791883454733,
+      "rate_ot": 0.2730627306273063,
+      "rate_no_ot": 0.08550724637681159,
+      "n_ot": 271,
+      "n_no_ot": 690
+    },
+    "Sales": {
+      "n": 446,
+      "ot_share": 0.28699551569506726,
+      "rate_ot": 0.375,
+      "rate_no_ot": 0.13836477987421383,
+      "n_ot": 128,
+      "n_no_ot": 318
+    }
+  },
+  "overtime_holds_in_all_roles": false,
+  "overtime_holds_in_all_departments": true,
+  "overtime_mh_or_by_role": {
+    "or": 4.295757281381226,
+    "ci_low": 3.170844550779802,
+    "ci_high": 5.819752537538166,
+    "p_value": 0.0
+  },
+  "segment_ot_early": {
+    "n": 69,
+    "leavers": 38,
+    "rate": 0.5507246376811594
+  },
+  "segment_ot_salesrep": {
+    "n": 24,
+    "leavers": 16,
+    "rate": 0.6666666666666666
+  },
+  "logit": {
+    "n": 1470,
+    "pseudo_r2": 0.24241248347230293,
+    "auc": 0.8194192066963017,
+    "terms": {
+      "Overtime": {
+        "odds_ratio": 4.985860049696523,
+        "ci_low": 3.5660817571452252,
+        "ci_high": 6.97090031246512,
+        "p_value": 5.679156452389416e-21
+      },
+      "Tenure 0-1 yrs": {
+        "odds_ratio": 2.8563946761113246,
+        "ci_low": 1.940640274745518,
+        "ci_high": 4.204277656139561,
+        "p_value": 1.02746091915042e-07
+      },
+      "Low job satisfaction": {
+        "odds_ratio": 2.1637781888960217,
+        "ci_low": 1.4855273670995293,
+        "ci_high": 3.151699628316886,
+        "p_value": 5.758126415032368e-05
+      },
+      "Bad work-life balance": {
+        "odds_ratio": 2.965630260693104,
+        "ci_low": 1.649937019654595,
+        "ci_high": 5.330483975067015,
+        "p_value": 0.00027933491354351547
+      },
+      "Low environment satisfaction": {
+        "odds_ratio": 2.837601503315069,
+        "ci_low": 1.9527534636888972,
+        "ci_high": 4.123399313503274,
+        "p_value": 4.505737085725454e-08
+      },
+      "Sales Representative": {
+        "odds_ratio": 2.6546927510358387,
+        "ci_low": 1.4984711817054435,
+        "ci_high": 4.703055813446764,
+        "p_value": 0.0008196200678020677
+      },
+      "Job level 1": {
+        "odds_ratio": 2.522220739760827,
+        "ci_low": 1.7931635569130682,
+        "ci_high": 3.547695041846125,
+        "p_value": 1.0668482995114019e-07
+      },
+      "No stock options": {
+        "odds_ratio": 2.464224822292233,
+        "ci_low": 1.503639714013895,
+        "ci_high": 4.03847006580532,
+        "p_value": 0.000345816415256864
+      },
+      "Single": {
+        "odds_ratio": 1.2455958783432115,
+        "ci_low": 0.762072730002172,
+        "ci_high": 2.0359068512281953,
+        "p_value": 0.3809936687619587
+      },
+      "Travels frequently": {
+        "odds_ratio": 2.2334381578101574,
+        "ci_low": 1.5341536315492694,
+        "ci_high": 3.2514644571319984,
+        "p_value": 2.747188216335481e-05
+      },
+      "No training last year": {
+        "odds_ratio": 2.555484122782927,
+        "ci_low": 1.2461293969154537,
+        "ci_high": 5.240626790412441,
+        "p_value": 0.010453410548490945
+      }
+    },
+    "max_vif": 2.6866965476215032
+  },
+  "training": {
+    "per_employee": 2.7993197278911564,
+    "by_tenure_band": {
+      "0-1 yrs": 2.9348837209302325,
+      "2-5 yrs": 2.7557932263814617,
+      "6-10 yrs": 2.7879464285714284,
+      "11+ yrs": 2.8008130081300813
+    },
+    "spearman_training_vs_left": {
+      "rho": -0.05175730829709095,
+      "p_value": 0.04725060848651558
+    },
+    "chi2_bands_p": 0.018400223711124656
+  },
+  "sales_rep_profile": {
+    "n": 83,
+    "avg_income": 2626.0,
+    "company_avg_income": 6502.931292517007,
+    "share_job_level_1": 0.9156626506024096,
+    "company_share_job_level_1": 0.3693877551020408,
+    "share_no_stock": 0.5301204819277109,
+    "company_share_no_stock": 0.42925170068027213,
+    "avg_age": 30.36144578313253,
+    "company_avg_age": 36.923809523809524,
+    "avg_tenure": 2.9156626506024095,
+    "company_avg_tenure": 7.0081632653061225,
+    "overtime_share": 0.2891566265060241
+  },
+  "what_if": {
+    "overtime_crude": 83.584440227704,
+    "overtime_role_adjusted": 84.77010683831298,
+    "early_tenure": 41.657754010695186,
+    "rate_2_5_yrs": 0.15508021390374332,
+    "low_job_sat": 19.406122448979595,
+    "sales_rep_halved_gap": 9.809183673469388
+  }
+}
